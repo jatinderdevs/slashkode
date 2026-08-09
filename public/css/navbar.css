@@ -1,0 +1,159 @@
+/* ── Island Menu (Mobile) ── */
+.island {
+  position: fixed;
+  top: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: var(--sk-color-terracotta);
+  border: 1.5px solid var(--sk-color-primary-soft);
+  border-radius: var(--sk-radius-pill);
+  white-space: nowrap;
+  width: auto;
+  overflow: hidden;
+  box-shadow: var(--sk-shadow-soft);
+}
+
+.island-logo--cont {
+  position: relative;
+  width: 0;
+  height: 20px;
+  pointer-events: none;
+}
+
+.island-logo {
+  position: absolute;
+  width: 20px;
+  opacity: 0;
+  margin-left: 0.75rem;
+}
+
+.menu-btn {
+  width: 100%;
+  height: 34px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  color: var(--sk-color-bg-warm); /* light icon on dark island */
+}
+
+.button-cont {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-btn:focus-visible {
+  outline: 2px solid var(--sk-color-terracotta);
+  outline-offset: 3px;
+}
+
+.menu-btn svg {
+  overflow: visible;
+  display: block;
+}
+
+/* Overlay */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  pointer-events: none;
+}
+
+.menu-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 41, 59, 0.72); /* primary-dark with transparency */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0;
+}
+
+/* Panel */
+.menu-panel {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--sk-color-bg-card);
+  border: 1.5px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-md);
+  padding: 0.375rem;
+  width: 90vw;
+  max-width: 400px;
+  box-shadow: var(--sk-shadow-card);
+  /* no visibility:hidden – GSAP controls with autoAlpha */
+}
+
+/* Links */
+.menu-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.1rem;
+  border-radius: var(--sk-radius-sm);
+  text-decoration: none;
+  color: var(--sk-color-primary-dark);
+  font-family: var(--sk-font-body);
+  font-weight: 500;
+  font-size: var(--sk-text-body);
+  line-height: 1.2;
+  transition: var(--sk-transition-smooth);
+}
+
+.menu-link + .menu-link {
+  border-top: 1px solid var(--sk-color-surface-sand);
+  border-radius: 0;
+}
+
+.menu-link:first-child {
+  border-radius: var(--sk-radius-sm) var(--sk-radius-sm) 0 0;
+}
+
+.menu-link:last-child {
+  border-radius: 0 0 var(--sk-radius-sm) var(--sk-radius-sm);
+}
+
+.menu-link:hover {
+  color: var(--sk-color-terracotta);
+  background: var(--sk-color-sage-light);
+}
+
+.menu-link:focus-visible {
+  outline: 2px solid var(--sk-color-terracotta);
+  outline-offset: -2px;
+  border-radius: var(--sk-radius-sm);
+}
+
+.link-num {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  color: var(--sk-color-primary-soft);
+  transition: color 0.2s ease;
+}
+
+.menu-link:hover .link-num {
+  color: var(--sk-color-terracotta);
+}
+
+/* Hide on desktop – show only on mobile */
+@media (min-width: 769px) {
+  .island,
+  .menu-overlay {
+    display: none !important;
+  }
+}

@@ -1,0 +1,410 @@
+@import url("../fonts/jakarta/css/plus-jakarta-sans.css");
+/* 1. GOOGLE FONTS IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap");
+
+/* 2. BRAND DESIGN TOKENS (CSS VARIABLES) */
+:root {
+  /* --- Colour Palette --- */
+  /* Primary: Trust & Calm Base */
+  --sk-color-primary-dark: #1e293b; /* Deep Slate Blue (Main Text & Dark Surfaces) */
+  --sk-color-primary-soft: #2c3e50; /* Slightly lighter slate for secondary text/borders */
+
+  /* Secondary: Balance & Peace */
+  --sk-color-sage: #4a7c59; /* Soft Sage Green */
+  --sk-color-sage-light: #ebf2ec; /* Light Sage tint for card backgrounds/badges */
+
+  /* Accent: Warm Human Energy */
+  --sk-color-terracotta: #f74123; /* Warm Terracotta (Primary CTA / Buttons) */
+  --sk-color-terracotta-hover: #f76d23; /* Hover state for buttons */
+
+  /* Neutral Backgrounds: Soft & Relaxing (No Harsh Pure Whites) */
+  --sk-color-bg-warm: #f8f6f0; /* Warm Off-White (Default Canvas) */
+  --sk-color-bg-card: #ffffff; /* Pure White for elevated card surfaces */
+  --sk-color-surface-sand: #e5e0d8; /* Muted Sand for borders & subtle sections */
+
+  /* --- Typography System --- */
+  --sk-font-heading:
+    "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --sk-font-semibold:
+    "PlusJakartaSans-SemiBold", -apple-system, BlinkMacSystemFont, sans-serif;
+  --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --sk-font-mono: "JetBrains Mono", monospace;
+
+  /* --- Font Sizes & Scale --- */
+  --sk-text-h1: clamp(2.25rem, 5vw, 3.5rem); /* 36px to 56px */
+  --sk-text-h2: clamp(1.75rem, 3.5vw, 2.5rem); /* 28px to 40px */
+  --sk-text-h3: clamp(1.25rem, 2.5vw, 1.5rem); /* 20px to 24px */
+  --sk-text-body-lg: 1.125rem; /* 18px */
+  --sk-text-body: 1rem; /* 16px Base */
+  --sk-text-sm: 0.875rem; /* 14px */
+  --sk-text-xs: 0.75rem; /* 12px Mono/Badges */
+
+  /* --- Spacing & Layout --- */
+  --sk-max-content-width: 1200px;
+  --sk-max-text-width: 65ch; /* Max 65 characters per line for calm reading */
+  --sk-radius-sm: 8px;
+  --sk-radius-md: 16px; /* Soft rounded edges for approachable UI */
+  --sk-radius-lg: 24px;
+  --sk-radius-pill: 9999px;
+
+  /* --- Elevating Shadows (Soft & Diffused) --- */
+  --sk-shadow-soft: 0 10px 30px -10px rgba(30, 41, 59, 0.05);
+  --sk-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.03);
+
+  /* --- Transitions --- */
+  --sk-transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 3. MODERN CSS RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--sk-font-body);
+  font-size: var(--sk-text-body);
+  font-weight: 400;
+  line-height: 1.65; /* Airy line height for effortless reading */
+  color: var(--sk-color-primary-dark);
+  background-color: var(--sk-color-bg-warm); /* Warm Canvas */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* 4. TYPOGRAPHY HIERARCHY */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--sk-font-heading);
+  color: var(--sk-color-primary-dark);
+  line-height: 1.2; /* Tight line height for titles */
+  letter-spacing: -0.02em; /* Modern slightly tight letter spacing */
+  margin-bottom: 0.75em;
+  text-wrap: balance; /* Prevents awkward single-word orphans */
+}
+
+h1 {
+  font-size: var(--sk-text-h1);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--sk-text-h2);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--sk-text-h3);
+  font-weight: 600;
+}
+
+p {
+  max-width: var(--sk-max-text-width); /* Comfortable reading container */
+  margin-bottom: 1.25rem;
+}
+
+p.lead {
+  font-size: var(--sk-text-body-lg);
+  color: var(--sk-color-primary-soft);
+  line-height: 1.6;
+}
+
+.text-mono {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* 5. INTERACTIVE ELEMENTS (BUTTONS & LINKS) */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--sk-transition-smooth);
+}
+a:hover {
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+}
+.hero h1 {
+  font-size: clamp(4.25rem, 5vw, 4.5rem);
+}
+.hero p {
+  margin: 0 auto;
+}
+/* Primary Call To Action (Terracotta Button) */
+.sk-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--sk-color-terracotta);
+  color: #ffffff;
+  font-family: var(--sk-font-body);
+  font-weight: 600;
+  font-size: var(--sk-text-body);
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--sk-radius-pill); /* Rounded pill shape feels friendly */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(224, 122, 95, 0.25);
+  transition: var(--sk-transition-smooth);
+}
+
+.sk-btn-primary:hover {
+  background-color: var(--sk-color-terracotta-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(224, 122, 95, 0.35);
+}
+.btn_project {
+  padding: 10px 20px;
+  background: var(--sk-color-terracotta);
+  text-transform: capitalize;
+  border-radius: 25px;
+  border: 1px solid var(--sk-color-surface-sand);
+
+  font-family: var(--sk-font-semibold);
+
+  box-shadow:
+    var(--sk-color-terracotta) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.btn_project:hover {
+  background: white;
+  color: var(--sk-color-primary-dark);
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+/* Secondary Button (Calm & Subtle) */
+.sk-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--sk-color-primary-dark);
+  font-family: var(--sk-font-body);
+  font-weight: 600;
+  font-size: var(--sk-text-body);
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--sk-radius-pill);
+  border: 1.5px solid var(--sk-color-surface-sand);
+  cursor: pointer;
+  transition: var(--sk-transition-smooth);
+}
+
+.sk-btn-secondary:hover {
+  background-color: var(--sk-color-bg-card);
+  border-color: var(--sk-color-primary-dark);
+}
+
+/* 6. CARD COMPONENTS & CONTAINERS */
+.sk-container {
+  width: 100%;
+  max-width: var(--sk-max-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.sk-card {
+  background-color: var(--sk-color-bg-card);
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-md); /* 16px soft corners */
+  padding: 2rem;
+  box-shadow: var(--sk-shadow-card);
+  transition: var(--sk-transition-smooth);
+}
+
+.sk-card:hover {
+  box-shadow: var(--sk-shadow-soft);
+  transform: translateY(-4px);
+}
+
+/* Friendly Tag/Badge Accent */
+.sk-badge {
+  display: inline-block;
+  background-color: var(--sk-color-sage-light);
+  color: var(--sk-color-sage);
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--sk-radius-pill);
+  margin-bottom: 1rem;
+}
+.sk_header {
+  padding: 15px 0;
+}
+.sk_navbar .nav {
+  justify-content: center;
+}
+.sk_navbar {
+  background: white;
+  border-radius: 25px;
+}
+.sk_navbar li a {
+  font-family: var(--sk-font-semibold);
+  font-size: 14px;
+  color: var(--sk-color-primary-dark);
+  border-radius: 35px;
+
+  padding: 8px 20px;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.sk_navbar li a:hover {
+  text-decoration: none;
+  background: var(--sk-color-surface-sand);
+}
+.sk_navbar li:last-child a:hover {
+  text-decoration: none;
+  background: var(--sk-color-terracotta);
+}
+.nav-link-anim {
+  overflow: hidden;
+}
+.nav-link-inner {
+  position: relative;
+  display: block;
+  height: 2.1em;
+}
+.nav-link-text {
+  display: block;
+  line-height: 2.1em;
+}
+.nav-link-text--bottom {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+section {
+  padding: 100px 0;
+}
+/* hero buttton call to action */
+.mag-zone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* Size of the magnetic area – make it a bit larger than the button */
+  width: 220px;
+  height: 100px;
+  /* Optional: remove the border if you don’t want the guide circle */
+  /* border: 1px dashed #42433d; */
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* Make sure the button itself is positioned relatively for the transform */
+.mag-zone .btn {
+  position: relative;
+  will-change: transform;
+  display: inline-flex; /* or whatever you already use */
+}
+.herobtnPrimary {
+  font-weight: var(--sk-font-semibold);
+  background: linear-gradient(
+    to left,
+    var(--sk-color-terracotta),
+    var(--sk-color-terracotta-hover)
+  );
+  border: 1px solid var(--sk-color-surface-sand);
+  align-items: center;
+  border-radius: 30px;
+  color: var(--sk-color-sage-light);
+  padding: 10px 25px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.herobtnPrimary:hover {
+  color: var(--sk-color-sage-light);
+}
+.herobtnSec {
+  font-weight: var(--sk-font-semibold);
+  font-weight: 600;
+  align-items: center;
+  border-radius: 30px;
+  color: var(--sk-color-primary-dark);
+  padding: 10px 25px;
+  border: 1px solid var(--sk-color-surface-sand);
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background: white;
+}
+
+/* marquee section */
+
+/* TECH MARQUEE */
+.sk-marquee-section {
+  padding: 60px 0;
+}
+
+.marquee-wrap {
+  overflow: hidden;
+  position: relative;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 8%,
+    black 92%,
+    transparent
+  );
+}
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  gap: 2.5rem;
+  will-change: transform;
+}
+
+.marquee-item {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--sk-color-primary-soft);
+  white-space: nowrap;
+  transition: var(--sk-transition-smooth);
+  cursor: default;
+}
+
+.marquee-item:hover {
+  color: var(--sk-color-terracotta);
+}
+
+.marquee-sep {
+  font-family: var(--sk-font-mono);
+  color: var(--sk-color-surface-sand);
+  font-size: var(--sk-text-sm);
+}
+@media (max-width: 768px) {
+  #desktopNavbar {
+    display: none !important;
+  }
+}

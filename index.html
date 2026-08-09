@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slashkode |</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/stylesheet.css" />
+    <link rel="stylesheet" href="public/css/navbar.css" />
+    <link rel="stylesheet" href="public/css/statement.css" />
+    <link rel="stylesheet" href="public/css/servicesSection.css" />
+    <link rel="stylesheet" href="public/css/bientoGrid.css" />
+    <link rel="stylesheet" href="public/css/portfolio.css" />
+    <link rel="stylesheet" href="public/css/faq.css" />
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <header class="sk_header">
+          <div class="island">
+            <div class="island-logo--cont">
+              <img class="island-logo" src="public/img/logo.png" alt="" />
+            </div>
+            <button
+              class="menu-btn"
+              id="menuToggle"
+              aria-expanded="false"
+              aria-controls="menu-overlay"
+              aria-label="Open navigation menu"
+            >
+              <div class="button-cont">
+                <svg
+                  id="menuIcon"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <line
+                    class="bar bar-top"
+                    x1="2"
+                    y1="5"
+                    x2="14"
+                    y2="5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    class="bar bar-mid"
+                    x1="2"
+                    y1="8"
+                    x2="14"
+                    y2="8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    class="bar bar-bot"
+                    x1="2"
+                    y1="11"
+                    x2="14"
+                    y2="11"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </button>
+          </div>
+
+          <div
+            class="menu-overlay"
+            id="menu-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Navigation menu"
+          >
+            <div class="menu-backdrop"></div>
+            <div class="menu-panel">
+              <nav>
+                <a class="menu-link" href="#work" tabindex="-1"
+                  ><span>Work</span><span class="link-num">01</span></a
+                >
+                <a class="menu-link" href="#about" tabindex="-1"
+                  ><span>About</span><span class="link-num">02</span></a
+                >
+                <a class="menu-link" href="#studio" tabindex="-1"
+                  ><span>Studio</span><span class="link-num">03</span></a
+                >
+                <a class="menu-link" href="#journal" tabindex="-1"
+                  ><span>Journal</span><span class="link-num">04</span></a
+                >
+                <a class="menu-link" href="#contact" tabindex="-1"
+                  ><span>Contact</span><span class="link-num">05</span></a
+                >
+              </nav>
+            </div>
+          </div>
+          <div class="row align-items-center" id="desktopNavbar">
+            <div class="col-md-4">
+              <div class="logo">
+                <img
+                  src="public/img/slashkode.png"
+                  width="250px"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sk_navbar">
+                <ul class="nav">
+                  <li>
+                    <a href="" class="nav-link-anim"
+                      ><span class="nav-link-inner"
+                        ><span class="nav-link-text nav-link-text--top"
+                          >work</span
+                        ><span class="nav-link-text nav-link-text--bottom"
+                          >Work</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="nav-link-anim"
+                      ><span class="nav-link-inner"
+                        ><span class="nav-link-text nav-link-text--top"
+                          >service</span
+                        ><span class="nav-link-text nav-link-text--bottom"
+                          >Service</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="nav-link-anim"
+                      ><span class="nav-link-inner"
+                        ><span class="nav-link-text nav-link-text--top"
+                          >pricing</span
+                        ><span class="nav-link-text nav-link-text--bottom"
+                          >Pricing</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="nav-link-anim"
+                      ><span class="nav-link-inner"
+                        ><span class="nav-link-text nav-link-text--top"
+                          >about</span
+                        ><span class="nav-link-text nav-link-text--bottom"
+                          >About</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                  <li>
+                    <a href="" class="nav-link-anim"
+                      ><span class="nav-link-inner"
+                        ><span class="nav-link-text nav-link-text--top"
+                          >contact</span
+                        ><span class="nav-link-text nav-link-text--bottom"
+                          >Contact</span
+                        ></span
+                      ></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <a href="" class="btn_project"
+                >start project
+                <img src="public/icons/top-right.png" width="14px" />
+              </a>
+            </div>
+          </div>
+        </header>
+        <section class="hero">
+          <h1>Websites that don't feel <br />like homework.</h1>
+          <p>
+            We're SLASHKODE — a web design and development studio based in
+            Melbourne. We build fast, clean, good-looking websites for small
+            businesses and brands who want something that actually converts, not
+            just something that looks nice in a portfolio. No jargon, no
+            six-month timelines, no disappearing after you've paid the deposit.
+          </p>
+
+          <div class="mag-zone">
+            <a href="#" class="btn herobtnPrimary"
+              >See what i do &nbsp;
+              <dotlottie-wc
+                src="https://lottie.host/3c7a293d-42c4-4658-a8db-6f2e4bfef31c/UY9L97Lncp.lottie"
+                style="width: 30px; height: 30px"
+                autoplay
+                loop
+              ></dotlottie-wc
+            ></a>
+          </div>
+
+          <div class="mag-zone">
+            <a href="#" class="btn herobtnSec"
+              >Say hey
+              <dotlottie-wc
+                src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
+                style="width: 30px; height: 30px"
+                autoplay
+                loop
+              ></dotlottie-wc
+            ></a>
+          </div>
+        </section>
+        <section class="sk-marquee-section">
+          <div class="sk-container">
+            <p
+              class="text-mono"
+              style="color: var(--sk-color-primary-soft); margin-bottom: 2rem"
+            >
+              / built with
+            </p>
+          </div>
+
+          <div class="marquee-wrap">
+            <div class="marquee-track">
+              <span class="marquee-item">HTML</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">CSS</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">Bootstrap</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">GSAP</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">Figma</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">JavaScript</span>
+              <span class="marquee-sep">/</span>
+              <!-- duplicate the exact set above once for a seamless loop -->
+              <span class="marquee-item">HTML</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">CSS</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">Bootstrap</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">GSAP</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">Figma</span>
+              <span class="marquee-sep">/</span>
+              <span class="marquee-item">JavaScript</span>
+              <span class="marquee-sep">/</span>
+            </div>
+          </div>
+        </section>
+        <div class="service-list">
+          <!-- 01 Web Designing -->
+          <div class="service-list-item item-01">
+            <div class="service-card-content">
+              <div class="service-card-header">
+                <h3 class="heading-style-h3">Web Designing</h3>
+                <div class="service-card-num-box">
+                  <div class="service-card-num">01</div>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-text-box">
+                  <div>
+                    <p class="text-size-xlarge">
+                      User-Centric Design &amp; Digital Storytelling
+                    </p>
+                    <p class="service-card-desc">
+                      We design intuitive, high-impact websites—so users
+                      connect, engage, and take action effortlessly.
+                    </p>
+                    <div class="service-card-rich">
+                      <ul>
+                        <li>UX Research &amp; User Flows</li>
+                        <li>UI Design &amp; Design Systems</li>
+                        <li>Responsive Web Design</li>
+                        <li>Conversion-Focused Layouts</li>
+                        <li>Prototyping &amp; Interaction Design</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="p-button">
+                    View Details
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="service-card-image-box">
+                  <div class="service-card-image-box-frame">
+                    <!-- <div class="image-placeholder">Image placeholder</div> -->
+                    <img
+                      class="cover-image"
+                      src="public/img/website.svg"
+                      alt="Web Designing"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 Web Development -->
+          <div class="service-list-item item-02">
+            <div class="service-card-content">
+              <div class="service-card-header">
+                <h3 class="heading-style-h3">Web Development</h3>
+                <div class="service-card-num-box">
+                  <div class="service-card-num">02</div>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-text-box">
+                  <div>
+                    <p class="text-size-xlarge">
+                      Technical Excellence &amp; Scalable Engineering
+                    </p>
+                    <p class="service-card-desc">
+                      We build fast, scalable digital systems—so your product
+                      performs reliably and grows without limits.
+                    </p>
+                    <div class="service-card-rich">
+                      <ul>
+                        <li>Front-End &amp; Back-End Development</li>
+                        <li>CMS Development</li>
+                        <li>Performance &amp; Speed Optimization</li>
+                        <li>Scalable Architecture</li>
+                        <li>Security &amp; Maintenance</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="p-button">
+                    View Details
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="service-card-image-box">
+                  <div class="service-card-image-box-frame">
+                    <div class="image-placeholder">Image placeholder</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 Search Engine Optimization -->
+          <div class="service-list-item item-03">
+            <div class="service-card-content">
+              <div class="service-card-header">
+                <h3 class="heading-style-h3">Search Engine Optimization</h3>
+                <div class="service-card-num-box">
+                  <div class="service-card-num">03</div>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-text-box">
+                  <div>
+                    <p class="text-size-xlarge">
+                      Data-Driven Visibility &amp; Growth
+                    </p>
+                    <p class="service-card-desc">
+                      Organic visibility that compounds — technical SEO, content
+                      strategy, and authority building.
+                    </p>
+                    <div class="service-card-rich">
+                      <ul>
+                        <li>Technical SEO Audits</li>
+                        <li>On-Page &amp; Content Optimization</li>
+                        <li>Keyword Strategy</li>
+                        <li>Link Building &amp; Authority</li>
+                        <li>Analytics &amp; Reporting</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="p-button">
+                    View Details
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="service-card-image-box">
+                  <div class="service-card-image-box-frame">
+                    <div class="image-placeholder">Image placeholder</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 CMS for Business -->
+          <div class="service-list-item item-04">
+            <div class="service-card-content">
+              <div class="service-card-header">
+                <h3 class="heading-style-h3">CMS for Business</h3>
+                <div class="service-card-num-box">
+                  <div class="service-card-num">04</div>
+                </div>
+              </div>
+              <div class="service-card-body">
+                <div class="service-card-text-box">
+                  <div>
+                    <p class="text-size-xlarge">Flexible Content Systems</p>
+                    <p class="service-card-desc">
+                      Custom content systems that let your team publish and
+                      manage without friction.
+                    </p>
+                    <div class="service-card-rich">
+                      <ul>
+                        <li>Custom CMS Setup</li>
+                        <li>Content Modelling</li>
+                        <li>Editor-Friendly Interfaces</li>
+                        <li>Multi-site Management</li>
+                        <li>Training &amp; Handover</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <a href="#" class="p-button">
+                    View Details
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="service-card-image-box">
+                  <div class="service-card-image-box-frame">
+                    <div class="image-placeholder">Image placeholder</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="about-grid-section">
+          <div class="about-grid-container">
+            <div class="about-grid-header">
+              <span class="about-grid-label">About</span>
+              <h2 class="about-grid-title">A bit about me &amp; the work</h2>
+            </div>
+
+            <div class="bento-grid">
+              <!-- About Me -->
+              <article class="bento-card card-about" data-animate>
+                <div>
+                  <div class="about-avatar">SK</div>
+                  <h3 class="about-name">JATINDER SINGH</h3>
+                  <p class="about-role">Web Designer &amp; Developer</p>
+                  <p class="about-bio">
+                    I help businesses turn ideas into calm, conversion-focused
+                    digital experiences. From strategy and design to development
+                    and growth — everything is built with clarity and care.
+                  </p>
+                </div>
+                <div class="about-tags">
+                  <span class="about-tag">Design</span>
+                  <span class="about-tag">Development</span>
+                  <span class="about-tag">SEO</span>
+                  <span class="about-tag">CMS</span>
+                </div>
+              </article>
+
+              <!-- Metrics -->
+              <article class="bento-card card-metrics" data-animate>
+                <div class="metrics-header">
+                  <span class="metrics-label">Metrics</span>
+                </div>
+
+                <div class="metrics-row">
+                  <div class="metrics-value" data-count="48">
+                    0<span class="accent">+</span>
+                  </div>
+                  <div class="metrics-text">Projects<br />Shipped</div>
+                </div>
+
+                <div class="metrics-row">
+                  <div class="metrics-value" data-count="4.9">
+                    0<span class="accent">★</span>
+                  </div>
+                  <div class="metrics-text">Average<br />Rating</div>
+                </div>
+
+                <div class="metrics-row">
+                  <div class="metrics-value" data-count="6">
+                    0<span class="accent"> yrs</span>
+                  </div>
+                  <div class="metrics-text">Years<br />Experience</div>
+                </div>
+              </article>
+
+              <!-- Testimonial -->
+              <article class="bento-card card-testimonial" data-animate>
+                <p class="testimonial-quote">
+                  Working with them completely changed how we present our brand.
+                  Clear thinking, beautiful execution, and genuine care for
+                  results.
+                </p>
+                <div class="testimonial-author">
+                  <div class="author-avatar">EF</div>
+                  <div>
+                    <div class="author-name">Emily Foster</div>
+                    <div class="author-role">Founder, Sarter</div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Available -->
+              <article class="bento-card card-available" data-animate>
+                <div>
+                  <div class="available-status">
+                    <span class="available-dot"></span>
+                    Available for work
+                  </div>
+                  <h3 class="available-title">Open to new projects</h3>
+                  <p class="available-desc">
+                    Currently taking on selected design &amp; development work
+                    for Q3–Q4.
+                  </p>
+                </div>
+              </article>
+
+              <!-- CTA -->
+              <article class="bento-card card-cta" data-animate>
+                <div>
+                  <div class="cta-label">Next step</div>
+                  <h3 class="cta-title">Have a project in mind? Let’s talk.</h3>
+                </div>
+                <a href="#contact" class="cta-btn">
+                  Say hello
+                  <svg viewBox="0 0 20 20" fill="currentColor">
+                    <path
+                      d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                    />
+                  </svg>
+                </a>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="sk-statement-section" id="statement">
+          <div class="sk-statement-inner">
+            <span class="sk-statement-eyebrow">/ what we believe</span>
+
+            <h2 class="sk-statement-heading split" id="headline">
+              A good website
+              <span class="avatars">
+                <img src="public/img/website.svg" class="img-fluid" alt="" />
+              </span>
+              isn't decoration. It's a decision your customers
+              <span class="avatars">
+                <img src="public/img/customer.svg" class="img-fluid" alt="" />
+              </span>
+              make in seconds.
+            </h2>
+
+            <p class="sk-statement-sub split" id="subtext">
+              Every layout, every line of copy, every load time — it's all doing
+              one job: making people trust you enough to stay. That's the only
+              metric that matters to us.
+            </p>
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <div class="projects-header">
+            <span class="projects-label">Portfolio</span>
+            <h2 class="projects-title">Selected work &amp; experiments</h2>
+            <p class="projects-sub">
+              Large previews — drag or use the dots to move one by one.
+            </p>
+          </div>
+
+          <div class="projects-viewport" id="projectsViewport">
+            <div class="projects-track" id="projectsTrack">
+              <!-- Card 1 -->
+              <article class="project-card" data-index="0">
+                <div class="project-card-media">
+                  <!-- Replace with real image -->
+
+                  <img
+                    src="public/img/mockups/aiitmockupsample.png"
+                    alt="Corgi Labs"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">
+                      Australian International Institute of Technology
+                    </h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag accent">Design</span>
+                    <span class="project-tag muted">SEO</span>
+
+                    <span class="project-tag">Melbourne</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="project-card" data-index="1">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #0f172a 0%,
+                        #1e293b 50%,
+                        #334155 100%
+                      );
+                      color: rgba(255, 255, 255, 0.4);
+                    "
+                  >
+                    CineDream
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">CineDream</h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">AI</span>
+                    <span class="project-tag muted">Video</span>
+                    <span class="project-tag muted">Creative</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="project-card" data-index="2">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #f0f4f8 0%,
+                        #d4dde8 55%,
+                        #b8c5d6 100%
+                      );
+                    "
+                  >
+                    Northwind Store
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Northwind Store</h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag accent">YC S19</span>
+                    <span class="project-tag">Web</span>
+                    <span class="project-tag muted">Commerce</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="project-card" data-index="3">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #fff5f2 0%,
+                        #f5d9d0 55%,
+                        #e8b8a8 100%
+                      );
+                    "
+                  >
+                    Pulse Analytics
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Pulse Analytics</h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">SaaS</span>
+                    <span class="project-tag muted">Data</span>
+                    <span class="project-tag muted">B2B</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5 -->
+              <article class="project-card" data-index="4">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #f7f9f6 0%,
+                        #e5e0d8 55%,
+                        #d0c8bc 100%
+                      );
+                    "
+                  >
+                    Lumen Health
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Lumen Health</h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">Health</span>
+                    <span class="project-tag muted">App</span>
+                    <span class="project-tag muted">UX</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6 -->
+              <article class="project-card" data-index="5">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #ebf2ec 0%,
+                        #c8d9cc 55%,
+                        #a3bfab 100%
+                      );
+                    "
+                  >
+                    Forge CMS
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Forge CMS</h3>
+                    <span class="project-dot" aria-hidden="true"></span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">CMS</span>
+                    <span class="project-tag muted">Web</span>
+                    <span class="project-tag muted">Business</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="projects-progress" id="projectsProgress"></div>
+          </div>
+
+          <div class="projects-footer">
+            <div
+              class="projects-dots"
+              id="projectsDots"
+              role="tablist"
+              aria-label="Project navigation"
+            ></div>
+            <span class="projects-hint">Drag to explore →</span>
+          </div>
+        </section>
+        <section class="faq-section">
+          <div class="faq-container">
+            <header class="faq-header">
+              <span class="faq-label">FAQ</span>
+              <h2 class="faq-title">Common questions</h2>
+              <p class="faq-subtitle">
+                Straight answers about working together, timelines, and what to
+                expect.
+              </p>
+            </header>
+
+            <div class="faq-list">
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>What services do you offer?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      I focus on four core areas: Web Designing (clean,
+                      conversion-focused interfaces), Web Development (fast,
+                      accessible front-end builds), SEO (technical foundations +
+                      on-page strategy), and CMS for Business (WordPress,
+                      Webflow, or custom setups that clients can actually
+                      manage).
+                    </p>
+                    <p>
+                      Most projects blend two or more of these. If you need
+                      something outside this scope I’ll tell you early and point
+                      you in the right direction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>How long does a typical project take?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      A focused landing page or small marketing site usually
+                      lands in 2–4 weeks. Full multi-page websites with custom
+                      interactions sit around 5–8 weeks. Larger CMS builds or
+                      projects that need content strategy can stretch to 10–12
+                      weeks.
+                    </p>
+                    <p>
+                      Timeline depends on how quickly feedback and content
+                      arrive from your side. I always share a clear schedule at
+                      the start so there are no surprises.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>Do you work with remote or international clients?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Yes. Almost all of my work is remote. I’m comfortable with
+                      clients across different time zones and use async
+                      communication (Loom, Notion, email) so nothing waits on a
+                      live meeting.
+                    </p>
+                    <p>
+                      We can schedule calls when it makes sense, but the process
+                      is designed so progress continues even when we’re not
+                      online at the same time.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>What’s included in a project?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Every project includes strategy kickoff, design system or
+                      key screens, development, basic SEO setup, performance
+                      checks, and a handoff with documentation so you (or your
+                      team) can update content later.
+                    </p>
+                    <p>
+                      Source files, component notes, and a short training
+                      session are part of the package. Ongoing maintenance or
+                      new feature work can be arranged separately after launch.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" aria-expanded="false">
+                  <span>How do we get started?</span>
+                  <span class="faq-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" /></svg>
+                  </span>
+                </button>
+                <div class="faq-answer">
+                  <div class="faq-answer-inner">
+                    <p>
+                      Send a short note about what you’re building and where you
+                      are in the process. I’ll reply within a couple of days
+                      with a few clarifying questions and, if it looks like a
+                      fit, a proposed scope and timeline.
+                    </p>
+                    <p>
+                      No long forms or sales calls required up front — just a
+                      clear conversation so we both know it’s the right match.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="faq-footer">
+              Still have a question? <a href="#contact">Say hi</a> — happy to
+              answer.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script src="public/js/custom.js"></script>
+    <script src="public/js/navbar.js"></script>
+    <script src="public/js/serviceSection.js"></script>
+    <script src="public/js/bientoGrid.js"></script>
+    <script src="public/js/portfolio.js"></script>
+  </body>
+</html>
