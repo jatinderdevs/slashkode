@@ -271,8 +271,8 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 180px;
-  background: var(--sk-color-sage-light);
-  border-color: #d4e5d8;
+  /* background: var(--sk-color-sage-light);
+  border-color: #d4e5d8; */
 }
 
 .available-status {
@@ -339,7 +339,7 @@
   box-shadow: 0 20px 40px -12px rgba(30, 41, 59, 0.35);
 }
 
-.cta-label {
+.cta-labelbeinto {
   font-family: var(--sk-font-mono);
   font-size: var(--sk-text-xs);
   letter-spacing: 0.08em;
@@ -357,11 +357,10 @@
   color: #fff;
   margin-bottom: 0;
 }
-.card-cta img {
-  filter: invert(1);
+/* .card-cta img {
   width: 22px;
   margin-left: 10px;
-}
+} */
 
 .cta-btn {
   display: inline-flex;
