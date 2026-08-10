@@ -14,7 +14,8 @@
 }
 
 .projects-section {
-  padding: 70px 0 90px;
+  /* padding: 70px 0 90px; */
+  padding: 100px 0;
   position: relative;
 }
 
@@ -24,7 +25,7 @@
   padding: 0 1.5rem;
 }
 
-.projects-label {
+/* .projects-label {
   display: inline-block;
   font-family: var(--sk-font-mono);
   font-size: var(--sk-text-xs);
@@ -35,7 +36,7 @@
   padding: 0.35rem 0.85rem;
   border-radius: var(--sk-radius-pill);
   margin-bottom: 1rem;
-}
+} */
 
 .projects-title {
   font-family: var(--sk-font-heading);
@@ -44,12 +45,12 @@
   letter-spacing: -0.02em;
   line-height: 1.2;
   color: var(--sk-color-primary-dark);
-  max-width: 18ch;
+  max-width: 22ch;
 }
 
 .projects-sub {
   margin-top: 0.75rem;
-  font-size: var(--sk-text-sm);
+  font-size: var(--sk-text-body);
   color: var(--sk-color-primary-soft);
   max-width: 42ch;
 }
@@ -57,7 +58,7 @@
 /* Viewport + Track */
 .projects-viewport {
   width: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
   cursor: grab;
   touch-action: pan-y;
@@ -90,8 +91,7 @@
   flex-direction: column;
   transition:
     border-color 0.35s ease,
-    box-shadow 0.35s ease,
-    transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    box-shadow 0.35s ease;
   user-select: none;
   -webkit-user-select: none;
   position: relative;
@@ -103,8 +103,14 @@
     0 0 0 1px var(--sk-color-terracotta),
     0 28px 70px -20px rgba(247, 65, 35, 0.22),
     var(--sk-shadow-soft);
-  transform: scale(1.02);
+  /* transform: scale(1.02); */
   z-index: 2;
+}
+.project-card:not(.is-active) {
+  opacity: 0.72;
+}
+.project-card.is-active {
+  opacity: 1;
 }
 
 /* Big thumbnail */
@@ -173,7 +179,29 @@
   color: var(--sk-color-primary-dark);
   line-height: 1.25;
 }
+.project-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--sk-color-primary-dark);
+  color: #fff;
+  border-radius: var(--sk-radius-pill);
+  font-family: var(--sk-font-body);
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+  pointer-events: auto; /* important */
+}
 
+.project-cta:hover {
+  background: var(--sk-color-terracotta);
+  transform: translateY(-1px);
+}
 .project-dot {
   width: 9px;
   height: 9px;

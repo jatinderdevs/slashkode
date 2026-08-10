@@ -1,5 +1,3 @@
-// gsap.registerPlugin(ScrollTrigger);
-
 const items = gsap.utils.toArray(".service-list-item");
 
 // Clear starting state — nothing blurred on load
@@ -25,7 +23,7 @@ items.forEach((item, i) => {
     {
       scale: 0.92,
       opacity: 0.55,
-      filter: "blur(3px)",
+      filter: "blur(1.5px)",
       ease: "none",
       scrollTrigger: {
         trigger: next,

@@ -1,5 +1,3 @@
-gsap.registerPlugin(ScrollTrigger);
-
 const cards = gsap.utils.toArray("[data-animate]");
 gsap.set(cards, { y: 36, opacity: 0 });
 

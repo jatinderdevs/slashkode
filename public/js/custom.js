@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //hero btns
-gsap.registerPlugin(); // only if you need extra plugins later
+gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
 
 function initMagneticButtons(selector = ".mag-zone", options = {}) {
   const {

@@ -15,7 +15,7 @@
   /* max-width: 36ch; */
 }
 
-.about-grid-label {
+/* .about-grid-label {
   display: inline-block;
   font-family: var(--sk-font-mono);
   font-size: var(--sk-text-xs);
@@ -26,7 +26,7 @@
   padding: 0.35rem 0.85rem;
   border-radius: var(--sk-radius-pill);
   margin-bottom: 1rem;
-}
+} */
 
 .about-grid-title {
   font-family: var(--sk-font-heading);
@@ -352,9 +352,15 @@
   font-family: var(--sk-font-heading);
   font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.3;
+  letter-spacing: -0.025em;
+  line-height: 1.6;
+  color: #fff;
   margin-bottom: 0;
+}
+.card-cta img {
+  filter: invert(1);
+  width: 22px;
+  margin-left: 10px;
 }
 
 .cta-btn {
@@ -363,8 +369,8 @@
   gap: 0.5rem;
   flex-shrink: 0;
   padding: 0.75rem 1.5rem;
-  background: var(--sk-color-terracotta);
-  color: #fff;
+  color: var(--sk-color-terracotta);
+  background: #fff;
   border-radius: var(--sk-radius-pill);
   font-weight: 600;
   font-size: var(--sk-text-sm);
@@ -373,8 +379,9 @@
 }
 
 .cta-btn:hover {
-  background: var(--sk-color-terracotta-hover);
+  background: var(--sk-color-terracotta);
   transform: translateY(-2px);
+  color: var(--sk-color-primary-dark);
 }
 
 .cta-btn svg {

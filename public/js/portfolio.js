@@ -83,6 +83,7 @@
       bounds: { minX: maxX, maxX: 0 },
       edgeResistance: 0.82,
       dragResistance: 0.06,
+      dragClickables: true,
       snap: {
         x: (value) => {
           let closest = snapPoints[0];
