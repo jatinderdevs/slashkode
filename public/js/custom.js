@@ -77,22 +77,6 @@ function initMagneticButtons(selector = ".mag-zone", options = {}) {
 // Call it after GSAP is loaded
 initMagneticButtons();
 
-///marquee section
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".marquee-track");
-  const wrap = document.querySelector(".marquee-wrap");
-
-  const tween = gsap.to(track, {
-    xPercent: -50,
-    repeat: -1,
-    duration: 28,
-    ease: "none",
-  });
-
-  wrap.addEventListener("mouseenter", () => tween.pause());
-  wrap.addEventListener("mouseleave", () => tween.play());
-});
-
 //statement section
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

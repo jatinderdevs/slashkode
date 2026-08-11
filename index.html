@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="public/css/portfolio.css" />
     <link rel="stylesheet" href="public/css/faq.css" />
     <link rel="stylesheet" href="public/css/cta.css" />
+    <link rel="stylesheet" href="public/css/marquee.css" />
     <script
       src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js"
       type="module"
@@ -224,39 +225,324 @@
             ></a>
           </div>
         </section>
-        <section class="sk-marquee-section">
+        <section
+          class="sk-marquee-section"
+          aria-label="Trusted by Melbourne businesses"
+        >
           <div class="sk-container">
-            <p class="sk-statement-eyebrow">/ built with</p>
+            <p class="sk-statement-eyebrow">/ trusted by</p>
           </div>
 
           <div class="marquee-wrap">
             <div class="marquee-track">
-              <span class="marquee-item">HTML</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">CSS</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">Bootstrap</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">GSAP</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">Figma</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">JavaScript</span>
-              <span class="marquee-sep">/</span>
-              <!-- duplicate the exact set above once for a seamless loop -->
-              <span class="marquee-item">HTML</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">CSS</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">Bootstrap</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">GSAP</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">Figma</span>
-              <span class="marquee-sep">/</span>
-              <span class="marquee-item">JavaScript</span>
-              <span class="marquee-sep">/</span>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/aiit.png"
+                  alt="AIIT"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/bit.png" alt="BIT" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/cornell.png"
+                  alt="Cornell"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/dalavoro.png"
+                  alt="Dalavoro"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/yara.png"
+                  alt="Yara"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/aiit.png"
+                  alt="AIIT"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/bit.png" alt="BIT" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/cornell.png"
+                  alt="Cornell"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/ist.svg" alt="IST" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/sit.png" alt="SIT" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/cornell.png"
+                  alt="Cornell"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/dalavoro.png"
+                  alt="Dalavoro"
+                  loading="lazy"
+                />
+              </div>
+
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/yara.png"
+                  alt="Yara"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/ist.svg" alt="IST" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img src="public/img/logos/sit.png" alt="SIT" loading="lazy" />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/yara.png"
+                  alt="Yara"
+                  loading="lazy"
+                />
+              </div>
+              <div class="marquee-logo">
+                <img
+                  src="public/img/logos/dalavoro.png"
+                  alt="Dalavoro"
+                  loading="lazy"
+                />
+              </div>
             </div>
+          </div>
+        </section>
+        <section class="projects-section" id="projects">
+          <div class="projects-header">
+            <span class="sk-statement-eyebrow">/Portfolio</span>
+            <h2 class="projects-title">Selected work &amp; experiments</h2>
+            <p class="projects-sub">
+              One project at a time — scroll on desktop, swipe on mobile.
+            </p>
+          </div>
+
+          <div class="projects-viewport" id="projectsViewport">
+            <div class="projects-track" id="projectsTrack">
+              <!-- Card 1 -->
+              <article class="project-card" data-index="0">
+                <div class="project-card-media">
+                  <img
+                    src="public/img/mockups/aiitmockupsample.png"
+                    alt="Australian International Institute of Technology"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">
+                      Australian International Institute of Technology
+                    </h3>
+                    <span class="project-index">01</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag accent">Design</span>
+                    <span class="project-tag muted">SEO</span>
+                    <span class="project-tag">Melbourne</span>
+                  </div>
+                  <a href="#" class="project-cta">
+                    View project
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="project-card" data-index="1">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #0f172a 0%,
+                        #1e293b 50%,
+                        #334155 100%
+                      );
+                      color: rgba(255, 255, 255, 0.35);
+                    "
+                  >
+                    CineDream
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">CineDream</h3>
+                    <span class="project-index">02</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">AI</span>
+                    <span class="project-tag muted">Video</span>
+                    <span class="project-tag muted">Creative</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="project-card" data-index="2">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #f0f4f8 0%,
+                        #d4dde8 55%,
+                        #b8c5d6 100%
+                      );
+                    "
+                  >
+                    Northwind Store
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Northwind Store</h3>
+                    <span class="project-index">03</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag accent">YC S19</span>
+                    <span class="project-tag">Web</span>
+                    <span class="project-tag muted">Commerce</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="project-card" data-index="3">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #fff5f2 0%,
+                        #f5d9d0 55%,
+                        #e8b8a8 100%
+                      );
+                    "
+                  >
+                    Pulse Analytics
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Pulse Analytics</h3>
+                    <span class="project-index">04</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">SaaS</span>
+                    <span class="project-tag muted">Data</span>
+                    <span class="project-tag muted">B2B</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 5 -->
+              <article class="project-card" data-index="4">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #f7f9f6 0%,
+                        #e5e0d8 55%,
+                        #d0c8bc 100%
+                      );
+                    "
+                  >
+                    Lumen Health
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Lumen Health</h3>
+                    <span class="project-index">05</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">Health</span>
+                    <span class="project-tag muted">App</span>
+                    <span class="project-tag muted">UX</span>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 6 -->
+              <article class="project-card" data-index="5">
+                <div class="project-card-media">
+                  <div
+                    class="mock"
+                    style="
+                      background: linear-gradient(
+                        155deg,
+                        #ebf2ec 0%,
+                        #c8d9cc 55%,
+                        #a3bfab 100%
+                      );
+                    "
+                  >
+                    Forge CMS
+                  </div>
+                </div>
+                <div class="project-card-body">
+                  <div class="project-card-top">
+                    <h3 class="project-title">Forge CMS</h3>
+                    <span class="project-index">06</span>
+                  </div>
+                  <div class="project-tags">
+                    <span class="project-tag">CMS</span>
+                    <span class="project-tag muted">Web</span>
+                    <span class="project-tag muted">Business</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="projects-progress" id="projectsProgress"></div>
+          </div>
+
+          <div class="projects-footer">
+            <div
+              class="projects-dots"
+              id="projectsDots"
+              role="tablist"
+              aria-label="Project navigation"
+            ></div>
+            <span class="projects-hint">Scroll to explore →</span>
           </div>
         </section>
         <div class="service-list">
@@ -581,220 +867,7 @@
             </p>
           </div>
         </section>
-        <section class="projects-section" id="projects">
-          <div class="projects-header">
-            <span class="sk-statement-eyebrow">/Portfolio</span>
-            <h2 class="projects-title">Selected work &amp; experiments</h2>
-            <p class="projects-sub">
-              Large previews — drag or use the dots to move one by one.
-            </p>
-          </div>
 
-          <div class="projects-viewport" id="projectsViewport">
-            <div class="projects-track" id="projectsTrack">
-              <!-- Card 1 -->
-              <article class="project-card" data-index="0">
-                <div class="project-card-media">
-                  <!-- Replace with real image -->
-
-                  <img
-                    src="public/img/mockups/aiitmockupsample.png"
-                    alt="Corgi Labs"
-                  />
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">
-                      Australian International Institute of Technology
-                    </h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag accent">Design</span>
-                    <span class="project-tag muted">SEO</span>
-
-                    <span class="project-tag">Melbourne</span>
-                  </div>
-                  <a href="#" class="project-cta">
-                    View project
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </article>
-
-              <!-- Card 2 -->
-              <article class="project-card" data-index="1">
-                <div class="project-card-media">
-                  <div
-                    class="mock"
-                    style="
-                      background: linear-gradient(
-                        155deg,
-                        #0f172a 0%,
-                        #1e293b 50%,
-                        #334155 100%
-                      );
-                      color: rgba(255, 255, 255, 0.4);
-                    "
-                  >
-                    CineDream
-                  </div>
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">CineDream</h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag">AI</span>
-                    <span class="project-tag muted">Video</span>
-                    <span class="project-tag muted">Creative</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Card 3 -->
-              <article class="project-card" data-index="2">
-                <div class="project-card-media">
-                  <div
-                    class="mock"
-                    style="
-                      background: linear-gradient(
-                        155deg,
-                        #f0f4f8 0%,
-                        #d4dde8 55%,
-                        #b8c5d6 100%
-                      );
-                    "
-                  >
-                    Northwind Store
-                  </div>
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">Northwind Store</h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag accent">YC S19</span>
-                    <span class="project-tag">Web</span>
-                    <span class="project-tag muted">Commerce</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Card 4 -->
-              <article class="project-card" data-index="3">
-                <div class="project-card-media">
-                  <div
-                    class="mock"
-                    style="
-                      background: linear-gradient(
-                        155deg,
-                        #fff5f2 0%,
-                        #f5d9d0 55%,
-                        #e8b8a8 100%
-                      );
-                    "
-                  >
-                    Pulse Analytics
-                  </div>
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">Pulse Analytics</h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag">SaaS</span>
-                    <span class="project-tag muted">Data</span>
-                    <span class="project-tag muted">B2B</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Card 5 -->
-              <article class="project-card" data-index="4">
-                <div class="project-card-media">
-                  <div
-                    class="mock"
-                    style="
-                      background: linear-gradient(
-                        155deg,
-                        #f7f9f6 0%,
-                        #e5e0d8 55%,
-                        #d0c8bc 100%
-                      );
-                    "
-                  >
-                    Lumen Health
-                  </div>
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">Lumen Health</h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag">Health</span>
-                    <span class="project-tag muted">App</span>
-                    <span class="project-tag muted">UX</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Card 6 -->
-              <article class="project-card" data-index="5">
-                <div class="project-card-media">
-                  <div
-                    class="mock"
-                    style="
-                      background: linear-gradient(
-                        155deg,
-                        #ebf2ec 0%,
-                        #c8d9cc 55%,
-                        #a3bfab 100%
-                      );
-                    "
-                  >
-                    Forge CMS
-                  </div>
-                </div>
-                <div class="project-card-body">
-                  <div class="project-card-top">
-                    <h3 class="project-title">Forge CMS</h3>
-                    <span class="project-dot" aria-hidden="true"></span>
-                  </div>
-                  <div class="project-tags">
-                    <span class="project-tag">CMS</span>
-                    <span class="project-tag muted">Web</span>
-                    <span class="project-tag muted">Business</span>
-                  </div>
-                </div>
-              </article>
-            </div>
-            <div class="projects-progress" id="projectsProgress"></div>
-          </div>
-
-          <div class="projects-footer">
-            <div
-              class="projects-dots"
-              id="projectsDots"
-              role="tablist"
-              aria-label="Project navigation"
-            ></div>
-            <span class="projects-hint">Drag to explore →</span>
-          </div>
-        </section>
         <section class="faq-section">
           <div class="faq-container">
             <header class="faq-header">
@@ -996,9 +1069,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
     <script src="public/js/custom.js"></script>
     <script src="public/js/navbar.js"></script>
+
     <script src="public/js/serviceSection.js"></script>
-    <script src="public/js/bientoGrid.js"></script>
     <script src="public/js/portfolio.js"></script>
+
+    <script src="public/js/bientoGrid.js"></script>
     <script src="public/js/cta.js"></script>
+    <script src="public/js/marquee.js"></script>
   </body>
 </html>
