@@ -176,7 +176,7 @@
 
     st = ScrollTrigger.create({
       trigger: section,
-      start: "center 42%",
+      start: "center 32%",
       end: () => "+=" + scrollLength,
       pin: true,
       scrub: 0.7,

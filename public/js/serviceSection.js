@@ -42,7 +42,7 @@ function initServiceBlur() {
         scrollTrigger: {
           id: "service-blur-" + i,
           trigger: next,
-          start: "top 70%",
+          start: "top 60%",
           end: "top 15%",
           scrub: true,
           invalidateOnRefresh: true,

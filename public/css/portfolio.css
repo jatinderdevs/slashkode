@@ -72,9 +72,9 @@
   flex: 0 0 var(--card-w);
   width: var(--card-w);
   background: #fff;
-  border: 1.5px solid rgba(226, 232, 240, 0.95);
+
   border-radius: 22px;
-  padding: 10px;
+
   box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.04),
     0 10px 28px -12px rgba(15, 23, 42, 0.1);
@@ -97,9 +97,7 @@
   opacity: 1;
   transform: translateY(0);
   border-color: rgba(203, 213, 225, 0.95);
-  box-shadow:
-    0 4px 10px rgba(15, 23, 42, 0.06),
-    0 28px 60px -16px rgba(15, 23, 42, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
   z-index: 3;
 }
 
@@ -270,7 +268,7 @@
   bottom: 0;
   left: 0;
   height: 2px;
-  background: var(--sk-color-primary-dark);
+  background: var(--sk-color-terracotta);
   width: 0%;
   opacity: 0.2;
   pointer-events: none;

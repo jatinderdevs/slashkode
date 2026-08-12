@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="public/css/faq.css" />
     <link rel="stylesheet" href="public/css/cta.css" />
     <link rel="stylesheet" href="public/css/marquee.css" />
+    <link rel="stylesheet" href="public/css/footer.css" />
     <script
       src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js"
       type="module"
@@ -113,14 +114,14 @@
           </div>
           <div class="row align-items-center" id="desktopNavbar">
             <div class="col-md-4">
-              <div class="logo">
+              <!-- <div class="logo">
                 <img
                   src="public/img/slashkode.png"
                   width="250px"
                   class="img-fluid"
                   alt=""
                 />
-              </div>
+              </div> -->
             </div>
             <div class="col-md-4">
               <div class="sk_navbar">
@@ -140,9 +141,9 @@
                     <a href="" class="nav-link-anim"
                       ><span class="nav-link-inner"
                         ><span class="nav-link-text nav-link-text--top"
-                          >service</span
+                          >services</span
                         ><span class="nav-link-text nav-link-text--bottom"
-                          >Service</span
+                          >Services</span
                         ></span
                       ></a
                     >
@@ -173,9 +174,9 @@
                     <a href="" class="nav-link-anim"
                       ><span class="nav-link-inner"
                         ><span class="nav-link-text nav-link-text--top"
-                          >contact</span
+                          >Request Consultaion</span
                         ><span class="nav-link-text nav-link-text--bottom"
-                          >Contact</span
+                          >Request Consultaion</span
                         ></span
                       ></a
                     >
@@ -183,16 +184,20 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-4 text-right">
+            <!-- <div class="col-md-4 text-right">
               <a href="" class="btn_project"
-                >start project
+                >Book a Call
                 <img src="public/icons/top-right.png" width="14px" />
               </a>
-            </div>
+            </div> -->
           </div>
         </header>
         <section class="hero">
-          <h1>Websites that don't feel <br />like homework.</h1>
+          <h1>
+            <span class="hl">Minimum </span> cost, maximum revenue. <br />
+            We make it
+            <span class="hl">happen.</span>
+          </h1>
           <p>
             We're SLASHKODE — a web design and development studio based in
             Melbourne. We build fast, clean, good-looking websites for small
@@ -203,7 +208,7 @@
 
           <div class="mag-zone">
             <a href="#" class="btn herobtnPrimary"
-              >See what i do &nbsp;
+              >See the work &nbsp;
               <dotlottie-wc
                 src="https://lottie.host/3c7a293d-42c4-4658-a8db-6f2e4bfef31c/UY9L97Lncp.lottie"
                 style="width: 30px; height: 30px"
@@ -365,7 +370,7 @@
                     <span class="project-tag muted">SEO</span>
                     <span class="project-tag">Melbourne</span>
                   </div>
-                  <a href="#" class="project-cta">
+                  <a href="#" class="p-button">
                     View project
                     <svg
                       width="14"
@@ -547,6 +552,7 @@
         </section>
         <div class="service-list">
           <!-- 01 Web Designing -->
+          <span class="sk-statement-eyebrow">/our services</span>
           <div class="service-list-item item-01">
             <div class="service-card-content">
               <div class="service-card-header">
@@ -589,7 +595,7 @@
                     <!-- <div class="image-placeholder">Image placeholder</div> -->
                     <img
                       class="cover-image"
-                      src="public/img/website.svg"
+                      src="public/img/services/webdeve.jpg"
                       alt="Web Designing"
                     />
                   </div>
@@ -638,7 +644,11 @@
                 </div>
                 <div class="service-card-image-box">
                   <div class="service-card-image-box-frame">
-                    <div class="image-placeholder">Image placeholder</div>
+                    <img
+                      class="cover-image"
+                      src="public/img/services/webdes.jpg"
+                      alt="Web Designing"
+                    />
                   </div>
                 </div>
               </div>
@@ -687,7 +697,11 @@
                 </div>
                 <div class="service-card-image-box">
                   <div class="service-card-image-box-frame">
-                    <div class="image-placeholder">Image placeholder</div>
+                    <img
+                      class="cover-image"
+                      src="public/img/services/webdev.jpg"
+                      alt="Web Designing"
+                    />
                   </div>
                 </div>
               </div>
@@ -867,7 +881,41 @@
             </p>
           </div>
         </section>
+        <section class="cta-section" aria-label="Get a quote">
+          <div class="cta-container">
+            <span class="cta-label" data-label>Let’s work together</span>
 
+            <h2 class="cta-heading">
+              <span class="cta-line">
+                <span class="cta-line-inner">Have a project</span>
+              </span>
+              <span class="cta-line">
+                <span class="cta-line-inner">in mind?</span>
+              </span>
+            </h2>
+
+            <p class="cta-desc" data-desc>
+              Tell me a little about what you need. I’ll come back with a clear
+              quote, timeline, and next steps — no pressure.
+            </p>
+
+            <div class="cta-actions" data-actions>
+              <a href="/contact" class="btn-primary">
+                Get a Quote
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+              <a href="/contact" class="btn-secondary">Say hello</a>
+            </div>
+
+            <p class="cta-note" data-note>
+              Usually replies within 1 business day
+            </p>
+          </div>
+        </section>
         <section class="faq-section">
           <div class="faq-container">
             <header class="faq-header">
@@ -1010,41 +1058,144 @@
           </div>
         </section>
       </div>
-      <section class="cta-section" aria-label="Get a quote">
-        <div class="cta-container">
-          <span class="cta-label" data-label>Let’s work together</span>
+      <footer class="sk-footer" role="contentinfo">
+        <!-- Bouncy top edge -->
+        <div class="footer-wave" id="footer-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path
+              d="M0,40 C180,5 360,5 540,40 C720,75 900,75 1080,40 C1260,5 1380,5 1440,25 L1440,80 L0,80 Z"
+            />
+          </svg>
+        </div>
 
-          <h2 class="cta-heading">
-            <span class="cta-line">
-              <span class="cta-line-inner">Have a project</span>
-            </span>
-            <span class="cta-line">
-              <span class="cta-line-inner">in mind?</span>
-            </span>
-          </h2>
+        <div class="footer-inner">
+          <div class="footer-top">
+            <!-- Brand -->
+            <div class="footer-brand footer-anim-item">
+              <a href="/" class="footer-logo" aria-label="Slashkode home"
+                >slashkode</a
+              >
+              <p class="footer-tagline">
+                Web design, development &amp; SEO for Melbourne businesses that
+                want clarity, speed and trust online.
+              </p>
+              <span class="footer-location">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Based in Melbourne, Australia
+              </span>
+            </div>
 
-          <p class="cta-desc" data-desc>
-            Tell me a little about what you need. I’ll come back with a clear
-            quote, timeline, and next steps — no pressure.
-          </p>
+            <!-- Navigate -->
+            <div class="footer-col footer-anim-item">
+              <h4>Navigate</h4>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
 
-          <div class="cta-actions" data-actions>
-            <a href="/contact" class="btn-primary">
-              Get a Quote
-              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path
-                  d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                />
-              </svg>
-            </a>
-            <a href="/contact" class="btn-secondary">Say hello</a>
+            <!-- Services -->
+            <div class="footer-col footer-anim-item">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#services">Web Design</a></li>
+                <li><a href="#services">Web Development</a></li>
+                <li><a href="#services">SEO</a></li>
+                <li><a href="#services">CMS for Business</a></li>
+              </ul>
+            </div>
+
+            <!-- Hybrid: Trust + CTA + Contact -->
+            <div class="footer-cta-col footer-anim-item">
+              <h4>Get in touch</h4>
+              <p class="footer-trust">
+                <strong>ABN 12 345 678 901</strong><br />
+                Sole trader · Melbourne, VIC<br />
+                Australian-owned &amp; operated
+              </p>
+              <a href="#contact" class="footer-cta-btn">
+                Start a project
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+              <div class="footer-contact-links">
+                <a href="mailto:hello@slashkode.com.au"
+                  >hello@slashkode.com.au</a
+                >
+              </div>
+              <p class="footer-reply-note">
+                Usually replies within 1 business day
+              </p>
+              <div class="footer-socials" aria-label="Social links">
+                <a href="#" aria-label="Instagram" title="Instagram">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" title="LinkedIn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <p class="cta-note" data-note>
-            Usually replies within 1 business day
-          </p>
+          <!-- Big brand mark -->
+          <div class="footer-brand-mark" aria-hidden="true">
+            <span id="footer-brand-text">slashkode</span>
+          </div>
+
+          <!-- Bottom bar -->
+          <div class="footer-bottom footer-anim-item">
+            <div>
+              <span>© 2026 Slashkode. All rights reserved.</span>
+              <span class="footer-abn"> · ABN 12 345 678 901</span>
+            </div>
+            <div class="footer-bottom-links">
+              <a href="/privacy">Privacy Policy</a>
+              <a href="/terms">Terms of Use</a>
+            </div>
+          </div>
         </div>
-      </section>
+      </footer>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -1076,5 +1227,6 @@
     <script src="public/js/bientoGrid.js"></script>
     <script src="public/js/cta.js"></script>
     <script src="public/js/marquee.js"></script>
+    <script src="public/js/footer.js"></script>
   </body>
 </html>

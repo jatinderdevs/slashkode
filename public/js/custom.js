@@ -21,7 +21,45 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //hero btns
 gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
+//highlight the words
+function initHeroHighlight() {
+  const highlights = document.querySelectorAll(".hero .hl");
+  if (!highlights.length) return;
 
+  // Reset function
+  function reset() {
+    gsap.set(highlights, { "--scale": 0 });
+  }
+
+  // Animate function
+  function play() {
+    gsap.to(highlights, {
+      "--scale": 1,
+      duration: 0.6,
+      stagger: 0.1,
+      ease: "bounce",
+      overwrite: true,
+    });
+  }
+  document.addEventListener("DOMContentLoaded", initHeroHighlight);
+
+  // Make CSS variable work
+  highlights.forEach((el) => {
+    el.style.setProperty("--scale", 0);
+  });
+
+  // Update the CSS so it uses the variable
+  // (we need a small CSS update - see below)
+
+  ScrollTrigger.create({
+    trigger: ".hero",
+    start: "top 70%",
+    onEnter: play,
+    onEnterBack: play, // plays again when scrolling back up
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initHeroHighlight);
 function initMagneticButtons(selector = ".mag-zone", options = {}) {
   const {
     strength = 0.35, // how far the button follows the mouse
