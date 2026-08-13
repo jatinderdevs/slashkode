@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const top = link.querySelector(".nav-link-text--top");
     const bottom = link.querySelector(".nav-link-text--bottom");
 
-    // bottom text is already hidden below the mask via CSS (top: 100%),
-    // so both spans rest at yPercent 0 until hovered
     link.addEventListener("mouseenter", () => {
       gsap.to(top, { yPercent: -100, duration: 0.45, ease: "power3.out" });
       gsap.to(bottom, { yPercent: -100, duration: 0.45, ease: "power3.out" });
@@ -17,21 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
       gsap.to(bottom, { yPercent: 0, duration: 0.45, ease: "power3.out" });
     });
   });
+
+  initHeroHighlight();
+  initMagneticButtons();
 });
 
-//hero btns
-gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
-//highlight the words
+// Hero Highlight
 function initHeroHighlight() {
   const highlights = document.querySelectorAll(".hero .hl");
   if (!highlights.length) return;
 
-  // Reset function
-  function reset() {
-    gsap.set(highlights, { "--scale": 0 });
-  }
-
-  // Animate function
   function play() {
     gsap.to(highlights, {
       "--scale": 1,
@@ -41,28 +34,24 @@ function initHeroHighlight() {
       overwrite: true,
     });
   }
-  document.addEventListener("DOMContentLoaded", initHeroHighlight);
 
-  // Make CSS variable work
   highlights.forEach((el) => {
     el.style.setProperty("--scale", 0);
   });
 
-  // Update the CSS so it uses the variable
-  // (we need a small CSS update - see below)
-
   ScrollTrigger.create({
     trigger: ".hero",
     start: "top 70%",
+    invalidateOnRefresh: true,
     onEnter: play,
-    onEnterBack: play, // plays again when scrolling back up
+    onEnterBack: play,
   });
 }
 
-document.addEventListener("DOMContentLoaded", initHeroHighlight);
+// Magnetic Buttons
 function initMagneticButtons(selector = ".mag-zone", options = {}) {
   const {
-    strength = 0.35, // how far the button follows the mouse
+    strength = 0.35,
     duration = 0.4,
     returnDuration = 0.7,
     ease = "power2.out",
@@ -70,8 +59,7 @@ function initMagneticButtons(selector = ".mag-zone", options = {}) {
   } = options;
 
   document.querySelectorAll(selector).forEach((zone) => {
-    const btn = zone.querySelector(".btn"); // works with your .btn class
-
+    const btn = zone.querySelector(".btn");
     if (!btn) return;
 
     zone.addEventListener("mousemove", (e) => {
@@ -112,35 +100,40 @@ function initMagneticButtons(selector = ".mag-zone", options = {}) {
   });
 }
 
-// Call it after GSAP is loaded
-initMagneticButtons();
-
-//statement section
-gsap.registerPlugin(SplitText, ScrollTrigger);
-
+// Statement Section SplitText
 document.fonts.ready.then(() => {
-  gsap.set(".split", { opacity: 1 });
+  const headline = document.querySelector("#headline");
+  const subtext = document.querySelector("#subtext");
 
-  /* ---------- HEADING: mask-reveal lines + word-by-word highlight ---------- */
+  if (!headline || !subtext) return;
+
+  gsap.set(["#headline", "#subtext", ".split"], {
+    opacity: 1,
+    visibility: "visible",
+  });
+
+  // HEADING
   SplitText.create("#headline", {
     type: "words,lines",
     linesClass: "line",
     autoSplit: true,
     mask: "lines",
     onSplit: (self) => {
+      gsap.set(self.lines, { yPercent: 100 });
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: "#statement",
-          start: "top 70%",
+          start: "top 80%",
           toggleActions: "play none none none",
+          once: true,
+          invalidateOnRefresh: true,
         },
       });
 
-      // line mask reveal
-      tl.from(self.lines, {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.7,
+      tl.to(self.lines, {
+        yPercent: 0,
+        duration: 0.8,
         stagger: 0.1,
         ease: "expo.out",
       }).from(
@@ -148,29 +141,27 @@ document.fonts.ready.then(() => {
         {
           scale: 0,
           opacity: 0,
-          duration: 0.6,
+          duration: 0.55,
           stagger: 0.07,
           ease: "back.out(1.7)",
         },
-        "-=0.4",
-      ); // overlaps the tail end of the line reveal
+        "-=0.35",
+      );
 
-      // word-by-word colour highlight, scrubbed to scroll position
       const accentWords = ["decoration.", "seconds."];
-      gsap.set(self.words, { color: "#e5e0d8" }); // var(--sk-color-surface-sand)
+      gsap.set(self.words, { color: "#e5e0d8" });
 
       gsap.to(self.words, {
         color: (i, el) =>
-          accentWords.includes(el.textContent.trim())
-            ? "#f74123" /* var(--sk-color-terracotta) */
-            : "#1e293b" /* var(--sk-color-primary-dark) */,
-        stagger: 0.06,
+          accentWords.includes(el.textContent.trim()) ? "#f74123" : "#1e293b",
+        stagger: 0.05,
         ease: "none",
         scrollTrigger: {
           trigger: "#statement",
-          start: "top 65%",
-          end: "top 10%",
-          scrub: 0.6,
+          start: "top 75%",
+          end: "top 20%",
+          scrub: 0.5,
+          invalidateOnRefresh: true,
         },
       });
 
@@ -178,37 +169,46 @@ document.fonts.ready.then(() => {
     },
   });
 
-  /* ---------- SUB PARAGRAPH: mask-reveal lines only ---------- */
+  // SUBTEXT
   SplitText.create("#subtext", {
     type: "lines",
     linesClass: "line",
     autoSplit: true,
     mask: "lines",
     onSplit: (self) => {
-      return gsap.from(self.lines, {
-        yPercent: 100,
-        opacity: 0,
-        duration: 0.7,
+      gsap.set(self.lines, { yPercent: 100 });
+
+      return gsap.to(self.lines, {
+        yPercent: 0,
+        duration: 0.75,
         stagger: 0.1,
         ease: "expo.out",
         scrollTrigger: {
           trigger: "#subtext",
-          start: "top 80%",
+          start: "top 88%",
           toggleActions: "play none none none",
+          once: true,
+          invalidateOnRefresh: true,
         },
       });
     },
   });
+
+  // Crucial: Refresh ScrollTrigger after DOM mutation caused by SplitText
+  if (window.SKRefresh) {
+    window.SKRefresh(100);
+  } else {
+    ScrollTrigger.refresh();
+  }
 });
 
-//FAQ SECTION js
+// FAQ Accordion
 document.querySelectorAll(".faq-question").forEach((btn) => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".faq-item");
     const answer = item.querySelector(".faq-answer");
     const isOpen = item.classList.contains("is-open");
 
-    // Close others
     document.querySelectorAll(".faq-item.is-open").forEach((openItem) => {
       if (openItem !== item) {
         openItem.classList.remove("is-open");
@@ -219,7 +219,6 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
       }
     });
 
-    // Toggle current
     if (isOpen) {
       item.classList.remove("is-open");
       btn.setAttribute("aria-expanded", "false");
@@ -229,5 +228,8 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
       btn.setAttribute("aria-expanded", "true");
       answer.style.maxHeight = answer.scrollHeight + "px";
     }
+
+    // Recalculate ScrollTrigger positions as FAQ expand changes page height
+    if (window.SKRefresh) window.SKRefresh(300);
   });
 });

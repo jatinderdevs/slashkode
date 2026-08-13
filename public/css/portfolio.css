@@ -17,12 +17,14 @@
   background: var(--sk-color-bg-warm, #f8f6f0);
   padding: 4.5rem 0 3.5rem;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .projects-header {
   max-width: 1200px;
   margin: 0 auto 2rem;
   padding: 0 1.5rem;
+  box-sizing: border-box;
 }
 
 .projects-title {
@@ -52,6 +54,7 @@
   cursor: grab;
   touch-action: pan-y;
   overscroll-behavior-x: contain;
+  box-sizing: border-box;
 }
 
 .projects-viewport.is-dragging {
@@ -62,18 +65,20 @@
   display: flex;
   gap: var(--card-gap);
   will-change: transform;
-  padding-left: max(1rem, calc(50% - var(--card-w) / 2));
-  padding-right: max(1rem, calc(50% - var(--card-w) / 2));
+  /* Centering padding made bulletproof for Chrome sub-pixel resizing */
+  padding-left: calc(50vw - (var(--card-w) / 2));
+  padding-right: calc(50vw - (var(--card-w) / 2));
   align-items: center;
+  box-sizing: content-box;
 }
 
-/* Card — spotlight via opacity + lift (no scale = no blur) */
+/* Card — spotlight via opacity + lift */
 .project-card {
   flex: 0 0 var(--card-w);
   width: var(--card-w);
   background: #fff;
-
   border-radius: 22px;
+  box-sizing: border-box;
 
   box-shadow:
     0 1px 2px rgba(15, 23, 42, 0.04),
@@ -85,9 +90,10 @@
   position: relative;
   opacity: 0.42;
   transform: translateY(12px);
+  /* Safely target properties individually so transitions don't fight GSAP measurements */
   transition:
     opacity 0.45s ease,
-    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.45s ease,
     border-color 0.35s ease;
   z-index: 1;
@@ -226,6 +232,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  box-sizing: border-box;
 }
 
 .projects-dots {
@@ -274,7 +281,7 @@
   pointer-events: none;
 }
 
-/* Mobile */
+/* Mobile & Tablet Overrides */
 @media (max-width: 768px) {
   :root {
     --card-w: min(88vw, 400px);
@@ -286,6 +293,11 @@
   }
   .projects-header {
     margin-bottom: 1.25rem;
+  }
+
+  .projects-track {
+    padding-left: calc(50vw - (var(--card-w) / 2));
+    padding-right: calc(50vw - (var(--card-w) / 2));
   }
 
   .project-card {

@@ -4,7 +4,7 @@ function initServiceBlur() {
   const items = gsap.utils.toArray(".service-list-item");
   if (!items.length) return;
 
-  // Kill previous service blur triggers so re-init is clean
+  // Clean up existing service triggers safely
   ScrollTrigger.getAll().forEach((st) => {
     if (
       st.vars &&
@@ -15,45 +15,53 @@ function initServiceBlur() {
     }
   });
 
-  // Always start sharp
-  gsap.set(items, {
-    scale: 1,
-    opacity: 1,
-    filter: "blur(0px)",
-  });
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const stickyTop = isMobile ? "4vh" : "8vh";
 
   items.forEach((item, i) => {
+    // The last card stays sharp
     if (i === items.length - 1) return;
 
-    const next = items[i + 1];
+    const nextItem = items[i + 1];
+    const cardContent = item.querySelector(".service-card-content") || item;
 
-    gsap.fromTo(
-      item,
-      {
-        scale: 1,
-        opacity: 1,
-        filter: "blur(0px)",
+    // Hard reset styles back to pristine state
+    gsap.set(cardContent, {
+      scale: 1,
+      opacity: 1,
+      filter: "blur(0px)",
+      clearProps: "transform,opacity,filter,scale",
+    });
+
+    gsap.to(cardContent, {
+      scale: 0.92,
+      opacity: 0.55,
+      filter: "blur(1.5px)",
+      ease: "none",
+      immediateRender: false,
+      scrollTrigger: {
+        id: "service-blur-" + i,
+        trigger: nextItem,
+        // Crucial: Account for the portfolio section pinned spacer above this element
+        pinnedContainer: document.querySelector(".projects-section")
+          ? ".projects-section"
+          : null,
+        start: "top 80%", // Triggers as next card enters lower viewport
+        end: `top ${stickyTop}`, // Completes blur when next card settles on sticky top
+        scrub: true,
+        invalidateOnRefresh: true,
       },
-      {
-        scale: 0.92,
-        opacity: 0.55,
-        filter: "blur(1.5px)",
-        ease: "none",
-        scrollTrigger: {
-          id: "service-blur-" + i,
-          trigger: next,
-          start: "top 60%",
-          end: "top 15%",
-          scrub: true,
-          invalidateOnRefresh: true,
-        },
-      },
-    );
+    });
   });
 }
 
-// So portfolio can call it after the pin is ready
+// Global hook
 window.initServiceBlur = initServiceBlur;
 
-// First run (portfolio will re-run it after pin)
-initServiceBlur();
+// Initialize on DOM ready
+document.addEventListener("DOMContentLoaded", () => {
+  // Delay slightly to let layout settle
+  requestAnimationFrame(() => {
+    initServiceBlur();
+  });
+});

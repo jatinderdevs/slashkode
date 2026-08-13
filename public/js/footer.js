@@ -1,102 +1,100 @@
-gsap.registerPlugin(ScrollTrigger);
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
 
-const wave = document.querySelector("#footer-wave");
+  const footer = document.querySelector(".sk-footer");
+  if (!footer) return;
 
-// Start compressed
-gsap.set(wave, {
-  scaleY: 0.15,
-  transformOrigin: "center bottom",
-});
+  const wave = document.querySelector("#footer-wave");
+  const brandText = document.querySelector("#footer-brand-text");
+  const footerItems = gsap.utils.toArray(".footer-anim-item");
 
-// Top-edge bounce — every time you scroll in
-ScrollTrigger.create({
-  trigger: ".sk-footer",
-  start: "top 95%",
-  onEnter: (self) => {
-    const velocity = Math.abs(self.getVelocity?.() || 0);
-    const amp = 0.9 + Math.min(velocity / 3000, 0.35);
-    const period = 0.38;
-
-    gsap.fromTo(
-      wave,
-      { scaleY: 0.15 },
-      {
-        scaleY: 1,
-        duration: 1.6,
-        ease: `elastic.out(${amp}, ${period})`,
-        overwrite: true,
-      },
-    );
-  },
-  onLeaveBack: () => {
-    gsap.set(wave, { scaleY: 0.15 });
-  },
-});
-
-// Columns + bottom bar — soft rise
-const footerItems = gsap.utils.toArray(".footer-anim-item");
-gsap.set(footerItems, { opacity: 0, y: 32 });
-
-ScrollTrigger.create({
-  trigger: ".sk-footer",
-  start: "top 85%",
-  once: true,
-  onEnter: () => {
-    gsap.to(footerItems, {
-      opacity: 1,
-      y: 0,
-      duration: 0.85,
-      stagger: 0.1,
-      ease: "power3.out",
-      overwrite: true,
+  /* 1. Wave bounce */
+  if (wave) {
+    gsap.set(wave, {
+      scaleY: 0.15,
+      transformOrigin: "center bottom",
     });
-  },
-});
 
-// Big "slashkode" left → right reveal
-const brandText = document.querySelector("#footer-brand-text");
-gsap.set(brandText, {
-  clipPath: "inset(0 100% 0 0)",
-  x: -40,
-  opacity: 0.4,
-});
+    ScrollTrigger.create({
+      trigger: footer,
+      start: "top 92%",
+      invalidateOnRefresh: true,
+      onEnter: () => {
+        gsap.fromTo(
+          wave,
+          { scaleY: 0.15 },
+          {
+            scaleY: 1,
+            duration: 1.5,
+            ease: "elastic.out(1, 0.4)",
+            overwrite: true,
+          },
+        );
+      },
+      onLeaveBack: () => {
+        gsap.set(wave, { scaleY: 0.15 });
+      },
+    });
+  }
 
-ScrollTrigger.create({
-  trigger: ".sk-footer",
-  start: "top 70%",
-  once: true,
-  onEnter: (self) => {
-    const velocity = Math.abs(self.getVelocity?.() || 0);
-    const boost = Math.min(velocity / 4000, 0.35);
+  /* 2. Footer columns rise */
+  if (footerItems.length) {
+    gsap.set(footerItems, { opacity: 0, y: 30 });
 
-    gsap
-      .timeline()
-      .to(brandText, {
-        clipPath: "inset(0 0% 0 0)",
-        x: 0,
-        opacity: 1,
-        duration: 1.15 + boost * 0.2,
-        ease: "power3.out",
-      })
-      .to(
-        brandText,
-        {
-          duration: 1.3,
-          ease: `elastic.out(${0.85 + boost}, 0.55)`,
-        },
-        "-=0.8",
-      );
-  },
-});
+    ScrollTrigger.create({
+      trigger: footer,
+      start: "top 85%",
+      once: true,
+      invalidateOnRefresh: true,
+      onEnter: () => {
+        gsap.to(footerItems, {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          stagger: 0.09,
+          ease: "power3.out",
+          overwrite: true,
+        });
+      },
+    });
+  }
 
-// Subtle parallax on big name
-gsap.to(brandText, {
-  y: -18,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".sk-footer",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: 1.2,
-  },
+  /* 3. Brand text reveal */
+  if (brandText) {
+    gsap.set(brandText, {
+      clipPath: "inset(0 100% 0 0)",
+      x: -30,
+      opacity: 0.5,
+    });
+
+    ScrollTrigger.create({
+      trigger: footer,
+      start: "top 75%",
+      once: true,
+      invalidateOnRefresh: true,
+      onEnter: () => {
+        gsap.to(brandText, {
+          clipPath: "inset(0 0% 0 0)",
+          x: 0,
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.out",
+          overwrite: true,
+        });
+      },
+    });
+
+    // Light parallax
+    gsap.to(brandText, {
+      y: -16,
+      ease: "none",
+      scrollTrigger: {
+        trigger: footer,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.1,
+        invalidateOnRefresh: true,
+      },
+    });
+  }
 });
