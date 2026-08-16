@@ -3,641 +3,256 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Web Design & Development | Slashkode</title>
+    <title>Custom Web Development Services Melbourne | SLASHKODE</title>
     <meta
       name="description"
-      content="Custom UI/UX design, fluid GSAP animations, and rock-solid SEO. Websites built to scale your business — without the technical stress."
+      content="High-performance custom web development services in Melbourne. Fast, scalable, GSAP-animated, and SEO-optimized websites that convert visitors into loyal clients."
+    />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="public/css/stylesheet.css" />
-    <link rel="stylesheet" href="public/css/navbar.css" />
-    <link rel="stylesheet" href="public/css/services/web-design.css" />
-    <link rel="stylesheet" href="public/css/footer.css" />
+
+    <style>
+      /* SLASHKODE BRAND DESIGN TOKENS */
+      :root {
+        --sk-color-primary-dark: #1e293b;
+        --sk-color-primary-soft: #2c3e50;
+        --sk-color-sage: #4a7c59;
+        --sk-color-sage-light: #ebf2ec;
+        --sk-color-terracotta: #e07a5f;
+        --sk-color-terracotta-hover: #d0694e;
+        --sk-color-bg-warm: #f8f6f0;
+        --sk-color-bg-card: #ffffff;
+        --sk-color-surface-sand: #e5e0d8;
+
+        --sk-font-heading: "Plus Jakarta Sans", sans-serif;
+        --sk-font-body: "Inter", sans-serif;
+        --sk-font-mono: "JetBrains Mono", monospace;
+
+        --sk-radius-sm: 8px;
+        --sk-radius-md: 16px;
+        --sk-radius-lg: 24px;
+        --sk-radius-pill: 9999px;
+        --sk-shadow-soft: 0 20px 40px -12px rgba(30, 41, 59, 0.08);
+        --sk-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.03);
+        --sk-transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+      }
+      body {
+        font-family: var(--sk-font-body);
+        background-color: var(--sk-color-bg-warm);
+        color: var(--sk-color-primary-dark);
+        line-height: 1.65;
+        overflow-x: hidden;
+      }
+
+      .sk-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+      h1,
+      h2,
+      h3 {
+        font-family: var(--sk-font-heading);
+        color: var(--sk-color-primary-dark);
+        letter-spacing: -0.02em;
+        line-height: 1.2;
+      }
+
+      .sk-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--sk-color-sage-light);
+        color: var(--sk-color-sage);
+        font-family: var(--sk-font-mono);
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.4rem 0.9rem;
+        border-radius: var(--sk-radius-pill);
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .sk-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        background: var(--sk-color-terracotta);
+        color: #fff;
+        font-weight: 600;
+        padding: 0.875rem 1.8rem;
+        border-radius: var(--sk-radius-pill);
+        border: none;
+        cursor: pointer;
+        transition: var(--sk-transition-smooth);
+        text-decoration: none;
+      }
+      .sk-btn-primary:hover {
+        background: var(--sk-color-terracotta-hover);
+        transform: translateY(-2px);
+      }
+      .sk-btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: transparent;
+        color: var(--sk-color-primary-dark);
+        font-weight: 600;
+        padding: 0.875rem 1.8rem;
+        border-radius: var(--sk-radius-pill);
+        border: 1.5px solid var(--sk-color-surface-sand);
+        transition: var(--sk-transition-smooth);
+        text-decoration: none;
+      }
+      .sk-btn-secondary:hover {
+        background: #fff;
+      }
+
+      /* STACKED SERVICE CARDS (GSAP) */
+      .services-stacked-section {
+        padding: 4rem 0 6rem;
+      }
+      .service-list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 1050px;
+        margin: 0 auto;
+      }
+      .service-list-item {
+        position: sticky;
+        top: 10vh;
+      }
+      .service-card-content {
+        background: var(--sk-color-bg-card);
+        border: 1px solid var(--sk-color-surface-sand);
+        border-radius: var(--sk-radius-lg);
+        padding: 3rem;
+        box-shadow: var(--sk-shadow-soft);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+        align-items: center;
+        transform-origin: center top;
+        will-change: transform, opacity, filter;
+      }
+    </style>
   </head>
-  <body class="wd-page">
-    <main>
-      <div class="container-fluid">
-        <!-- ── Header (simplified island + desktop nav pattern) ── -->
-        <header class="sk_header">
-          <div class="island">
-            <div class="island-logo--cont">
-              <a href="/"
-                ><img
-                  class="island-logo"
-                  src="public/img/logo.png"
-                  alt="Slashkode"
-              /></a>
-            </div>
-            <button
-              class="menu-btn"
-              id="menuToggle"
-              aria-expanded="false"
-              aria-controls="menu-overlay"
-              aria-label="Open navigation menu"
-            >
-              <div class="button-cont">
-                <svg
-                  id="menuIcon"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  aria-hidden="true"
-                >
-                  <line
-                    class="bar bar-top"
-                    x1="2"
-                    y1="5"
-                    x2="14"
-                    y2="5"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    class="bar bar-mid"
-                    x1="2"
-                    y1="8"
-                    x2="14"
-                    y2="8"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    class="bar bar-bot"
-                    x1="2"
-                    y1="11"
-                    x2="14"
-                    y2="11"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-            </button>
-          </div>
-
-          <div
-            class="menu-overlay"
-            id="menu-overlay"
-            role="dialog"
-            aria-modal="true"
-            aria-label="Navigation menu"
+  <body>
+    <!-- Navigation -->
+    <header
+      style="
+        padding: 1.5rem 0;
+        position: sticky;
+        top: 0;
+        background: rgba(248, 246, 240, 0.9);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+      "
+    >
+      <div
+        class="sk-container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <a
+          href="/"
+          style="
+            font-family: var(--sk-font-heading);
+            font-weight: 900;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: var(--sk-color-primary-dark);
+          "
+          >SLASH<span style="color: var(--sk-color-terracotta)">KODE</span></a
+        >
+        <nav
+          style="
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            font-weight: 500;
+          "
+        >
+          <a href="/work/" style="text-decoration: none">Work</a>
+          <a
+            href="/services/"
+            style="text-decoration: none; color: var(--sk-color-terracotta)"
+            >Services</a
           >
-            <div class="menu-backdrop"></div>
-            <div class="menu-panel">
-              <nav>
-                <a class="menu-link" href="/work/" tabindex="-1"
-                  ><span>Work</span><span class="link-num">01</span></a
-                >
-                <a class="menu-link" href="/services/" tabindex="-1"
-                  ><span>Services</span><span class="link-num">02</span></a
-                >
-                <a class="menu-link" href="/about/" tabindex="-1"
-                  ><span>About</span><span class="link-num">03</span></a
-                >
-                <a class="menu-link" href="/contact/" tabindex="-1"
-                  ><span>Contact</span><span class="link-num">04</span></a
-                >
-              </nav>
-            </div>
-          </div>
-
-          <div class="row align-items-center" id="desktopNavbar">
-            <div class="col-md-3"></div>
-            <div class="col-md-6">
-              <div class="sk_navbar">
-                <ul class="nav">
-                  <li>
-                    <a href="/work/" class="nav-link-anim"
-                      ><span class="nav-link-inner"
-                        ><span class="nav-link-text nav-link-text--top"
-                          >work</span
-                        ><span class="nav-link-text nav-link-text--bottom"
-                          >Work</span
-                        ></span
-                      ></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/services/" class="nav-link-anim"
-                      ><span class="nav-link-inner"
-                        ><span class="nav-link-text nav-link-text--top"
-                          >services</span
-                        ><span class="nav-link-text nav-link-text--bottom"
-                          >Services</span
-                        ></span
-                      ></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/about/" class="nav-link-anim"
-                      ><span class="nav-link-inner"
-                        ><span class="nav-link-text nav-link-text--top"
-                          >about</span
-                        ><span class="nav-link-text nav-link-text--bottom"
-                          >About</span
-                        ></span
-                      ></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/contact/" class="nav-link-anim"
-                      ><span class="nav-link-inner"
-                        ><span class="nav-link-text nav-link-text--top"
-                          >Request Consultation</span
-                        ><span class="nav-link-text nav-link-text--bottom"
-                          >Request Consultation</span
-                        ></span
-                      ></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-3 text-right"></div>
-          </div>
-        </header>
-
-        <!-- ── Breadcrumb ── -->
-        <div class="wd-container">
-          <nav class="wd-breadcrumb" aria-label="Breadcrumb">
-            <ol class="wd-breadcrumb-list">
-              <li><a href="/">Home</a></li>
-              <li class="wd-breadcrumb-sep" aria-hidden="true">/</li>
-              <li><a href="/services/">Services</a></li>
-              <li class="wd-breadcrumb-sep" aria-hidden="true">/</li>
-              <li class="wd-breadcrumb-current" aria-current="page">
-                Web Design &amp; Development
-              </li>
-            </ol>
-          </nav>
-        </div>
-
-        <!-- ════════════════════════════════════
-             SECTION 1 — Hero
-        ════════════════════════════════════ -->
-        <section class="wd-hero">
-          <div class="wd-container">
-            <div class="wd-hero-inner">
-              <span class="wd-hero-badge wd-reveal"
-                >Web Design &amp; Development</span
-              >
-              <h1 class="wd-reveal">
-                Websites Built to Scale Your Business — Without the Technical
-                Stress.
-              </h1>
-              <p class="lead wd-reveal">
-                We combine custom UI/UX design, fluid GSAP animations, and
-                rock-solid SEO to turn your site into a 24/7 lead engine.
-              </p>
-
-              <div class="wd-hero-actions wd-reveal">
-                <div class="mag-zone">
-                  <a href="/contact/" class="btn sk-btn-primary"
-                    >Book a 15-Min Intro Call</a
-                  >
-                </div>
-                <div class="mag-zone">
-                  <a href="#lead-form" class="btn sk-btn-secondary"
-                    >Quick enquiry form</a
-                  >
-                </div>
-              </div>
-
-              <div class="wd-hero-card wd-reveal" id="lead-form">
-                <p class="wd-hero-card-title">
-                  Or send a quick brief — we’ll reply within one business day.
-                </p>
-                <form class="wd-lead-form" action="/contact/" method="get">
-                  <div class="form-row">
-                    <div>
-                      <label for="wd-name">Name</label>
-                      <input
-                        type="text"
-                        id="wd-name"
-                        name="name"
-                        placeholder="Your name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label for="wd-email">Email</label>
-                      <input
-                        type="email"
-                        id="wd-email"
-                        name="email"
-                        placeholder="you@company.com"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label for="wd-url">Website URL (optional)</label>
-                    <input
-                      type="url"
-                      id="wd-url"
-                      name="website"
-                      placeholder="https://"
-                    />
-                  </div>
-                  <div>
-                    <label for="wd-goal">Main goal</label>
-                    <select id="wd-goal" name="goal" required>
-                      <option value="" disabled selected>
-                        What are you aiming for?
-                      </option>
-                      <option value="new-site">New website from scratch</option>
-                      <option value="redesign">Redesign existing site</option>
-                      <option value="conversion">Improve conversions</option>
-                      <option value="seo">Better visibility / SEO</option>
-                      <option value="other">Something else</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="sk-btn-primary">
-                    Send brief
-                  </button>
-                </form>
-                <p class="wd-form-note">No spam. Just a clear next step.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 2 — Pain Points
-        ════════════════════════════════════ -->
-        <section class="wd-section wd-pain">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Why us</span>
-              <h2 class="wd-reveal">
-                Are these challenges holding your website back?
-              </h2>
-              <p class="wd-reveal">
-                Most businesses don’t need “more design.” They need a site that
-                works harder than they do.
-              </p>
-            </div>
-
-            <div class="wd-pain-grid">
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">01</div>
-                <h3>Low conversion rates</h3>
-                <p>
-                  Visitors land on your page, but leave without filling out
-                  forms or reaching out.
-                </p>
-              </article>
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">02</div>
-                <h3>Inconsistent / clunky code</h3>
-                <p>
-                  Slow load times and buggy mobile animations ruin the
-                  experience for your clients.
-                </p>
-              </article>
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">03</div>
-                <h3>Invisible on Google</h3>
-                <p>
-                  A beautiful design doesn’t help if search engines can’t index
-                  your content properly.
-                </p>
-              </article>
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">04</div>
-                <h3>Hard to manage</h3>
-                <p>
-                  You need a developer every single time you want to edit text
-                  or publish new project work.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 3 — Core Capabilities
-        ════════════════════════════════════ -->
-        <section class="wd-section">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Deliverables</span>
-              <h2 class="wd-reveal">What you get with a SLASHKODE web build</h2>
-              <p class="wd-reveal">
-                Clear scope. Clean code. Results you can measure.
-              </p>
-            </div>
-
-            <div class="wd-cap-grid">
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">✦</div>
-                <h3>Custom UI/UX &amp; Responsive Design</h3>
-                <p>
-                  Tailored designs built around your target audience’s exact
-                  browsing habits — not a recycled template.
-                </p>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">◎</div>
-                <h3>Smooth GSAP &amp; Interaction Design</h3>
-                <p>
-                  Premium micro-interactions that elevate brand perception
-                  without slowing down speed.
-                </p>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">◆</div>
-                <h3>Built-in Technical SEO</h3>
-                <p>
-                  Clean HTML structure, fast Core Web Vitals, and proper
-                  canonical tags from day one.
-                </p>
-                <a href="/services/seo/">Explore our SEO service →</a>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">▣</div>
-                <h3>Scalable CMS Setup</h3>
-                <p>
-                  Simple content editing structure so your team can easily add
-                  portfolio items or updates — no developer required.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 4 — Process
-        ════════════════════════════════════ -->
-        <section class="wd-section wd-process">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Process</span>
-              <h2 class="wd-reveal">
-                How we build your site: Simple, transparent, and stress-free.
-              </h2>
-              <p class="wd-reveal">
-                Five clear steps. No surprises. You always know what’s next.
-              </p>
-            </div>
-
-            <div class="wd-process-list">
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">01</div>
-                <div class="wd-process-body">
-                  <h3>Discovery &amp; Strategy</h3>
-                  <p>
-                    Mapping your user flow, site map, and key performance
-                    indicators so every decision has a purpose.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">02</div>
-                <div class="wd-process-body">
-                  <h3>UX/UI Wireframing</h3>
-                  <p>
-                    Visualising layout and content hierarchy before writing any
-                    code — so you can shape the experience early.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">03</div>
-                <div class="wd-process-body">
-                  <h3>Custom Code Development</h3>
-                  <p>
-                    Writing clean, high-performance HTML/CSS/JS and GSAP
-                    animations that feel premium and stay fast.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">04</div>
-                <div class="wd-process-body">
-                  <h3>Optimization &amp; Testing</h3>
-                  <p>
-                    Cross-browser testing, mobile responsiveness, and SEO checks
-                    before anything goes live.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">05</div>
-                <div class="wd-process-body">
-                  <h3>Launch &amp; Handover</h3>
-                  <p>
-                    Seamless domain transition, CMS walk-through, and ongoing
-                    support options if you want them.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 5 — Case Studies
-        ════════════════════════════════════ -->
-        <section class="wd-section">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Proof</span>
-              <h2 class="wd-reveal">Real results for growing brands</h2>
-              <p class="wd-reveal">
-                A few recent builds — same care, different goals.
-              </p>
-            </div>
-
-            <div class="wd-cases-grid">
-              <article class="wd-case-card wd-reveal">
-                <div class="wd-case-thumb">
-                  <span>AIIT</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">Custom Dev</span>
-                    <span class="wd-case-tag">GSAP</span>
-                    <span class="wd-case-tag">SEO</span>
-                  </div>
-                  <h3>AIIT</h3>
-                  <p>
-                    Clean, conversion-focused site for an education brand —
-                    faster load times and clearer enquiry paths.
-                  </p>
-                  <a href="/work/aiit/" class="wd-case-link"
-                    >View case study →</a
-                  >
-                </div>
-              </article>
-
-              <article class="wd-case-card wd-reveal">
-                <div
-                  class="wd-case-thumb"
-                  style="
-                    background: linear-gradient(
-                      135deg,
-                      #f5ebe6 0%,
-                      #e8f0e9 100%
-                    );
-                  "
-                >
-                  <span>Client</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">UI/UX</span>
-                    <span class="wd-case-tag">CMS</span>
-                  </div>
-                  <h3>Growing service brand</h3>
-                  <p>
-                    Redesigned site architecture and CMS so the team can publish
-                    updates without calling a developer.
-                  </p>
-                  <a href="/work/" class="wd-case-link">View case study →</a>
-                </div>
-              </article>
-
-              <article class="wd-case-card wd-reveal">
-                <div
-                  class="wd-case-thumb"
-                  style="
-                    background: linear-gradient(
-                      135deg,
-                      #eef2f6 0%,
-                      #f8f6f0 100%
-                    );
-                  "
-                >
-                  <span>Studio</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">Custom Dev</span>
-                    <span class="wd-case-tag">GSAP</span>
-                  </div>
-                  <h3>Creative studio site</h3>
-                  <p>
-                    High-performance portfolio with smooth interactions that
-                    still score well on Core Web Vitals.
-                  </p>
-                  <a href="/work/" class="wd-case-link">View case study →</a>
-                </div>
-              </article>
-            </div>
-
-            <div class="wd-maintain wd-reveal">
-              <p>
-                After launch, many clients keep us on for light upkeep —
-                updates, security, and small improvements so the site stays
-                sharp.
-              </p>
-              <a href="/services/website-maintenance/">Website maintenance →</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 6 — FAQ + Final CTA
-        ════════════════════════════════════ -->
-        <section class="wd-section wd-faq">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">FAQ</span>
-              <h2 class="wd-reveal">Common questions</h2>
-              <p class="wd-reveal">
-                Straight answers so you can decide with confidence.
-              </p>
-            </div>
-
-            <div class="wd-faq-list">
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>Do I own my website after launch?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Yes — 100% full ownership. The code, design assets, and
-                    content are yours. We hand everything over cleanly so you’re
-                    never locked in.
-                  </div>
-                </div>
-              </div>
-
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>How long does a web design project take?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Typically 3–6 weeks depending on scope. A focused marketing
-                    site sits toward the shorter end; larger builds with more
-                    content and integrations take a bit longer. We’ll give you a
-                    clear timeline before we start.
-                  </div>
-                </div>
-              </div>
-
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>Will my site be mobile-friendly and fast?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Yes. Every build is optimised for speed and all screen
-                    sizes. We design mobile-first, test Core Web Vitals, and
-                    keep animations lightweight so the experience stays smooth
-                    on phones as well as desktops.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="wd-final-cta">
-          <div class="wd-container">
-            <div class="wd-final-box wd-reveal">
-              <h2>Ready to elevate your online presence?</h2>
-              <p>
-                Tell us where you are and where you want the site to take you —
-                we’ll come back with a clear, no-pressure plan.
-              </p>
-              <div class="wd-final-actions">
-                <div class="mag-zone">
-                  <a href="/contact/" class="btn sk-btn-primary"
-                    >Get Started Today</a
-                  >
-                </div>
-                <div class="mag-zone">
-                  <a href="/contact/" class="btn sk-btn-secondary"
-                    >Request a Custom Quote</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <a href="/pricing/" style="text-decoration: none">Pricing</a>
+          <a href="/about/" style="text-decoration: none">About</a>
+          <a
+            href="#consultation-form"
+            class="sk-btn-primary"
+            style="padding: 0.6rem 1.2rem; font-size: 0.875rem"
+            >Book Call</a
+          >
+        </nav>
       </div>
-    </main>
+    </header>
 
-    <!-- GSAP + ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="public/js/navbar.js"></script>
-    <script src="public/js/custom.js"></script>
-    <script src="public/js/services/web-design.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      function initServiceBlur() {
+        const items = gsap.utils.toArray(".service-list-item");
+        if (!items.length) return;
+
+        items.forEach((item, i) => {
+          if (i === items.length - 1) return;
+          const nextItem = items[i + 1];
+          const cardContent =
+            item.querySelector(".service-card-content") || item;
+
+          gsap.to(cardContent, {
+            scale: 0.92,
+            opacity: 0.55,
+            filter: "blur(1.5px)",
+            ease: "none",
+            scrollTrigger: {
+              trigger: nextItem,
+              start: "top 80%",
+              end: "top 10vh",
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          });
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        requestAnimationFrame(initServiceBlur);
+      });
+    </script>
   </body>
 </html>

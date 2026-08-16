@@ -1,25 +1,63 @@
 // ========== Soft Endless Logo Marquee (horizontalLoop) ==========
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.querySelector(".marquee-track");
-  if (!track) return;
+(function () {
+  let loop = null;
+  let track = null;
+  let logos = [];
+  let resizeTimer = null;
+  let lastWidth = 0;
 
-  const logos = gsap.utils.toArray(".marquee-logo");
+  function createLoop(force) {
+    track = document.querySelector(".marquee-track");
+    if (!track) return;
 
-  // Create the seamless loop
-  const loop = horizontalLoop(logos, {
-    repeat: -1,
-    speed: 0.7, // lower = slower & softer (try 0.5 – 1.0)
-    paddingRight: 72, // should match your CSS gap (4.5rem ≈ 72px)
-  });
+    logos = gsap.utils.toArray(".marquee-logo");
+    if (!logos.length) return;
 
-  // Soft pause on hover
-  track.addEventListener("mouseenter", () => {
-    gsap.to(loop, { timeScale: 0, duration: 0.6, overwrite: true });
+    const w = Math.round(track.scrollWidth || track.offsetWidth);
+    // Skip rebuild if width did not change — prevents marquee dying on pin layout shifts
+    if (!force && loop && w === lastWidth) return;
+    lastWidth = w;
+
+    if (loop) {
+      loop.kill();
+      loop = null;
+      gsap.set(logos, { clearProps: "x,xPercent" });
+    }
+
+    const style = getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 72;
+
+    loop = horizontalLoop(logos, {
+      repeat: -1,
+      speed: 0.7,
+      paddingRight: gap,
+    });
+
+    // Ensure it is playing
+    if (loop && loop.paused && loop.paused()) {
+      loop.play(0);
+    }
+
+    track.onmouseenter = () => {
+      if (loop) gsap.to(loop, { timeScale: 0, duration: 0.6, overwrite: true });
+    };
+    track.onmouseleave = () => {
+      if (loop) gsap.to(loop, { timeScale: 1, duration: 0.6, overwrite: true });
+    };
+  }
+
+  document.addEventListener("DOMContentLoaded", () => createLoop(true));
+
+  window.addEventListener("load", () => createLoop(true));
+
+  // Only rebuild on real window width change
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      createLoop(false);
+    }, 300);
   });
-  track.addEventListener("mouseleave", () => {
-    gsap.to(loop, { timeScale: 1, duration: 0.6, overwrite: true });
-  });
-});
+})();
 
 function horizontalLoop(items, config) {
   items = gsap.utils.toArray(items);

@@ -1,67 +1,43 @@
-gsap.registerPlugin(ScrollTrigger);
+// Simple single-open accordion
+document.querySelectorAll(".skill-trigger").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const panel = document.getElementById(btn.getAttribute("aria-controls"));
+    const isOpen = btn.getAttribute("aria-expanded") === "true";
 
-function initServiceBlur() {
-  const items = gsap.utils.toArray(".service-list-item");
-  if (!items.length) return;
-
-  // Clean up existing service triggers safely
-  ScrollTrigger.getAll().forEach((st) => {
-    if (
-      st.vars &&
-      st.vars.id &&
-      String(st.vars.id).startsWith("service-blur-")
-    ) {
-      st.kill();
-    }
-  });
-
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
-  const stickyTop = isMobile ? "4vh" : "8vh";
-
-  items.forEach((item, i) => {
-    // The last card stays sharp
-    if (i === items.length - 1) return;
-
-    const nextItem = items[i + 1];
-    const cardContent = item.querySelector(".service-card-content") || item;
-
-    // Hard reset styles back to pristine state
-    gsap.set(cardContent, {
-      scale: 1,
-      opacity: 1,
-      filter: "blur(0px)",
-      clearProps: "transform,opacity,filter,scale",
+    // Close all others
+    document.querySelectorAll(".skill-trigger").forEach((other) => {
+      if (other === btn) return;
+      other.setAttribute("aria-expanded", "false");
+      const otherPanel = document.getElementById(
+        other.getAttribute("aria-controls"),
+      );
+      if (otherPanel) otherPanel.setAttribute("data-open", "false");
     });
 
-    gsap.to(cardContent, {
-      scale: 0.92,
-      opacity: 0.55,
-      filter: "blur(1.5px)",
-      ease: "none",
-      immediateRender: false,
-      scrollTrigger: {
-        id: "service-blur-" + i,
-        trigger: nextItem,
-        // Crucial: Account for the portfolio section pinned spacer above this element
-        pinnedContainer: document.querySelector(".projects-section")
-          ? ".projects-section"
-          : null,
-        start: "top 80%", // Triggers as next card enters lower viewport
-        end: `top ${stickyTop}`, // Completes blur when next card settles on sticky top
-        scrub: true,
-        invalidateOnRefresh: true,
-      },
-    });
+    // Toggle current
+    btn.setAttribute("aria-expanded", String(!isOpen));
+    if (panel) panel.setAttribute("data-open", String(!isOpen));
   });
-}
+});
 
-// Global hook
-window.initServiceBlur = initServiceBlur;
+//hover image effect
+const cursor = document.querySelector(".cursor-img");
+const links = document.querySelectorAll(".hover-link");
 
-// Initialize on DOM ready
-document.addEventListener("DOMContentLoaded", () => {
-  // Delay slightly to let layout settle
-  requestAnimationFrame(() => {
-    initServiceBlur();
+links.forEach((link) => {
+  link.addEventListener("mouseenter", () => {
+    const imgUrl = link.getAttribute("data-img");
+    cursor.style.backgroundImage = `url(${imgUrl})`;
+    cursor.classList.add("is-visible");
   });
+
+  link.addEventListener("mouseleave", () => {
+    cursor.classList.remove("is-visible");
+  });
+});
+
+// Make the image follow the mouse
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.clientX + "px";
+  cursor.style.top = e.clientY + "px";
 });

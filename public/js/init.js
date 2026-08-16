@@ -1,7 +1,12 @@
 gsap.registerPlugin(ScrollTrigger);
 
+if ("scrollRestoration" in history) {
+  history.scrollRestoration = "manual";
+}
+
 ScrollTrigger.config({
   ignoreMobileResize: true,
+  autoRefreshEvents: "visibilitychange,DOMContentLoaded,load",
 });
 
 let refreshTimer;
@@ -30,6 +35,7 @@ function initialRefresh() {
 
 window.addEventListener("load", initialRefresh);
 
+// Never observe .projects-section — pin-spacer size changes loop refresh
 let observerSettled = false;
 document.addEventListener("DOMContentLoaded", () => {
   const watchTargets = document.querySelectorAll(
@@ -42,13 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
         observerSettled = true;
         return;
       }
-      skRefresh(200);
+      skRefresh(300);
     });
-
     watchTargets.forEach((el) => resizeObserver.observe(el));
   }
 });
 
 window.addEventListener("resize", () => {
-  skRefresh(200);
+  skRefresh(300);
 });

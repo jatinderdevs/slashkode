@@ -1,123 +1,98 @@
-:root {
-  --sk-text-sm: 0.875rem;
-  --sk-text-xs: 0.75rem;
-  --sk-radius-xl: 28px;
-  --sk-radius-pill: 9999px;
-  --sk-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.03);
-  --sk-shadow-soft: 0 24px 60px -18px rgba(30, 41, 59, 0.14);
+/* =====================================================
+   DRAG PORTFOLIO CAROUSEL — Slashkode
+   ===================================================== */
 
-  /* One large card at a time */
-  --card-w: min(820px, 86vw);
-  --card-gap: clamp(1.5rem, 3vw, 2.75rem);
-}
-
-.projects-section {
-  position: relative;
-  width: 100%;
-  background: var(--sk-color-bg-warm, #f8f6f0);
-  padding: 4.5rem 0 3.5rem;
+.sk-drag-portfolio {
+  --drag-card-w: min(860px, 84vw); /* was: min(720px, 78vw) */
+  --drag-gap: clamp(1.5rem, 3.5vw, 2.5rem);
+  padding: 100px 0 60px;
   overflow: hidden;
-  box-sizing: border-box;
 }
 
-.projects-header {
-  max-width: 1200px;
-  margin: 0 auto 2rem;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
+.drag-portfolio-header {
+  margin-bottom: 2.5rem;
 }
 
-.projects-title {
+.drag-portfolio-title {
   font-family: var(--sk-font-heading);
-  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-size: clamp(1.9rem, 4vw, 2.75rem);
   font-weight: 700;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   line-height: 1.2;
   color: var(--sk-color-primary-dark);
-  max-width: 16ch;
-}
-
-.projects-sub {
-  margin-top: 0.6rem;
-  font-size: 0.9rem;
-  color: var(--sk-color-primary-soft);
-  max-width: 40ch;
-  opacity: 0.85;
+  max-width: 18ch;
 }
 
 /* Viewport */
-.projects-viewport {
+.drag-carousel {
+  position: relative;
   width: 100%;
   overflow: hidden;
-  position: relative;
-  padding: 1.5rem 0 2rem;
-  cursor: grab;
+  padding: 1.5rem 0 2.5rem;
   touch-action: pan-y;
-  overscroll-behavior-x: contain;
-  box-sizing: border-box;
 }
 
-.projects-viewport.is-dragging {
-  cursor: grabbing;
+@media (hover: hover) and (pointer: fine) {
+  .drag-carousel:hover {
+    cursor: none;
+  }
+  .drag-carousel:active {
+    cursor: none;
+  }
 }
 
-.projects-track {
+.drag-track {
   display: flex;
-  gap: var(--card-gap);
-  will-change: transform;
-  /* Centering padding made bulletproof for Chrome sub-pixel resizing */
-  padding-left: calc(50vw - (var(--card-w) / 2));
-  padding-right: calc(50vw - (var(--card-w) / 2));
   align-items: center;
-  box-sizing: content-box;
+  gap: var(--drag-gap);
+  width: max-content;
+  will-change: transform;
+  /* padding-left / padding-right are set in JS (dragPortfolio.js),
+     computed from the carousel's actual width so the active card
+     is centered against its real container, not the viewport. */
 }
 
-/* Card — spotlight via opacity + lift */
-.project-card {
-  flex: 0 0 var(--card-w);
-  width: var(--card-w);
+/* Card */
+.drag-card {
+  flex: 0 0 var(--drag-card-w);
+  width: var(--drag-card-w);
   background: #fff;
-  border-radius: 22px;
-  box-sizing: border-box;
-
-  box-shadow:
-    0 1px 2px rgba(15, 23, 42, 0.04),
-    0 10px 28px -12px rgba(15, 23, 42, 0.1);
-  display: flex;
-  flex-direction: column;
+  border-radius: var(--sk-radius-lg);
+  box-shadow: var(--sk-shadow-soft, 0 24px 60px -18px rgba(30, 41, 59, 0.14));
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  position: relative;
   user-select: none;
   -webkit-user-select: none;
-  position: relative;
-  opacity: 0.42;
-  transform: translateY(12px);
-  /* Safely target properties individually so transitions don't fight GSAP measurements */
-  transition:
-    opacity 0.45s ease,
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.45s ease,
-    border-color 0.35s ease;
-  z-index: 1;
+  transform-origin: center center;
 }
 
-.project-card.is-active {
-  opacity: 1;
-  transform: translateY(0);
-  border-color: rgba(203, 213, 225, 0.95);
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px 0px;
-  z-index: 3;
+.drag-card-tag {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  background: var(--sk-color-primary-dark);
+  color: #fff;
+  font-family: var(--sk-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--sk-radius-pill);
+  pointer-events: none;
 }
 
-/* Media */
-.project-card-media {
+.drag-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10.5;
-  background: #e8e4dc;
-  border-radius: 14px;
+  aspect-ratio: 16 / 10;
+  background: #0f172a;
   overflow: hidden;
 }
 
-.project-card-media img {
+.drag-card-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -125,207 +100,155 @@
   pointer-events: none;
 }
 
-.project-card-media .mock {
-  width: 100%;
-  height: 100%;
+.drag-card-link {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  display: grid;
+  place-items: center;
+  color: var(--sk-color-primary-dark);
+  transition: var(--sk-transition-smooth);
+}
+
+.drag-card-link:hover {
+  background: var(--sk-color-terracotta);
+  color: #fff;
+}
+
+.drag-card-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.drag-card-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: var(--sk-font-heading);
-  font-weight: 700;
-  font-size: clamp(1.2rem, 2.4vw, 1.7rem);
-  color: rgba(30, 41, 59, 0.28);
-  letter-spacing: -0.02em;
-}
-
-/* Body */
-.project-card-body {
-  padding: 1.25rem 1.35rem 1.35rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.project-card-top {
-  display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+  padding: 1.15rem 1.4rem;
 }
 
-.project-title {
+.drag-card-title {
   font-family: var(--sk-font-heading);
-  font-size: clamp(1.1rem, 2vw, 1.3rem);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: 1.15rem;
+  margin: 0;
+  letter-spacing: -0.01em;
   color: var(--sk-color-primary-dark);
-  line-height: 1.3;
 }
 
-.project-index {
-  font-family: var(--sk-font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
-  color: var(--sk-color-primary-soft);
-  opacity: 0.5;
-  flex-shrink: 0;
-  padding-top: 0.2rem;
-}
-
-.project-tags {
+.drag-card-tags {
   display: flex;
-  flex-wrap: wrap;
   gap: 0.4rem;
+  flex-shrink: 0;
 }
 
-.project-tag {
+.drag-tag {
   font-family: var(--sk-font-mono);
   font-size: 0.65rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.28rem 0.65rem;
+  padding: 0.3rem 0.65rem;
   border-radius: var(--sk-radius-pill);
   background: var(--sk-color-sage-light);
   color: var(--sk-color-sage);
+  white-space: nowrap;
 }
 
-.project-tag.muted {
-  background: #f1f0ed;
-  color: var(--sk-color-primary-soft);
-}
-
-.project-tag.accent {
+.drag-tag.accent {
   background: #fff0eb;
   color: var(--sk-color-terracotta);
 }
 
-.project-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  margin-top: 0.15rem;
-  font-family: var(--sk-font-heading);
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--sk-color-primary-dark);
-  text-decoration: none;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.project-cta:hover {
-  opacity: 1;
-}
-.project-cta svg {
-  transition: transform 0.2s ease;
-}
-.project-cta:hover svg {
-  transform: translateX(3px);
-}
-
-/* Footer */
-.projects-footer {
-  max-width: 1200px;
-  margin: 0.75rem auto 0;
-  padding: 0 1.5rem;
+/* Custom drag cursor */
+.drag-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  box-sizing: border-box;
+  gap: 0.5rem;
+  padding: 0.85rem 1.4rem;
+  background: var(--sk-color-primary-dark);
+  color: #fff;
+  border-radius: var(--sk-radius-pill);
+  font-family: var(--sk-font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.7);
+  z-index: 10;
+  white-space: nowrap;
+  box-shadow: var(--sk-shadow-soft);
 }
 
-.projects-dots {
+.drag-cursor-arrow {
+  opacity: 0.55;
+  font-family: var(--sk-font-body);
+}
+
+/* Dots */
+.drag-dots {
   display: flex;
-  gap: 0.45rem;
+  justify-content: center;
   align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
-.projects-dot {
+.drag-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--sk-color-surface-sand);
   border: none;
-  cursor: pointer;
   padding: 0;
+  cursor: pointer;
   transition:
     background 0.25s ease,
     width 0.25s ease,
     border-radius 0.25s ease;
 }
 
-.projects-dot.is-active {
+.drag-dot.is-active {
   background: var(--sk-color-primary-dark);
-  width: 24px;
+  width: 26px;
   border-radius: 4px;
 }
 
-.projects-hint {
-  font-family: var(--sk-font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--sk-color-primary-soft);
-  opacity: 0.55;
-}
-
-.projects-progress {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  background: var(--sk-color-terracotta);
-  width: 0%;
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-/* Mobile & Tablet Overrides */
+/* Responsive */
 @media (max-width: 768px) {
-  :root {
-    --card-w: min(88vw, 400px);
-    --card-gap: 1rem;
+  .sk-drag-portfolio {
+    --drag-card-w: min(88vw, 420px);
+    --drag-gap: 1rem;
+    padding: 70px 0 40px;
   }
 
-  .projects-section {
-    padding: 3rem 0 2.5rem;
-  }
-  .projects-header {
-    margin-bottom: 1.25rem;
+  .drag-carousel {
+    padding: 1rem 0 2rem;
   }
 
-  .projects-track {
-    padding-left: calc(50vw - (var(--card-w) / 2));
-    padding-right: calc(50vw - (var(--card-w) / 2));
-  }
-
-  .project-card {
-    padding: 8px;
-    border-radius: 18px;
-    transform: translateY(8px);
-  }
-
-  .project-card.is-active {
-    transform: translateY(0);
-  }
-
-  .project-card-media {
-    aspect-ratio: 4 / 3;
-    border-radius: 12px;
-  }
-
-  .project-card-body {
-    padding: 1rem 1.05rem 1.1rem;
-  }
-
-  .projects-hint {
+  .drag-cursor {
     display: none;
   }
+
+  .drag-card-footer {
+    padding: 1rem 1.15rem;
+  }
+
+  .drag-card-title {
+    font-size: 1.05rem;
+  }
 }
 
-@media (min-width: 1100px) {
-  :root {
-    --card-w: min(860px, 72vw);
+@media (min-width: 1200px) {
+  .sk-drag-portfolio {
+    --drag-card-w: min(920px, 68vw);
   }
 }

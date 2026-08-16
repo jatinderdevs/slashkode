@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Cards – Interactive Expand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    :root {
+      --sk-color-primary-dark: #1e293b;
+      --sk-color-primary-soft: #2c3e50;
+      --sk-color-bg-warm: #f8f6f0;
+      --sk-color-bg-card: #ffffff;
+      --sk-color-surface-sand: #e5e0d8;
+      --sk-color-lime: #c8f542;
+      --sk-radius-lg: 24px;
+      --sk-radius-md: 16px;
+      --sk-font-heading: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+      --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --card-gap: 12px;
+      --collapsed-width: 220px;
+      --image-width: 320px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--sk-font-body);
+      background: var(--sk-color-bg-warm);
+      color: var(--sk-color-primary-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1.demo-title {
+      font-family: var(--sk-font-heading);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 12px;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+
+    p.demo-note {
+      font-size: 0.9rem;
+      color: #64748b;
+      margin-bottom: 40px;
+      text-align: center;
+      max-width: 520px;
+      line-height: 1.5;
+    }
+
+    /* ========== DESKTOP LAYOUT ========== */
+    .cards-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      display: flex;
+      gap: var(--card-gap);
+      align-items: stretch;
+      height: 380px;
+      position: relative;
+    }
+
+    .card {
+      position: relative;
+      background: var(--sk-color-bg-card);
+      border-radius: var(--sk-radius-lg);
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 4px 24px rgba(30, 41, 59, 0.04);
+      overflow: hidden;
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 0;
+      /* default collapsed */
+      width: var(--collapsed-width);
+      transition: none; /* GSAP handles motion */
+    }
+
+    .card.is-active {
+      /* expanded width is set by GSAP */
+    }
+
+    /* Left content column (icon + text) */
+    .card-content {
+      width: var(--collapsed-width);
+      min-width: var(--collapsed-width);
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      z-index: 2;
+      background: var(--sk-color-bg-card);
+    }
+
+    .card-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--sk-color-lime);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 28px;
+      flex-shrink: 0;
+    }
+
+    .card-icon svg {
+      width: 18px;
+      height: 18px;
+      color: #1a1a1a;
+    }
+
+    .card-title {
+      font-family: var(--sk-font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+      line-height: 1.25;
+      color: var(--sk-color-primary-dark);
+    }
+
+    .card-desc {
+      font-size: 0.875rem;
+      line-height: 1.55;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    /* Image panel – slides in from the right of the card */
+    .card-image {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      bottom: 12px;
+      width: var(--image-width);
+      border-radius: calc(var(--sk-radius-lg) - 8px);
+      overflow: hidden;
+      /* start hidden to the right (outside the collapsed card) */
+      transform: translateX(110%);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* ========== MOBILE LAYOUT ========== */
+    .mobile-carousel {
+      display: none;
+      width: 100%;
+      max-width: 420px;
+      overflow: hidden;
+      touch-action: pan-y;
+      position: relative;
+      border-radius: var(--sk-radius-lg);
+    }
+
+    .mobile-track {
+      display: flex;
+      width: 300%; /* 3 slides */
+      will-change: transform;
+    }
+
+    .mobile-slide {
+      width: 33.333%;
+      flex-shrink: 0;
+      padding: 0 6px;
+      box-sizing: border-box;
+    }
+
+    .mobile-card {
+      background: var(--sk-color-bg-card);
+      border-radius: var(--sk-radius-lg);
+      border: 1px solid rgba(0,0,0,0.06);
+      box-shadow: 0 4px 24px rgba(30, 41, 59, 0.06);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-card-image {
+      width: 100%;
+      aspect-ratio: 16 / 11;
+      overflow: hidden;
+    }
+
+    .mobile-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .mobile-card-body {
+      padding: 22px 20px 26px;
+    }
+
+    .mobile-card-body .card-icon {
+      margin-bottom: 16px;
+    }
+
+    .mobile-card-body .card-title {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+    }
+
+    .mobile-card-body .card-desc {
+      font-size: 0.85rem;
+    }
+
+    /* Dots */
+    .mobile-dots {
+      display: none;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .mobile-dots button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
+      background: #cbd5e1;
+      cursor: pointer;
+      padding: 0;
+      transition: background 0.25s, transform 0.25s;
+    }
+
+    .mobile-dots button.is-active {
+      background: var(--sk-color-primary-dark);
+      transform: scale(1.25);
+    }
+
+    /* ========== RESPONSIVE ========== */
+    @media (max-width: 860px) {
+      .cards-wrapper {
+        display: none;
+      }
+      .mobile-carousel,
+      .mobile-dots {
+        display: flex;
+      }
+      body {
+        justify-content: flex-start;
+        padding-top: 48px;
+      }
+    }
+
+    @media (min-width: 861px) {
+      .mobile-carousel,
+      .mobile-dots {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="demo-title">Services cards – expand on hover</h1>
+  <p class="demo-note">
+    Desktop: hover a card → it expands and the photo slides in from the right.<br>
+    Mobile: swipe / drag left-right. Image sits on top, text below.
+  </p>
+
+  <!-- ========== DESKTOP ========== -->
+  <div class="cards-wrapper" id="cardsWrapper">
+
+    <!-- Card 1 – AI strategy (starts active) -->
+    <div class="card is-active" data-index="0">
+      <div class="card-content">
+        <div class="card-icon">
+          <!-- sparkles -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3 class="card-title">AI strategy</h3>
+        <p class="card-desc">We help you identify opportunities for AI adoption and implement the right solutions.</p>
+      </div>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1573497019940-1cfe2dcefbaa?w=800&q=80" alt="AI strategy" />
+      </div>
+    </div>
+
+    <!-- Card 2 – Business consulting -->
+    <div class="card" data-index="1">
+      <div class="card-content">
+        <div class="card-icon">
+          <!-- pie chart -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Business consulting</h3>
+        <p class="card-desc">We help you identify opportunities for top growth and implement the right strategies.</p>
+      </div>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Business consulting" />
+      </div>
+    </div>
+
+    <!-- Card 3 – Data & insights -->
+    <div class="card" data-index="2">
+      <div class="card-content">
+        <div class="card-icon">
+          <!-- bar chart -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+        </div>
+        <h3 class="card-title">Data &amp; insights</h3>
+        <p class="card-desc">We help you identify opportunities for Big Data use and implement the right analytics.</p>
+      </div>
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Data & insights" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========== MOBILE ========== -->
+  <div class="mobile-carousel" id="mobileCarousel">
+    <div class="mobile-track" id="mobileTrack">
+
+      <div class="mobile-slide">
+        <div class="mobile-card">
+          <div class="mobile-card-image">
+            <img src="https://images.unsplash.com/photo-1573497019940-1cfe2dcefbaa?w=800&q=80" alt="AI strategy" />
+          </div>
+          <div class="mobile-card-body">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1"/>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <h3 class="card-title">AI strategy</h3>
+            <p class="card-desc">We help you identify opportunities for AI adoption and implement the right solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-slide">
+        <div class="mobile-card">
+          <div class="mobile-card-image">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Business consulting" />
+          </div>
+          <div class="mobile-card-body">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Business consulting</h3>
+            <p class="card-desc">We help you identify opportunities for top growth and implement the right strategies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-slide">
+        <div class="mobile-card">
+          <div class="mobile-card-image">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Data & insights" />
+          </div>
+          <div class="mobile-card-body">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Data &amp; insights</h3>
+            <p class="card-desc">We help you identify opportunities for Big Data use and implement the right analytics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="mobile-dots" id="mobileDots">
+    <button class="is-active" data-index="0" aria-label="Slide 1"></button>
+    <button data-index="1" aria-label="Slide 2"></button>
+    <button data-index="2" aria-label="Slide 3"></button>
+  </div>
+
+  <script>
+    (function () {
+      const COLLAPSED = 220;
+      const IMAGE_W = 320;
+      const GAP = 12;
+      const PADDING = 24; // image inset from edges
+      const EXPANDED = COLLAPSED + IMAGE_W + 24; // content + image + breathing room
+
+      const cards = gsap.utils.toArray(".card");
+      const wrapper = document.getElementById("cardsWrapper");
+      let activeIndex = 0;
+      let isAnimating = false;
+
+      // Initial layout: first card expanded, image visible
+      function setInitialState() {
+        cards.forEach((card, i) => {
+          const img = card.querySelector(".card-image");
+          if (i === 0) {
+            gsap.set(card, { width: EXPANDED });
+            gsap.set(img, { x: 0, opacity: 1 });
+            card.classList.add("is-active");
+          } else {
+            gsap.set(card, { width: COLLAPSED });
+            gsap.set(img, { x: "110%", opacity: 0 });
+            card.classList.remove("is-active");
+          }
+        });
+      }
+
+      function expandCard(index) {
+        if (index === activeIndex || isAnimating) return;
+        isAnimating = true;
+
+        const prev = cards[activeIndex];
+        const next = cards[index];
+        const prevImg = prev.querySelector(".card-image");
+        const nextImg = next.querySelector(".card-image");
+
+        // Close previous
+        const tl = gsap.timeline({
+          defaults: { ease: "power3.inOut" },
+          onComplete: () => {
+            activeIndex = index;
+            isAnimating = false;
+            cards.forEach((c, i) => c.classList.toggle("is-active", i === index));
+          }
+        });
+
+        // Shrink previous + hide its image (slide out to right)
+        tl.to(prev, { width: COLLAPSED, duration: 0.55 }, 0);
+        tl.to(prevImg, { x: "110%", opacity: 0, duration: 0.4 }, 0);
+
+        // Expand next + slide image in from right
+        tl.to(next, { width: EXPANDED, duration: 0.55 }, 0.05);
+        tl.fromTo(
+          nextImg,
+          { x: "110%", opacity: 0 },
+          { x: 0, opacity: 1, duration: 0.5, ease: "power3.out" },
+          0.15
+        );
+      }
+
+      // Hover / focus handlers
+      cards.forEach((card, i) => {
+        card.addEventListener("mouseenter", () => expandCard(i));
+        card.addEventListener("focus", () => expandCard(i));
+        // keyboard accessibility
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
+        card.setAttribute("aria-label", card.querySelector(".card-title").textContent);
+      });
+
+      // Also allow clicking (useful on trackpads / touch laptops)
+      cards.forEach((card, i) => {
+        card.addEventListener("click", () => expandCard(i));
+      });
+
+      setInitialState();
+
+      // ---------- MOBILE SWIPE / DRAG ----------
+      const track = document.getElementById("mobileTrack");
+      const dots = gsap.utils.toArray("#mobileDots button");
+      let mobileIndex = 0;
+      let startX = 0;
+      let currentX = 0;
+      let isDragging = false;
+      let dragOffset = 0;
+
+      function goToSlide(index, animate = true) {
+        mobileIndex = gsap.utils.clamp(0, 2, index);
+        const xPercent = -mobileIndex * (100 / 3);
+
+        if (animate) {
+          gsap.to(track, {
+            xPercent,
+            duration: 0.45,
+            ease: "power3.out"
+          });
+        } else {
+          gsap.set(track, { xPercent });
+        }
+
+        dots.forEach((d, i) => d.classList.toggle("is-active", i === mobileIndex));
+      }
+
+      // Touch + mouse drag
+      function onPointerDown(e) {
+        isDragging = true;
+        startX = e.type.includes("mouse") ? e.clientX : e.touches[0].clientX;
+        dragOffset = 0;
+        gsap.killTweensOf(track);
+        track.style.cursor = "grabbing";
+      }
+
+      function onPointerMove(e) {
+        if (!isDragging) return;
+        const x = e.type.includes("mouse") ? e.clientX : e.touches[0].clientX;
+        dragOffset = x - startX;
+        const base = -mobileIndex * (track.offsetWidth / 3);
+        gsap.set(track, { x: base + dragOffset });
+      }
+
+      function onPointerUp() {
+        if (!isDragging) return;
+        isDragging = false;
+        track.style.cursor = "grab";
+
+        const threshold = 60;
+        if (dragOffset < -threshold && mobileIndex < 2) {
+          goToSlide(mobileIndex + 1);
+        } else if (dragOffset > threshold && mobileIndex > 0) {
+          goToSlide(mobileIndex - 1);
+        } else {
+          goToSlide(mobileIndex); // snap back
+        }
+      }
+
+      const carousel = document.getElementById("mobileCarousel");
+      carousel.addEventListener("mousedown", onPointerDown);
+      window.addEventListener("mousemove", onPointerMove);
+      window.addEventListener("mouseup", onPointerUp);
+
+      carousel.addEventListener("touchstart", onPointerDown, { passive: true });
+      carousel.addEventListener("touchmove", onPointerMove, { passive: true });
+      carousel.addEventListener("touchend", onPointerUp);
+
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          goToSlide(Number(dot.dataset.index));
+        });
+      });
+
+      // Set initial mobile position
+      gsap.set(track, { xPercent: 0 });
+
+      // Recalculate on resize (desktop ↔ mobile)
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 860) {
+          setInitialState();
+        } else {
+          goToSlide(mobileIndex, false);
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

@@ -28,9 +28,9 @@ function initHeroHighlight() {
   function play() {
     gsap.to(highlights, {
       "--scale": 1,
-      duration: 0.6,
+      duration: 0.8,
       stagger: 0.1,
-      ease: "bounce",
+      ease: "power2.out",
       overwrite: true,
     });
   }
@@ -232,4 +232,41 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
     // Recalculate ScrollTrigger positions as FAQ expand changes page height
     if (window.SKRefresh) window.SKRefresh(300);
   });
+});
+
+//section headings scroll text effects
+function setupCharReveal(selector = "h2") {
+  const headings = document.querySelectorAll(selector);
+
+  headings.forEach((heading) => {
+    // Clean up previous instance if the function is called again (e.g. on resize)
+    if (heading.anim) {
+      heading.anim.progress(1).kill();
+      heading.split.revert();
+    }
+
+    heading.split = SplitText.create(heading, {
+      type: "words,chars",
+      linesClass: "split-line",
+    });
+
+    heading.anim = gsap.from(heading.split.chars, {
+      scrollTrigger: {
+        trigger: heading,
+        start: "top 80%", // adjust as needed
+        toggleActions: "play none play none", // play once
+        // markers: true,           // uncomment to debug
+      },
+      y: 80,
+      duration: 0.6,
+      ease: "circ.out",
+      stagger: 0.02,
+    });
+  });
+}
+
+// Run after fonts are loaded (important for SplitText)
+document.fonts.ready.then(() => {
+  setupCharReveal("h2"); // or a more specific selector
+  // ScrollTrigger.refresh();     // usually not needed, but safe
 });

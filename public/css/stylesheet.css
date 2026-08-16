@@ -6,7 +6,7 @@
 :root {
   /* --- Colour Palette --- */
   /* Primary: Trust & Calm Base */
-  --sk-color-primary-dark: #1e293b; /* Deep Slate Blue (Main Text & Dark Surfaces) */
+  --sk-color-primary-dark: #111111; /* Deep Slate Blue (Main Text & Dark Surfaces) */
   --sk-color-primary-soft: #2c3e50; /* Slightly lighter slate for secondary text/borders */
 
   /* Secondary: Balance & Peace */
@@ -14,7 +14,7 @@
   --sk-color-sage-light: #ebf2ec; /* Light Sage tint for card backgrounds/badges */
 
   /* Accent: Warm Human Energy */
-  --sk-color-terracotta: #f74123; /* Warm Terracotta (Primary CTA / Buttons) */
+  --sk-color-terracotta: #e52f22; /* Warm Terracotta (Primary CTA / Buttons) */
   --sk-color-terracotta-hover: #f76d23; /* Hover state for buttons */
 
   /* Neutral Backgrounds: Soft & Relaxing (No Harsh Pure Whites) */
@@ -79,7 +79,9 @@ body {
   background-color: var(--sk-color-bg-warm); /* Warm Canvas */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  /* overflow-x:hidden breaks ScrollTrigger pin-spacer (empty gap on scroll-back).
+     clip avoids horizontal bleed without the same containment side-effects. */
+  overflow-x: clip;
 }
 
 /* 4. TYPOGRAPHY HIERARCHY */
@@ -313,6 +315,7 @@ section {
   position: relative;
   display: inline-block;
   z-index: 1;
+  color: white;
   white-space: nowrap;
 }
 
@@ -320,7 +323,7 @@ section {
   content: "";
   position: absolute;
   inset: -0.001em -0.1em;
-  background: #f767237d;
+  background: #f74523;
   border-radius: 0.2em;
   z-index: -1;
   transform: scaleX(var(--scale, 0));
@@ -378,4 +381,10 @@ section {
     rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background: white;
+}
+
+/* section heading scroll effct GSAP */
+h2.split-chars,
+.split-line {
+  overflow: hidden;
 }
