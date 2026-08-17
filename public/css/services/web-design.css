@@ -39,6 +39,9 @@
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 .breadcrumb-btn:hover {
+  box-shadow:
+    rgb(204, 219, 232) 3px 3px 6px 0px,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
   color: var(--sk-color-primary-dark);
 }
 .breadcrumb-btn img {
@@ -374,11 +377,6 @@
 }
 
 /* ── Process ── */
-.wd-process {
-  background: #fff;
-  border-top: 1px solid var(--sk-color-surface-sand);
-  border-bottom: 1px solid var(--sk-color-surface-sand);
-}
 
 .wd-process-list {
   max-width: 780px;
@@ -593,10 +591,6 @@
 }
 
 /* ── FAQ (service page) ── */
-.wd-faq {
-  background: #fff;
-  border-top: 1px solid var(--sk-color-surface-sand);
-}
 
 .wd-faq-list {
   max-width: 720px;

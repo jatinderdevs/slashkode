@@ -1,0 +1,225 @@
+.sk-expand-cards {
+  --ec-collapsed: 220px;
+  --ec-image: 320px;
+  --ec-gap: 12px;
+  --ec-expanded: calc(var(--ec-collapsed) + var(--ec-image) + 24px);
+
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ---------- Desktop layout ---------- */
+.sk-ec-desktop {
+  display: flex;
+  gap: var(--ec-gap);
+  align-items: stretch;
+  height: 380px;
+  position: relative;
+}
+
+.sk-ec-card {
+  position: relative;
+  background: var(--sk-color-bg-card);
+  border-radius: var(--sk-radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.04);
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  width: var(--ec-collapsed);
+  transition: none; /* GSAP owns the motion */
+}
+
+.sk-ec-content {
+  width: var(--ec-collapsed);
+  min-width: var(--ec-collapsed);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  z-index: 2;
+  background: var(--sk-color-bg-card);
+}
+
+.sk-ec-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--sk-color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+  flex-shrink: 0;
+}
+
+.sk-ec-icon svg {
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
+.sk-ec-title {
+  font-family: var(--sk-font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  line-height: 1.25;
+  color: var(--sk-color-primary-dark);
+}
+
+.sk-ec-desc {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Image panel – slides in from the right */
+.sk-ec-image {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  width: var(--ec-image);
+  border-radius: calc(var(--sk-radius-lg) - 8px);
+  overflow: hidden;
+  transform: translateX(110%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sk-ec-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------- Mobile layout ---------- */
+.sk-ec-mobile {
+  display: none;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  overflow: hidden;
+  touch-action: pan-y;
+  position: relative;
+}
+
+.sk-ec-track {
+  display: flex;
+  will-change: transform;
+  width: 100%;
+}
+
+.sk-ec-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0 1px; /* prevents sub-pixel right-edge clip */
+  box-sizing: border-box;
+}
+
+.sk-ec-m-card {
+  background: var(--sk-color-bg-card);
+  border-radius: var(--sk-radius-lg);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(30, 41, 59, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.sk-ec-m-image {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  border-radius: var(--sk-radius-lg) var(--sk-radius-lg) 0 0;
+}
+
+.sk-ec-m-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sk-ec-m-body {
+  padding: 22px 24px 26px;
+  box-sizing: border-box;
+}
+
+.sk-ec-m-body .sk-ec-icon {
+  margin-bottom: 16px;
+}
+
+.sk-ec-m-body .sk-ec-title {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.sk-ec-m-body .sk-ec-desc {
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+/* Dots */
+.sk-ec-dots {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.sk-ec-dots button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: #cbd5e1;
+  cursor: pointer;
+  padding: 0;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+
+.sk-ec-dots button.is-active {
+  background: var(--sk-color-primary-dark);
+  transform: scale(1.25);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .sk-ec-desktop {
+    display: none;
+  }
+
+  .sk-ec-mobile,
+  .sk-ec-dots {
+    display: flex;
+  }
+
+  .sk-ec-mobile {
+    max-width: 100%;
+  }
+
+  .sk-expand-cards {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 861px) {
+  .sk-ec-mobile,
+  .sk-ec-dots {
+    display: none !important;
+  }
+}

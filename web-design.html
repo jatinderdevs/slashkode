@@ -17,7 +17,10 @@
     <link rel="stylesheet" href="public/css/stylesheet.css" />
     <link rel="stylesheet" href="public/css/navbar.css" />
     <link rel="stylesheet" href="public/css/services/web-design.css" />
+    <link rel="stylesheet" href="public/css/portfolio.css" />
+
     <link rel="stylesheet" href="public/css/footer.css" />
+    <link rel="stylesheet" href="public/css/services/whyusSection.css" />
   </head>
   <body class="wd-page">
     <main>
@@ -249,7 +252,123 @@
             </div>
           </div>
         </section>
+  <section class="sk-drag-portfolio" id="work">
+      <div class="sk-container">
+        <div class="drag-portfolio-header">
+          <span class="sk-statement-eyebrow">/ Portfolio</span>
+          <h2 class="drag-portfolio-title">Work we've shipped</h2>
+        </div>
+      </div>
 
+      <div class="drag-carousel" id="dragCarousel">
+        <div class="drag-track" id="dragTrack">
+          <!-- Card 1 -->
+          <article class="drag-card" data-index="0">
+            <span class="drag-card-tag">Website</span>
+            <div class="drag-card-media">
+              <img
+                src="public/img/mockups/aiit.jpg"
+                alt="Kaelio project preview"
+                loading="lazy"
+                draggable="false"
+              />
+              <a
+                href="#"
+                class="drag-card-link"
+                aria-label="View Kaelio project"
+              >
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="drag-card-footer">
+              <h3 class="drag-card-title">Australian International Institute of Technology </h3>
+              <div class="drag-card-tags">
+                <span class="drag-tag accent">YC</span>
+                <span class="drag-tag">Webflow</span>
+                <span class="drag-tag">SaaS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 1 -->
+          <article class="drag-card" data-index="1">
+            <span class="drag-card-tag">Kaelio</span>
+            <div class="drag-card-media">
+              <img
+                src="public/img/mockups/aiit.jpg"
+                alt="Kaelio project preview"
+                loading="lazy"
+                draggable="false"
+              />
+              <a
+                href="#"
+                class="drag-card-link"
+                aria-label="View Kaelio project"
+              >
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="drag-card-footer">
+              <h3 class="drag-card-title">Kaelio</h3>
+              <div class="drag-card-tags">
+                <a href="" class="btn herobtnPrimary">Read more</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="drag-card" data-index="2">
+            <span class="drag-card-tag">AIIT</span>
+            <div class="drag-card-media">
+              <img
+                src="public/img/mockups/aiitmockupsample.png"
+                alt="AIIT project preview"
+                loading="lazy"
+                draggable="false"
+              />
+              <a href="#" class="drag-card-link" aria-label="View AIIT project">
+                <svg viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="drag-card-footer">
+              <h3 class="drag-card-title">AIIT</h3>
+              <div class="drag-card-tags">
+                <span class="drag-tag">RTO / VET</span>
+                <span class="drag-tag">SEO</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Add more .drag-card articles here, incrementing data-index -->
+        </div>
+
+        <!-- Custom drag cursor — follows the pointer on desktop hover -->
+        <div class="drag-cursor" id="dragCursor" aria-hidden="true">
+          <span class="drag-cursor-arrow">←</span>
+          <span>Drag</span>
+          <span class="drag-cursor-arrow">→</span>
+        </div>
+      </div>
+
+      <div
+        class="drag-dots"
+        id="dragDots"
+        role="tablist"
+        aria-label="Portfolio navigation"
+      ></div>
+    </section>
         <!-- ════════════════════════════════════
              SECTION 2 — Pain Points
         ════════════════════════════════════ -->
@@ -295,57 +414,142 @@
             </div>
           </div>
         </section>
-
-        <!-- ════════════════════════════════════
-             SECTION 3 — Core Capabilities
-        ════════════════════════════════════ -->
-        <section class="wd-section">
-          <div class="wd-container">
-            <div class="wd-section-header">
+     <section class="sk-expand-cards" aria-label="Services">
+ <div class="wd-section-header">
               <span class="wd-section-label wd-reveal">Deliverables</span>
               <h2 class="wd-reveal">What you get with a SLASHKODE web build</h2>
               <p class="wd-reveal">
                 Clear scope. Clean code. Results you can measure.
               </p>
             </div>
+  <!-- ========== DESKTOP (hover expand) ========== -->
+  <div class="sk-ec-desktop" id="skEcDesktop">
 
-            <div class="wd-cap-grid">
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">✦</div>
-                <h3>Custom UI/UX &amp; Responsive Design</h3>
-                <p>
-                  Tailored designs built around your target audience’s exact
-                  browsing habits — not a recycled template.
-                </p>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">◎</div>
-                <h3>Smooth GSAP &amp; Interaction Design</h3>
-                <p>
-                  Premium micro-interactions that elevate brand perception
-                  without slowing down speed.
-                </p>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">◆</div>
-                <h3>Built-in Technical SEO</h3>
-                <p>
-                  Clean HTML structure, fast Core Web Vitals, and proper
-                  canonical tags from day one.
-                </p>
-                <a href="/services/seo/">Explore our SEO service →</a>
-              </article>
-              <article class="wd-cap-card wd-reveal">
-                <div class="wd-cap-icon" aria-hidden="true">▣</div>
-                <h3>Scalable CMS Setup</h3>
-                <p>
-                  Simple content editing structure so your team can easily add
-                  portfolio items or updates — no developer required.
-                </p>
-              </article>
-            </div>
+    <!-- Card 1 – starts expanded -->
+    <div class="sk-ec-card is-active" data-index="0">
+      <div class="sk-ec-content">
+        <div class="sk-ec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1"/>
+            <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </div>
+        <h3 class="sk-ec-title">Custom UI/UX & Responsive Design</h3>
+        <p class="sk-ec-desc">We help you identify opportunities for AI adoption and implement the right solutions.</p>
+      </div>
+      <div class="sk-ec-image">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80" alt="Custom UI/UX & Responsive Design" />
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="sk-ec-card" data-index="1">
+      <div class="sk-ec-content">
+        <div class="sk-ec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+            <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+          </svg>
+        </div>
+        <h3 class="sk-ec-title">Built-in Technical SEO</h3>
+        <p class="sk-ec-desc">We help you identify opportunities for top growth and implement the right strategies.</p>
+      </div>
+      <div class="sk-ec-image">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Built-in Technical SEO" />
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="sk-ec-card" data-index="2">
+      <div class="sk-ec-content">
+        <div class="sk-ec-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="20" x2="18" y2="10"/>
+            <line x1="12" y1="20" x2="12" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="14"/>
+          </svg>
+        </div>
+        <h3 class="sk-ec-title">Data &amp; insights</h3>
+        <p class="sk-ec-desc">We help you identify opportunities for Big Data use and implement the right analytics.</p>
+      </div>
+      <div class="sk-ec-image">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Data & insights" />
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ========== MOBILE (swipe carousel) ========== -->
+  <div class="sk-ec-mobile" id="skEcMobile">
+    <div class="sk-ec-track" id="skEcTrack">
+
+      <div class="sk-ec-slide">
+        <div class="sk-ec-m-card">
+          <div class="sk-ec-m-image">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80" alt="Custom UI/UX & Responsive Design" />
           </div>
-        </section>
+          <div class="sk-ec-m-body">
+            <div class="sk-ec-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1"/>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </div>
+            <h3 class="sk-ec-title">Custom UI/UX & Responsive Design</h3>
+            <p class="sk-ec-desc">We help you identify opportunities for AI adoption and implement the right solutions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sk-ec-slide">
+        <div class="sk-ec-m-card">
+          <div class="sk-ec-m-image">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" alt="Built-in Technical SEO" />
+          </div>
+          <div class="sk-ec-m-body">
+            <div class="sk-ec-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+                <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+              </svg>
+            </div>
+            <h3 class="sk-ec-title">Built-in Technical SEO</h3>
+            <p class="sk-ec-desc">We help you identify opportunities for top growth and implement the right strategies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sk-ec-slide">
+        <div class="sk-ec-m-card">
+          <div class="sk-ec-m-image">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80" alt="Data & insights" />
+          </div>
+          <div class="sk-ec-m-body">
+            <div class="sk-ec-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3 class="sk-ec-title">Data &amp; insights</h3>
+            <p class="sk-ec-desc">We help you identify opportunities for Big Data use and implement the right analytics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sk-ec-dots" id="skEcDots">
+    <button class="is-active" data-index="0" aria-label="Slide 1"></button>
+    <button data-index="1" aria-label="Slide 2"></button>
+    <button data-index="2" aria-label="Slide 3"></button>
+  </div>
+
+      </section>
+
+     
 
         <!-- ════════════════════════════════════
              SECTION 4 — Process
@@ -417,106 +621,7 @@
           </div>
         </section>
 
-        <!-- ════════════════════════════════════
-             SECTION 5 — Case Studies
-        ════════════════════════════════════ -->
-        <section class="wd-section">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Proof</span>
-              <h2 class="wd-reveal">Real results for growing brands</h2>
-              <p class="wd-reveal">
-                A few recent builds — same care, different goals.
-              </p>
-            </div>
-
-            <div class="wd-cases-grid">
-              <article class="wd-case-card wd-reveal">
-                <div class="wd-case-thumb">
-                  <span>AIIT</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">Custom Dev</span>
-                    <span class="wd-case-tag">GSAP</span>
-                    <span class="wd-case-tag">SEO</span>
-                  </div>
-                  <h3>AIIT</h3>
-                  <p>
-                    Clean, conversion-focused site for an education brand —
-                    faster load times and clearer enquiry paths.
-                  </p>
-                  <a href="/work/aiit/" class="wd-case-link"
-                    >View case study →</a
-                  >
-                </div>
-              </article>
-
-              <article class="wd-case-card wd-reveal">
-                <div
-                  class="wd-case-thumb"
-                  style="
-                    background: linear-gradient(
-                      135deg,
-                      #f5ebe6 0%,
-                      #e8f0e9 100%
-                    );
-                  "
-                >
-                  <span>Client</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">UI/UX</span>
-                    <span class="wd-case-tag">CMS</span>
-                  </div>
-                  <h3>Growing service brand</h3>
-                  <p>
-                    Redesigned site architecture and CMS so the team can publish
-                    updates without calling a developer.
-                  </p>
-                  <a href="/work/" class="wd-case-link">View case study →</a>
-                </div>
-              </article>
-
-              <article class="wd-case-card wd-reveal">
-                <div
-                  class="wd-case-thumb"
-                  style="
-                    background: linear-gradient(
-                      135deg,
-                      #eef2f6 0%,
-                      #f8f6f0 100%
-                    );
-                  "
-                >
-                  <span>Studio</span>
-                </div>
-                <div class="wd-case-body">
-                  <div class="wd-case-tags">
-                    <span class="wd-case-tag">Custom Dev</span>
-                    <span class="wd-case-tag">GSAP</span>
-                  </div>
-                  <h3>Creative studio site</h3>
-                  <p>
-                    High-performance portfolio with smooth interactions that
-                    still score well on Core Web Vitals.
-                  </p>
-                  <a href="/work/" class="wd-case-link">View case study →</a>
-                </div>
-              </article>
-            </div>
-
-            <div class="wd-maintain wd-reveal">
-              <p>
-                After launch, many clients keep us on for light upkeep —
-                updates, security, and small improvements so the site stays
-                sharp.
-              </p>
-              <a href="/services/website-maintenance/">Website maintenance →</a>
-            </div>
-          </div>
-        </section>
+      
 
         <!-- ════════════════════════════════════
              SECTION 6 — FAQ + Final CTA
@@ -579,37 +684,160 @@
           </div>
         </section>
 
-        <section class="wd-final-cta">
-          <div class="wd-container">
-            <div class="wd-final-box wd-reveal">
-              <h2>Ready to elevate your online presence?</h2>
-              <p>
-                Tell us where you are and where you want the site to take you —
-                we’ll come back with a clear, no-pressure plan.
+    
+      </div>
+       <footer class="sk-footer" role="contentinfo">
+        <!-- Bouncy top edge -->
+        <div class="footer-wave" id="footer-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+            <path
+              d="M0,40 C180,5 360,5 540,40 C720,75 900,75 1080,40 C1260,5 1380,5 1440,25 L1440,80 L0,80 Z"
+            />
+          </svg>
+        </div>
+
+        <div class="footer-inner">
+          <div class="footer-top">
+            <!-- Brand -->
+            <div class="footer-brand footer-anim-item">
+              <a href="/" class="footer-logo" aria-label="Slashkode home"
+                >slashkode</a
+              >
+              <p class="footer-tagline">
+                Web design, development &amp; SEO for Melbourne businesses that
+                want clarity, speed and trust online.
               </p>
-              <div class="wd-final-actions">
-                <div class="mag-zone">
-                  <a href="/contact/" class="btn sk-btn-primary"
-                    >Get Started Today</a
+              <span class="footer-location">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Based in Melbourne, Australia
+              </span>
+            </div>
+
+            <!-- Navigate -->
+            <div class="footer-col footer-anim-item">
+              <h4>Navigate</h4>
+              <ul>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="footer-col footer-anim-item">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#services">Web Design</a></li>
+                <li><a href="#services">Web Development</a></li>
+                <li><a href="#services">SEO</a></li>
+                <li><a href="#services">RTO &amp; VET College Websites</a></li>
+              </ul>
+            </div>
+
+            <!-- Hybrid: Trust + CTA + Contact -->
+            <div class="footer-cta-col footer-anim-item">
+              <h4>Get in touch</h4>
+              <p class="footer-trust">
+                <strong>ABN 12 345 678 901</strong><br />
+                Sole trader · Melbourne, VIC<br />
+                Australian-owned &amp; operated
+              </p>
+              <a href="#contact" class="footer-cta-btn">
+                Start a project
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                  />
+                </svg>
+              </a>
+              <div class="footer-contact-links">
+                <a href="mailto:hello@slashkode.com.au"
+                  >hello@slashkode.com.au</a
+                >
+              </div>
+              <p class="footer-reply-note">
+                Usually replies within 1 business day
+              </p>
+              <div class="footer-socials" aria-label="Social links">
+                <a href="#" aria-label="Instagram" title="Instagram">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   >
-                </div>
-                <div class="mag-zone">
-                  <a href="/contact/" class="btn sk-btn-secondary"
-                    >Request a Custom Quote</a
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" title="LinkedIn">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
                   >
-                </div>
+                    <path
+                      d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                    />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </a>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+
+          <!-- Big brand mark -->
+          <div class="footer-brand-mark" aria-hidden="true">
+            <span id="footer-brand-text">slashkode</span>
+          </div>
+
+          <!-- Bottom bar -->
+          <div class="footer-bottom footer-anim-item">
+            <div>
+              <span>© 2026 Slashkode. All rights reserved.</span>
+              <span class="footer-abn"> · ABN 12 345 678 901</span>
+            </div>
+            <div class="footer-bottom-links">
+              <a href="/privacy">Privacy Policy</a>
+              <a href="/terms">Terms of Use</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- GSAP + ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+
     <script src="public/js/navbar.js"></script>
     <script src="public/js/custom.js"></script>
     <script src="public/js/services/web-design.js"></script>
+    <script src="public/js/portfolio.js"></script>
+
+    <script src="public/js/services/whyusSection.js"></script>
+    <script src="public/js/footer.js"></script>
+    <script src="public/js/init.js"></script>
   </body>
 </html>

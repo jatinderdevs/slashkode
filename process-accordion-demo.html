@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process Stack Cards – slashkode</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <style>
+    /* =========================================================
+       Process Stack Cards – slashkode
+       Compact section-width stack (embeds cleanly)
+       ========================================================= */
+
+    :root {
+      --sk-bg: #f4f1ec;
+      --sk-text: #1a1a1a;
+      --sk-text-muted: #5c5c5c;
+      --sk-accent: #e03e2d;
+      --sk-card-1: #1e2a30;
+      --sk-card-2: #2a383f;
+      --sk-card-3: #36464e;
+      --sk-card-4: #42545d;
+      --sk-radius: 20px;
+      --sk-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --sk-section-max: 1100px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--sk-font);
+      background: var(--sk-bg);
+      color: var(--sk-text);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Extra space only for demo scrolling */
+    .sk-demo-pad {
+      height: 35vh;
+      pointer-events: none;
+    }
+
+    /* ---------- Section wrapper (matches your other sections) ---------- */
+    .sk-process-stack {
+      width: 100%;
+      max-width: var(--sk-section-max);
+      margin: 0 auto;
+      padding: 4rem 1.5rem 5rem;
+    }
+
+    .sk-process-stack__intro {
+      text-align: center;
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .sk-process-stack__eyebrow {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--sk-accent);
+      margin-bottom: 0.65rem;
+    }
+
+    .sk-process-stack__heading {
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
+    }
+
+    .sk-process-stack__sub {
+      font-size: 0.95rem;
+      color: var(--sk-text-muted);
+      line-height: 1.55;
+    }
+
+    /* ---------- Stack stage (fixed height, not full viewport) ---------- */
+    .sk-stack-stage {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      /* leave room on the right so stacked edges can peek */
+      padding-right: 36px;
+    }
+
+    .sk-stack-stage__inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Individual cards */
+    .sk-stack-card {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: var(--sk-radius);
+      overflow: hidden;
+      color: #fff;
+      box-shadow:
+        0 6px 24px rgba(0, 0, 0, 0.12),
+        0 1px 3px rgba(0, 0, 0, 0.06);
+      will-change: transform;
+    }
+
+    .sk-stack-card:nth-child(1) { background: var(--sk-card-1); z-index: 1; }
+    .sk-stack-card:nth-child(2) { background: var(--sk-card-2); z-index: 2; }
+    .sk-stack-card:nth-child(3) { background: var(--sk-card-3); z-index: 3; }
+    .sk-stack-card:nth-child(4) { background: var(--sk-card-4); z-index: 4; }
+
+    /* Accent strip */
+    .sk-stack-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--sk-accent);
+      opacity: 0.9;
+    }
+
+    /* Soft depth */
+    .sk-stack-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.04) 0%,
+        transparent 50%,
+        rgba(0, 0, 0, 0.08) 100%
+      );
+      pointer-events: none;
+    }
+
+    /* Rotated side label */
+    .sk-stack-card__label {
+      position: absolute;
+      bottom: 14%;
+      left: 1.1rem;
+      transform-origin: left center;
+      transform: rotate(-90deg);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      opacity: 0.7;
+      z-index: 2;
+    }
+
+    /* Content */
+    .sk-stack-card__body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem 2.25rem 2rem 4rem;
+      position: relative;
+      z-index: 1;
+      max-width: 520px;
+    }
+
+    .sk-stack-card__num {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 0.55rem;
+    }
+
+    .sk-stack-card__num::before {
+      content: "";
+      width: 12px;
+      height: 1.5px;
+      background: var(--sk-accent);
+    }
+
+    .sk-stack-card__title {
+      font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.25;
+      margin-bottom: 0.55rem;
+    }
+
+    .sk-stack-card__desc {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.78);
+      max-width: 38ch;
+    }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width: 699px) {
+      .sk-process-stack {
+        padding: 3rem 1.15rem 4rem;
+      }
+
+      .sk-stack-stage {
+        height: 240px;
+        padding-right: 28px;
+      }
+
+      .sk-stack-card {
+        border-radius: 16px;
+      }
+
+      .sk-stack-card__body {
+        padding: 1.5rem 1.35rem 1.5rem 1.5rem;
+        max-width: none;
+      }
+
+      .sk-stack-card__label {
+        display: none;
+      }
+
+      .sk-stack-card__title {
+        font-size: 1.2rem;
+      }
+
+      .sk-stack-card__desc {
+        font-size: 0.85rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sk-stack-card {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sk-demo-pad" aria-hidden="true"></div>
+
+  <!-- ========== DROP THIS SECTION INTO YOUR PAGE ========== -->
+  <section class="sk-process-stack" aria-labelledby="process-stack-heading">
+
+    <div class="sk-process-stack__intro">
+      <span class="sk-process-stack__eyebrow">Process</span>
+      <h2 id="process-stack-heading" class="sk-process-stack__heading">
+        How we build your site: Simple, transparent, and stress-free.
+      </h2>
+      <p class="sk-process-stack__sub">
+        Four clear steps. No surprises. You always know what’s next.
+      </p>
+    </div>
+
+    <div class="sk-stack-stage" id="skProcessStack">
+      <div class="sk-stack-stage__inner">
+
+        <article class="sk-stack-card" data-index="0">
+          <span class="sk-stack-card__label">01 — Discovery</span>
+          <div class="sk-stack-card__body">
+            <span class="sk-stack-card__num">Step 01</span>
+            <h3 class="sk-stack-card__title">Discovery &amp; Strategy</h3>
+            <p class="sk-stack-card__desc">
+              Mapping your user flow, site map, and key performance indicators so every decision has a purpose.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-stack-card" data-index="1">
+          <span class="sk-stack-card__label">02 — Build</span>
+          <div class="sk-stack-card__body">
+            <span class="sk-stack-card__num">Step 02</span>
+            <h3 class="sk-stack-card__title">Custom Code Development</h3>
+            <p class="sk-stack-card__desc">
+              Writing clean, high-performance HTML/CSS/JS and GSAP animations that feel premium and stay fast.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-stack-card" data-index="2">
+          <span class="sk-stack-card__label">03 — Polish</span>
+          <div class="sk-stack-card__body">
+            <span class="sk-stack-card__num">Step 03</span>
+            <h3 class="sk-stack-card__title">Optimization &amp; Testing</h3>
+            <p class="sk-stack-card__desc">
+              Cross-browser testing, mobile responsiveness, and SEO checks before anything goes live.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-stack-card" data-index="3">
+          <span class="sk-stack-card__label">04 — Launch</span>
+          <div class="sk-stack-card__body">
+            <span class="sk-stack-card__num">Step 04</span>
+            <h3 class="sk-stack-card__title">Launch &amp; Handover</h3>
+            <p class="sk-stack-card__desc">
+              Seamless domain transition, CMS walk-through, and ongoing support options if you want them.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- ========== END SECTION ========== -->
+
+  <div class="sk-demo-pad" aria-hidden="true"></div>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    (function () {
+      const stage = document.getElementById("skProcessStack");
+      if (!stage) return;
+
+      const cards = gsap.utils.toArray(".sk-stack-card");
+      if (cards.length < 2) return;
+
+      const rest = cards.slice(1);
+      const peek = 14; // how much of each stacked card peeks out (px)
+
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+
+      const mm = gsap.matchMedia();
+
+      // Desktop & tablet – horizontal stack, cards peek from the right
+      mm.add("(min-width: 700px)", () => {
+        gsap.set(cards[0], { x: 0 });
+        rest.forEach((card, i) => {
+          gsap.set(card, { x: stage.offsetWidth + 40 + i * 20 });
+        });
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: stage,
+            pin: true,
+            scrub: 0.55,
+            start: "top 22%",
+            end: "+=180%",
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+          },
+        });
+
+        // Bring each card in one after another
+        rest.forEach((card, i) => {
+          tl.to(
+            card,
+            {
+              x: peek * (i + 1),
+              duration: 1,
+              ease: "none",
+            },
+            i
+          );
+        });
+      });
+
+      // Mobile – vertical stack from below
+      mm.add("(max-width: 699px)", () => {
+        gsap.set(cards[0], { y: 0, x: 0 });
+        rest.forEach((card, i) => {
+          gsap.set(card, {
+            y: stage.offsetHeight + 30 + i * 16,
+            x: 0,
+          });
+        });
+
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: stage,
+            pin: true,
+            scrub: 0.55,
+            start: "top 18%",
+            end: "+=160%",
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+          },
+        });
+
+        rest.forEach((card, i) => {
+          tl.to(
+            card,
+            {
+              y: peek * (i + 1),
+              duration: 1,
+              ease: "none",
+            },
+            i
+          );
+        });
+      });
+
+      window.addEventListener("resize", () => ScrollTrigger.refresh());
+    })();
+  </script>
+</body>
+</html>
