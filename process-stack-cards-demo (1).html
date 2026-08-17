@@ -1,413 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Process Stack Cards – slashkode</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <style>
-    /* =========================================================
-       Process Stack Cards – slashkode
-       Compact, refined GSAP ScrollTrigger stack
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Process – Sticky Clip Reveal | slashkode</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <style>
+      /* =========================================================
+       Process – Sticky Clip-Path Reveal
+       Pattern from: sticky image effect (clip-path version)
+       Content: Discovery → Build → Polish → Launch
        ========================================================= */
 
-    :root {
-      --sk-bg: #f7f4ef;
-      --sk-text: #1c1c1c;
-      --sk-text-muted: #6b6b6b;
-      --sk-accent: #e03e2d;
-      --sk-card-1: #222c30;
-      --sk-card-2: #2a363b;
-      --sk-card-3: #334147;
-      --sk-card-4: #3c4c53;
-      --sk-radius: 20px;
-      --sk-font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: var(--sk-font);
-      background: var(--sk-bg);
-      color: var(--sk-text);
-      -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
-    }
-
-    .sk-stack-spacer {
-      height: 28vh;
-      pointer-events: none;
-    }
-
-    /* ---------- Intro ---------- */
-    .sk-stack-intro {
-      max-width: 560px;
-      margin: 0 auto;
-      padding: 0 1.25rem 1.75rem;
-      text-align: center;
-    }
-
-    .sk-stack-intro__eyebrow {
-      display: block;
-      font-size: 0.68rem;
-      font-weight: 600;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--sk-accent);
-      margin-bottom: 0.7rem;
-    }
-
-    .sk-stack-intro__heading {
-      font-size: clamp(1.55rem, 3.8vw, 2.1rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-      line-height: 1.2;
-      margin-bottom: 0.65rem;
-    }
-
-    .sk-stack-intro__sub {
-      font-size: 0.95rem;
-      color: var(--sk-text-muted);
-      line-height: 1.55;
-      max-width: 34ch;
-      margin: 0 auto;
-    }
-
-    /* ---------- Cards container ---------- */
-    .sk-cards-container {
-      position: relative;
-      width: 100%;
-      height: 420px;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .sk-card {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--sk-radius);
-      overflow: hidden;
-      color: #fff;
-      box-shadow:
-        0 8px 28px rgba(0, 0, 0, 0.14),
-        0 1px 4px rgba(0, 0, 0, 0.06);
-      will-change: transform;
-    }
-
-    /* Card tones */
-    .sk-card:nth-child(1) { background: var(--sk-card-1); z-index: 1; }
-    .sk-card:nth-child(2) { background: var(--sk-card-2); z-index: 2; }
-    .sk-card:nth-child(3) { background: var(--sk-card-3); z-index: 3; }
-    .sk-card:nth-child(4) { background: var(--sk-card-4); z-index: 4; }
-
-    /* Thin accent edge */
-    .sk-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 4px;
-      height: 100%;
-      background: var(--sk-accent);
-      opacity: 0.9;
-    }
-
-    /* Soft depth overlay */
-    .sk-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        145deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        transparent 45%,
-        rgba(0, 0, 0, 0.1) 100%
-      );
-      pointer-events: none;
-    }
-
-    /* Side label */
-    .sk-card__label {
-      position: absolute;
-      top: 1rem;
-      left: 1.15rem;
-      font-size: 0.78rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      opacity: 0.75;
-      z-index: 2;
-    }
-
-    @media (min-width: 800px) {
-      .sk-card__label {
-        top: auto;
-        bottom: 12%;
-        left: 1.2rem;
-        transform-origin: left center;
-        transform: rotate(-90deg);
-        white-space: nowrap;
-        font-size: 0.82rem;
-        opacity: 0.7;
-      }
-    }
-
-    /* Content */
-    .sk-card__body {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2.25rem 1.75rem 2rem 1.9rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    @media (min-width: 800px) {
-      .sk-card__body {
-        padding: 2.5rem 2.5rem 2.25rem 4.25rem;
-      }
-    }
-
-    .sk-card__num {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.5);
-      margin-bottom: 0.65rem;
-    }
-
-    .sk-card__num::before {
-      content: "";
-      width: 14px;
-      height: 1.5px;
-      background: var(--sk-accent);
-      opacity: 0.9;
-    }
-
-    .sk-card__title {
-      font-size: clamp(1.35rem, 2.8vw, 1.7rem);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      line-height: 1.25;
-      margin-bottom: 0.7rem;
-    }
-
-    .sk-card__desc {
-      font-size: 0.92rem;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.78);
-      max-width: 36ch;
-    }
-
-    /* ---------- Mobile ---------- */
-    @media (max-width: 799px) {
-      .sk-stack-spacer {
-        height: 18vh;
+      :root {
+        --sk-bg: #f4f1ec;
+        --sk-text: #1a1a1a;
+        --sk-text-muted: #5a5a5a;
+        --sk-accent: #e03e2d;
+        --sk-card-1: #1f2a2e;
+        --sk-card-2: #2d3b40;
+        --sk-card-3: #3d4f55;
+        --sk-card-4: #4a5f66;
+        --sk-radius: 28px;
+        --sk-font: "Inter", system-ui, -apple-system, sans-serif;
       }
 
-      .sk-cards-container {
-        height: 340px;
-        width: 92%;
-        max-width: none;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
-      .sk-card {
-        border-radius: 16px;
+      body {
+        font-family: var(--sk-font);
+        background: var(--sk-bg);
+        color: var(--sk-text);
+        -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
       }
 
-      .sk-card__body {
-        padding: 2rem 1.35rem 1.75rem 1.5rem;
+      /* ---------- Intro ---------- */
+      .sk-process-intro {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 12vh 1.5rem 4rem;
+        text-align: center;
       }
 
-      .sk-card__title {
-        font-size: 1.3rem;
+      .sk-process-intro__eyebrow {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--sk-accent);
+        margin-bottom: 0.9rem;
       }
 
-      .sk-card__desc {
+      .sk-process-intro__heading {
+        font-size: clamp(1.85rem, 4.5vw, 2.65rem);
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        line-height: 1.15;
+        margin-bottom: 0.85rem;
+      }
+
+      .sk-process-intro__sub {
+        font-size: 1.05rem;
+        color: var(--sk-text-muted);
+        line-height: 1.55;
+        max-width: 38ch;
+        margin: 0 auto;
+      }
+
+      /* ---------- Sticky layout ---------- */
+      .sk-process-section {
+        position: relative;
+        width: calc(100% - 48px);
+        max-width: 1180px;
+        margin-inline: auto;
+        min-height: 85vh;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.5rem;
+        border-top: 1px dashed rgba(0, 0, 0, 0.12);
+      }
+
+      .sk-process-section:last-of-type {
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.12);
+        margin-bottom: 12vh;
+      }
+
+      /* Text column */
+      .sk-process-content {
+        width: min(48%, 420px);
+        flex-shrink: 0;
+      }
+
+      .sk-process-content__num {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--sk-accent);
+        margin-bottom: 0.75rem;
+      }
+
+      .sk-process-content__title {
+        font-size: clamp(1.55rem, 3.2vw, 2.15rem);
+        font-weight: 700;
+        letter-spacing: -0.025em;
+        line-height: 1.2;
+        margin-bottom: 0.9rem;
+      }
+
+      .sk-process-content__desc {
+        font-size: clamp(0.95rem, 1.6vw, 1.08rem);
+        line-height: 1.65;
+        color: var(--sk-text-muted);
+        max-width: 36ch;
+      }
+
+      /* Visual stack (pinned) */
+      .sk-process-visual {
+        position: relative;
+        width: clamp(220px, 38vmin, 380px);
+        aspect-ratio: 3 / 4;
+        flex-shrink: 0;
+        overflow: hidden;
+        border-radius: 28px 0 28px 0;
+      }
+
+      .sk-process-card {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1.75rem 1.5rem 1.6rem;
+        color: #fff;
+        overflow: hidden;
+        will-change: clip-path;
+      }
+
+      .sk-process-card:first-child {
+        position: relative; /* establishes height for the wrapper */
+      }
+
+      .sk-process-card:nth-child(1) {
+        background: var(--sk-card-1);
+        z-index: 1;
+      }
+      .sk-process-card:nth-child(2) {
+        background: var(--sk-card-2);
+        z-index: 2;
+      }
+      .sk-process-card:nth-child(3) {
+        background: var(--sk-card-3);
+        z-index: 3;
+      }
+      .sk-process-card:nth-child(4) {
+        background: var(--sk-card-4);
+        z-index: 4;
+      }
+
+      /* Accent bar */
+      .sk-process-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: var(--sk-accent);
+        opacity: 0.9;
+      }
+
+      /* Subtle depth overlay */
+      .sk-process-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.05) 0%,
+          transparent 45%,
+          rgba(0, 0, 0, 0.18) 100%
+        );
+        pointer-events: none;
+      }
+
+      .sk-process-card__label {
+        position: absolute;
+        top: 1.15rem;
+        left: 1.35rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        opacity: 0.85;
+        z-index: 2;
+      }
+
+      .sk-process-card__body {
+        position: relative;
+        z-index: 2;
+      }
+
+      .sk-process-card__step {
+        display: block;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 0.45rem;
+      }
+
+      .sk-process-card__title {
+        font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        line-height: 1.25;
+        margin-bottom: 0.55rem;
+      }
+
+      .sk-process-card__desc {
         font-size: 0.88rem;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.78);
+        max-width: 28ch;
       }
 
-      .sk-card__label {
-        font-size: 0.72rem;
+      /* ---------- Mobile ---------- */
+      @media (max-width: 799px) {
+        .sk-process-section {
+          width: calc(100% - 32px);
+          min-height: 78vh;
+          padding: 2.5rem 0;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          gap: 1.75rem;
+        }
+
+        .sk-process-content {
+          width: 100%;
+          order: 1;
+        }
+
+        .sk-process-visual {
+          width: min(280px, 72vw);
+          order: 2;
+          align-self: center;
+        }
+
+        .sk-process-card {
+          padding: 1.5rem 1.25rem 1.35rem;
+        }
+
+        .sk-process-card__title {
+          font-size: 1.2rem;
+        }
+
+        .sk-process-card__desc {
+          font-size: 0.85rem;
+        }
       }
-    }
 
-    @media (prefers-reduced-motion: reduce) {
-      .sk-card {
-        transition: none !important;
+      @media (prefers-reduced-motion: reduce) {
+        .sk-process-card {
+          transition: none !important;
+        }
       }
-    }
-  </style>
-</head>
-<body>
+    </style>
+  </head>
+  <body>
+    <header class="sk-process-intro">
+      <span class="sk-process-intro__eyebrow">Process</span>
+      <h2 class="sk-process-intro__heading">
+        How we build your site: Simple, transparent, and stress-free.
+      </h2>
+      <p class="sk-process-intro__sub">
+        Four clear steps. No surprises. You always know what’s next.
+      </p>
+    </header>
 
-  <div class="sk-stack-spacer" aria-hidden="true"></div>
-
-  <header class="sk-stack-intro">
-    <span class="sk-stack-intro__eyebrow">Process</span>
-    <h2 class="sk-stack-intro__heading">
-      How we build your site: Simple, transparent, and stress-free.
-    </h2>
-    <p class="sk-stack-intro__sub">
-      Four clear steps. No surprises. You always know what’s next.
-    </p>
-  </header>
-
-  <div class="sk-cards-container" id="skProcessStack">
-
-    <article class="sk-card" data-index="0">
-      <span class="sk-card__label">01 — Discovery</span>
-      <div class="sk-card__body">
-        <span class="sk-card__num">Step 01</span>
-        <h3 class="sk-card__title">Discovery &amp; Strategy</h3>
-        <p class="sk-card__desc">
-          Mapping your user flow, site map, and key performance indicators so every decision has a purpose.
+    <!-- ========== STEP 01 ========== -->
+    <section class="sk-process-section" data-step="0">
+      <div class="sk-process-content">
+        <span class="sk-process-content__num">Step 01</span>
+        <h3 class="sk-process-content__title">Discovery &amp; Strategy</h3>
+        <p class="sk-process-content__desc">
+          Mapping your user flow, site map, and key performance indicators so
+          every decision has a purpose.
         </p>
       </div>
-    </article>
 
-    <article class="sk-card" data-index="1">
-      <span class="sk-card__label">02 — Build</span>
-      <div class="sk-card__body">
-        <span class="sk-card__num">Step 02</span>
-        <h3 class="sk-card__title">Custom Code Development</h3>
-        <p class="sk-card__desc">
-          Writing clean, high-performance HTML/CSS/JS and GSAP animations that feel premium and stay fast.
+      <!-- Visual stack lives only in the first section; it gets pinned -->
+      <div class="sk-process-visual" id="skProcessVisual">
+        <article class="sk-process-card" data-index="0">
+          <span class="sk-process-card__label">01 — Discovery</span>
+          <div class="sk-process-card__body">
+            <span class="sk-process-card__step">Step 01</span>
+            <h4 class="sk-process-card__title">Discovery &amp; Strategy</h4>
+            <p class="sk-process-card__desc">
+              Mapping your user flow, site map, and key performance indicators
+              so every decision has a purpose.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-process-card" data-index="1">
+          <span class="sk-process-card__label">02 — Build</span>
+          <div class="sk-process-card__body">
+            <span class="sk-process-card__step">Step 02</span>
+            <h4 class="sk-process-card__title">Custom Code Development</h4>
+            <p class="sk-process-card__desc">
+              Writing clean, high-performance HTML/CSS/JS and GSAP animations
+              that feel premium and stay fast.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-process-card" data-index="2">
+          <span class="sk-process-card__label">03 — Polish</span>
+          <div class="sk-process-card__body">
+            <span class="sk-process-card__step">Step 03</span>
+            <h4 class="sk-process-card__title">Optimization &amp; Testing</h4>
+            <p class="sk-process-card__desc">
+              Cross-browser testing, mobile responsiveness, and SEO checks
+              before anything goes live.
+            </p>
+          </div>
+        </article>
+
+        <article class="sk-process-card" data-index="3">
+          <span class="sk-process-card__label">04 — Launch</span>
+          <div class="sk-process-card__body">
+            <span class="sk-process-card__step">Step 04</span>
+            <h4 class="sk-process-card__title">Launch &amp; Handover</h4>
+            <p class="sk-process-card__desc">
+              Seamless domain transition, CMS walk-through, and ongoing support
+              options if you want them.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== STEP 02 ========== -->
+    <section class="sk-process-section" data-step="1">
+      <div class="sk-process-content">
+        <span class="sk-process-content__num">Step 02</span>
+        <h3 class="sk-process-content__title">Custom Code Development</h3>
+        <p class="sk-process-content__desc">
+          Writing clean, high-performance HTML/CSS/JS and GSAP animations that
+          feel premium and stay fast.
         </p>
       </div>
-    </article>
+      <!-- empty visual slot so layout stays consistent -->
+      <div
+        class="sk-process-visual-spacer"
+        aria-hidden="true"
+        style="
+          width: clamp(220px, 38vmin, 380px);
+          aspect-ratio: 3/4;
+          flex-shrink: 0;
+        "
+      ></div>
+    </section>
 
-    <article class="sk-card" data-index="2">
-      <span class="sk-card__label">03 — Polish</span>
-      <div class="sk-card__body">
-        <span class="sk-card__num">Step 03</span>
-        <h3 class="sk-card__title">Optimization &amp; Testing</h3>
-        <p class="sk-card__desc">
-          Cross-browser testing, mobile responsiveness, and SEO checks before anything goes live.
+    <!-- ========== STEP 03 ========== -->
+    <section class="sk-process-section" data-step="2">
+      <div class="sk-process-content">
+        <span class="sk-process-content__num">Step 03</span>
+        <h3 class="sk-process-content__title">Optimization &amp; Testing</h3>
+        <p class="sk-process-content__desc">
+          Cross-browser testing, mobile responsiveness, and SEO checks before
+          anything goes live.
         </p>
       </div>
-    </article>
+      <div
+        class="sk-process-visual-spacer"
+        aria-hidden="true"
+        style="
+          width: clamp(220px, 38vmin, 380px);
+          aspect-ratio: 3/4;
+          flex-shrink: 0;
+        "
+      ></div>
+    </section>
 
-    <article class="sk-card" data-index="3">
-      <span class="sk-card__label">04 — Launch</span>
-      <div class="sk-card__body">
-        <span class="sk-card__num">Step 04</span>
-        <h3 class="sk-card__title">Launch &amp; Handover</h3>
-        <p class="sk-card__desc">
-          Seamless domain transition, CMS walk-through, and ongoing support options if you want them.
+    <!-- ========== STEP 04 ========== -->
+    <section class="sk-process-section" data-step="3">
+      <div class="sk-process-content">
+        <span class="sk-process-content__num">Step 04</span>
+        <h3 class="sk-process-content__title">Launch &amp; Handover</h3>
+        <p class="sk-process-content__desc">
+          Seamless domain transition, CMS walk-through, and ongoing support
+          options if you want them.
         </p>
       </div>
-    </article>
+      <div
+        class="sk-process-visual-spacer"
+        aria-hidden="true"
+        style="
+          width: clamp(220px, 38vmin, 380px);
+          aspect-ratio: 3/4;
+          flex-shrink: 0;
+        "
+      ></div>
+    </section>
 
-  </div>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
 
-  <div class="sk-stack-spacer" aria-hidden="true"></div>
+      (function () {
+        const visual = document.getElementById("skProcessVisual");
+        if (!visual) return;
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
+        const cards = gsap.utils.toArray(".sk-process-card");
+        const restSections = gsap.utils.toArray(
+          ".sk-process-section:not(:first-of-type)",
+        );
 
-    (function () {
-      const container = document.getElementById("skProcessStack");
-      if (!container) return;
+        if (cards.length < 2 || restSections.length === 0) return;
 
-      const cards = gsap.utils.toArray(".sk-card");
-      if (cards.length < 2) return;
+        // Kill previous (safe for demos / hot reload)
+        ScrollTrigger.getAll().forEach((t) => t.kill());
 
-      const spacer = 28;
-      const rest = cards.slice(1); // cards 2, 3, 4
+        // Pin the visual stack while scrolling through the remaining steps
+        ScrollTrigger.create({
+          trigger: visual,
+          pin: true,
+          pinSpacing: false,
+          start: "center center",
+          end: () =>
+            `+=${
+              document.querySelector(".sk-process-section").offsetHeight *
+              restSections.length
+            }px`,
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+        });
 
-      ScrollTrigger.getAll().forEach((t) => t.kill());
+        // Reveal each subsequent card with the same clip-path technique
+        restSections.forEach((section, index) => {
+          const targetCard = cards[index + 1];
+          if (!targetCard) return;
 
-      const mm = gsap.matchMedia();
+          // Start fully clipped from the bottom
+          gsap.set(targetCard, { clipPath: "inset(100% 0% 0% 0%)" });
 
-      // ---------- Desktop: one card slides in at a time from the right ----------
-      mm.add("(min-width: 800px)", () => {
-        // Initial positions
-        gsap.set(cards[0], { x: 0, y: 0 });
-        rest.forEach((card, i) => {
-          gsap.set(card, {
-            x: window.innerWidth * 0.85 + spacer * i,
-            y: 0,
+          gsap.to(targetCard, {
+            clipPath: "inset(0% 0% 0% 0%)",
+            ease: "none",
+            scrollTrigger: {
+              trigger: section,
+              start: () => `top 50%+=${targetCard.offsetHeight / 2}px`,
+              end: () => `+=${targetCard.offsetHeight}`,
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
           });
         });
 
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: container,
-            pin: true,
-            scrub: 0.6,
-            start: "top 18%",
-            end: "+=220%", // more scroll distance so each card has room
-            invalidateOnRefresh: true,
-            anticipatePin: 1,
-          },
+        // Keep positions correct after resize
+        window.addEventListener("resize", () => {
+          ScrollTrigger.refresh();
         });
-
-        // Animate each card in sequence (one after another)
-        rest.forEach((card, i) => {
-          tl.to(
-            card,
-            {
-              x: spacer * (i + 1),
-              duration: 1,
-              ease: "none",
-            },
-            i // start time: 0, 1, 2 → sequential
-          );
-        });
-      });
-
-      // ---------- Mobile: one card slides in at a time from below ----------
-      mm.add("(max-width: 799px)", () => {
-        gsap.set(cards[0], { x: 0, y: 0 });
-        rest.forEach((card, i) => {
-          gsap.set(card, {
-            y: window.innerHeight * 0.75 + spacer * i,
-            x: 0,
-          });
-        });
-
-        const tl = gsap.timeline({
-          scrollTrigger: {
-            trigger: container,
-            pin: true,
-            scrub: 0.6,
-            start: "top 15%",
-            end: "+=200%",
-            invalidateOnRefresh: true,
-            anticipatePin: 1,
-          },
-        });
-
-        rest.forEach((card, i) => {
-          tl.to(
-            card,
-            {
-              y: spacer * (i + 1),
-              duration: 1,
-              ease: "none",
-            },
-            i
-          );
-        });
-      });
-
-      window.addEventListener("resize", () => {
-        ScrollTrigger.refresh();
-      });
-    })();
-  </script>
-</body>
+      })();
+    </script>
+  </body>
 </html>

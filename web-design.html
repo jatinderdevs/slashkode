@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="public/css/footer.css" />
     <link rel="stylesheet" href="public/css/services/whyusSection.css" />
+    <link rel="stylesheet" href="public/css/services/process.css" />
   </head>
   <body class="wd-page">
     <main>
@@ -173,247 +174,203 @@
              SECTION 1 — Hero
         ════════════════════════════════════ -->
         <section class="wd-hero">
-          <div class="wd-container">
-             <div class="text-container">
-                <!-- ── Breadcrumb ── -->
-                 <div>
-              
-                 <a href="" class="breadcrumb-btn"><img src="public/icons/right-arrow.png" alt=""> &nbsp; Services</a>
-              
-
-                <h1 class="wd-reveal">
-                  Websites Built to Scale Your Business — Without the Technical
-                  Stress.
-                </h1>
-                <p class="lead wd-reveal">
-                  We combine custom UI/UX design, fluid GSAP animations, and
-                  rock-solid SEO to turn your site into a 24/7 lead engine.
-                </p>
-                 </div>
-               
-                  <div class="enquiryform">
-       <div class="wd-hero-card wd-reveal" id="lead-form">
+            <div class="wd-container">
+              <div class="text-container">
+                  <!-- ── Breadcrumb ── -->
+                  <div>
                 
-                <form class="wd-lead-form" action="/contact/" method="get">
-                  <div class="form-row">
+                  <a href="" class="breadcrumb-btn"><img src="public/icons/right-arrow.png" alt=""> &nbsp; Services</a>
+                
+
+                  <h1 class="wd-reveal">
+                    Websites Built to Scale Your Business — Without the Technical
+                    Stress.
+                  </h1>
+                  <p class="lead wd-reveal">
+                    We combine custom UI/UX design, fluid GSAP animations, and
+                    rock-solid SEO to turn your site into a 24/7 lead engine.
+                  </p>
+                  </div>
+                
+                    <div class="enquiryform">
+        <div class="wd-hero-card wd-reveal" id="lead-form">
+                  
+                  <form class="wd-lead-form" action="/contact/" method="get">
+                    <div class="form-row">
+                      <div>
+                        <label for="wd-name">Name</label>
+                        <input
+                          type="text"
+                          id="wd-name"
+                          name="name"
+                          placeholder="Your name"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <label for="wd-email">Email</label>
+                        <input
+                          type="email"
+                          id="wd-email"
+                          name="email"
+                          placeholder="you@company.com"
+                          required
+                        />
+                      </div>
+                    </div>
                     <div>
-                      <label for="wd-name">Name</label>
+                      <label for="wd-url">Website URL (optional)</label>
                       <input
-                        type="text"
-                        id="wd-name"
-                        name="name"
-                        placeholder="Your name"
-                        required
+                        type="url"
+                        id="wd-url"
+                        name="website"
+                        placeholder="https://"
                       />
                     </div>
                     <div>
-                      <label for="wd-email">Email</label>
-                      <input
-                        type="email"
-                        id="wd-email"
-                        name="email"
-                        placeholder="you@company.com"
-                        required
-                      />
+                      <label for="wd-goal">Main goal</label>
+                      <select id="wd-goal" name="goal" required>
+                        <option value="" disabled selected>
+                          What are you aiming for?
+                        </option>
+                        <option value="new-site">New website from scratch</option>
+                        <option value="redesign">Redesign existing site</option>
+                        <option value="conversion">Improve conversions</option>
+                        <option value="seo">Better visibility / SEO</option>
+                        <option value="other">Something else</option>
+                      </select>
                     </div>
-                  </div>
-                  <div>
-                    <label for="wd-url">Website URL (optional)</label>
-                    <input
-                      type="url"
-                      id="wd-url"
-                      name="website"
-                      placeholder="https://"
-                    />
-                  </div>
-                  <div>
-                    <label for="wd-goal">Main goal</label>
-                    <select id="wd-goal" name="goal" required>
-                      <option value="" disabled selected>
-                        What are you aiming for?
-                      </option>
-                      <option value="new-site">New website from scratch</option>
-                      <option value="redesign">Redesign existing site</option>
-                      <option value="conversion">Improve conversions</option>
-                      <option value="seo">Better visibility / SEO</option>
-                      <option value="other">Something else</option>
-                    </select>
-                  </div>
-                  <button type="submit" class="sk-btn-primary">
-                    Request Consultation
-                  </button>
-                </form>
-                <p class="wd-form-note">No spam. Just a clear next step.</p>
-              </div>
-              </div>
-              </div>
+                    <button type="submit" class="sk-btn-primary">
+                      Request Consultation
+                    </button>
+                  </form>
+                  <p class="wd-form-note">No spam. Just a clear next step.</p>
+                </div>
+                </div>
+                </div>
 
-       
+        
+              </div>
+            </div>
+        </section>
+      <section class="sk-drag-portfolio" id="work">
+          <div class="sk-container">
+            <div class="drag-portfolio-header">
+              <span class="sk-statement-eyebrow">/ Portfolio</span>
+              <h2 class="drag-portfolio-title">Work we've shipped</h2>
             </div>
           </div>
-        </section>
-  <section class="sk-drag-portfolio" id="work">
-      <div class="sk-container">
-        <div class="drag-portfolio-header">
-          <span class="sk-statement-eyebrow">/ Portfolio</span>
-          <h2 class="drag-portfolio-title">Work we've shipped</h2>
-        </div>
-      </div>
 
-      <div class="drag-carousel" id="dragCarousel">
-        <div class="drag-track" id="dragTrack">
-          <!-- Card 1 -->
-          <article class="drag-card" data-index="0">
-            <span class="drag-card-tag">Website</span>
-            <div class="drag-card-media">
-              <img
-                src="public/img/mockups/aiit.jpg"
-                alt="Kaelio project preview"
-                loading="lazy"
-                draggable="false"
-              />
-              <a
-                href="#"
-                class="drag-card-link"
-                aria-label="View Kaelio project"
-              >
-                <svg viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+          <div class="drag-carousel" id="dragCarousel">
+            <div class="drag-track" id="dragTrack">
+              <!-- Card 1 -->
+              <article class="drag-card" data-index="0">
+                <span class="drag-card-tag">Website</span>
+                <div class="drag-card-media">
+                  <img
+                    src="public/img/mockups/aiit.jpg"
+                    alt="Kaelio project preview"
+                    loading="lazy"
+                    draggable="false"
                   />
-                </svg>
-              </a>
-            </div>
-            <div class="drag-card-footer">
-              <h3 class="drag-card-title">Australian International Institute of Technology </h3>
-              <div class="drag-card-tags">
-                <span class="drag-tag accent">YC</span>
-                <span class="drag-tag">Webflow</span>
-                <span class="drag-tag">SaaS</span>
-              </div>
-            </div>
-          </article>
+                  <a
+                    href="#"
+                    class="drag-card-link"
+                    aria-label="View Kaelio project"
+                  >
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="drag-card-footer">
+                  <h3 class="drag-card-title">Australian International Institute of Technology </h3>
+                  <div class="drag-card-tags">
+                    <span class="drag-tag accent">YC</span>
+                    <span class="drag-tag">Webflow</span>
+                    <span class="drag-tag">SaaS</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Card 1 -->
-          <article class="drag-card" data-index="1">
-            <span class="drag-card-tag">Kaelio</span>
-            <div class="drag-card-media">
-              <img
-                src="public/img/mockups/aiit.jpg"
-                alt="Kaelio project preview"
-                loading="lazy"
-                draggable="false"
-              />
-              <a
-                href="#"
-                class="drag-card-link"
-                aria-label="View Kaelio project"
-              >
-                <svg viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              <!-- Card 1 -->
+              <article class="drag-card" data-index="1">
+                <span class="drag-card-tag">Kaelio</span>
+                <div class="drag-card-media">
+                  <img
+                    src="public/img/mockups/aiit.jpg"
+                    alt="Kaelio project preview"
+                    loading="lazy"
+                    draggable="false"
                   />
-                </svg>
-              </a>
-            </div>
-            <div class="drag-card-footer">
-              <h3 class="drag-card-title">Kaelio</h3>
-              <div class="drag-card-tags">
-                <a href="" class="btn herobtnPrimary">Read more</a>
-              </div>
-            </div>
-          </article>
+                  <a
+                    href="#"
+                    class="drag-card-link"
+                    aria-label="View Kaelio project"
+                  >
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="drag-card-footer">
+                  <h3 class="drag-card-title">Kaelio</h3>
+                  <div class="drag-card-tags">
+                    <a href="" class="btn herobtnPrimary">Read more</a>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Card 3 -->
-          <article class="drag-card" data-index="2">
-            <span class="drag-card-tag">AIIT</span>
-            <div class="drag-card-media">
-              <img
-                src="public/img/mockups/aiitmockupsample.png"
-                alt="AIIT project preview"
-                loading="lazy"
-                draggable="false"
-              />
-              <a href="#" class="drag-card-link" aria-label="View AIIT project">
-                <svg viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+              <!-- Card 3 -->
+              <article class="drag-card" data-index="2">
+                <span class="drag-card-tag">AIIT</span>
+                <div class="drag-card-media">
+                  <img
+                    src="public/img/mockups/aiitmockupsample.png"
+                    alt="AIIT project preview"
+                    loading="lazy"
+                    draggable="false"
                   />
-                </svg>
-              </a>
-            </div>
-            <div class="drag-card-footer">
-              <h3 class="drag-card-title">AIIT</h3>
-              <div class="drag-card-tags">
-                <span class="drag-tag">RTO / VET</span>
-                <span class="drag-tag">SEO</span>
-              </div>
-            </div>
-          </article>
+                  <a href="#" class="drag-card-link" aria-label="View AIIT project">
+                    <svg viewBox="0 0 20 20" fill="currentColor">
+                      <path
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="drag-card-footer">
+                  <h3 class="drag-card-title">AIIT</h3>
+                  <div class="drag-card-tags">
+                    <span class="drag-tag">RTO / VET</span>
+                    <span class="drag-tag">SEO</span>
+                  </div>
+                </div>
+              </article>
 
-          <!-- Add more .drag-card articles here, incrementing data-index -->
-        </div>
-
-        <!-- Custom drag cursor — follows the pointer on desktop hover -->
-        <div class="drag-cursor" id="dragCursor" aria-hidden="true">
-          <span class="drag-cursor-arrow">←</span>
-          <span>Drag</span>
-          <span class="drag-cursor-arrow">→</span>
-        </div>
-      </div>
-
-      <div
-        class="drag-dots"
-        id="dragDots"
-        role="tablist"
-        aria-label="Portfolio navigation"
-      ></div>
-    </section>
-        <!-- ════════════════════════════════════
-             SECTION 2 — Pain Points
-        ════════════════════════════════════ -->
-        <section class="wd-section">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Why us</span>
-              <h2 class="wd-reveal">
-                Are these challenges holding your website back?
-              </h2>
-              <p class="wd-reveal">
-                Most businesses don’t need “more design.” They need a site that
-                works harder than they do.
-              </p>
+              <!-- Add more .drag-card articles here, incrementing data-index -->
             </div>
 
-            <div class="wd-pain-grid">
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">01</div>
-                <h3>Low conversion rates</h3>
-                <p>
-                  Visitors land on your page, but leave without filling out
-                  forms or reaching out.
-                </p>
-              </article>
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">02</div>
-                <h3>Inconsistent / clunky code</h3>
-                <p>
-                  Slow load times and buggy mobile animations ruin the
-                  experience for your clients.
-                </p>
-              </article>
-              <article class="wd-pain-card wd-reveal">
-                <div class="wd-pain-num">03</div>
-                <h3>Invisible on Google</h3>
-                <p>
-                  A beautiful design doesn’t help if search engines can’t index
-                  your content properly.
-                </p>
-              </article>
-              
+            <!-- Custom drag cursor — follows the pointer on desktop hover -->
+            <div class="drag-cursor" id="dragCursor" aria-hidden="true">
+              <span class="drag-cursor-arrow">←</span>
+              <span>Drag</span>
+              <span class="drag-cursor-arrow">→</span>
             </div>
           </div>
+
+          <div
+            class="drag-dots"
+            id="dragDots"
+            role="tablist"
+            aria-label="Portfolio navigation"
+          ></div>
         </section>
+     
      <section class="sk-expand-cards" aria-label="Services">
  <div class="wd-section-header">
               <span class="wd-section-label wd-reveal">Deliverables</span>
@@ -548,144 +505,107 @@
   </div>
 
       </section>
+      </div>
+
+    <section class="sk-section">
+      <div class="sk-section-inner">
+  <div class="sk-header">
+        <h2 class="sk-header__title">How we build<br>your site</h2>
+        <div class="sk-header__right">
+          <p class="sk-header__sub">
+            Four clear steps. No surprises. You always know what’s next.
+          </p>
+          <a href="/contact" class="sk-btn">
+            Get Started
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="sk-cards">
+
+        <!-- Card 01 -->
+        <article class="sk-card">
+          <div class="sk-card__fill" aria-hidden="true"></div>
+          <div class="sk-card__inner">
+            <span class="sk-card__num">01</span>
+            <div class="sk-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+              </svg>
+            </div>
+            <h3 class="sk-card__title">Discovery &amp; Strategy</h3>
+            <p class="sk-card__desc">
+              Mapping your user flow, site map, and key performance indicators so every decision has a purpose.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 02 -->
+        <article class="sk-card">
+          <div class="sk-card__fill" aria-hidden="true"></div>
+          <div class="sk-card__inner">
+            <span class="sk-card__num">02</span>
+            <div class="sk-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 17l6-6 4 4 6-6"/>
+                <path d="M14 7h6v6"/>
+              </svg>
+            </div>
+            <h3 class="sk-card__title">Custom Code Development</h3>
+            <p class="sk-card__desc">
+              Writing clean, high-performance HTML/CSS/JS and GSAP animations that feel premium and stay fast.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 03 -->
+        <article class="sk-card">
+          <div class="sk-card__fill" aria-hidden="true"></div>
+          <div class="sk-card__inner">
+            <span class="sk-card__num">03</span>
+            <div class="sk-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M9 11l3 3L22 4"/>
+                <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <h3 class="sk-card__title">Optimization &amp; Testing</h3>
+            <p class="sk-card__desc">
+              Cross-browser testing, mobile responsiveness, and SEO checks before anything goes live.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 04 -->
+        <article class="sk-card">
+          <div class="sk-card__fill" aria-hidden="true"></div>
+          <div class="sk-card__inner">
+            <span class="sk-card__num">04</span>
+            <div class="sk-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <h3 class="sk-card__title">Launch &amp; Handover</h3>
+            <p class="sk-card__desc">
+              Seamless domain transition, CMS walk-through, and ongoing support options if you want them.
+            </p>
+          </div>
+        </article>
+
+      </div>
+      </div>
+    
+    </section>
+      
 
      
 
-        <!-- ════════════════════════════════════
-             SECTION 4 — Process
-        ════════════════════════════════════ -->
-        <section class="wd-section wd-process">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">Process</span>
-              <h2 class="wd-reveal">
-                How we build your site: Simple, transparent, and stress-free.
-              </h2>
-              <p class="wd-reveal">
-                Five clear steps. No surprises. You always know what’s next.
-              </p>
-            </div>
-
-            <div class="wd-process-list">
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">01</div>
-                <div class="wd-process-body">
-                  <h3>Discovery &amp; Strategy</h3>
-                  <p>
-                    Mapping your user flow, site map, and key performance
-                    indicators so every decision has a purpose.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">02</div>
-                <div class="wd-process-body">
-                  <h3>UX/UI Wireframing</h3>
-                  <p>
-                    Visualising layout and content hierarchy before writing any
-                    code — so you can shape the experience early.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">03</div>
-                <div class="wd-process-body">
-                  <h3>Custom Code Development</h3>
-                  <p>
-                    Writing clean, high-performance HTML/CSS/JS and GSAP
-                    animations that feel premium and stay fast.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">04</div>
-                <div class="wd-process-body">
-                  <h3>Optimization &amp; Testing</h3>
-                  <p>
-                    Cross-browser testing, mobile responsiveness, and SEO checks
-                    before anything goes live.
-                  </p>
-                </div>
-              </div>
-              <div class="wd-process-step wd-reveal">
-                <div class="wd-process-num">05</div>
-                <div class="wd-process-body">
-                  <h3>Launch &amp; Handover</h3>
-                  <p>
-                    Seamless domain transition, CMS walk-through, and ongoing
-                    support options if you want them.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      
-
-        <!-- ════════════════════════════════════
-             SECTION 6 — FAQ + Final CTA
-        ════════════════════════════════════ -->
-        <section class="wd-section wd-faq">
-          <div class="wd-container">
-            <div class="wd-section-header">
-              <span class="wd-section-label wd-reveal">FAQ</span>
-              <h2 class="wd-reveal">Common questions</h2>
-              <p class="wd-reveal">
-                Straight answers so you can decide with confidence.
-              </p>
-            </div>
-
-            <div class="wd-faq-list">
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>Do I own my website after launch?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Yes — 100% full ownership. The code, design assets, and
-                    content are yours. We hand everything over cleanly so you’re
-                    never locked in.
-                  </div>
-                </div>
-              </div>
-
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>How long does a web design project take?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Typically 3–6 weeks depending on scope. A focused marketing
-                    site sits toward the shorter end; larger builds with more
-                    content and integrations take a bit longer. We’ll give you a
-                    clear timeline before we start.
-                  </div>
-                </div>
-              </div>
-
-              <div class="wd-faq-item wd-reveal">
-                <button class="wd-faq-q" type="button" aria-expanded="false">
-                  <span>Will my site be mobile-friendly and fast?</span>
-                  <span class="wd-faq-icon" aria-hidden="true">+</span>
-                </button>
-                <div class="wd-faq-a">
-                  <div class="wd-faq-a-inner">
-                    Yes. Every build is optimised for speed and all screen
-                    sizes. We design mobile-first, test Core Web Vitals, and
-                    keep animations lightweight so the experience stays smooth
-                    on phones as well as desktops.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
     
-      </div>
        <footer class="sk-footer" role="contentinfo">
         <!-- Bouncy top edge -->
         <div class="footer-wave" id="footer-wave" aria-hidden="true">
@@ -830,6 +750,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
 
     <script src="public/js/navbar.js"></script>
     <script src="public/js/custom.js"></script>
@@ -837,6 +758,7 @@
     <script src="public/js/portfolio.js"></script>
 
     <script src="public/js/services/whyusSection.js"></script>
+    <script src="public/js/services/process.js"></script>
     <script src="public/js/footer.js"></script>
     <script src="public/js/init.js"></script>
   </body>

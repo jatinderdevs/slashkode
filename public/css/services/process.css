@@ -1,0 +1,252 @@
+/* =========================================================
+   Dark 4-card process section
+   Hover: white fill from top → bottom + slight tilt
+   ========================================================= */
+
+:root {
+  --card-border: rgba(255, 255, 255, 0.06);
+  --text: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.45);
+
+  --radius: 18px;
+}
+
+.sk-section {
+  width: 100%;
+
+  background: var(--sk-color-primary-dark);
+  color: var(--text);
+  font-family: var(--sk-font-heading);
+  -webkit-font-smoothing: antialiased;
+}
+.sk-section-inner {
+  max-width: 1200px;
+  margin-inline: auto;
+
+  padding: 0 1.5rem;
+}
+/* ---------- Header ---------- */
+.sk-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3.25rem;
+}
+
+.sk-header__title {
+  font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+  max-width: 12ch;
+  color: var(--sk-color-bg-warm);
+}
+
+.sk-header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.1rem;
+  padding-top: 0.35rem;
+}
+
+.sk-header__sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  text-align: right;
+  max-width: 22ch;
+}
+
+.sk-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.7rem 1.25rem;
+  background: var(--sk-color-terracotta);
+  color: #111;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.sk-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(200, 245, 66, 0.25);
+}
+
+.sk-btn svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ---------- Cards grid ---------- */
+.sk-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.sk-card {
+  position: relative;
+  background: var(--sk-color-primary-soft);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.75rem 1.4rem 1.6rem;
+  min-height: 280px;
+  overflow: hidden;
+  cursor: pointer;
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.45s ease;
+}
+
+/* White fill that grows from top → bottom */
+.sk-card__fill {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  transform: scaleY(0);
+  transform-origin: top center;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: 0;
+  border-radius: inherit;
+}
+
+.sk-card:hover .sk-card__fill {
+  transform: scaleY(1);
+}
+
+/* Content sits above the fill */
+.sk-card__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: color 0.4s ease;
+}
+
+.sk-card:hover .sk-card__inner {
+  color: #111;
+}
+
+.sk-card:hover .sk-card__desc {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.sk-card:hover .sk-card__num {
+  color: rgba(0, 0, 0, 0.35);
+}
+
+/* Number */
+.sk-card__num {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 1.5rem;
+  transition: color 0.4s ease;
+}
+
+/* Icon */
+.sk-card__icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 1.35rem;
+  color: currentColor;
+  opacity: 0.9;
+}
+
+.sk-card__icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+}
+
+.sk-card__title {
+  font-size: 1.25rem;
+  font-weight: 650;
+  color: var(--sk-color-bg-warm);
+
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin-bottom: 0.7rem;
+}
+
+.sk-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin-top: auto;
+  transition: color 0.4s ease;
+}
+.sk-card:hover .sk-card__title {
+  color: var(--sk-color-primary-dark);
+}
+
+/* Tilt on hover */
+.sk-card:hover {
+  transform: rotate(-2.5deg) translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.sk-card:nth-child(2):hover {
+  transform: rotate(2deg) translateY(-6px);
+}
+.sk-card:nth-child(3):hover {
+  transform: rotate(-1.8deg) translateY(-6px);
+}
+.sk-card:nth-child(4):hover {
+  transform: rotate(2.2deg) translateY(-6px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .sk-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sk-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .sk-header__right {
+    align-items: flex-start;
+  }
+
+  .sk-header__sub {
+    text-align: left;
+  }
+}
+
+@media (max-width: 520px) {
+  .sk-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sk-card {
+    min-height: 240px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sk-card,
+  .sk-card__fill,
+  .sk-card__inner,
+  .sk-card__desc,
+  .sk-card__num {
+    transition: none !important;
+  }
+}
