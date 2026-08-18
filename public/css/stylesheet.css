@@ -148,6 +148,81 @@ a:hover {
 .hero p {
   margin: 0 auto;
 }
+.sk-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.sk-btn:hover {
+  color: white;
+}
+.sk-btn:focus-visible {
+  outline: 2px solid var(--sk-color-terracotta);
+  outline-offset: 3px;
+}
+
+/* Expanding circle */
+.sk-btn > span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition:
+    width 0.45s ease,
+    height 0.45s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sk-btn:hover > span {
+  width: 400px;
+  height: 400px;
+}
+
+/* Primary – solid terracotta → darker terracotta */
+.sk-btn--primary {
+  background: var(--sk-color-terracotta);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(247, 65, 35, 0.25);
+}
+.sk-btn--secondary:hover > img {
+  filter: invert(1);
+}
+.sk-btn--primary > span {
+  background: var(--sk-color-primary-dark); /* darker shade of terracotta */
+}
+
+/* Secondary – solid sand → dark slate */
+.sk-btn--secondary {
+  background: var(--sk-color-bg-card);
+  color: var(--sk-color-primary-dark);
+}
+
+.sk-btn--secondary > span {
+  background: var(--sk-color-primary-dark);
+}
+
+.sk-btn--secondary:hover {
+  color: #ffffff;
+}
+/* buttons css end */
 /* Primary Call To Action (Terracotta Button) */
 .sk-btn-primary {
   display: inline-flex;
@@ -218,8 +293,8 @@ a:hover {
 .sk-container {
   width: 100%;
   max-width: var(--sk-max-content-width);
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -258,7 +333,12 @@ a:hover {
 }
 .sk_navbar {
   background: white;
-  border-radius: 25px;
+  border-radius: 45px;
+  padding: 0 12px;
+  display: none;
+
+  align-items: center;
+  justify-content: space-between;
 }
 .sk_navbar li a {
   font-family: var(--sk-font-semibold);
@@ -387,4 +467,63 @@ section {
 h2.split-chars,
 .split-line {
   overflow: hidden;
+}
+
+/* //testimonial */
+.beinto-testi-font {
+  font-size: clamp(1.05rem, 2vw, 1.15rem);
+}
+.testimonial-quote {
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--sk-color-primary-dark);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.25rem;
+}
+
+.testimonial-quote::before {
+  content: "“";
+  color: var(--sk-color-terracotta);
+  font-size: 1.4em;
+  margin-right: 0.15em;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.author-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--sk-color-surface-sand);
+  display: grid;
+  place-items: center;
+  font-family: var(--sk-font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--sk-color-primary-soft);
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: var(--sk-text-sm);
+}
+
+.author-role {
+  font-size: var(--sk-text-xs);
+  color: var(--sk-color-primary-soft);
+}
+
+/* section eyebrow */
+.sk-statement-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sk-color-terracotta);
+  margin-bottom: 1.5rem;
 }

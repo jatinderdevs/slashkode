@@ -25,23 +25,14 @@
   pointer-events: none;
 }
 
-.cta-container {
-  width: 100%;
-  max-width: 820px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
 .cta-label {
-  display: inline-block;
+  display: block;
   font-family: var(--sk-font-mono, "JetBrains Mono", monospace);
   font-size: var(--sk-text-xs, 0.75rem);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
+  text-align: center;
   margin-bottom: 1.75rem;
   opacity: 0;
 }
@@ -50,6 +41,7 @@
   font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
   font-size: clamp(2.35rem, 6.5vw, 3.75rem);
   font-weight: 700;
+  text-align: center;
   letter-spacing: -0.035em;
   line-height: 1.15;
   margin-bottom: 1.5rem;
@@ -71,8 +63,8 @@
   font-size: clamp(1rem, 2.2vw, 1.125rem);
   color: var(--sk-color-surface-sand);
   line-height: 1.65;
-  max-width: 38ch;
-  margin: 0 auto 2.75rem;
+  text-align: center;
+  margin: 10px auto;
   opacity: 0;
 }
 
@@ -148,6 +140,7 @@
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.28);
   opacity: 0;
+  text-align: center;
 }
 
 @media (max-width: 540px) {

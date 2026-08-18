@@ -746,3 +746,7 @@
   opacity: 0;
   transform: translateY(28px);
 }
+.testimonial {
+  margin: 0 auto;
+  max-width: 1200px;
+}

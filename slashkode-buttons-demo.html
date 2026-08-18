@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slashkode – Position Aware Buttons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --sk-color-primary-dark: #1e293b;
+      --sk-color-primary-soft: #2c3e50;
+      --sk-color-terracotta: #f74123;
+      --sk-color-terracotta-hover: #f76d23;
+      --sk-color-bg-warm: #f8f6f0;
+      --sk-color-bg-card: #ffffff;
+      --sk-color-surface-sand: #e5e0d8;
+      --sk-font-heading: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+      --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--sk-font-body);
+      background: var(--sk-color-bg-warm);
+      color: var(--sk-color-primary-dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .demo-header {
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 480px;
+    }
+
+    .demo-header h1 {
+      font-family: var(--sk-font-heading);
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .demo-header p {
+      font-size: 0.95rem;
+      color: #64748b;
+      line-height: 1.5;
+    }
+
+    .btn-showcase {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .btn-group {
+      background: var(--sk-color-bg-card);
+      border-radius: 20px;
+      border: 1px solid rgba(0,0,0,0.05);
+      box-shadow: 0 10px 30px -10px rgba(30, 41, 59, 0.06);
+      padding: 28px 24px;
+    }
+
+    .btn-group__label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    /* =========================================================
+       POSITION AWARE BUTTONS
+       Fill expands from where the cursor enters
+       ========================================================= */
+    .sk-btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      font-family: var(--sk-font-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      border-radius: 9999px;
+      text-decoration: none;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+      border: 1.5px solid transparent;
+      transition: color 0.35s ease;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .sk-btn:focus-visible {
+      outline: 2px solid var(--sk-color-terracotta);
+      outline-offset: 3px;
+    }
+
+    /* The expanding circle */
+    .sk-btn > span {
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.45s ease, height 0.45s ease;
+      z-index: -1;
+      pointer-events: none;
+    }
+
+    .sk-btn:hover > span {
+      width: 400px;
+      height: 400px;
+    }
+
+    /* Primary – terracotta */
+    .sk-btn--primary {
+      background: transparent;
+      color: var(--sk-color-terracotta);
+      border-color: var(--sk-color-terracotta);
+    }
+
+    .sk-btn--primary > span {
+      background: var(--sk-color-terracotta);
+    }
+
+    .sk-btn--primary:hover {
+      color: #ffffff;
+    }
+
+    /* Secondary – soft outline */
+    .sk-btn--secondary {
+      background: transparent;
+      color: var(--sk-color-primary-dark);
+      border-color: var(--sk-color-surface-sand);
+    }
+
+    .sk-btn--secondary > span {
+      background: var(--sk-color-primary-dark);
+    }
+
+    .sk-btn--secondary:hover {
+      color: #ffffff;
+      border-color: var(--sk-color-primary-dark);
+    }
+
+    /* Optional sizes */
+    .sk-btn--lg {
+      padding: 16px 32px;
+      font-size: 1.05rem;
+    }
+
+    .sk-btn--sm {
+      padding: 10px 20px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 480px) {
+      .btn-row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .sk-btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="demo-header">
+    <h1>Position Aware Buttons</h1>
+    <p>Hover from different sides — the fill expands from where your cursor enters.</p>
+  </div>
+
+  <div class="btn-showcase">
+
+    <div class="btn-group">
+      <span class="btn-group__label">Primary</span>
+      <div class="btn-row">
+        <a href="#" class="sk-btn sk-btn--primary">
+          Book a free call
+          <span></span>
+        </a>
+        <a href="#" class="sk-btn sk-btn--primary sk-btn--lg">
+          Start a project
+          <span></span>
+        </a>
+        <a href="#" class="sk-btn sk-btn--primary sk-btn--sm">
+          Get in touch
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <span class="btn-group__label">Secondary</span>
+      <div class="btn-row">
+        <a href="#" class="sk-btn sk-btn--secondary">
+          View work
+          <span></span>
+        </a>
+        <a href="#" class="sk-btn sk-btn--secondary sk-btn--lg">
+          See process
+          <span></span>
+        </a>
+        <a href="#" class="sk-btn sk-btn--secondary sk-btn--sm">
+          Learn more
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <span class="btn-group__label">Common pair</span>
+      <div class="btn-row">
+        <a href="#" class="sk-btn sk-btn--primary">
+          Book a free call
+          <span></span>
+        </a>
+        <a href="#" class="sk-btn sk-btn--secondary">
+          View recent work
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Position Aware – sets the circle origin to cursor position
+    document.querySelectorAll('.sk-btn').forEach(function (btn) {
+      var circle = btn.querySelector('span');
+      if (!circle) return;
+
+      function setOrigin(e) {
+        var rect = btn.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        circle.style.left = x + 'px';
+        circle.style.top = y + 'px';
+      }
+
+      btn.addEventListener('mouseenter', setOrigin);
+      btn.addEventListener('mouseout', setOrigin);
+    });
+  </script>
+</body>
+</html>

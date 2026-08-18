@@ -103,11 +103,10 @@ function initMagneticButtons(selector = ".mag-zone", options = {}) {
 // Statement Section SplitText
 document.fonts.ready.then(() => {
   const headline = document.querySelector("#headline");
-  const subtext = document.querySelector("#subtext");
 
-  if (!headline || !subtext) return;
+  if (!headline) return;
 
-  gsap.set(["#headline", "#subtext", ".split"], {
+  gsap.set(["#headline"], {
     opacity: 1,
     visibility: "visible",
   });
@@ -153,7 +152,7 @@ document.fonts.ready.then(() => {
 
       gsap.to(self.words, {
         color: (i, el) =>
-          accentWords.includes(el.textContent.trim()) ? "#f74123" : "#1e293b",
+          accentWords.includes(el.textContent.trim()) ? "#f74123" : "#111111",
         stagger: 0.05,
         ease: "none",
         scrollTrigger: {
@@ -166,31 +165,6 @@ document.fonts.ready.then(() => {
       });
 
       return tl;
-    },
-  });
-
-  // SUBTEXT
-  SplitText.create("#subtext", {
-    type: "lines",
-    linesClass: "line",
-    autoSplit: true,
-    mask: "lines",
-    onSplit: (self) => {
-      gsap.set(self.lines, { yPercent: 100 });
-
-      return gsap.to(self.lines, {
-        yPercent: 0,
-        duration: 0.75,
-        stagger: 0.1,
-        ease: "expo.out",
-        scrollTrigger: {
-          trigger: "#subtext",
-          start: "top 88%",
-          toggleActions: "play none none none",
-          once: true,
-          invalidateOnRefresh: true,
-        },
-      });
     },
   });
 
@@ -269,4 +243,22 @@ function setupCharReveal(selector = "h2") {
 document.fonts.ready.then(() => {
   setupCharReveal("h2"); // or a more specific selector
   // ScrollTrigger.refresh();     // usually not needed, but safe
+});
+
+//main btns
+// Position Aware – fill expands from cursor entry point
+document.querySelectorAll(".sk-btn").forEach(function (btn) {
+  var circle = btn.querySelector("span");
+  if (!circle) return;
+
+  function setOrigin(e) {
+    var rect = btn.getBoundingClientRect();
+    var x = e.clientX - rect.left;
+    var y = e.clientY - rect.top;
+    circle.style.left = x + "px";
+    circle.style.top = y + "px";
+  }
+
+  btn.addEventListener("mouseenter", setOrigin);
+  btn.addEventListener("mouseout", setOrigin);
 });

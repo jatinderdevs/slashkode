@@ -3,7 +3,7 @@
    Requires: GSAP 3.x
    ========================================================= */
 (function () {
-  const COLLAPSED = 220;
+  const COLLAPSED = 250;
   const IMAGE_W = 320;
   const EXPANDED = COLLAPSED + IMAGE_W + 24; // content + image + breathing room
   const BREAKPOINT = 860;

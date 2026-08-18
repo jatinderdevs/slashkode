@@ -157,4 +157,7 @@
   .menu-overlay {
     display: none !important;
   }
+  .sk_navbar {
+    display: flex;
+  }
 }
