@@ -137,36 +137,6 @@
   font-weight: 600;
 }
 
-.footer-cta-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  background: var(--sk-color-terracotta, #f74123);
-  color: #fff !important;
-  font-family: var(--sk-font-body, "Inter", sans-serif);
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.7rem 1.35rem;
-  border-radius: var(--sk-radius-pill, 9999px);
-  margin-bottom: 1.35rem;
-  transition: var(
-    --sk-transition-smooth,
-    all 0.25s cubic-bezier(0.4, 0, 0.2, 1)
-  );
-  box-shadow: 0 4px 14px rgba(247, 65, 35, 0.25);
-}
-
-.footer-cta-btn:hover {
-  background: var(--sk-color-terracotta-hover, #f76d23);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(247, 65, 35, 0.35);
-}
-
-.footer-cta-btn svg {
-  width: 16px;
-  height: 16px;
-}
-
 .footer-contact-links {
   display: flex;
   flex-direction: column;

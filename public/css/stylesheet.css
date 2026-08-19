@@ -154,7 +154,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 14px 28px;
+  padding: 18px 28px;
   font-family: var(--sk-font-heading);
   font-weight: 600;
   font-size: 0.95rem;
@@ -197,97 +197,36 @@ a:hover {
 }
 
 /* Primary – solid terracotta → darker terracotta */
-.sk-btn--primary {
+.sk-btn-primary {
   background: var(--sk-color-terracotta);
   color: #ffffff;
   box-shadow: 0 4px 14px rgba(247, 65, 35, 0.25);
 }
-.sk-btn--secondary:hover > img {
+.sk-btn-primary > img {
   filter: invert(1);
 }
-.sk-btn--primary > span {
+.sk-btn-secondary:hover > img {
+  filter: invert(1);
+}
+.sk-btn-primary > span {
   background: var(--sk-color-primary-dark); /* darker shade of terracotta */
 }
 
 /* Secondary – solid sand → dark slate */
-.sk-btn--secondary {
+.sk-btn-secondary {
   background: var(--sk-color-bg-card);
   color: var(--sk-color-primary-dark);
 }
 
-.sk-btn--secondary > span {
+.sk-btn-secondary > span {
   background: var(--sk-color-primary-dark);
 }
 
-.sk-btn--secondary:hover {
+.sk-btn-secondary:hover {
   color: #ffffff;
 }
 /* buttons css end */
 /* Primary Call To Action (Terracotta Button) */
-.sk-btn-primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: var(--sk-color-terracotta);
-  color: #ffffff;
-  font-family: var(--sk-font-body);
-  font-weight: 600;
-  font-size: var(--sk-text-body);
-  padding: 0.875rem 1.75rem;
-  border-radius: var(--sk-radius-pill); /* Rounded pill shape feels friendly */
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 14px rgba(224, 122, 95, 0.25);
-  transition: var(--sk-transition-smooth);
-}
-
-.sk-btn-primary:hover {
-  background-color: var(--sk-color-terracotta-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(224, 122, 95, 0.35);
-}
-.btn_project {
-  padding: 10px 20px;
-  background: var(--sk-color-terracotta);
-  text-transform: capitalize;
-  border-radius: 25px;
-  border: 1px solid var(--sk-color-surface-sand);
-
-  font-family: var(--sk-font-semibold);
-
-  box-shadow:
-    var(--sk-color-terracotta) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.btn_project:hover {
-  background: white;
-  color: var(--sk-color-primary-dark);
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-/* Secondary Button (Calm & Subtle) */
-.sk-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  color: var(--sk-color-primary-dark);
-  font-family: var(--sk-font-body);
-  font-weight: 600;
-  font-size: var(--sk-text-body);
-  padding: 0.875rem 1.75rem;
-  border-radius: var(--sk-radius-pill);
-  border: 1.5px solid var(--sk-color-surface-sand);
-  cursor: pointer;
-  transition: var(--sk-transition-smooth);
-}
-
-.sk-btn-secondary:hover {
-  background-color: var(--sk-color-bg-card);
-  border-color: var(--sk-color-primary-dark);
-}
 
 /* 6. CARD COMPONENTS & CONTAINERS */
 .sk-container {
@@ -391,24 +330,11 @@ section {
   padding: 100px 0;
 }
 /* hero */
-.hl {
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  color: white;
-  white-space: nowrap;
+.heroheading {
+  text-transform: capitalize;
 }
-
-.hl::before {
-  content: "";
-  position: absolute;
-  inset: -0.001em -0.1em;
-  background: #f74523;
-  border-radius: 0.2em;
-  z-index: -1;
-  transform: scaleX(var(--scale, 0));
-  transform-origin: left center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+.wordhero4 {
+  color: var(--sk-color-terracotta);
 }
 /* hero buttton call to action */
 .mag-zone {

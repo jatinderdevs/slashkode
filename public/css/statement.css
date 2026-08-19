@@ -3,7 +3,7 @@
   opacity: 0; /* set to 1 by JS once split, avoids FOUC */
   font-family: var(--sk-font-heading);
   font-weight: 800;
-
+  text-align: center;
   font-size: clamp(2.25rem, 6vw, 4.5rem);
   line-height: 1.25;
   letter-spacing: -0.02em;
@@ -15,7 +15,9 @@
 .split .line {
   overflow: hidden; /* the mask */
 }
-
+.line-mask {
+  text-align: center !important;
+}
 .avatars {
   display: inline-flex;
   align-items: center;

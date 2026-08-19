@@ -175,7 +175,7 @@
              SECTION 1 — Hero
         ════════════════════════════════════ -->
        <section class="wd-hero">
-            <div class="wd-container">
+            <div class="sk-container">
               <div class="text-container">
                   <!-- ── Breadcrumb ── -->
                   <div>
@@ -241,8 +241,9 @@
                         <option value="other">Something else</option>
                       </select>
                     </div>
-                    <button type="submit" class="sk-btn-primary">
+                    <button type="submit" class="p-3 sk-btn sk-btn-primary">
                       Request Consultation
+                      <span></span>
                     </button>
                   </form>
                   <p class="wd-form-note">No spam. Just a clear next step.</p>
@@ -254,6 +255,7 @@
               </div>
             </div>
       </section>
+      
       <section class="sk-drag-portfolio" id="work">
           <div class="sk-container">
             <div class="drag-portfolio-header">
@@ -372,7 +374,7 @@
           ></div>
         </section>
      
-     <section class="sk-expand-cards" aria-label="Services">
+     <section class="sk-expand-cards sk-container" aria-label="Services">
  <div class="wd-section-header">
               <span class="wd-section-label wd-reveal">Deliverables</span>
               <h2 class="wd-reveal">What you get with a SLASHKODE web build</h2>
@@ -506,7 +508,7 @@
   </div>
 
       </section>
-      <section class="testimonial text-center">
+      <section class="sk-container text-center">
         <span class="sk-statement-eyebrow">/what customer says</span>
         <h2  class="testimonial-quote">Working with them completely changed how we present our brand. Clear thinking, beautiful execution, and genuine care for results.     </h2>
          <div class="testimonial-author justify-content-center">
@@ -520,18 +522,22 @@
       </div>
 
     <section class="sk-section">
-      <div class="sk-section-inner">
+      <div class="sk-container">
   <div class="sk-header">
         <h2 class="sk-header__title">How we build<br>your site</h2>
         <div class="sk-header__right">
           <p class="sk-header__sub">
             Four clear steps. No surprises. You always know what’s next.
           </p>
-          <a href="/contact" class="sk-btn">
-            Get Started
-            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M3 8h10M9 4l4 4-4 4"/>
-            </svg>
+          <a href="/contact" class="sk-btn sk-btn-primary">
+            Get Started <img
+                    src="public/icons/top-right.png"
+                    class="img-fluid"
+                    alt=""
+                    width="15px"
+                    height="15px"
+                  /> 
+         <span></span>
           </a>
         </div>
       </div>
@@ -903,9 +909,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
     <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script src="public/js/custom.js"></script>
 
     <script src="public/js/navbar.js"></script>
-    <script src="public/js/custom.js"></script>
     <script src="public/js/services/web-design.js"></script>
     <script src="public/js/portfolio.js"></script>
 

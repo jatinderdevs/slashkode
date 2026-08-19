@@ -19,12 +19,7 @@
   font-family: var(--sk-font-heading);
   -webkit-font-smoothing: antialiased;
 }
-.sk-section-inner {
-  max-width: 1200px;
-  margin-inline: auto;
 
-  padding: 0 1.5rem;
-}
 /* ---------- Header ---------- */
 .sk-header {
   display: flex;
@@ -57,34 +52,6 @@
   line-height: 1.5;
   text-align: right;
   max-width: 22ch;
-}
-
-.sk-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.7rem 1.25rem;
-  background: var(--sk-color-terracotta);
-
-  font-size: 0.9rem;
-  font-weight: 600;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  text-decoration: none;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
-.sk-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(200, 245, 66, 0.25);
-}
-
-.sk-btn svg {
-  width: 14px;
-  height: 14px;
 }
 
 /* ---------- Cards grid ---------- */

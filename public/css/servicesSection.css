@@ -8,6 +8,8 @@
   padding: clamp(5rem, 12vw, 8rem) 0;
   position: relative;
   overflow: hidden;
+  place-content: center;
+  height: 80vh;
 }
 
 /* subtle warm glow (terracotta) for depth — matches CTA treatment */
@@ -32,7 +34,7 @@
   max-width: 1200px;
   align-items: center;
   margin: 0 auto;
-  padding: 0 clamp(1.25rem, 4vw, 2.5rem);
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(2.5rem, 6vw, 5rem);
@@ -64,7 +66,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1.35rem;
+  padding: 1.65rem 1.35rem;
   background: transparent;
 
   cursor: pointer;
@@ -192,6 +194,7 @@
   .skills-container {
     grid-template-columns: 1fr;
     gap: 2.5rem;
+    padding: 0 10px;
   }
 
   .skills-heading-wrap {
@@ -206,7 +209,7 @@
 
 @media (max-width: 480px) {
   .skill-trigger {
-    padding: 1.15rem 0;
+    padding: 1.15rem 10px;
     font-size: 1.1rem;
   }
 }
