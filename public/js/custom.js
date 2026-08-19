@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   initNavLinkHover();
-  initHeroHighlight();
   initMagneticButtons();
   initPositionAwareButtons();
   initFAQ();
@@ -175,6 +174,8 @@ document.fonts.ready.then(() => {
   initStatementSplitText();
   setupCharReveal(".headingeffect");
   scrambleText(".skill-label");
+  initHeroHighlight();
+
   // Final refresh after all SplitText DOM mutations
   if (window.SKRefresh) {
     window.SKRefresh(100);
