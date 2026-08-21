@@ -716,3 +716,37 @@
   opacity: 0;
   transform: translateY(28px);
 }
+
+.webdevicon {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  overflow: hidden;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.webdevicon div {
+  background: var(--sk-color-primary-soft);
+  padding: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
+}
+
+.servicebeinto {
+  color: white;
+}
+
+.servicebeinto h3 {
+  color: white;
+}
+
+.servicebeinto p {
+  color: var(--sk-color-bg-warm);
+  font-size: var(--sk-text-body);
+
+  line-height: 1.7;
+}

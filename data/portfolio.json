@@ -1,0 +1,24 @@
+[
+    {
+        "id": "aiit",
+        "title": "Australian International Institute of Technology",
+        "topTag": "Website",
+        "image": "/public/img/mockups/aiitmockupsample.png",
+        "alt": "AIIT project preview",
+        "link": "#",
+        "cta": null,
+        "chips": ["RTO / VET", "SEO"],
+        "pages": ["home", "web-design", "rto-vet"]
+    },
+    {
+        "id": "kaelio",
+        "title": "Kaelio",
+        "topTag": "Kaelio",
+        "image": "/public/img/mockups/aiit.jpg",
+        "alt": "Kaelio project preview",
+        "link": "#",
+        "cta": "Explore more",
+        "chips": [],
+        "pages": ["home", "web-design"]
+    }
+]

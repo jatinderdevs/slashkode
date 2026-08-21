@@ -1,31 +1,16 @@
 .section-container {
   position: relative;
 }
-.about-thumbnail {
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow:
-    rgba(0, 0, 0, 0.12) 0px 1px 3px,
-    rgba(0, 0, 0, 0.24) 0px 1px 2px;
-}
-.floating {
-  position: absolute;
-  top: 0;
-  right: -100px;
-  z-index: 11;
-  background-color: var(--sk-color-terracotta);
-  color: white;
-  width: 10vw;
-  padding: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: var(--sk-font-mono);
-  border-radius: 20px;
-  font-size: 14px;
-}
+
 .mission {
   background: var(--sk-color-bg-card);
-  border-radius: var(--sk-radius-lg);
+  border-radius: var(--sk-radius-md);
+}
+.mission p {
+  max-width: unset;
+  font-size: var(--sk-text-body-lg);
+
+  line-height: 1.6;
 }
 .local-stats {
   display: flex;
@@ -52,49 +37,67 @@
   color: var(--sk-color-primary-soft);
 }
 
-.local-card {
-  background: #fff;
-  border-radius: var(--sk-radius-lg);
-  padding: 2rem;
-  border: 1px solid rgba(30, 41, 59, 0.05);
-  box-shadow:
-    rgba(0, 0, 0, 0.09) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px,
-    rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px,
-    rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
-
-.local-card h3 {
-  font-family: var(--sk-font-heading);
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.local-card p {
-  font-size: 0.98rem;
-  color: var(--sk-color-primary-soft);
-  margin-bottom: 1.25rem;
-}
-
-.local-card ul {
-  list-style: none;
+/* scrolling text */
+.sk-scrolling-text {
+  overflow: hidden;
+  width: 100%;
+  padding: 50px 0;
   display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
+  align-items: center;
 }
 
-.local-card li {
+.sk-scrolling-text .rail {
   display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-  font-size: 0.95rem;
-  color: var(--sk-color-primary-dark);
+  will-change: transform;
 }
 
-.local-card li svg {
+.sk-scrolling-text .rail h4 {
   flex-shrink: 0;
-  margin-top: 0.2rem;
-  color: var(--sk-color-sage);
+  white-space: nowrap;
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-size: clamp(3rem, 10vw, 6.25rem); /* ~48–100px */
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0; /* matches the paddingRight: 30 used in JS */
+  color: var(--sk-color-primary-dark, #1e293b);
+}
+.rail > h4 > span {
+  color: var(--sk-color-terracotta);
+}
+.myself {
+  filter: grayscale(1);
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 42% 58% 55% 45% / 48% 42% 58% 52%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition:
+    border-radius 0.6s ease,
+    transform 0.4s ease;
+}
+.myself:hover {
+  filter: unset;
+
+  border-radius: 48% 52% 45% 55% / 42% 58% 48% 52%;
+  transform: scale(1.02);
+}
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.about-services {
+  padding: 20px 30px;
+  border-radius: var(--sk-radius-lg);
+  background: white;
+}
+
+.about-services p {
+  max-width: unset;
+}
+
+.about-services a {
+  margin: 10px 5px;
+  border: 1px solid #dfdfdf;
 }

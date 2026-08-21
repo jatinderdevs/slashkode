@@ -15,8 +15,8 @@
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrambleTextPlugin.min.js"></script>
 
-<script src="public/js/custom.js"></script>
-<script src="public/js/portfolio.js"></script>
+<script src="<?php echo BASE_PATH; ?>public/js/custom.js"></script>
+<script src="<?php echo BASE_PATH; ?>public/js/portfolio.js"></script>
 
-<script src="public/js/navbar.js"></script>
-<script src="public/js/footer.js"></script>
+<script src="<?php echo BASE_PATH; ?>public/js/navbar.js"></script>
+<script src="<?php echo BASE_PATH; ?>public/js/footer.js"></script>

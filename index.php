@@ -1,3 +1,5 @@
+<?php require_once __DIR__ . '/config.php'; ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -5,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slashkode | Web Agency</title>
-    <?php include_once('includes/stylesheets.php');?>
+    <?php require_once('includes/stylesheets.php');?>
     <link rel="stylesheet" href="public/css/statement.css" />
     <link rel="stylesheet" href="public/css/servicesSection.css" />
     <link rel="stylesheet" href="public/css/bientoGrid.css" />
@@ -18,7 +20,7 @@
 <body>
     <main>
         <div class="container-fluid">
-            <?php include_once('includes/navbar.php');?>
+            <?php require_once('includes/navbar.php');?>
 
             <section class="hero">
                 <div class="sk-container">
@@ -112,8 +114,8 @@
                     </div>
                 </div>
             </section>
-            <?php include_once('includes/sections/portfolio.php');?>
 
+            <?php $portfolioPage = 'home'; require_once('includes/sections/portfolio.php'); ?>
         </div>
 
         <section class="skills-section" aria-label="What I am good at">
@@ -122,14 +124,11 @@
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
                         <a href="" class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
-                            <span class="skill-label">Website Design</span>
+                            <span class="skill-label">Website Design & Development</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
-                        <a href="" class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.png">
-                            <span class="skill-label">Website Development</span>
-                            <span class="skill-icon" aria-hidden="true">
-                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
+
 
                         <a href="" class="skill-trigger">
                             <span class="skill-label">Search Engine Optimise (SEO)</span>
@@ -267,44 +266,16 @@
                 </div>
             </section>
         </div>
-        <section class="cta-section" aria-label="Get a quote">
-            <div class="sk-container">
-                <span class="cta-label" data-label>Let’s work together</span>
-
-                <h2 class="cta-heading">
-                    <span class="cta-line">
-                        <span class="cta-line-inner">Have a project in mind?</span>
-                    </span>
-
-                </h2>
-
-                <p class="cta-desc" data-desc>
-                    Tell me a little about what you need. I’ll come back with a clear
-                    quote, timeline, and next steps — no pressure.
-                </p>
-
-                <div class="cta-actions" data-actions>
-                    <a href="/contact" class="sk-btn sk-btn-primary">
-                        Get a Quote →
-
-                        <span></span>
-                    </a>
-                    <a href="/contact" class="sk-btn sk-btn-secondary">Say hello <span></span></a>
-                </div>
-
-                <p class="cta-note" data-note>
-                    Usually replies within 1 business day
-                </p>
-            </div>
-        </section>
-
-        <?php include_once('includes/sections/faq.php');?>
+        <?php require_once('includes/sections/cta.php');?>
 
 
-        <?php include_once('includes/footer.php');?>
+        <?php $faqPage = 'home'; require_once('includes/sections/faq.php'); ?>
+
+
+        <?php require_once('includes/footer.php');?>
 
     </main>
-    <?php include_once('includes/customjs.php');?>
+    <?php require_once('includes/customjs.php');?>
 
 
     <script src="public/js/serviceSection.js"></script>

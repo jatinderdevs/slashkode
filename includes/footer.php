@@ -41,9 +41,9 @@
                  <div class="footer-col footer-anim-item">
                      <h4>Services</h4>
                      <ul>
-                         <li><a href="#services">Web Design</a></li>
-                         <li><a href="#services">Web Development</a></li>
-                         <li><a href="#services">SEO</a></li>
+                         <li><a href="#services">Website Design & Development</a></li>
+                         <li><a href="#services">Search Engine Optimise (SEO)</a></li>
+                         <li><a href="#services">Custom web Applications</a></li>
                          <li><a href="#services">RTO &amp; VET College Websites</a></li>
                      </ul>
                  </div>

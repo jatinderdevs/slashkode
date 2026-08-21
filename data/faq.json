@@ -1,0 +1,72 @@
+[
+    {
+        "page": "home",
+        "question": "What does SLASHKODE do?",
+        "answer": [
+            "We design and build websites for Melbourne businesses — everything from clean marketing sites to custom web applications, with SEO built in from the start rather than tacked on afterwards.",
+            "If you're not sure exactly what you need yet, that's fine too. Tell us what you're trying to achieve and we'll point you toward the right service."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "Do you only work with Melbourne businesses?",
+        "answer": [
+            "Melbourne is where we're based and where most of our clients are, but most of our work happens remotely anyway. We're happy to work with businesses anywhere in Australia."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "How much does a website cost?",
+        "answer": [
+            "It depends on scope — a small marketing site costs a lot less than a custom web application or a full RTO/VET college build. Rather than guess, send us a short note about what you need and we'll give you a proper estimate."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "How do we get started?",
+        "answer": [
+            "Send us a short note about what you're building and where things are at. We'll reply within a couple of business days with a few questions and, if it's a good fit, a proposed scope and timeline.",
+            "No long forms or sales calls required — just a clear conversation so we both know it's the right match."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "What services do you offer?",
+        "answer": [
+            "We focus on four core areas: website design and development, SEO, custom web applications, and RTO &amp; VET college websites. Most projects blend two or three of these.",
+            "If something falls outside our scope, we'll say so early and point you in the right direction."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "How long does a typical project take?",
+        "answer": [
+            "A focused landing page or small marketing site usually takes 2&ndash;4 weeks. Full multi-page websites with custom animation sit around 5&ndash;8 weeks. Larger builds &mdash; like RTO/VET sites or custom web apps &mdash; can stretch to 10&ndash;12 weeks.",
+            "Timeline depends on how quickly feedback and content come back from your side, and we'll share a clear schedule upfront so there are no surprises."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "Do you work with remote or international clients?",
+        "answer": [
+            "Yes &mdash; most of our work happens remotely. We're comfortable working across time zones and use async tools so nothing has to wait on a live call.",
+            "We can jump on calls when it's useful, but the process is built so progress continues either way."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "What&rsquo;s included in a project?",
+        "answer": [
+            "Every project includes a strategy kickoff, design, development, basic SEO setup, performance checks, and a proper handover with documentation so you can update content yourself later.",
+            "Source files and a short training session are included. Ongoing maintenance or new features can be arranged separately after launch."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "How do we get started?",
+        "answer": [
+            "Send us a short note about what you're building and where things are at. We'll reply within a couple of business days with a few questions and, if it's a good fit, a proposed scope and timeline.",
+            "No long forms or sales calls required &mdash; just a clear conversation so we both know it's the right match."
+        ]
+    }
+]

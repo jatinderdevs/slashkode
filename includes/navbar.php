@@ -1,7 +1,7 @@
  <header class="sk_header">
      <div class="island">
          <div class="island-logo--cont">
-             <img class="island-logo" src="public/img/logo.png" alt="" />
+             <img class="island-logo" src="<?php echo BASE_PATH; ?>/public/img/logo.png" alt="" />
          </div>
          <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="menu-overlay"
              aria-label="Open navigation menu">
@@ -40,8 +40,8 @@
          <div class="col-md-6">
              <div class="sk_navbar">
                  <div class="logo">
-                     <a href="index.php"> <img src="public/img/slashkode.png" width="150px" class="img-fluid"
-                             alt="" /></a>
+                     <a href="index.php"> <img src="<?php echo BASE_PATH; ?>/public/img/slashkode.png" width="150px"
+                             class="img-fluid" alt="" /></a>
                  </div>
                  <ul class="nav">
                      <li>
@@ -50,7 +50,8 @@
                                      class="nav-link-text nav-link-text--bottom">Work</span></span></a>
                      </li>
                      <li>
-                         <a href="" class="nav-link-anim"><span class="nav-link-inner"><span
+                         <a href="./services/web-design-development.php" class="nav-link-anim"><span
+                                 class="nav-link-inner"><span
                                      class="nav-link-text nav-link-text--top">services</span><span
                                      class="nav-link-text nav-link-text--bottom">Services</span></span></a>
                      </li>
@@ -60,8 +61,8 @@
                                      class="nav-link-text nav-link-text--bottom">Pricing</span></span></a>
                      </li>
                      <li>
-                         <a href="aboutus.php" class="nav-link-anim"><span class="nav-link-inner"><span
-                                     class="nav-link-text nav-link-text--top">about</span><span
+                         <a href="<?php echo BASE_PATH; ?>/aboutus.php" class="nav-link-anim"><span
+                                 class="nav-link-inner"><span class="nav-link-text nav-link-text--top">about</span><span
                                      class="nav-link-text nav-link-text--bottom">About</span></span></a>
                      </li>
                      <li>
