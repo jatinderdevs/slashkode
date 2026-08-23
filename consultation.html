@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Consultation — SLASHKODE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sk-color-ink: #0A0A0A;
+    --sk-color-paper: #FAFAF7;
+    --sk-color-surface-sand: #F2F0E9;
+    --sk-color-slate: #6B6B67;
+    --sk-color-slate-light: #9C9B96;
+    --sk-color-signal: #E52F22;
+    --sk-color-signal-soft: #FBEAE8;
+    --sk-color-border: rgba(10,10,10,0.12);
+    --sk-color-border-strong: rgba(10,10,10,0.22);
+    --sk-font-heading: 'Plus Jakarta Sans', sans-serif;
+    --sk-font-body: 'Inter', sans-serif;
+    --sk-radius-sm: 6px;
+    --sk-radius-md: 10px;
+    --sk-radius-lg: 16px;
+    --sk-transition-smooth: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--sk-color-paper);
+    color: var(--sk-color-ink);
+    font-family: var(--sk-font-body);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; }
+
+  .wrap {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* Header */
+  header {
+    border-bottom: 1px solid var(--sk-color-border);
+    padding: 22px 0;
+  }
+  .header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: var(--sk-font-heading);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+  }
+  .logo span.k { color: var(--sk-color-signal); }
+  nav ul {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  nav a {
+    font-size: 14px;
+    color: var(--sk-color-slate);
+    transition: color var(--sk-transition-smooth);
+  }
+  nav a:hover, nav a:focus-visible { color: var(--sk-color-ink); }
+  nav a.current { color: var(--sk-color-ink); font-weight: 500; }
+
+  .btn-quiet {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 9px 18px;
+    border: 1px solid var(--sk-color-border-strong);
+    border-radius: var(--sk-radius-sm);
+    background: transparent;
+    color: var(--sk-color-ink);
+    transition: border-color var(--sk-transition-smooth), background var(--sk-transition-smooth);
+  }
+  .btn-quiet:hover, .btn-quiet:focus-visible { border-color: var(--sk-color-ink); background: var(--sk-color-surface-sand); }
+
+  .btn-signal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 24px;
+    border: none;
+    border-radius: var(--sk-radius-sm);
+    background: var(--sk-color-ink);
+    color: var(--sk-color-paper);
+    transition: background var(--sk-transition-smooth), transform var(--sk-transition-smooth);
+    width: 100%;
+  }
+  .btn-signal:hover, .btn-signal:focus-visible { background: var(--sk-color-signal); }
+  .btn-signal:active { transform: scale(0.98); }
+
+  .btn-outline {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 16px;
+    border: 1px solid var(--sk-color-border-strong);
+    border-radius: var(--sk-radius-sm);
+    background: transparent;
+    color: var(--sk-color-ink);
+    width: 100%;
+    transition: border-color var(--sk-transition-smooth), background var(--sk-transition-smooth);
+  }
+  .btn-outline:hover, .btn-outline:focus-visible { border-color: var(--sk-color-ink); background: var(--sk-color-paper); }
+
+  /* Hero */
+  .hero {
+    padding: 88px 0 56px;
+  }
+  .eyebrow {
+    font-family: var(--sk-font-heading);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--sk-color-signal);
+    letter-spacing: 0.02em;
+    margin-bottom: 18px;
+    display: block;
+  }
+  h1 {
+    font-family: var(--sk-font-heading);
+    font-size: clamp(34px, 4.4vw, 52px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.08;
+    max-width: 620px;
+    margin-bottom: 20px;
+  }
+  .hero-sub {
+    font-size: 17px;
+    color: var(--sk-color-slate);
+    max-width: 480px;
+    margin-bottom: 26px;
+  }
+  .status-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--sk-color-ink);
+    border: 1px solid var(--sk-color-border);
+    border-radius: 999px;
+    padding: 7px 14px 7px 10px;
+  }
+  .status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4C9A5A;
+    flex-shrink: 0;
+  }
+
+  /* Bento grid */
+  .bento {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
+    padding-bottom: 64px;
+  }
+  .tile {
+    border: 1px solid var(--sk-color-border);
+    border-radius: var(--sk-radius-lg);
+    background: var(--sk-color-paper);
+    padding: 32px;
+  }
+  .tile-form {
+    grid-row: span 2;
+  }
+  .tile-small {
+    padding: 26px;
+    background: var(--sk-color-surface-sand);
+    border-color: transparent;
+  }
+
+  .tile-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+  }
+  .tile-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--sk-radius-sm);
+    background: var(--sk-color-surface-sand);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .tile-small .tile-icon { background: var(--sk-color-paper); }
+  .tile-icon svg { width: 17px; height: 17px; stroke: var(--sk-color-ink); }
+
+  .tile-title {
+    font-family: var(--sk-font-heading);
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .tile-small .tile-title { font-size: 16px; }
+
+  .tile-desc {
+    font-size: 14px;
+    color: var(--sk-color-slate);
+    margin: 6px 0 22px;
+    max-width: 420px;
+  }
+  .tile-small .tile-desc { font-size: 13.5px; margin: 4px 0 18px; max-width: none; }
+
+  /* Form */
+  .field-row { display: flex; gap: 12px; margin-bottom: 12px; }
+  .field { flex: 1; margin-bottom: 12px; }
+  .field-row .field { margin-bottom: 0; }
+  .field label {
+    display: block;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--sk-color-slate);
+    margin-bottom: 6px;
+  }
+  .field input, .field textarea {
+    width: 100%;
+    border: 1px solid var(--sk-color-border);
+    border-radius: var(--sk-radius-sm);
+    padding: 11px 13px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--sk-color-ink);
+    background: var(--sk-color-paper);
+    transition: border-color var(--sk-transition-smooth);
+  }
+  .field input:focus, .field textarea:focus {
+    outline: none;
+    border-color: var(--sk-color-ink);
+  }
+  .field textarea { resize: vertical; min-height: 84px; }
+
+  .project-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .project-type button {
+    font-size: 13px;
+    padding: 9px 14px;
+    border: 1px solid var(--sk-color-border);
+    border-radius: 999px;
+    background: transparent;
+    color: var(--sk-color-ink);
+    transition: all var(--sk-transition-smooth);
+  }
+  .project-type button:hover { border-color: var(--sk-color-border-strong); }
+  .project-type button.selected {
+    background: var(--sk-color-ink);
+    border-color: var(--sk-color-ink);
+    color: var(--sk-color-paper);
+  }
+
+  .form-actions { margin-top: 22px; max-width: 220px; }
+
+  /* Small tiles content */
+  .contact-line {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--sk-color-ink);
+  }
+  .contact-line svg { width: 15px; height: 15px; stroke: var(--sk-color-slate); flex-shrink: 0; }
+  .in-person-note {
+    font-size: 12.5px;
+    color: var(--sk-color-slate);
+    margin-top: 14px;
+  }
+
+  /* Details strip */
+  .details-strip {
+    border: 1px solid var(--sk-color-border);
+    border-radius: var(--sk-radius-md);
+    padding: 18px 28px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 64px;
+  }
+  .details-strip .item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13.5px;
+    color: var(--sk-color-slate);
+  }
+  .details-strip svg { width: 15px; height: 15px; stroke: var(--sk-color-slate-light); }
+
+  footer {
+    border-top: 1px solid var(--sk-color-border);
+    padding: 28px 0 40px;
+  }
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: var(--sk-color-slate-light);
+  }
+  .footer-row a { transition: color var(--sk-transition-smooth); }
+  .footer-row a:hover { color: var(--sk-color-ink); }
+  .footer-links { display: flex; gap: 20px; }
+
+  @media (max-width: 860px) {
+    .wrap { padding: 0 20px; }
+    nav ul { display: none; }
+    .hero { padding: 56px 0 40px; }
+    .bento { grid-template-columns: 1fr; }
+    .tile-form { grid-row: auto; }
+    .details-strip { gap: 20px 28px; padding: 16px 20px; }
+    .footer-row { flex-direction: column; gap: 10px; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-row">
+    <div class="logo">/SLASH<span class="k">K</span>ODE</div>
+    <nav>
+      <ul>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" class="current">Get in touch</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-quiet">Get a quote</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <span class="eyebrow">/ Request Consultation</span>
+    <h1>Let's talk about your project.</h1>
+    <p class="hero-sub">Tell us what you're building, or just send your details — we'll reply personally, no account managers, no relay.</p>
+    <span class="status-pill"><span class="status-dot"></span>Currently taking on new projects</span>
+  </section>
+
+  <section class="bento">
+
+    <div class="tile tile-form">
+      <div class="tile-eyebrow">
+        <div class="tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        </div>
+        <span class="tile-title">Send a query</span>
+      </div>
+      <p class="tile-desc">Write it out and we'll get back to you within a day.</p>
+
+      <form onsubmit="return false;">
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@email.com">
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone <span style="font-weight:400;color:var(--sk-color-slate-light);">(optional)</span></label>
+            <input id="phone" type="tel" placeholder="04xx xxx xxx">
+          </div>
+        </div>
+        <div class="field">
+          <label>What do you need help with?</label>
+          <div class="project-type">
+            <button type="button" class="selected">Website</button>
+            <button type="button">SEO</button>
+            <button type="button">RTO / VET site</button>
+            <button type="button">Custom web app</button>
+            <button type="button">Not sure yet</button>
+          </div>
+        </div>
+        <div class="field" style="margin-top:14px;">
+          <label for="message">Message <span style="font-weight:400;color:var(--sk-color-slate-light);">(optional)</span></label>
+          <textarea id="message" placeholder="Tell us a bit about it"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn-signal">Send</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="tile tile-small">
+      <div class="tile-eyebrow">
+        <div class="tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <span class="tile-title">Book a call</span>
+      </div>
+      <p class="tile-desc">Pick a time that works — we'll ask if you'd rather meet on video or in person.</p>
+      <button class="btn-outline">Schedule a time</button>
+    </div>
+
+    <div class="tile tile-small">
+      <div class="tile-eyebrow">
+        <div class="tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <span class="tile-title">Reach us directly</span>
+      </div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        hello@slashkode.com.au
+      </div>
+      <div class="contact-line">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0400 000 000
+      </div>
+      <p class="in-person-note">Prefer to meet face to face? Just say so — we're Melbourne-based and happy to.</p>
+    </div>
+
+  </section>
+
+  <section class="details-strip">
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Melbourne, Australia
+    </div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/></svg>
+      ABN 00 000 000 000
+    </div>
+    <div class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      Replies within one business day
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>&copy; 2026 SLASHKODE. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">TikTok</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.project-type button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.project-type button').forEach(b => b.classList.remove('selected'));
+      btn.classList.add('selected');
+    });
+  });
+</script>
+
+</body>
+</html>
