@@ -2,7 +2,7 @@
   text-align: center;
 }
 .contacthero h1 {
-  font-size: clamp(5.25rem, 5vw, 5.5rem);
+  font-size: clamp(3.25rem, 5vw, 5.5rem);
 }
 .contacthero p {
   margin: 0 auto;
@@ -42,11 +42,11 @@
 /* Full-width bottom card */
 .bottom-full {
   grid-column: 1 / -1; /* spans both columns */
-  grid-row: 4;
 }
 .bottom-content {
   display: flex;
   align-items: center;
+
   justify-content: space-between;
 }
 .bottom-content h6 {
@@ -68,15 +68,11 @@
     grid-row: auto;
     aspect-ratio: 4 / 5; /* keeps the tall feel on mobile */
   }
-
-  .item:not(.large) {
-    aspect-ratio: 1; /* the three small ones stay square */
+  .bottom-content {
+    flex-direction: column;
   }
 }
 
-.inner-contact-page {
-  margin: 20px;
-}
 .profileCard {
   color: white;
   background: var(--sk-color-primary-dark);
@@ -176,7 +172,8 @@
 .profile-contact a {
   color: #ccc;
   text-decoration: none;
-  font-size: 0.95rem;
+
+  font-size: clamp(1.05rem, 3vw, 1.75rem);
   transition: color 0.2s ease;
 }
 

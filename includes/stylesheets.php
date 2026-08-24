@@ -8,3 +8,4 @@
 
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/footer.css" />
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/faq.css" />
+<link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/island.css" />
