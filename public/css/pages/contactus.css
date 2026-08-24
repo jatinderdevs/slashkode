@@ -1,0 +1,268 @@
+.contacthero {
+  text-align: center;
+}
+.contacthero h1 {
+  font-size: clamp(5.25rem, 5vw, 5.5rem);
+}
+.contacthero p {
+  margin: 0 auto;
+}
+.contactform {
+  padding-top: 0;
+}
+.contactform p {
+  font-size: 0.95rem;
+  color: #666;
+
+  line-height: 1.4;
+}
+.contact-bento-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr; /* left wider, right narrower */
+  grid-template-rows: repeat(3, 1fr) auto; /* 3 equal rows + auto bottom */
+  gap: 16px;
+  width: 100%;
+
+  margin: 0 auto;
+}
+.item {
+  place-content: center;
+}
+.item h3 {
+  font-family: var(--sk-font-semibold);
+  margin-bottom: 0.5rem;
+}
+.large-left {
+  grid-column: 1;
+  grid-row: 1 / 4; /* spans the 3 top rows */
+}
+
+/* Right side cards automatically go into column 2 */
+
+/* Full-width bottom card */
+.bottom-full {
+  grid-column: 1 / -1; /* spans both columns */
+  grid-row: 4;
+}
+.bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-content h6 {
+  margin: 0;
+  color: #333;
+  font-weight: 400;
+  font-family: var(--sk-font-body);
+}
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .contact-bento-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    aspect-ratio: auto;
+    height: auto;
+  }
+
+  .large {
+    grid-row: auto;
+    aspect-ratio: 4 / 5; /* keeps the tall feel on mobile */
+  }
+
+  .item:not(.large) {
+    aspect-ratio: 1; /* the three small ones stay square */
+  }
+}
+
+.inner-contact-page {
+  margin: 20px;
+}
+.profileCard {
+  color: white;
+  background: var(--sk-color-primary-dark);
+}
+
+/* ===== White Action Cards (WhatsApp + Consultation) ===== */
+.action-card {
+  background: #ffffff;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  border-radius: 30px;
+  border: 1px solid #dfdfdf;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.action-card img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.action-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.action-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ===== Dark Profile Card ===== */
+.profile-card {
+  background: #111111;
+}
+
+.self-contact-card {
+  height: 100%;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+}
+
+.profile-info h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #fff;
+}
+
+.profile-info p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0;
+}
+
+.profile-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.profile-contact a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.profile-contact a:hover {
+  color: #fff;
+}
+
+/* Optional: make email & phone stand out a bit */
+.profile-contact a:first-child {
+  color: #fff;
+  font-weight: 500;
+}
+
+.process-section {
+  padding: 80px 20px;
+  background: #f8f7f4; /* soft warm background matching your site */
+}
+
+.process-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+/* Grid */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Card */
+.process-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Step number */
+.step-number {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #e07a5f; /* soft coral matching the reference */
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.process-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+/* Description */
+.process-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+  }
+}

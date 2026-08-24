@@ -34,7 +34,7 @@
                                 <div class="about-text">
                                     <h1 class="heroheading">About slashKode</h1>
                                     <p>
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        
                                         Odio reiciendis eius optio sapiente aut officiis explicabo
                                         quod. Odio nulla minus beatae et provident cumque pariatur
                                         at expedita molestiae, deleniti nobis magnam quaerat dicta

@@ -26,29 +26,6 @@
 }
 
 /* Grid */
-.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1.25rem;
-}
-
-.bento-card {
-  background: var(--sk-color-bg-card);
-  border-radius: var(--sk-radius-lg);
-  border: 1px solid var(--sk-color-sage-light);
-  box-shadow:
-    0px 4px 6px 0px rgba(50, 50, 93, 0.11),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.08);
-  padding: 1.75rem;
-  /* transition: var(--sk-transition-smooth); */
-  overflow: hidden;
-  position: relative;
-}
-
-.bento-card:hover {
-  transform: translateY(-3px);
-  box-shadow: unset;
-}
 
 /* Placement */
 .card-about {
