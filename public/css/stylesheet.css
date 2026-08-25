@@ -6,7 +6,7 @@
 :root {
   /* --- Colour Palette --- */
   /* Primary: Trust & Calm Base */
-  --sk-color-primary-dark: #1e293b; /* Deep Slate Blue (Main Text & Dark Surfaces) */
+  --sk-color-primary-dark: #0f172a; /* Deep Slate Blue (Main Text & Dark Surfaces)  1e293b*/
   --sk-color-primary-soft: #2c3e50; /* Slightly lighter slate for secondary text/borders */
 
   /* Secondary: Balance & Peace */
@@ -142,8 +142,8 @@ a:hover {
 .hero {
   text-align: center;
 }
-.hero h1 {
-  font-size: clamp(4.25rem, 5vw, 4.5rem);
+h1 {
+  font-size: clamp(3.25rem, 5vw, 5.5rem);
 }
 .hero p {
   margin: 0 auto;

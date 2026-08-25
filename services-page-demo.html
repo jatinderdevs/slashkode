@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Slashkode — Melbourne Web Agency</title>
+  <meta name="description" content="Website design, development and SEO services for Melbourne businesses. Clear process, honest advice, results that matter." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --sk-color-primary-dark: #1e293b;
+      --sk-color-primary-soft: #2c3e50;
+      --sk-color-sage: #4a7c59;
+      --sk-color-sage-light: #ebf2ec;
+      --sk-color-terracotta: #f74123;
+      --sk-color-terracotta-hover: #f76d23;
+      --sk-color-bg-warm: #f8f6f0;
+      --sk-color-bg-card: #ffffff;
+      --sk-color-surface-sand: #e5e0d8;
+      --sk-color-mint: #5eead4;
+      --sk-color-mint-soft: #ccfbf1;
+
+      --sk-font-heading: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+      --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --sk-font-mono: "JetBrains Mono", monospace;
+
+      --sk-radius-md: 16px;
+      --sk-radius-lg: 24px;
+      --sk-radius-pill: 9999px;
+      --sk-shadow-soft: 0 10px 30px -10px rgba(30, 41, 59, 0.06);
+      --sk-shadow-card: 0 4px 20px rgba(0, 0, 0, 0.04);
+      --sk-max: 1140px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--sk-font-body);
+      background: var(--sk-color-bg-warm);
+      color: var(--sk-color-primary-dark);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    img, video {
+      max-width: 100%;
+      display: block;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ─────────────────────────────────────
+       HERO
+    ───────────────────────────────────── */
+    .services-hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem 1.5rem 5rem;
+      position: relative;
+    }
+
+    .services-hero__inner {
+      max-width: var(--sk-max);
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: end;
+    }
+
+    .services-hero__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--sk-font-mono);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--sk-color-primary-soft);
+      margin-bottom: 1.5rem;
+    }
+
+    .services-hero__eyebrow span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--sk-color-terracotta);
+    }
+
+    .services-hero__title {
+      font-family: var(--sk-font-heading);
+      font-weight: 800;
+      font-size: clamp(2.8rem, 6.5vw, 5.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--sk-color-primary-dark);
+      margin-bottom: 0;
+    }
+
+    .services-hero__subtitle {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      color: var(--sk-color-primary-soft);
+      max-width: 28ch;
+      line-height: 1.5;
+    }
+
+    .services-hero__cta {
+      display: flex;
+      gap: 1.25rem;
+      margin-top: 2.5rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--sk-color-terracotta);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.9rem 1.6rem;
+      border-radius: var(--sk-radius-pill);
+      transition: background 0.25s ease, transform 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background: var(--sk-color-terracotta-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--sk-color-primary-dark);
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 2px;
+    }
+
+    /* ─────────────────────────────────────
+       HORIZONTAL SERVICES (pinned)
+    ───────────────────────────────────── */
+    .services-horizontal {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-horizontal__track {
+      display: flex;
+      flex-wrap: nowrap;
+      height: 100vh;
+      width: max-content;
+      will-change: transform;
+    }
+
+    .service-panel {
+      flex: 0 0 100vw;
+      width: 100vw;
+      min-width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 4rem 1.5rem;
+      position: relative;
+    }
+
+    .service-panel__inner {
+      max-width: var(--sk-max);
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    /* Left column – number + visual + description */
+    .service-panel__left {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    .service-panel__num {
+      font-family: var(--sk-font-mono);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--sk-color-primary-soft);
+    }
+
+    .service-panel__visual {
+      width: 100%;
+      max-width: 380px;
+      aspect-ratio: 4 / 3;
+      border-radius: var(--sk-radius-lg);
+      overflow: hidden;
+      background: #111;
+      position: relative;
+      box-shadow: var(--sk-shadow-soft);
+    }
+
+    .service-panel__visual-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+      color: rgba(255,255,255,0.5);
+      font-family: var(--sk-font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+    }
+
+    /* Video ready – just replace the placeholder with <video> later */
+    .service-panel__visual video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .service-panel__desc {
+      font-size: 1.15rem;
+      line-height: 1.55;
+      color: var(--sk-color-primary-soft);
+      max-width: 32ch;
+    }
+
+    /* Right column – big title + sub services */
+    .service-panel__right {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .service-panel__title {
+      font-family: var(--sk-font-heading);
+      font-weight: 800;
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      color: var(--sk-color-primary-dark);
+      text-transform: uppercase;
+    }
+
+    .service-panel__subs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem 2.5rem;
+      list-style: none;
+    }
+
+    .service-panel__subs li {
+      font-size: 1rem;
+      color: var(--sk-color-primary-soft);
+      padding: 0.2rem 0;
+      position: relative;
+    }
+
+    .service-panel__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--sk-color-terracotta);
+      transition: gap 0.2s ease;
+    }
+
+    .service-panel__link:hover {
+      gap: 0.65rem;
+    }
+
+    .service-panel__link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* Soft background tints per panel */
+    .service-panel--01 { background: var(--sk-color-bg-warm); }
+    .service-panel--02 { background: #f5f3ed; }
+    .service-panel--03 { background: #f0f4f1; }
+
+    /* Progress dots (optional visual aid) */
+    .services-progress {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 0.5rem;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .services-progress span {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(30, 41, 59, 0.2);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .services-progress span.active {
+      background: var(--sk-color-terracotta);
+      transform: scale(1.25);
+    }
+
+    /* ─────────────────────────────────────
+       FINAL CTA
+    ───────────────────────────────────── */
+    .services-cta {
+      padding: 7rem 1.5rem;
+      background: var(--sk-color-primary-dark);
+      color: #fff;
+      text-align: center;
+    }
+
+    .services-cta__inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .services-cta h2 {
+      font-family: var(--sk-font-heading);
+      font-weight: 800;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    .services-cta p {
+      font-size: 1.1rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+      line-height: 1.55;
+    }
+
+    .services-cta .btn-primary {
+      background: var(--sk-color-terracotta);
+    }
+
+    /* ─────────────────────────────────────
+       FOOTER (simple)
+    ───────────────────────────────────── */
+    .services-footer {
+      padding: 2.5rem 1.5rem;
+      background: #0f172a;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.875rem;
+      text-align: center;
+    }
+
+    /* ─────────────────────────────────────
+       RESPONSIVE
+    ───────────────────────────────────── */
+    @media (max-width: 900px) {
+      .services-hero__inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .services-hero {
+        min-height: auto;
+        padding: 5rem 1.25rem 4rem;
+      }
+
+      .service-panel {
+        height: auto;
+        min-height: 100vh;
+        padding: 3.5rem 1.25rem;
+      }
+
+      .service-panel__inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .service-panel__visual {
+        max-width: 100%;
+      }
+
+      .service-panel__title {
+        font-size: clamp(2rem, 8vw, 2.8rem);
+      }
+
+      .service-panel__subs {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+
+      /* On mobile we disable horizontal and stack vertically */
+      .services-horizontal__track {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+      }
+
+      .service-panel {
+        flex: none;
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        min-height: 100vh;
+      }
+
+      .services-progress {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .services-hero__title {
+        font-size: 2.4rem;
+      }
+
+      .service-panel__desc {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <section class="services-hero">
+    <div class="services-hero__inner">
+      <div>
+        <div class="services-hero__eyebrow">
+          <span></span>
+          Services
+        </div>
+        <h1 class="services-hero__title">
+          Clear digital<br>
+          services for<br>
+          Melbourne<br>
+          businesses.
+        </h1>
+      </div>
+      <div>
+        <p class="services-hero__subtitle">
+          Website design, development and SEO — built to help local businesses look professional, get found, and grow.
+        </p>
+        <div class="services-hero__cta">
+          <a href="#contact" class="btn-primary">Book a free chat</a>
+          <a href="#work" class="btn-secondary">See our work →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ HORIZONTAL SERVICES ═══════════════ -->
+  <section class="services-horizontal" id="services">
+    <div class="services-horizontal__track" id="servicesTrack">
+
+      <!-- PANEL 01 – Website Designing -->
+      <div class="service-panel service-panel--01" data-index="0">
+        <div class="service-panel__inner">
+          <div class="service-panel__left">
+            <div class="service-panel__num">01</div>
+            <div class="service-panel__visual">
+              <!-- Replace this placeholder with your video later -->
+              <div class="service-panel__visual-placeholder">
+                Video / Project preview
+              </div>
+              <!--
+              <video autoplay muted loop playsinline>
+                <source src="your-video-design.mp4" type="video/mp4">
+              </video>
+              -->
+            </div>
+            <p class="service-panel__desc">
+              We design intuitive, high-impact websites so users connect, engage and take action effortlessly.
+            </p>
+          </div>
+          <div class="service-panel__right">
+            <h2 class="service-panel__title">
+              Website<br>Designing
+            </h2>
+            <ul class="service-panel__subs">
+              <li>UX Research &amp; User Flows</li>
+              <li>UI Design &amp; Design Systems</li>
+              <li>Responsive Web Design</li>
+              <li>Conversion-Focused Layouts</li>
+              <li>Prototyping &amp; Interaction</li>
+              <li>Brand-Aligned Visuals</li>
+            </ul>
+            <a href="/website-design-melbourne" class="service-panel__link">
+              View design details
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 02 – Website Development -->
+      <div class="service-panel service-panel--02" data-index="1">
+        <div class="service-panel__inner">
+          <div class="service-panel__left">
+            <div class="service-panel__num">02</div>
+            <div class="service-panel__visual">
+              <div class="service-panel__visual-placeholder">
+                Video / Project preview
+              </div>
+            </div>
+            <p class="service-panel__desc">
+              We build fast, scalable digital systems so your website performs reliably and grows without limits.
+            </p>
+          </div>
+          <div class="service-panel__right">
+            <h2 class="service-panel__title">
+              Website<br>Development
+            </h2>
+            <ul class="service-panel__subs">
+              <li>Front-End Development</li>
+              <li>Back-End &amp; CMS</li>
+              <li>Performance Optimisation</li>
+              <li>Scalable Architecture</li>
+              <li>Security &amp; Maintenance</li>
+              <li>API Integrations</li>
+            </ul>
+            <a href="/website-development-melbourne" class="service-panel__link">
+              View development details
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- PANEL 03 – SEO -->
+      <div class="service-panel service-panel--03" data-index="2">
+        <div class="service-panel__inner">
+          <div class="service-panel__left">
+            <div class="service-panel__num">03</div>
+            <div class="service-panel__visual">
+              <div class="service-panel__visual-placeholder">
+                Video / Project preview
+              </div>
+            </div>
+            <p class="service-panel__desc">
+              Organic visibility that compounds — technical SEO, content strategy and authority building for Melbourne businesses.
+            </p>
+          </div>
+          <div class="service-panel__right">
+            <h2 class="service-panel__title">
+              Search Engine<br>Optimisation
+            </h2>
+            <ul class="service-panel__subs">
+              <li>Technical SEO Audits</li>
+              <li>On-Page Optimisation</li>
+              <li>Keyword Strategy</li>
+              <li>Content Strategy</li>
+              <li>Link Building &amp; Authority</li>
+              <li>Analytics &amp; Reporting</li>
+            </ul>
+            <a href="/seo-melbourne" class="service-panel__link">
+              View SEO details
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Progress dots -->
+    <div class="services-progress" id="servicesProgress">
+      <span class="active"></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FINAL CTA ═══════════════ -->
+  <section class="services-cta" id="contact">
+    <div class="services-cta__inner">
+      <h2>Ready to talk about your project?</h2>
+      <p>No pressure. Free initial chat. Melbourne-based and easy to work with.</p>
+      <a href="/contact" class="btn-primary">Book a free chat</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="services-footer">
+    <p>© 2026 Slashkode · Melbourne, Australia</p>
+  </footer>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const track = document.getElementById("servicesTrack");
+    const panels = gsap.utils.toArray(".service-panel");
+    const progressDots = document.querySelectorAll("#servicesProgress span");
+    const mm = gsap.matchMedia();
+
+    function getScrollAmount() {
+      return -(track.scrollWidth - window.innerWidth);
+    }
+
+    // Desktop / tablet horizontal scroll
+    mm.add("(min-width: 901px)", () => {
+      gsap.set(track, { clearProps: "transform" });
+
+      const totalPanels = panels.length;
+
+      const tween = gsap.to(track, {
+        x: getScrollAmount,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".services-horizontal",
+          pin: true,
+          scrub: 0.85,
+          start: "top top",
+          end: () => "+=" + Math.abs(getScrollAmount()),
+          invalidateOnRefresh: true,
+          anticipatePin: 1,
+          onUpdate: (self) => {
+            const progress = self.progress;
+            const activeIndex = Math.min(
+              totalPanels - 1,
+              Math.round(progress * (totalPanels - 1))
+            );
+            progressDots.forEach((dot, i) => {
+              dot.classList.toggle("active", i === activeIndex);
+            });
+          },
+        },
+      });
+
+      // Snap
+      ScrollTrigger.create({
+        trigger: ".services-horizontal",
+        start: "top top",
+        end: () => "+=" + Math.abs(getScrollAmount()),
+        snap: {
+          snapTo: 1 / (totalPanels - 1),
+          duration: { min: 0.12, max: 0.35 },
+          ease: "power1.inOut",
+        },
+      });
+
+      return () => {
+        tween.scrollTrigger && tween.scrollTrigger.kill();
+        ScrollTrigger.getAll().forEach((st) => {
+          if (st.vars && st.vars.trigger === document.querySelector(".services-horizontal")) {
+            st.kill();
+          }
+        });
+        gsap.set(track, { clearProps: "transform" });
+      };
+    });
+
+    // Mobile: pure vertical stack
+    mm.add("(max-width: 900px)", () => {
+      gsap.set(track, { clearProps: "all" });
+      progressDots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === 0);
+      });
+    });
+
+    // Resize handling
+    let resizeTimer;
+    window.addEventListener("resize", () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 180);
+    });
+
+    window.addEventListener("load", () => {
+      ScrollTrigger.refresh();
+    });
+  </script>
+</body>
+</html>

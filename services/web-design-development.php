@@ -45,57 +45,17 @@
                                 Services</a>
 
 
-                            <h1 class="wd-reveal">
+                            <h1 class="heroheading">
                                 Web Design & Development Built to Grow Your Melbourne Business
                             </h1>
-                            <p class="lead wd-reveal">
+                            <p >
                                 We combine clean design, smooth animation, and solid SEO foundations
                                 to turn your website into more enquiries — not just a prettier
                                 version of what you had.
                             </p>
                         </div>
 
-                        <div class="enquiryform">
-                            <div class="wd-hero-card wd-reveal" id="lead-form">
-
-                                <form class="wd-lead-form" action="/contact/" method="get">
-                                    <div class="form-row">
-                                        <div>
-                                            <label for="wd-name">Name</label>
-                                            <input type="text" id="wd-name" name="name" placeholder="Your name"
-                                                required />
-                                        </div>
-                                        <div>
-                                            <label for="wd-email">Email</label>
-                                            <input type="email" id="wd-email" name="email" placeholder="you@company.com"
-                                                required />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label for="wd-url">Website URL (optional)</label>
-                                        <input type="url" id="wd-url" name="website" placeholder="https://" />
-                                    </div>
-                                    <div>
-                                        <label for="wd-goal">Main goal</label>
-                                        <select id="wd-goal" name="goal" required>
-                                            <option value="" disabled selected>
-                                                What are you aiming for?
-                                            </option>
-                                            <option value="new-site">New website from scratch</option>
-                                            <option value="redesign">Redesign existing site</option>
-                                            <option value="conversion">Improve conversions</option>
-                                            <option value="seo">Better visibility / SEO</option>
-                                            <option value="other">Something else</option>
-                                        </select>
-                                    </div>
-                                    <button type="submit" class="p-3 sk-btn sk-btn-primary">
-                                        Request Consultation
-                                        <span></span>
-                                    </button>
-                                </form>
-                                <p class="wd-form-note">No spam. Just a clear next step.</p>
-                            </div>
-                        </div>
+                     
                     </div>
 
 
@@ -460,6 +420,8 @@
 
 
         <?php $faqPage = 'website-service'; require_once('../includes/sections/faq.php'); ?>
+
+        <?php  require_once( '../includes/island.php'); ?>
 
         <?php require_once('../includes/footer.php');?>
     </main>

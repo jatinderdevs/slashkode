@@ -261,11 +261,14 @@ function setupCharReveal(selector = ".headingeffect") {
   if (!headings.length) return;
 
   headings.forEach((heading) => {
-    gsap.from(heading, {
-      scale: 3,
+    const split = SplitText.create(heading, { type: "words" });
+
+    gsap.from(split.words, {
+      y: 50,
       opacity: 0,
+      stagger: 0.03,
       duration: 0.6,
-      ease: "bounce.out",
+      ease: "back.out(1.7)",
       scrollTrigger: {
         trigger: heading,
         start: "top 70%",
@@ -273,6 +276,19 @@ function setupCharReveal(selector = ".headingeffect") {
       },
     });
   });
+  //  headings.forEach((heading) => {
+  //   gsap.from(heading, {
+  //     scale: 3,
+  //     opacity: 0,
+  //     duration: 0.6,
+  //     ease: "bounce.out",
+  //     scrollTrigger: {
+  //       trigger: heading,
+  //       start: "top 70%",
+  //       toggleActions: "play none play none",
+  //     },
+  //   });
+  // });
 }
 
 /* --------------------------------------------------

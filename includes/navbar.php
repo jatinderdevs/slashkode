@@ -40,7 +40,7 @@
          <div class="col-md-6">
              <div class="sk_navbar">
                  <div class="logo">
-                     <a href="index.php"> <img src="<?php echo BASE_PATH; ?>/public/img/slashkode.png" width="150px"
+                     <a href="<?php echo BASE_PATH; ?>/index.php"> <img src="<?php echo BASE_PATH; ?>/public/img/slashkode.png" width="150px"
                              class="img-fluid" alt="" /></a>
                  </div>
                  <ul class="nav">
@@ -50,7 +50,7 @@
                                      class="nav-link-text nav-link-text--bottom">Work</span></span></a>
                      </li>
                      <li>
-                         <a href="./services/web-design-development.php" class="nav-link-anim"><span
+                         <a href="<?php echo BASE_PATH; ?>/services.php" class="nav-link-anim"><span
                                  class="nav-link-inner"><span
                                      class="nav-link-text nav-link-text--top">services</span><span
                                      class="nav-link-text nav-link-text--bottom">Services</span></span></a>

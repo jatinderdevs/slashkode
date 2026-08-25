@@ -17,7 +17,7 @@
             <div class="sk-container">
                 <section class="contacthero">
 
-                    <h1>Request a Consultation</h1>
+                    <h1 class="heroheading">Request a Consultation</h1>
                     <p>Let’s discuss your project goals. Send us a quick message or request a callback for a friendly,
                         practical conversation.</p>
                 </section>

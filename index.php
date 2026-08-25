@@ -271,8 +271,9 @@
 
         <?php $faqPage = 'home'; require_once('includes/sections/faq.php'); ?>
 
+        <?php  require_once( 'includes/island.php'); ?>
 
-        <?php require_once(BASE_PATH.'includes/footer.php');?>
+        <?php require_once('includes/footer.php'); ?>
 
     </main>
     <?php require_once('includes/customjs.php');?>

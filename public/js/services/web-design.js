@@ -11,17 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.set(reveals, { opacity: 0, y: 28 });
 
     // Hero group — staggered on load
-    const heroReveals = gsap.utils.toArray(".wd-hero .wd-reveal");
-    if (heroReveals.length) {
-      gsap.to(heroReveals, {
-        opacity: 1,
-        y: 0,
-        duration: 0.75,
-        stagger: 0.1,
-        ease: "power3.out",
-        delay: 0.15,
-      });
-    }
+    // const heroReveals = gsap.utils.toArray(".wd-hero .wd-reveal");
+    // if (heroReveals.length) {
+    //   gsap.to(heroReveals, {
+    //     opacity: 1,
+    //     y: 0,
+    //     duration: 0.75,
+    //     stagger: 0.1,
+    //     ease: "power3.out",
+    //     delay: 0.15,
+    //   });
+    // }
 
     // Everything else on scroll
     reveals.forEach((el) => {

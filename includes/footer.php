@@ -1,4 +1,3 @@
-        <?php  require_once( BASE_PATH.'includes/island.php'); ?>
 
         <footer class="sk-footer" role="contentinfo">
             <!-- Bouncy top edge -->
