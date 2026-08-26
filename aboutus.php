@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slashkode | About Us</title>
-    <?php require_once('includes/stylesheets.php');?>
+    <?php require_once('includes/stylesheets.php'); ?>
 
     <link rel="stylesheet" href="public/css/statement.css" />
     <link rel="stylesheet" href="public/css/servicesSection.css" />
@@ -24,7 +24,7 @@
 <body>
     <main>
         <div class="container-fluid">
-            <?php require_once('includes/navbar.php');?>
+            <?php require_once('includes/navbar.php'); ?>
 
             <section class="about-hero">
                 <div class="sk-container">
@@ -34,7 +34,7 @@
                                 <div class="about-text">
                                     <h1 class="heroheading">About slashKode</h1>
                                     <p>
-                                        
+
                                         Odio reiciendis eius optio sapiente aut officiis explicabo
                                         quod. Odio nulla minus beatae et provident cumque pariatur
                                         at expedita molestiae, deleniti nobis magnam quaerat dicta
@@ -137,16 +137,16 @@
 
 
         </section>
-        <?php require_once('includes/sections/cta.php');?>
+        <?php require_once('includes/sections/cta.php'); ?>
 
 
-        <?php require_once('includes/sections/faq.php');?>
+        <?php require_once('includes/sections/faq.php'); ?>
 
         </div>
-        <?php require_once('includes/footer.php');?>
+        <?php require_once('includes/footer.php'); ?>
 
     </main>
-    <?php require_once('includes/customjs.php');?>
+    <?php require_once('includes/customjs.php'); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Observer.min.js"></script>
     <script src="public/js/pages/about.js"></script>

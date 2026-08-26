@@ -333,7 +333,8 @@ section {
 .heroheading {
   text-transform: capitalize;
 }
-.wordhero4 {
+.heroheading .wordhero.is-accent,
+.heroheading .is-accent {
   color: var(--sk-color-terracotta);
 }
 /* hero buttton call to action */

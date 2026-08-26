@@ -1,0 +1,68 @@
+.heroWork{
+  text-align: center;
+}
+.heroWork p{
+  margin: 0 auto;
+}
+
+.works {
+  position: relative;
+  background: var(--sk-color-bg-warm);
+}
+.work {
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  height: 100vh; /* lock height if content fits */
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding: 4rem 0 5rem;
+  flex-direction: column;
+  justify-content: center;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  background: var(--sk-color-bg-warm);
+}
+.work p {
+  margin: 20px auto;
+}
+.work-desc {
+  padding-bottom: 0.5rem; /* small buffer under the button */
+}
+.work-media {
+  border-radius: var(--sk-radius-lg);
+  max-width: 70vw; /* adjust to your design */
+  margin: 0 auto;
+  max-height: 48vh; /* adjust to your design */
+  overflow: hidden;
+}
+
+.work-media img {
+  width: 100%;
+
+  object-fit: cover;
+}
+.work h2 {
+  text-transform: unset;
+  font-weight: 800;
+  font-size: clamp(2rem, 5.8vw, 4.5rem);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+.tags ul {
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.tags ul li {
+  border-radius: 40px;
+  padding: 10px 15px;
+  background: var(--sk-color-bg-card);
+}

@@ -38,6 +38,7 @@ function initHeroHighlight() {
     wordsClass: "wordhero++",
   });
 
+  // Entrance animation (same as yours)
   gsap.from(split.words, {
     opacity: 0.1,
     scale: 0.8,
@@ -45,6 +46,27 @@ function initHeroHighlight() {
     stagger: { each: 0.08, from: "random" },
     duration: 0.5,
     ease: "bounce.out",
+  });
+
+
+  const accentCount = 1;
+
+  const candidates = split.words.filter((w) => {
+    const t = w.textContent.trim().toLowerCase().replace(/[.,!?']/g, "");
+    return t.length > 2;
+  });
+  // Shuffle the words and take the first N
+  const randomWords = gsap.utils.shuffle(candidates).slice(0, accentCount);
+
+  // Apply the brand colour
+  randomWords.forEach((word) => {
+    word.classList.add("is-accent");   // or just set style
+    // Optional soft pop so it feels intentional
+    gsap.fromTo(
+      word,
+      { scale: 0.9 },
+      { scale: 1, duration: 0.4, ease: "back.out(1.7)", delay: 0.3 }
+    );
   });
 }
 

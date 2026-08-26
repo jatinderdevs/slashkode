@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php require_once('includes/stylesheets.php');?>
+    <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/contactus.css" />
 
 </head>
@@ -13,7 +13,7 @@
 <body>
     <main>
         <div class="container-fluid">
-            <?php require_once('includes/navbar.php');?>
+            <?php require_once('includes/navbar.php'); ?>
             <div class="sk-container">
                 <section class="contacthero">
 
@@ -139,13 +139,14 @@
                     </div>
                 </section>
             </div>
-            <?php $faqPage = 'contact page'; require_once('includes/sections/faq.php'); ?>
+            <?php $faqPage = 'contact page';
+            require_once('includes/sections/faq.php'); ?>
 
         </div>
-        <?php require_once('includes/footer.php');?>
+        <?php require_once('includes/footer.php'); ?>
 
     </main>
-    <?php require_once('includes/customjs.php');?>
+    <?php require_once('includes/customjs.php'); ?>
 </body>
 
 </html>

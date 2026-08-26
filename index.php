@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slashkode | Web Agency</title>
-    <?php require_once('includes/stylesheets.php');?>
+    <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="public/css/statement.css" />
     <link rel="stylesheet" href="public/css/servicesSection.css" />
     <link rel="stylesheet" href="public/css/bientoGrid.css" />
@@ -20,7 +20,7 @@
 <body>
     <main>
         <div class="container-fluid">
-            <?php require_once('includes/navbar.php');?>
+            <?php require_once('includes/navbar.php'); ?>
 
             <section class="hero">
                 <div class="sk-container">
@@ -115,7 +115,8 @@
                 </div>
             </section>
 
-            <?php $portfolioPage = 'home'; require_once('includes/sections/portfolio.php'); ?>
+            <?php $portfolioPage = 'home';
+            require_once('includes/sections/portfolio.php'); ?>
         </div>
 
         <section class="skills-section" aria-label="What I am good at">
@@ -266,17 +267,18 @@
                 </div>
             </section>
         </div>
-        <?php require_once('includes/sections/cta.php');?>
+        <?php require_once('includes/sections/cta.php'); ?>
 
 
-        <?php $faqPage = 'home'; require_once('includes/sections/faq.php'); ?>
+        <?php $faqPage = 'home';
+        require_once('includes/sections/faq.php'); ?>
 
-        <?php  require_once( 'includes/island.php'); ?>
+        <?php require_once('includes/island.php'); ?>
 
         <?php require_once('includes/footer.php'); ?>
 
     </main>
-    <?php require_once('includes/customjs.php');?>
+    <?php require_once('includes/customjs.php'); ?>
 
 
     <script src="public/js/serviceSection.js"></script>

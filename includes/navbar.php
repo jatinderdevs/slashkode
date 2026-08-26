@@ -45,7 +45,7 @@
                  </div>
                  <ul class="nav">
                      <li>
-                         <a href="" class="nav-link-anim"><span class="nav-link-inner"><span
+                         <a href="<?php echo BASE_PATH; ?>/work.php" class="nav-link-anim"><span class="nav-link-inner"><span
                                      class="nav-link-text nav-link-text--top">work</span><span
                                      class="nav-link-text nav-link-text--bottom">Work</span></span></a>
                      </li>
