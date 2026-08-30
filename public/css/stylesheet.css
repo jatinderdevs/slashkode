@@ -198,9 +198,24 @@ h1 {
 
 /* Primary – solid terracotta → darker terracotta */
 .sk-btn-primary {
-  background: var(--sk-color-terracotta);
+  background: linear-gradient(
+    to left,
+    var(--sk-color-terracotta),
+    var(--sk-color-terracotta-hover)
+  );
   color: #ffffff;
+  animation: wave 2s infinite alternate;
   box-shadow: 0 4px 14px rgba(247, 65, 35, 0.25);
+  animation: wave 3s infinite alternate;
+  background-size: 200%;
+}
+@keyframes wave {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 .sk-btn-primary > img {
   filter: invert(1);
