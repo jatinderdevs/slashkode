@@ -6,7 +6,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slashkode | Web Agency</title>
+    <meta name="description"
+        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one">
+    <title>slashkode | Web Design & Development, Melbourne</title>
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="public/css/statement.css" />
     <link rel="stylesheet" href="public/css/servicesSection.css" />
@@ -125,9 +127,13 @@
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
                         <a href="" class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
-                            <span class="skill-label">Website Design & Development</span>
+                            <span class="skill-label">Website Design & Development
+
+                            </span>
                             <span class="skill-icon" aria-hidden="true">
-                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
+                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span>
+
+                        </a>
 
 
 
@@ -155,6 +161,7 @@
                         What we are
                         good at
                     </h2>
+                    <p>Four things, done properly — not ten things done half-heartedly.</p>
                 </div>
             </div>
         </section>
@@ -262,7 +269,11 @@
                         </span>
                         make in seconds.
                     </h2>
-
+                    <p class="m-auto text-center">People decide whether to trust you almost the moment your site loads —
+                        often before they've read a word. If it's slow, looks dated, or buries
+                        the one thing you want them to do, you've lost them right there. We
+                        build every site around that split-second decision: clear message,
+                        fast load, obvious next step.</p>
 
                 </div>
             </section>

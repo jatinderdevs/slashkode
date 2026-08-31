@@ -210,6 +210,9 @@
   display: block;
   white-space: nowrap;
 }
+.footer-brand-mark span img {
+  opacity: 0.1;
+}
 
 /* Bottom bar */
 .footer-bottom {
