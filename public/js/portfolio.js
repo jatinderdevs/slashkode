@@ -22,7 +22,7 @@
   let minX = 0;
   let maxX = 0;
   // Start on the second slide by default
-  let activeIndex = Math.min(1, cards.length - 1);
+  let activeIndex = 0;
   let draggableInstance = null;
   let dragStartX = 0;
   let hasDragged = false;

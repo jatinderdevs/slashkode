@@ -10,7 +10,7 @@
     <title>Web Design & Development | Slashkode</title>
     <meta name="description"
         content="Custom UI/UX design, fluid GSAP animations, and rock-solid SEO. Websites built to scale your business — without the technical stress." />
-    <?php require_once('../includes/stylesheets.php');?>
+    <?php require_once('../includes/stylesheets.php'); ?>
 
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/services/web-design.css" />
 
@@ -29,7 +29,7 @@
     <main>
         <div class="container-fluid">
             <!-- ── Header (simplified island + desktop nav pattern) ── -->
-            <?php require_once('../includes/navbar.php');?>
+            <?php require_once('../includes/navbar.php'); ?>
 
             <!-- ════════════════════════════════════
              SECTION 1 — Hero
@@ -63,7 +63,8 @@
         </div>
         </section>
 
-        <?php $portfolioPage = 'web-design'; require_once('../includes/sections/portfolio.php'); ?>
+        <?php $portfolioPage = 'web-design';
+        require_once('../includes/sections/portfolio.php'); ?>
 
         <!-- about us -->
         <section class="sk-container">
@@ -176,7 +177,7 @@
                             a car park to a widescreen monitor.</p>
                     </div>
                     <div class="sk-ec-image">
-                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80"
+                        <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
                             alt="Custom UI/UX & Responsive Design" />
                     </div>
                 </div>
@@ -197,7 +198,7 @@
                             rank you.</p>
                     </div>
                     <div class="sk-ec-image">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80"
+                        <img src="<?php echo BASE_PATH; ?>/public/img/seo.png"
                             alt="Built-in Technical SEO" />
                     </div>
                 </div>
@@ -419,15 +420,16 @@
 
 
 
-        <?php $faqPage = 'website-service'; require_once('../includes/sections/faq.php'); ?>
+        <?php $faqPage = 'website-service';
+        require_once('../includes/sections/faq.php'); ?>
 
-        <?php  require_once( '../includes/island.php'); ?>
+        <?php require_once('../includes/island.php'); ?>
 
-        <?php require_once('../includes/footer.php');?>
+        <?php require_once('../includes/footer.php'); ?>
     </main>
 
     <!-- GSAP + ScrollTrigger -->
-    <?php require_once('../includes/customjs.php');?>
+    <?php require_once('../includes/customjs.php'); ?>
 
     <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
 

@@ -1,3 +1,32 @@
+<?php
+
+
+
+function sk_get_portfolio(string $page, string $jsonPath): array
+{
+  if (!file_exists($jsonPath)) {
+    return [];
+  }
+
+  $json = file_get_contents($jsonPath);
+  $all = json_decode($json, true);
+
+  if (!is_array($all)) {
+    return [];
+  }
+
+  return array_values(array_filter($all, function ($item) use ($page) {
+    return isset($item['pages']) && in_array($page, $item['pages'], true);
+  }));
+}
+
+// Adjust this path if your project structure differs — relative to
+// THIS file's location (includes/sections/portfolio.php), up two
+// levels to project root, then into /data/portfolio.json.
+$portfolioJsonPath = __DIR__ . '/data/portfolio.json';
+$portfolioPage = $portfolioPage ?? 'home';
+$portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
+?>
 <!doctype html>
 <html lang="en">
 
@@ -33,116 +62,42 @@
       </section>
       <section class="works">
 
-        <!-- 1. AIIT -->
-        <div class="work">
-          <h2>Australian International Institute of Technology</h2>
-          <div class="tags">
-            <ul class="nav">
-              <li>Website</li>
-              <li>SEO</li>
-              <li>UI/UX</li>
-              <li>RTO College</li>
-            </ul>
-          </div>
-          <div class="work-media">
-            <img src="public/img/mockups/aiit.jpg" alt="Australian International Institute of Technology website Melbourne">
-          </div>
-          <div class="work-desc">
-            <p>Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily.</p>
-            <a href="#" class="sk-btn sk-btn-primary">case study
-              <span></span>
-            </a>
-          </div>
-        </div>
+        <?php if (!empty($portfolioItems)) : ?>
+          <?php foreach ($portfolioItems as $item) : ?>
+            <div class="work">
+              <h2><?php echo htmlspecialchars($item['title'] ?? ''); ?></h2>
 
-        <!-- 2. Yarramovers -->
-        <div class="work">
-          <h2>Yarramovers</h2>
-          <div class="tags">
-            <ul class="nav">
-              <li>Website</li>
-              <li>Local SEO</li>
-              <li>UI/UX</li>
-              <li>Moving Company</li>
-            </ul>
-          </div>
-          <div class="work-media">
-            <img src="public/img/mockups/yara.png" alt="Yarramovers Melbourne moving company website">
-          </div>
-          <div class="work-desc">
-            <p>Website for a Melbourne moving company designed to generate more local leads. Clear service pages, quote-focused layout, and a structure that helps families and businesses find the right moving option quickly.</p>
-            <a href="https://www.yarramovers.com.au/" class="sk-btn sk-btn-primary" target="_blank" rel="noopener">case study
-              <span></span>
-            </a>
-          </div>
-        </div>
+              <?php if (!empty($item['chips'])) : ?>
+                <div class="tags">
+                  <ul class="nav">
+                    <?php foreach ($item['chips'] as $chip) : ?>
+                      <li><?php echo htmlspecialchars($chip); ?></li>
+                    <?php endforeach; ?>
+                  </ul>
+                </div>
+              <?php endif; ?>
 
-        <!-- 3. Brighton Institute -->
-        <div class="work">
-          <h2>Brighton Institute of Technology</h2>
-          <div class="tags">
-            <ul class="nav">
-              <li>Website</li>
-              <li>SEO</li>
-              <li>RTO</li>
-              <li>Education</li>
-            </ul>
-          </div>
-          <div class="work-media">
-            <img src="public/img/mockups/bit.png" alt="Brighton Institute of Technology VET college website">
-          </div>
-          <div class="work-desc">
-            <p>ASQA-aware website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs without looking generic.</p>
-            <a href="#" class="sk-btn sk-btn-primary">case study
-              <span></span>
-            </a>
-          </div>
-        </div>
+              <div class="work-media">
+                <img
+                  src="<?php echo htmlspecialchars($item['image'] ?? ''); ?>"
+                  alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>">
+              </div>
 
-        <!-- 4. International Student Tips -->
-        <div class="work">
-          <h2>International Student Tips</h2>
-          <div class="tags">
-            <ul class="nav">
-              <li>Website</li>
-              <li>CMS</li>
-              <li>SEO</li>
-              <li>Content</li>
-            </ul>
-          </div>
-          <div class="work-media">
-            <img src="public/img/mockups/ist.png" alt="International Student Tips Melbourne blog website">
-          </div>
-          <div class="work-desc">
-            <p>Content-focused website and admin dashboard for a Melbourne blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience.</p>
-            <a href="https://internationalstudenttips.com.au/" class="sk-btn sk-btn-primary" target="_blank" rel="noopener">case study
-              <span></span>
-            </a>
-          </div>
-        </div>
+              <div class="work-desc">
+                <?php if (!empty($item['desc'])) : ?>
+                  <p><?php echo htmlspecialchars($item['desc']); ?></p>
+                <?php endif; ?>
 
-        <!-- 5. Dalavoro -->
-        <div class="work">
-          <h2>Dalavoro</h2>
-          <div class="tags">
-            <ul class="nav">
-              <li>Website</li>
-              <li>UI/UX</li>
-              <li>Brand</li>
-              <li>Products</li>
-            </ul>
-          </div>
-          <div class="work-media">
-            <img src="public/img/mockups/dalavoro.png" alt="Dalavoro workwear and tools brand website">
-          </div>
-          <div class="work-desc">
-            <p>Modern product website for a workwear and tools brand. Clean layout that puts the products first, with a professional look that supports both retail and trade customers.</p>
-            <a href="https://dalavoro.com.au/" class="sk-btn sk-btn-primary" target="_blank" rel="noopener">case study
-              <span></span>
-            </a>
-          </div>
-        </div>
-
+                <?php if (!empty($item['cta'])) : ?>
+                  <a href="<?php echo htmlspecialchars($item['link'] ?? '#'); ?>" class="sk-btn sk-btn-primary">
+                    <?php echo htmlspecialchars($item['cta']); ?>
+                    <span></span>
+                  </a>
+                <?php endif; ?>
+              </div>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
         <!-- 6. Custom CMS -->
         <div class="work">
           <h2>Custom CMS &amp; Admin Dashboards</h2>

@@ -1,24 +1,62 @@
 [
-    {
-        "id": "aiit",
-        "title": "Australian International Institute of Technology",
-        "topTag": "Website",
-        "image": "/public/img/mockups/aiitmockupsample.png",
-        "alt": "AIIT project preview",
-        "link": "#",
-        "cta": null,
-        "chips": ["RTO / VET", "SEO"],
-        "pages": ["home", "web-design", "rto-vet"]
-    },
-    {
-        "id": "kaelio",
-        "title": "Kaelio",
-        "topTag": "Kaelio",
-        "image": "/public/img/mockups/aiit.jpg",
-        "alt": "Kaelio project preview",
-        "link": "#",
-        "cta": "Explore more",
-        "chips": [],
-        "pages": ["home", "web-design"]
-    }
+  {
+    "id": "aiit",
+    "title": "Australian International Institute of Technology",
+    "topTag": "Website",
+    "image": "./public/img/mockups/aiitmockupsample.png",
+    "alt": "AIIT RTO website preview – Melbourne VET college",
+    "link": "https://www.aiit.edu.au/",
+    "cta": "View live site",
+    "chips": ["Website design","RTO / VET", "SEO"],
+    "pages": ["home", "web-design", "rto-vet"],
+    "desc":"Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily."
+  },
+  {
+    "id": "brighton-institute",
+    "title": "Brighton Institute of Technology",
+    "topTag": "Website",
+    "image": "./public/img/mockups/bit.png",
+    "alt": "Brighton Institute of Technology website preview",
+    "link": "https://www.bit.edu.au/",
+    "cta": "View live site",
+    "chips": ["Website design","RTO / VET", "Social Media"],
+    "pages": ["home", "web-design", "rto-vet"],
+    "desc":"ASQA-aware website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs without looking generic."
+  },
+  {
+    "id": "international-student-tips",
+    "title": "International Student Tips",
+    "topTag": "Website + CMS",
+    "image": "./public/img/mockups/ist.png",
+    "alt": "International Student Tips blog website with admin dashboard",
+    "link": "https://internationalstudenttips.com.au/",
+    "cta": "Explore more",
+    "chips": ["Blog / CMS", "Admin Dashboard", "SEO"],
+    "pages": ["home", "web-design", "custom-cms"],
+    "desc":"Content-focused website and admin dashboard for a Melbourne blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience."
+  },
+  {
+    "id": "yarramovers",
+    "title": "Yarramovers",
+    "topTag": "Website",
+    "image": "./public/img/mockups/yara.png",
+    "alt": "Yarramovers Melbourne moving company website",
+    "link": "https://www.yarramovers.com.au/",
+    "cta": "View live site",
+    "chips": ["Local Business", "SEO"],
+    "pages": ["home", "web-design"],
+    "desc":"Website for a Melbourne moving company designed to generate more local leads. Clear service pages, quote-focused layout, and a structure that helps families and businesses find the right moving option quickly."
+  },
+   {
+    "id": "jd",
+    "title": "JD Shopfront and Shutters",
+    "topTag": "Website",
+    "image": "./public/img/mockups/jd.png",
+    "alt": "JD London Shopfront and Shutters company website",
+    "link": "https://www.jdshopfrontandshutter.co.uk/",
+    "cta": "View live site",
+    "chips": ["Service Based Business", "SEO"],
+    "pages": ["home", "web-design"],
+    "desc":"Website for a London based service company designed to generate more local leads. Clear service pages, quote-focused layout, and a structure that helps families and businesses find the right moving option quickly."
+  }
 ]
