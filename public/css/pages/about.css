@@ -4,13 +4,19 @@
 
 .mission {
   background: var(--sk-color-bg-card);
-  border-radius: var(--sk-radius-md);
+  border-radius: var(--sk-radius-lg);
+  padding: 4rem 2rem;
+  background-color: var(--sk-color-primary-dark);
 }
 .mission p {
   max-width: unset;
+  color: var( --sk-color-surface-sand);
   font-size: var(--sk-text-body-lg);
-
+  
   line-height: 1.6;
+}
+.mission h2{
+  color: var(--sk-color-bg-card);
 }
 .local-stats {
   display: flex;

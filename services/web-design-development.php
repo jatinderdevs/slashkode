@@ -40,8 +40,7 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
 
-                            <a href="" class="breadcrumb-btn"><img
-                                    src="<?php echo BASE_PATH; ?>/public/icons/right-arrow.png" alt=""> &nbsp;
+                            <a href="<?php echo BASE_PATH; ?>/services.php" class="breadcrumb-btn"> /
                                 Services</a>
 
 

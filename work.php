@@ -124,7 +124,9 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
       <?php require_once('includes/sections/cta.php'); ?>
 
 
-      <?php require_once('includes/sections/faq.php'); ?>
+      <?php $faqPage = 'work';
+      require_once('includes/sections/faq.php'); ?>
+      <?php require_once('includes/island.php'); ?>
 
     </div>
     <?php require_once('includes/footer.php'); ?>

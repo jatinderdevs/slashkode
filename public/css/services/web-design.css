@@ -29,19 +29,12 @@
 }
 .breadcrumb-btn {
   padding: 0.5rem 2rem;
-  border-radius: 50px;
-  background: var(--sk-color-bg-card);
-  margin-bottom: 10px;
-  display: inline-block;
-  font-weight: 600;
-  box-shadow:
-    rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  font-family: var(--sk-font-heading);
+
+  color: var(--sk-color-terracotta);
 }
 .breadcrumb-btn:hover {
-  box-shadow:
-    rgb(204, 219, 232) 3px 3px 6px 0px,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
+  text-decoration: underline;
   color: var(--sk-color-primary-dark);
 }
 .breadcrumb-btn img {

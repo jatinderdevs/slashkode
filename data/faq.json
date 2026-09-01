@@ -15,13 +15,6 @@
         ]
     },
     {
-        "page": "contact page",
-        "question": "How much does a website cost?",
-        "answer": [
-            "It depends on scope — a small marketing site costs a lot less than a custom web application or a full RTO/VET college build. Rather than guess, send us a short note about what you need and we'll give you a proper estimate."
-        ]
-    },
-    {
         "page": "home",
         "question": "How do we get started?",
         "answer": [
@@ -30,10 +23,60 @@
         ]
     },
     {
+        "page": "home",
+        "question": "What makes a Slashkode website different?",
+        "answer": [
+            "We focus on clarity, performance and real results for Melbourne businesses. Every site is custom-built with SEO in mind from day one, so it loads fast, ranks better and is easy for you to update.",
+            "You get a site that works hard for your business, not just one that looks good for a week."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "Can you help if I already have a website?",
+        "answer": [
+            "Yes. Many clients come to us with an existing site that needs a refresh, better SEO, or a complete rebuild. We'll look at what's working, what's not, and recommend the simplest path forward."
+        ]
+    },
+    {
+        "page": "contact page",
+        "question": "How much does a website cost?",
+        "answer": [
+            "It depends on scope — a small marketing site costs a lot less than a custom web application or a full RTO/VET college build. Rather than guess, send us a short note about what you need and we'll give you a proper estimate."
+        ]
+    },
+    {
+        "page": "contact page",
+        "question": "How quickly will you reply?",
+        "answer": [
+            "We aim to reply within one to two business days. If your project is a good fit we'll follow up with clear next steps and a realistic timeline."
+        ]
+    },
+    {
+        "page": "contact page",
+        "question": "Do I need to fill out a long form or book a call?",
+        "answer": [
+            "No. Just send a short message about what you're looking for. We prefer a simple conversation over long forms or forced sales calls."
+        ]
+    },
+    {
+        "page": "contact page",
+        "question": "What information should I include when I get in touch?",
+        "answer": [
+            "A few sentences about your business, what you need the website to do, and any deadlines or budget range you have in mind is perfect. Screenshots or links to sites you like are also helpful."
+        ]
+    },
+    {
+        "page": "contact page",
+        "question": "Are you available for projects outside Melbourne?",
+        "answer": [
+            "Yes. While we're based in Melbourne, most of our work is done remotely. We regularly work with clients across Australia and are comfortable with different time zones."
+        ]
+    },
+    {
         "page": "website-service",
         "question": "What services do you offer?",
         "answer": [
-            "We focus on four core areas: website design and development, SEO, custom web applications, and RTO &amp; VET college websites. Most projects blend two or three of these.",
+            "We focus on four core areas: website design and development, SEO, custom web applications, and RTO & VET college websites. Most projects blend two or three of these.",
             "If something falls outside our scope, we'll say so early and point you in the right direction."
         ]
     },
@@ -41,7 +84,7 @@
         "page": "website-service",
         "question": "How long does a typical project take?",
         "answer": [
-            "A focused landing page or small marketing site usually takes 2&ndash;4 weeks. Full multi-page websites with custom animation sit around 5&ndash;8 weeks. Larger builds &mdash; like RTO/VET sites or custom web apps &mdash; can stretch to 10&ndash;12 weeks.",
+            "A focused landing page or small marketing site usually takes 2–4 weeks. Full multi-page websites with custom animation sit around 5–8 weeks. Larger builds — like RTO/VET sites or custom web apps — can stretch to 10–12 weeks.",
             "Timeline depends on how quickly feedback and content come back from your side, and we'll share a clear schedule upfront so there are no surprises."
         ]
     },
@@ -49,13 +92,13 @@
         "page": "website-service",
         "question": "Do you work with remote or international clients?",
         "answer": [
-            "Yes &mdash; most of our work happens remotely. We're comfortable working across time zones and use async tools so nothing has to wait on a live call.",
+            "Yes — most of our work happens remotely. We're comfortable working across time zones and use async tools so nothing has to wait on a live call.",
             "We can jump on calls when it's useful, but the process is built so progress continues either way."
         ]
     },
     {
         "page": "website-service",
-        "question": "What&rsquo;s included in a project?",
+        "question": "What's included in a project?",
         "answer": [
             "Every project includes a strategy kickoff, design, development, basic SEO setup, performance checks, and a proper handover with documentation so you can update content yourself later.",
             "Source files and a short training session are included. Ongoing maintenance or new features can be arranged separately after launch."
@@ -66,7 +109,116 @@
         "question": "How do we get started?",
         "answer": [
             "Send us a short note about what you're building and where things are at. We'll reply within a couple of business days with a few questions and, if it's a good fit, a proposed scope and timeline.",
-            "No long forms or sales calls required &mdash; just a clear conversation so we both know it's the right match."
+            "No long forms or sales calls required — just a clear conversation so we both know it's the right match."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Who is behind Slashkode?",
+        "answer": [
+            "Slashkode is run by Jatinder, a Melbourne-based web designer and developer with years of experience building websites and custom applications for Australian businesses.",
+            "What started as freelance work under jatinderdev.com.au has grown into a focused sole-trader business dedicated to clear, high-performing websites."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Why did you start Slashkode?",
+        "answer": [
+            "After years of freelancing I wanted a clearer brand that reflected the kind of work I do best — practical, SEO-aware websites for Melbourne businesses that need to grow online.",
+            "Slashkode is simply a more focused version of the same hands-on approach."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Do you still do logo design or other digital services?",
+        "answer": [
+            "No. Slashkode is focused on website design, development, SEO and custom web applications. We no longer offer standalone logo design or general digital marketing packages."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Are you based in Melbourne?",
+        "answer": [
+            "Yes. Slashkode is a Melbourne-based business. Most of our clients are local, and we understand the local market, but we also work happily with clients anywhere in Australia."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "What kind of businesses do you work with?",
+        "answer": [
+            "We work with small to mid-sized businesses, professional services, education providers (including RTOs and VET colleges), and anyone who needs a clean, fast website that actually supports their goals.",
+            "If you're not sure whether we're a good fit, just ask — we're happy to tell you honestly."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "What website services does Slashkode offer?",
+        "answer": [
+            "We design and develop custom websites, handle technical SEO from the start, build custom web applications, and specialise in RTO and VET college websites that meet industry needs.",
+            "Most projects combine design, development and SEO so everything works together."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "Do you offer SEO as a separate service?",
+        "answer": [
+            "SEO is built into every website project we take on. We can also review an existing site and recommend improvements, but we don't run ongoing monthly SEO packages as a standalone service."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "Can you build a custom web application?",
+        "answer": [
+            "Yes. We build custom web applications and admin systems when a standard website isn't enough. These are usually tailored tools that help a business manage content, users or specific workflows."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "Do you build websites for RTOs and VET colleges?",
+        "answer": [
+            "Yes. We have solid experience building websites for Registered Training Organisations and VET providers. We understand the need for clear course information, compliance-friendly structure and easy content updates."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "Will I be able to update the website myself after launch?",
+        "answer": [
+            "Yes. Every project includes a handover and short training so you (or your team) can make everyday content updates without needing a developer for small changes."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "What kind of projects do you show in your work section?",
+        "answer": [
+            "We feature a mix of marketing websites, custom web applications and education-sector sites (including RTO and VET college projects). Each one highlights the real problem we solved and the outcome for the client."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Can I see examples of Melbourne businesses you've worked with?",
+        "answer": [
+            "Yes. Many of the projects in our work section are for Melbourne and Australian businesses. We focus on results that matter locally — clearer messaging, better performance and stronger online presence."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Do you only show finished websites?",
+        "answer": [
+            "Most of the work we share is live websites and applications. Where it adds clarity we also explain the process or the specific challenge the project solved."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Can I request a project similar to one of your past works?",
+        "answer": [
+            "Absolutely. If you see a project that feels close to what you need, mention it when you get in touch. It helps us understand the direction and style you're after."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Are all projects custom, or do you use templates?",
+        "answer": [
+            "Every project is custom-built. We don't use off-the-shelf templates. This keeps the design and performance tailored to each business and makes the site easier to maintain long-term."
         ]
     }
 ]

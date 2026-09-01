@@ -16,11 +16,11 @@
 
         <div class="cta-actions" data-actions>
             <a href="/contact" class="sk-btn sk-btn-primary">
-                Get a Quote →
+                Let’s talk →
 
                 <span></span>
             </a>
-            <a href="/contact" class="sk-btn sk-btn-secondary">Say hello <span></span></a>
+
         </div>
 
         <p class="cta-note" data-note>

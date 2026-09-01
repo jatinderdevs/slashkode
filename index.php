@@ -37,7 +37,7 @@
                     </p>
 
                     <div class="mag-zone">
-                        <a href="#" class="btn herobtnPrimary">See the work &nbsp;
+                        <a href="work.php" class="btn herobtnPrimary">See the work &nbsp;
                             <dotlottie-wc
                                 src="https://lottie.host/3c7a293d-42c4-4658-a8db-6f2e4bfef31c/UY9L97Lncp.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="mag-zone">
-                        <a href="#" class="btn herobtnSec">Say hi
+                        <a href="contactus.php" class="btn herobtnSec">Say hi
                             <dotlottie-wc
                                 src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -126,7 +126,7 @@
                 <!-- Left: expandable list -->
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
-                        <a href="" class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
+                        <a href="<?php echo BASE_PATH; ?>/services/web-design-development.php" class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
                             <span class="skill-label">Website Design & Development
 
                             </span>
@@ -214,7 +214,7 @@
                                 Asking and getting a clear answer.
                             </h3>
                         </div>
-                        <a href="#" class="sk-btn sk-btn-secondary"
+                        <a href="contactus.php" class="sk-btn sk-btn-secondary"
                             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">contact
                             now <img src="public/icons/top-right.png" width="15px" height="15px" alt="">
                             <span> </span>

@@ -63,6 +63,9 @@ height: 100%;
 }
 .tags ul li {
   border-radius: 40px;
-  padding: 10px 15px;
-  background: var(--sk-color-bg-card);
+  padding: 6px 14px;
+  font-size: 14px;
+  background: var(--sk-color-sage-light);
+    color: var(--sk-color-sage);
+    font-family: var(  --sk-font-mono);
 }

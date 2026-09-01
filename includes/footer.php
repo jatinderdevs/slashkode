@@ -33,9 +33,9 @@
                 <ul>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">Price</a></li>
+                    <li><a href="#faq">About</a></li>
+                    <li><a href="#contact">Blog</a></li>
                 </ul>
             </div>
 

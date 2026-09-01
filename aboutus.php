@@ -35,12 +35,7 @@
                                     <h1 class="heroheading">About slashKode</h1>
                                     <p>
 
-                                        Odio reiciendis eius optio sapiente aut officiis explicabo
-                                        quod. Odio nulla minus beatae et provident cumque pariatur
-                                        at expedita molestiae, deleniti nobis magnam quaerat dicta
-                                        laudantium temporibus nisi neque facere fugit cum modi
-                                        officiis sapiente animi atque quibusdam! Dolore eaque vero
-                                        dicta?
+                                        I’m Jatinder Singh, founder of slashKode. What began as freelance web work under jatinderdev.com.au is now a Melbourne-based sole-trader agency focused on helping local businesses grow online properly. We design and build websites, improve search visibility, create specialist platforms for RTOs and VET colleges, and develop custom web applications that save time and reduce manual work.
                                     </p>
 
                                 </div>
@@ -64,11 +59,11 @@
             <div class="rail">
                 <h4>Proudly based in <span> MELBOURNE</span>.</h4>
                 <h4>Experienced.</h4>
-                <h4>understand local market</h4>
+                <h4>We understand the local market.</h4>
             </div>
         </section>
-        <section class="sk-container shadow   bg-white">
-            <div class="mission">
+        <section class="sk-container   ">
+            <div class="mission ">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="./public/img/myself.webp" class="img-fluid myself" alt="">
@@ -78,19 +73,10 @@
                             Our mission? Help your business reach its online potential
                         </h2>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
-                            sunt corrupti adipisci in maiores, enim impedit sapiente
-                            accusamus molestias quos blanditiis corporis iste cum
-                            consequuntur officiis aut nemo repellendus consectetur quasi
-                            hic. Laboriosam magnam id voluptate aliquid quos cupiditate
-                            voluptates inventore iste nemo, corrupti nesciunt ullam!
-                            Possimus delectus quibusdam, dicta consequatur facere modi ea
-                            quaerat quidem inventore odio aperiam. Natus deleniti, saepe
-                            consequatur quo neque odit animi vel veritatis cumque ab ad quod
-                            eum tenetur voluptatibus libero praesentium iusto? Odit mollitia
-                            ipsa animi neque, eum quibusdam iste, dolores natus est eligendi
-                            dolore debitis consectetur voluptatem fugit! Corrupti facere
-                            earum facilis.
+                            After years working with Melbourne businesses as a freelancer, I saw the gap clearly: too many local companies were paying for websites that looked fine but didn’t bring enquiries, or systems that were hard to manage. slashKode was built to close that gap.
+                        </p>
+                        <p>
+                            We work with business owners who want practical digital support — clear communication, honest advice, and solutions that match how Melbourne businesses actually run day to day. Whether you need a new website that converts, better visibility on Google, a compliant RTO or VET college site, or a custom application that removes repetitive tasks, we keep the process straightforward and the results measurable.
                         </p>
                         <a href="#contact" class="mb-3 sk-btn sk-btn-primary">
                             Contact Now <img src="public/icons/top-right.png" class="img-fluid" alt="" width="15px"
@@ -105,10 +91,8 @@
 
         <section class="sk-container">
             <div class="about-services shadow">
-                <h2 class="headingeffect">our services</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellat obcaecati sed assumenda
-                    numquam, dicta magni quo, voluptatibus, minima nostrum aliquid id! Eaque possimus magni ab expedita,
-                    mollitia porro illo!</p>
+                <h2 class="headingeffect">Our Services</h2>
+                <p>We focus on the digital work that delivers the highest return for Melbourne businesses. Every project starts with understanding your goals, your customers, and the local market — then we build only what is needed.</p>
                 <div class="servicesbtn">
                     <a href="#" class="sk-btn sk-btn-secondary"
                         style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">Website
