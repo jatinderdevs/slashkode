@@ -8,13 +8,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one">
+    <meta name="keywords"
+        content="web design Melbourne, website development Melbourne, SEO Melbourne, RTO website design, custom web applications Melbourne, VET college website, Melbourne web developer" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="slashkode" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="canonical" href="https://slashkode.com.au/" />
     <title>slashkode | Web Design & Development, Melbourne</title>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="slashkode | Web Design & Development, Melbourne" />
+    <meta property="og:description"
+        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one." />
+    <meta property="og:url" content="https://slashkode.com.au/" />
+    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="slashkode | Web Design & Development, Melbourne" />
+    <meta name="twitter:description"
+        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs." />
+    <meta name="twitter:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
+
+    <!-- Schema.org: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "slashkode",
+        "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
+        "url": "https://slashkode.com.au/",
+        "telephone": "+61499167608",
+        "email": "info@slashkode.com.au",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Melbourne",
+            "addressRegion": "VIC",
+            "addressCountry": "AU"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Melbourne"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Jatinder Singh"
+        },
+        "makesOffer": [{
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Website Design & Development"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Search Engine Optimisation (SEO)"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "RTO and VET Colleges Website"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Web Applications"
+                }
+            }
+        ]
+    }
+    </script>
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="public/css/statement.css" />
     <link rel="stylesheet" href="public/css/servicesSection.css" />
     <link rel="stylesheet" href="public/css/bientoGrid.css" />
     <link rel="stylesheet" href="public/css/cta.css" />
     <link rel="stylesheet" href="public/css/marquee.css" />
+    <!-- Preconnect: speeds up the external script/font hosts used on this page -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js" type="module"></script>
 </head>
@@ -126,7 +212,8 @@
                 <!-- Left: expandable list -->
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
-                        <a href="<?php echo BASE_PATH; ?>/services/web-design-development.php" class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
+                        <a href="<?php echo BASE_PATH; ?>/services/web-design-development.php"
+                            class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
                             <span class="skill-label">Website Design & Development
 
                             </span>
@@ -137,16 +224,16 @@
 
 
 
-                        <a href="" class="skill-trigger">
+                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger">
                             <span class="skill-label">Search Engine Optimise (SEO)</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
-                        <a href="" class="skill-trigger">
+                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php" class="skill-trigger">
                             <span class="skill-label">RTO and VET Colleges Website</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
-                        <a href="" class="skill-trigger">
+                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications.php" class="skill-trigger">
                             <span class="skill-label">Custom web Applications</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
@@ -179,30 +266,32 @@
                             <div class="row align-items-center no-gutters">
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
-                                        <img src="public/img/js.jpg" class="img-fluid alt="" />
-                    
-                  </div></div>
-                    <div class=" col-sm-8">
-                                        <div>
-                                            <h3 class="about-name">JATINDER SINGH</h3>
-                                            <p class="about-role">Web Designer &amp; Developer</p>
-                                        </div>
+                                        <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
+                                            alt="Jatinder Singh, founder and web developer at slashkode" />
                                     </div>
                                 </div>
+                                <div class="col-sm-8">
+                                    <div>
+                                        <h3 class="about-name">JATINDER SINGH</h3>
+                                        <p class="about-role">Web Designer &amp; Developer</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                                <p class="about-bio">
-                                    I’m Jatinder, a Melbourne-based web designer and developer.
-                                    I work with small businesses across the city who want clean,
-                                    fast websites that actually help them get enquiries — not
-                                    just look good.
-                                </p>
-                            </div>
-                            <div class="about-tags">
-                                <span class="about-tag">Design</span>
-                                <span class="about-tag">Development</span>
-                                <span class="about-tag">SEO</span>
-                                <span class="about-tag">CMS</span>
-                            </div>
+                            <p class="about-bio">
+                                I’m Jatinder, a Melbourne-based web designer and developer.
+                                I work with small businesses across the city who want clean,
+                                fast websites that actually help them get enquiries — not
+                                just look good.
+                                <a href="<?php echo BASE_PATH; ?>/aboutus.php">More about slashkode →</a>
+                            </p>
+                        </div>
+                        <div class="about-tags">
+                            <span class="about-tag">Design</span>
+                            <span class="about-tag">Development</span>
+                            <span class="about-tag">SEO</span>
+                            <span class="about-tag">CMS</span>
+                        </div>
                     </article>
 
 
@@ -292,12 +381,11 @@
     <?php require_once('includes/customjs.php'); ?>
 
 
-    <script src="public/js/serviceSection.js"></script>
-
-    <script src="public/js/bientoGrid.js"></script>
-    <script src="public/js/cta.js"></script>
-    <script src="public/js/marquee.js"></script>
-    <script src="public/js/init.js"></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/serviceSection.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/bientoGrid.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/cta.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/init.js" defer></script>
 </body>
 
 </html>

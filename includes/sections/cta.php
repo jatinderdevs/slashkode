@@ -10,12 +10,12 @@
         </h2>
 
         <p class="cta-desc" data-desc>
-            Tell me a little about what you need. I’ll come back with a clear
-            quote, timeline, and next steps — no pressure.
+            Tell us a little about what you need. We’ll come back with a clear
+            quote, timeline, and next steps - no pressure.
         </p>
 
         <div class="cta-actions" data-actions>
-            <a href="/contact" class="sk-btn sk-btn-primary">
+            <a href="<?php echo BASE_PATH; ?>/contactus.php" class="sk-btn sk-btn-primary">
                 Let’s talk →
 
                 <span></span>
