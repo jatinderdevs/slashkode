@@ -7,26 +7,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SEO Services Melbourne | On-Page SEO & Website Audits | Slashkode</title>
+    <title>SEO Services Melbourne | On-Page SEO & Website Audits | slashkode</title>
     <meta name="description"
         content="On-page SEO and website audits in Melbourne. We build SEO into new sites from day one, and upgrade existing sites for speed, keywords, content and conversions — no monthly retainers required." />
-    <meta name="keywords" content="SEO Melbourne, on-page SEO Melbourne, website SEO audit, technical SEO Melbourne, SEO website upgrade, conversion focused SEO, local SEO Melbourne" />
+    <meta name="keywords"
+        content="SEO services Melbourne, website SEO audit Melbourne, technical SEO Melbourne, on-page SEO Melbourne, local SEO Melbourne" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Slashkode | Jatinder Singh" />
-    <link rel="canonical" href="https://slashkode.com.au/services/seo" />
+    <meta name="author" content="slashkode" />
+    <link rel="canonical" href="https://slashkode.com.au/services/seo-services" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SEO Services Melbourne | On-Page SEO & Website Audits | Slashkode" />
-    <meta property="og:description" content="SEO built into your website — or a deep audit and upgrade of what you already have. Speed, keywords, content and conversion focus. Melbourne based." />
-    <meta property="og:url" content="https://slashkode.com.au/services/seo" />
-    <meta property="og:site_name" content="Slashkode" />
+    <meta property="og:title" content="SEO Services Melbourne | On-Page SEO & Website Audits | slashkode" />
+    <meta property="og:description"
+        content="SEO built into your website — or a deep audit and upgrade of what you already have. Speed, keywords, content and conversion focus. Melbourne based." />
+    <meta property="og:url" content="https://slashkode.com.au/services/seo-services" />
+    <meta property="og:site_name" content="slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SEO Services Melbourne | Slashkode" />
-    <meta name="twitter:description" content="On-page SEO and full website upgrades. No monthly plans — we fix the site so it can actually rank and convert." />
+    <meta name="twitter:title" content="SEO Services Melbourne | slashkode" />
+    <meta name="twitter:description"
+        content="On-page SEO and full website upgrades. No monthly plans — we fix the site so it can actually rank and convert." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -36,7 +39,7 @@
         "name": "On-Page SEO & Website Audit Services",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "Slashkode",
+            "name": "slashkode",
             "url": "https://slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
@@ -78,7 +81,7 @@
                     <div class="text-container">
                         <!-- ── Breadcrumb ── -->
                         <div>
-                            <a href="<?php echo BASE_PATH; ?>/services.php" class="breadcrumb-btn"> / Services</a>
+                            <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
 
                             <h1 class="heroheading">
                                 SEO Built Into Your Website — Not Bolted On Later
@@ -98,7 +101,7 @@
             require_once('../includes/sections/portfolio.php'); ?>
 
             <!-- about us / why us bento -->
-            <section class="sk-container">
+            <section class="sk-container p-0">
                 <div class="bento-grid">
                     <!-- About Me -->
                     <article class="bento-card card-about" data-animate>
@@ -106,7 +109,8 @@
                             <div class="row align-items-center no-gutters">
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
-                                        <img src="public/img/js.jpg" class="img-fluid" alt="Jatinder Singh, Founder of Slashkode" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
+                                            alt="Jatinder Singh, Founder of slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
@@ -144,19 +148,24 @@
                             <div class="marquee-wrap">
                                 <div class="marquee-track service_beinto_imgs">
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/nodejs.png" alt="Node.js" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/nodejs.png" alt="Node.js"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mysql.png" alt="MySQL" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mysql.png" alt="MySQL"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/php.png" alt="PHP" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/php.png" alt="PHP"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mongodb.png" alt="MongoDB" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mongodb.png" alt="MongoDB"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/html.png" alt="HTML" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/html.png" alt="HTML"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -223,7 +232,7 @@
                         </div>
                         <div class="sk-ec-image">
                             <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                alt="Website SEO audit and upgrade" />
+                                alt="Website SEO audit and upgrade" loading="lazy" />
                         </div>
                     </div>
 
@@ -245,8 +254,9 @@
                             </p>
                         </div>
                         <div class="sk-ec-image">
+                            <!-- TODO: replace with a real screenshot/graphic — currently the same generic stock photo used on custom-web-applications.php and rto-vet-colleges-website.php -->
                             <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                alt="Keyword research and content for ranking" />
+                                alt="Keyword research and content for ranking" loading="lazy" />
                         </div>
                     </div>
 
@@ -273,7 +283,7 @@
                                     <h3 class="sk-ec-title">SEO Built Into New Websites</h3>
                                     <p class="sk-ec-desc">
                                         Structure, metadata, speed and content planned from the start so your
-                                        new site is ready to rank — not left for “later”.
+                                        new site is ready to rank — not left for "later".
                                     </p>
                                 </div>
                             </div>
@@ -283,7 +293,7 @@
                             <div class="sk-ec-m-card">
                                 <div class="sk-ec-m-image">
                                     <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                        alt="Website SEO audit and upgrade" />
+                                        alt="Website SEO audit and upgrade" loading="lazy" />
                                 </div>
                                 <div class="sk-ec-m-body">
                                     <div class="sk-ec-icon">
@@ -309,8 +319,9 @@
                         <div class="sk-ec-slide">
                             <div class="sk-ec-m-card">
                                 <div class="sk-ec-m-image">
+                                    <!-- TODO: replace with a real screenshot/graphic — currently the same generic stock photo used on custom-web-applications.php and rto-vet-colleges-website.php -->
                                     <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                        alt="Keyword research and content for ranking" />
+                                        alt="Keyword research and content for ranking" loading="lazy" />
                                 </div>
                                 <div class="sk-ec-m-body">
                                     <div class="sk-ec-icon">
@@ -343,117 +354,118 @@
             <section class="sk-container text-center">
                 <span class="sk-statement-eyebrow">/what clients say</span>
                 <h2 class="testimonial-quote">
-                    They didn’t sell us a monthly package. They fixed the site — speed, structure and
+                    They didn't sell us a monthly package. They fixed the site — speed, structure and
                     content — and we started seeing better rankings and clearer enquiries.
                 </h2>
                 <div class="testimonial-author justify-content-center">
                     <div class="author-avatar">MC</div>
                     <div>
+                        <!-- TODO: replace with a real client name/business once available -->
                         <div class="author-name">Melbourne Client</div>
                         <div class="author-role">Local Business Owner</div>
                     </div>
                 </div>
             </section>
-
-            <!-- Process -->
-            <section class="sk-section">
-                <div class="sk-container">
-                    <div class="sk-header">
-                        <h2 class="sk-header__title">How we improve<br>your visibility</h2>
-                        <div class="sk-header__right">
-                            <p class="sk-header__sub">
-                                Clear steps. Focus on the website itself. Results you can see and measure.
-                            </p>
-                            <a href="/contact" class="sk-btn sk-btn-primary">
-                                Get Started <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
-                                    alt="" width="15px" height="15px" />
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="sk-cards">
-
-                        <!-- Card 01 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">01</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="3" />
-                                        <path
-                                            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Audit &amp; Keyword Review</h3>
-                                <p class="sk-card__desc">
-                                    Full technical and content check of your current site (or a clear plan for a
-                                    new one), plus the search terms your Melbourne audience actually uses.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 02 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">02</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M4 17l6-6 4 4 6-6" />
-                                        <path d="M14 7h6v6" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Structure &amp; Speed Fixes</h3>
-                                <p class="sk-card__desc">
-                                    We fix the foundations: page speed, headings, metadata, internal links and
-                                    technical issues that stop Google (and users) from trusting the site.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 03 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">03</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 11l3 3L22 4" />
-                                        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Content &amp; Conversion Focus</h3>
-                                <p class="sk-card__desc">
-                                    Pages and copy shaped around real search intent, with clear paths to enquiry
-                                    or contact — so rankings turn into actual business, not just traffic.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 04 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">04</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Handover &amp; Clear Next Steps</h3>
-                                <p class="sk-card__desc">
-                                    You get a site that is ready to rank and convert, plus a simple summary of
-                                    what was done and what (if anything) is worth watching going forward.
-                                </p>
-                            </div>
-                        </article>
-
+        </div>
+        <!-- Process -->
+        <section class="sk-section">
+            <div class="sk-container">
+                <div class="sk-header">
+                    <h2 class="sk-header__title">How we improve<br>your visibility</h2>
+                    <div class="sk-header__right">
+                        <p class="sk-header__sub">
+                            Clear steps. Focus on the website itself. Results you can see and measure.
+                        </p>
+                        <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">
+                            Get Started <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
+                                alt="" width="15" height="15" />
+                            <span></span>
+                        </a>
                     </div>
                 </div>
-            </section>
 
+                <div class="sk-cards">
+
+                    <!-- Card 01 -->
+                    <article class="sk-card">
+                        <div class="sk-card__fill" aria-hidden="true"></div>
+                        <div class="sk-card__inner">
+                            <span class="sk-card__num">01</span>
+                            <div class="sk-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path
+                                        d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+                                </svg>
+                            </div>
+                            <h3 class="sk-card__title">Audit &amp; Keyword Review</h3>
+                            <p class="sk-card__desc">
+                                Full technical and content check of your current site (or a clear plan for a
+                                new one), plus the search terms your Melbourne audience actually uses.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Card 02 -->
+                    <article class="sk-card">
+                        <div class="sk-card__fill" aria-hidden="true"></div>
+                        <div class="sk-card__inner">
+                            <span class="sk-card__num">02</span>
+                            <div class="sk-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 17l6-6 4 4 6-6" />
+                                    <path d="M14 7h6v6" />
+                                </svg>
+                            </div>
+                            <h3 class="sk-card__title">Structure &amp; Speed Fixes</h3>
+                            <p class="sk-card__desc">
+                                We fix the foundations: page speed, headings, metadata, internal links and
+                                technical issues that stop Google (and users) from trusting the site.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Card 03 -->
+                    <article class="sk-card">
+                        <div class="sk-card__fill" aria-hidden="true"></div>
+                        <div class="sk-card__inner">
+                            <span class="sk-card__num">03</span>
+                            <div class="sk-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9 11l3 3L22 4" />
+                                    <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                                </svg>
+                            </div>
+                            <h3 class="sk-card__title">Content &amp; Conversion Focus</h3>
+                            <p class="sk-card__desc">
+                                Pages and copy shaped around real search intent, with clear paths to enquiry
+                                or contact — so rankings turn into actual business, not just traffic.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Card 04 -->
+                    <article class="sk-card">
+                        <div class="sk-card__fill" aria-hidden="true"></div>
+                        <div class="sk-card__inner">
+                            <span class="sk-card__num">04</span>
+                            <div class="sk-card__icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <h3 class="sk-card__title">Handover &amp; Clear Next Steps</h3>
+                            <p class="sk-card__desc">
+                                You get a site that is ready to rank and convert, plus a simple summary of
+                                what was done and what (if anything) is worth watching going forward.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid">
             <?php $faqPage = 'seo-service';
             require_once('../includes/sections/faq.php'); ?>
 
@@ -466,12 +478,12 @@
     <!-- GSAP + ScrollTrigger -->
     <?php require_once('../includes/customjs.php'); ?>
 
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js" defer></script>
 
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js"></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
 
 </body>
 

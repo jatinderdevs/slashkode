@@ -7,26 +7,29 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Web Applications Melbourne | Tailored Business Software | Slashkode</title>
+    <title>Custom Web Applications Melbourne | Tailored Business Software | slashkode</title>
     <meta name="description"
         content="Custom web applications and tailored CMS for Melbourne businesses. Admin dashboards, internal portals, workflow tools and secure systems built to fit how you actually work — not forced into a template." />
-    <meta name="keywords" content="custom web application Melbourne, custom CMS Melbourne, business portal development, admin dashboard development, tailored web software Melbourne, custom CRM Melbourne" />
+    <meta name="keywords"
+        content="custom web application development Melbourne, custom CMS Melbourne, admin dashboard development Melbourne, internal business portal development" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Slashkode | Jatinder Singh" />
+    <meta name="author" content="slashkode" />
     <link rel="canonical" href="https://slashkode.com.au/services/custom-web-applications" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Custom Web Applications Melbourne | Tailored Business Software | Slashkode" />
-    <meta property="og:description" content="Custom web applications, admin dashboards and internal portals built in Melbourne for the way your business actually works." />
+    <meta property="og:title" content="Custom Web Applications Melbourne | Tailored Business Software | slashkode" />
+    <meta property="og:description"
+        content="Custom web applications, admin dashboards and internal portals built in Melbourne for the way your business actually works." />
     <meta property="og:url" content="https://slashkode.com.au/services/custom-web-applications" />
-    <meta property="og:site_name" content="Slashkode" />
+    <meta property="og:site_name" content="slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Custom Web Applications Melbourne | Slashkode" />
-    <meta name="twitter:description" content="Tailored web applications, CMS and dashboards built around your processes — not the other way around." />
+    <meta name="twitter:title" content="Custom Web Applications Melbourne | slashkode" />
+    <meta name="twitter:description"
+        content="Tailored web applications, CMS and dashboards built around your processes — not the other way around." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -36,7 +39,7 @@
         "name": "Custom Web Applications",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "Slashkode",
+            "name": "slashkode",
             "url": "https://slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
@@ -78,10 +81,11 @@
                     <div class="text-container">
                         <!-- ── Breadcrumb ── -->
                         <div>
-                            <a href="<?php echo BASE_PATH; ?>/services.php" class="breadcrumb-btn"> / Services</a>
+                            <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
 
                             <h1 class="heroheading">
                                 Custom Web Applications Built Around How Your Business Actually Works
+
                             </h1>
                             <p>
                                 Off-the-shelf tools force you to change your process. We build the opposite —
@@ -97,7 +101,7 @@
             require_once('../includes/sections/portfolio.php'); ?>
 
             <!-- about us / why us bento -->
-            <section class="sk-container">
+            <section class="sk-container p-0">
                 <div class="bento-grid">
                     <!-- About Me -->
                     <article class="bento-card card-about" data-animate>
@@ -105,7 +109,8 @@
                             <div class="row align-items-center no-gutters">
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
-                                        <img src="public/img/js.jpg" class="img-fluid" alt="Jatinder Singh, Founder of Slashkode" />
+                                        <img src="<?php echo BASE_PATH; ?>public/img/js.jpg" class="img-fluid"
+                                            alt="Jatinder Singh, Founder of slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
@@ -143,19 +148,24 @@
                             <div class="marquee-wrap">
                                 <div class="marquee-track service_beinto_imgs">
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/nodejs.png" alt="Node.js" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/nodejs.png" alt="Node.js"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mysql.png" alt="MySQL" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mysql.png" alt="MySQL"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/php.png" alt="PHP" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/php.png" alt="PHP"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mongodb.png" alt="MongoDB" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mongodb.png" alt="MongoDB"
+                                            loading="lazy" />
                                     </div>
                                     <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/html.png" alt="HTML" loading="lazy" />
+                                        <img src="<?php echo BASE_PATH; ?>/public/icons/html.png" alt="HTML"
+                                            loading="lazy" />
                                     </div>
                                 </div>
                             </div>
@@ -219,8 +229,8 @@
                             </p>
                         </div>
                         <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/seo.png"
-                                alt="Custom CMS and admin dashboard" />
+                            <img src="<?php echo BASE_PATH; ?>/public/img/seo.png" alt="Custom CMS and admin dashboard"
+                                loading="lazy" />
                         </div>
                     </div>
 
@@ -244,8 +254,9 @@
                             </p>
                         </div>
                         <div class="sk-ec-image">
+                            <!-- TODO: replace with a real screenshot/graphic — currently a generic stock photo -->
                             <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                alt="Secure user management and integrations" />
+                                alt="Secure user management and integrations" loading="lazy" />
                         </div>
                     </div>
 
@@ -273,7 +284,8 @@
                                     <h3 class="sk-ec-title">Tailored Web Applications</h3>
                                     <p class="sk-ec-desc">
                                         Applications built around your real processes — portals, internal tools,
-                                        workflows and industry-specific platforms that make daily work clearer and faster.
+                                        workflows and industry-specific platforms that make daily work clearer and
+                                        faster.
                                     </p>
                                 </div>
                             </div>
@@ -283,7 +295,7 @@
                             <div class="sk-ec-m-card">
                                 <div class="sk-ec-m-image">
                                     <img src="<?php echo BASE_PATH; ?>/public/img/seo.png"
-                                        alt="Custom CMS and admin dashboard" />
+                                        alt="Custom CMS and admin dashboard" loading="lazy" />
                                 </div>
                                 <div class="sk-ec-m-body">
                                     <div class="sk-ec-icon">
@@ -305,8 +317,9 @@
                         <div class="sk-ec-slide">
                             <div class="sk-ec-m-card">
                                 <div class="sk-ec-m-image">
+                                    <!-- TODO: replace with a real screenshot/graphic — currently a generic stock photo -->
                                     <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                        alt="Secure user management and integrations" />
+                                        alt="Secure user management and integrations" loading="lazy" />
                                 </div>
                                 <div class="sk-ec-m-body">
                                     <div class="sk-ec-icon">
@@ -347,6 +360,7 @@
                 <div class="testimonial-author justify-content-center">
                     <div class="author-avatar">CL</div>
                     <div>
+                        <!-- TODO: replace with a real client name/business once available -->
                         <div class="author-name">Client Lead</div>
                         <div class="author-role">Melbourne Business</div>
                     </div>
@@ -362,9 +376,9 @@
                             <p class="sk-header__sub">
                                 Four clear steps. Requirements first. No surprises later.
                             </p>
-                            <a href="/contact" class="sk-btn sk-btn-primary">
-                                Get Started <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
-                                    alt="" width="15px" height="15px" />
+                            <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">
+                                Get Started <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png"
+                                    class="img-fluid" alt="" width="15" height="15" />
                                 <span></span>
                             </a>
                         </div>
@@ -464,12 +478,13 @@
     <!-- GSAP + ScrollTrigger -->
     <?php require_once('../includes/customjs.php'); ?>
 
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js"></script>
 
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js"></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js" defer></script>
+
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
 
 </body>
 

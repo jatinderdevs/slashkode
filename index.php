@@ -113,13 +113,12 @@
             <section class="hero">
                 <div class="sk-container">
                     <h1 class="heroheading">
-                        Minimum cost, maximum results.
-                        We make it happen.
+                        Melbourne website design & development that turns visitors into enquiries
                     </h1>
                     <p>
-                        We design and build sites that turn visitors into enquiries — for
-                        Melbourne businesses who are tired of paying for pretty and getting
-                        nothing back.
+                        Minimum cost, maximum results.
+                        We make it happen.
+
                     </p>
 
                     <div class="mag-zone">
