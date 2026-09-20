@@ -259,7 +259,7 @@
                 </div>
             </section>
 
-            <?php $faqPage = 'services';
+            <?php $faqPage = 'price';
             require_once('includes/sections/faq.php'); ?>
             <?php require_once('includes/island.php'); ?>
             <?php require_once('includes/footer.php'); ?>

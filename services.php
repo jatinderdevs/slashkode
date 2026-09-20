@@ -102,7 +102,7 @@
                         </div>
 
                         <div class="service-heading">
-                            <h2>Website Design <br>&amp; Development</h2>
+                            <h2>Website Design &amp; Development</h2>
                             <a href="<?php echo BASE_PATH; ?>/services/web-design-development"
                                 class="sk-btn sk-btn-primary"> Explore <img
                                     src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""
@@ -150,7 +150,7 @@
                         </div>
 
                         <div class="service-heading">
-                            <h2>Search Engine <br>Optimisation (SEO)</h2>
+                            <h2>Search Engine Optimisation (SEO)</h2>
                             <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="sk-btn sk-btn-primary">
                                 Explore <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
                                     alt="" width="15" height="15">
@@ -196,7 +196,7 @@
                         </div>
 
                         <div class="service-heading">
-                            <h2>RTO and VET <br>Colleges Website</h2>
+                            <h2>RTO and VET Colleges Website</h2>
                             <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website"
                                 class="sk-btn sk-btn-primary"> Explore <img
                                     src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""
@@ -244,7 +244,7 @@
                         </div>
 
                         <div class="service-heading">
-                            <h2>Custom Web <br>Applications</h2>
+                            <h2>Custom Web Applications</h2>
                             <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications"
                                 class="sk-btn sk-btn-primary"> Explore <img
                                     src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""

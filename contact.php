@@ -1,10 +1,56 @@
+<?php require_once __DIR__ . '/config.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact slashkode | Request a Free Consultation, Melbourne</title>
+    <meta name="description"
+        content="Get in touch with slashkode for a free consultation. Website design, SEO, RTO/VET websites and custom web applications for Melbourne businesses — no pressure, just clarity." />
+    <meta name="keywords"
+        content="contact slashkode, request a consultation Melbourne, web design quote Melbourne, book a consultation Melbourne web developer" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="slashkode" />
+    <link rel="canonical" href="https://slashkode.com.au/contact" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contact slashkode | Request a Free Consultation, Melbourne" />
+    <meta property="og:description"
+        content="Get in touch with slashkode for a free consultation on your Melbourne website, SEO, RTO/VET platform or custom web application." />
+    <meta property="og:url" content="https://slashkode.com.au/contact" />
+    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:locale" content="en_AU" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact slashkode | Melbourne" />
+    <meta name="twitter:description"
+        content="Request a free consultation with slashkode — Melbourne web design, SEO, and custom applications." />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact slashkode",
+        "mainEntity": {
+            "@type": "LocalBusiness",
+            "name": "slashkode",
+            "url": "https://slashkode.com.au",
+            "email": "info@slashkode.com.au",
+            "telephone": "+61499167608",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
+            }
+        }
+    }
+    </script>
+
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/contactus.css" />
 
@@ -18,7 +64,7 @@
                 <section class="contacthero">
 
                     <h1 class="heroheading">Request a Consultation</h1>
-                    <p>Let’s discuss your project goals. Send us a quick message or request a callback for a friendly,
+                    <p>Let's discuss your project goals. Send us a quick message or request a callback for a friendly,
                         practical conversation.</p>
                 </section>
 
@@ -28,7 +74,7 @@
                             <div class="inner-contact-page" id="lead-form">
                                 <h2>Write it out and we'll get back to you within a day.</h2>
                                 <p>Free consultation · No pressure · Call, Zoom or in-person</p>
-                                <form class="wd-lead-form" action="/contact/" method="get">
+                                <form class="wd-lead-form" action="<?php echo BASE_PATH; ?>/contact" method="get">
                                     <div>
                                         <label for="wd-name">Name</label>
                                         <input type="text" id="wd-name" name="name" placeholder="Your name" required />
@@ -43,9 +89,9 @@
                                         <input type="url" id="wd-url" name="website" placeholder="https://" />
                                     </div>
                                     <div>
-                                        <label for="wd-goal">Give us a little breif</label>
+                                        <label for="wd-goal">Give us a little brief</label>
                                         <textarea id="message" name="message" rows="3"
-                                            placeholder="Anything you’d like me to know before we talk?"></textarea>
+                                            placeholder="Anything you'd like me to know before we talk?"></textarea>
                                     </div>
                                     <button type="submit" class="p-3 sk-btn sk-btn-primary">
                                         Send Message
@@ -61,7 +107,7 @@
                                 <img src="<?php echo BASE_PATH; ?>/public/icons/whatsap.webp" width="52" alt="WhatsApp">
                                 <h3>Start a WhatsApp Chat</h3>
                                 <p>Instant replies • No forms</p>
-                                <a href="https://wa.me/61406258628" class="sk-btn sk-btn-primary">
+                                <a href="https://wa.me/61499167608" class="sk-btn sk-btn-primary">
                                     Say Hi <span></span>
                                 </a>
                             </div>
@@ -71,7 +117,6 @@
                         <div class="bento-card item">
                             <div class="action-card consultation-card">
                                 <img src="<?php echo BASE_PATH; ?>/public/icons/meeting.webp" width="52" alt="Calendar">
-                                <!-- better icon -->
                                 <h3>Book a Free Consultation</h3>
                                 <p>15-min discovery call • No obligation</p>
                                 <a href="#booking" class="sk-btn sk-btn-primary">
@@ -84,8 +129,8 @@
                         <div class="bento-card item profile-card">
                             <div class="self-contact-card">
                                 <div class="profile-header">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" alt="Jatinder Singh"
-                                        class="profile-img">
+                                    <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg"
+                                        alt="Jatinder Singh, Founder of slashkode" class="profile-img">
                                     <div class="profile-info">
                                         <h3>Jatinder Singh</h3>
                                         <p>Lead Developer</p>
@@ -93,7 +138,7 @@
                                 </div>
                                 <div class="profile-contact">
                                     <a href="mailto:info@slashkode.com.au">info@slashkode.com.au</a>
-                                    <a href="tel:+61406258628">+61 406 258 628</a>
+                                    <a href="tel:+61499167608">0499 167 608</a>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +147,7 @@
                                 <div class="bottom-content">
                                     <h6>Melbourne, Australia </h6>
 
-                                    <h6>ABN 00 000 000 000 </h6>
+                                    <h6>ABN 20 568 892 923</h6>
 
                                     <h6>Replies within one business day</h6>
                                 </div>
@@ -139,7 +184,7 @@
                     </div>
                 </section>
             </div>
-            <?php $faqPage = 'contact page';
+            <?php $faqPage = 'contact';
             require_once('includes/sections/faq.php'); ?>
 
         </div>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /data/
+Disallow: /demo/
+Disallow: /*.json$
+
+Sitemap: https://slashkode.com.au/sitemap.xml

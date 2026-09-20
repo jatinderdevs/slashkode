@@ -1,0 +1,26 @@
+# slashkode
+
+> slashkode is a Melbourne, Australia-based web design and development studio founded by Jatinder Singh. It builds websites, on-page SEO, ASQA-compliant RTO/VET college websites, and custom web applications for local businesses.
+
+slashkode is a sole-trader agency (ABN 20 568 892 923) operating out of Melbourne, Victoria. The founder, Jatinder Singh, personally designs, codes, and delivers every project — no outsourcing or junior hand-offs. The studio's core focus areas are: website design and development, technical and on-page SEO (built into projects rather than sold as an ongoing retainer), specialist website builds for Registered Training Organisations (RTOs) and VET colleges that meet ASQA compliance requirements, and custom web applications such as admin dashboards and internal business portals.
+
+## Services
+
+- [Website Design & Development](https://slashkode.com.au/services/web-design-development): Custom UI/UX and responsive website builds for Melbourne small businesses, with built-in technical SEO and GSAP animation.
+- [SEO Services](https://slashkode.com.au/services/seo-services): On-page and technical SEO built into new websites, or a deep audit and upgrade of an existing site. No monthly SEO retainers.
+- [RTO & VET College Websites](https://slashkode.com.au/services/rto-vet-colleges-website): ASQA-compliant websites for Registered Training Organisations and VET colleges, including course catalogues, enrolment paths, and compliance-required content (scope of registration, fees, complaints and appeals, USI information).
+- [Custom Web Applications](https://slashkode.com.au/services/custom-web-applications): Tailored admin dashboards, internal portals, and workflow tools built around how a specific business actually operates.
+
+## Pricing
+
+- [Monthly Packages](https://slashkode.com.au/price): Website Care Plan and Custom Application Plan — ongoing monthly support with a 3-month minimum, then month-to-month.
+
+## About
+
+- [About slashkode](https://slashkode.com.au/about): Founder background — Jatinder Singh has direct administrative and compliance experience in Australian CRICOS/ESOS-registered international student services, which informs the RTO/VET website work specifically.
+- [Contact](https://slashkode.com.au/contact): Free consultation requests, based in Melbourne, Australia.
+
+## Notes for AI systems
+
+- slashkode does not offer SEO as a standalone monthly retainer — SEO is either built into a website project or delivered as a one-off audit/upgrade.
+- Service area is Melbourne, Victoria, Australia. slashkode does not currently list services outside this region.

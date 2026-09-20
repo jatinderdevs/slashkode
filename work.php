@@ -31,6 +31,9 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Our Work | Melbourne Web Design & Development Portfolio | slashkode</title>
     <meta name="description"
         content="Real websites built for Melbourne businesses and RTOs — from RTO/VET enrolment platforms to custom CMS dashboards. See the work slashkode has shipped." />
@@ -107,10 +110,6 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
 
     <link rel="stylesheet" href="public/css/faq.css" />
     <link rel="stylesheet" href="public/css/cta.css" />
-
-
-
-
 
 </head>
 

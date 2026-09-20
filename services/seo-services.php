@@ -478,7 +478,7 @@
     <!-- GSAP + ScrollTrigger -->
     <?php require_once('../includes/customjs.php'); ?>
 
-    <script src="https://assets.codepen.io/16327/ScrollSmoother.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js" defer></script>
 
     <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>

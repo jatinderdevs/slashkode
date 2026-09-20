@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="mag-zone">
-                        <a href="contactus.php" class="btn herobtnSec">Say hi
+                        <a href="contact" class="btn herobtnSec">Say hi
                             <dotlottie-wc
                                 src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -223,16 +223,20 @@
 
 
 
-                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger">
+                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger hover-link"
+                            data-img="public/img/seo.png">
                             <span class="skill-label">Search Engine Optimise (SEO)</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
-                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php" class="skill-trigger">
+
+                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php"
+                            class="skill-trigger hover-link" data-img="public/img/mockups/bit.png">
                             <span class="skill-label">RTO and VET Colleges Website</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
-                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications.php" class="skill-trigger">
+                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications.php"
+                            class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.png">
                             <span class="skill-label">Custom web Applications</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
@@ -302,7 +306,7 @@
                                 Asking and getting a clear answer.
                             </h3>
                         </div>
-                        <a href="contactus.php" class="sk-btn sk-btn-secondary"
+                        <a href="contact" class="sk-btn sk-btn-secondary"
                             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">contact
                             now <img src="public/icons/top-right.png" width="15px" height="15px" alt="">
                             <span> </span>
