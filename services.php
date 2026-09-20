@@ -191,8 +191,13 @@
                         </div>
 
                         <div class="service-media">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                class="img-fluid" alt="RTO and VET college website example" loading="lazy">
+
+                            <video muted autoplay loop playsinline alt="RTO and VET college website example"
+                                loading="lazy">
+                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/rtomockup.webm"
+                                    type="video/webm">
+                            </video>
+
                         </div>
 
                         <div class="service-heading">
