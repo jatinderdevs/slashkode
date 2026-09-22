@@ -1,19 +1,17 @@
 <section class="cta-section" aria-label="Get a quote">
     <div class="sk-container">
-        <span class="cta-label" data-label>Let’s work together</span>
 
         <h2 class="cta-heading">
             <span class="cta-line">
-                <span class="cta-line-inner">Have a project in mind?</span>
+                <span class="cta-line-inner">A clear website that helps people choose you.</span>
             </span>
 
         </h2>
 
         <p class="cta-desc" data-desc>
-            Tell us a little about what you need. We’ll come back with a clear
-            quote, timeline, and next steps - no pressure.
+            We design and build professional websites for Melbourne small businesses, Migration agencies, RTO and VET colleges and service based business.
         </p>
-
+        <h3 class="cta-subheading my-4">only $99 to start. Then $39/ fortnighty.</h3>
         <div class="cta-actions" data-actions>
             <a href="<?php echo BASE_PATH; ?>/contactus.php" class="sk-btn sk-btn-primary">
                 Let’s talk →
@@ -23,8 +21,9 @@
 
         </div>
 
+
         <p class="cta-note" data-note>
-            Usually replies within 1 business day
+            No lock-in. No cancellation fees. No outsourcing.
         </p>
     </div>
 </section>
