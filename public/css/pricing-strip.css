@@ -1,0 +1,179 @@
+.pricing-panel {
+  padding: 4rem 0;
+}
+.pricePlan {
+  text-transform: uppercase;
+  font-family: var(--sk-font-mono);
+  color: var(--sk-color-bg-card);
+  opacity: 0.7;
+  display: block;
+  margin-bottom: 1rem;
+}
+.pricing-panel__card p {
+  max-width: unset !important;
+}
+
+.pricing-panel__card {
+  position: relative;
+  overflow: hidden;
+  background: var(--sk-color-primary-dark);
+  border-radius: var(--sk-radius-lg);
+  padding: clamp(2rem, 4vw, 3.25rem) clamp(1.75rem, 5vw, 4rem);
+  color: #fff;
+}
+
+.pricing-panel__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 60% 70% at 88% 12%,
+    rgba(229, 47, 34, 0.16) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pricing-panel__card > * {
+  position: relative;
+  z-index: 1;
+}
+/* ── Top block: price + then-line + desc, left-aligned ── */
+.pricing-panel__top {
+  margin-bottom: 1.75rem;
+}
+
+.pricing-panel__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-panel__price strong {
+  font-family: var(--sk-font-heading);
+  font-size: clamp(3.25rem, 7vw, 4.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #fff;
+}
+
+.pricing-panel__price span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.pricing-panel__then {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 0.6rem;
+}
+
+.pricing-panel__then strong {
+  color: var(--sk-color-terracotta);
+}
+
+.pricing-panel__desc {
+  max-width: 60ch;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+/* ── Horizontal tick row ── */
+.pricing-panel__ticks {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.pricing-panel__ticks li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  white-space: nowrap;
+}
+
+.pricing-panel__check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--sk-color-terracotta);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricing-panel__check svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ── CTA row, centered ── */
+.pricing-panel__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.pricing-panel__more {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0.4);
+  transition: var(--sk-transition-smooth);
+}
+
+.pricing-panel__more:hover {
+  color: var(--sk-color-terracotta);
+  text-decoration-color: var(--sk-color-terracotta);
+}
+
+/* ── Final trust line, centered ── */
+.pricing-panel__trust {
+  text-transform: uppercase;
+  font-family: var(--sk-font-mono);
+  margin: 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Responsive ── */
+@media (max-width: 720px) {
+  .pricing-panel__ticks {
+    justify-content: flex-start;
+  }
+
+  .pricing-panel__actions {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .pricing-panel__actions .sk-btn {
+    justify-content: center;
+  }
+}

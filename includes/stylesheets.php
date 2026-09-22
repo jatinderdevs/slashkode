@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/stylesheet.css" />
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/navbar.css" />
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/portfolio.css" />
+<link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/pricing-strip.css" />
 
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/footer.css" />
 <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/faq.css" />

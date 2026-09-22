@@ -113,11 +113,11 @@
             <section class="hero">
                 <div class="sk-container">
                     <h1 class="heroheading">
-                        Melbourne website design & development that turns visitors into enquiries
+                        Minimum cost, maximum results. We make it happen.
                     </h1>
                     <p>
-                        Minimum cost, maximum results.
-                        We make it happen.
+                        Melbourne website design & development that turns visitors into enquiries
+
 
                     </p>
 
@@ -201,6 +201,8 @@
                     </div>
                 </div>
             </section>
+
+            <?php require_once('includes/sections/pricing-strip.php'); ?>
 
             <?php $portfolioPage = 'home';
             require_once('includes/sections/portfolio.php'); ?>
@@ -368,6 +370,25 @@
                         fast load, obvious next step.</p>
 
                 </div>
+            </section>
+            <section class="sk-container">
+                <div class="about-grid-header">
+                    <span class="sk-statement-eyebrow">/catch</span>
+                    <h2 class="about-grid-title headingeffect">Why is it this cheap?</h2>
+                </div>
+                <p>
+                    No catch. I keep slashkode small on purpose — a handful of projects at a time, not a pipeline.
+                    That's what lets me actually pay attention to each one, instead of leaning on templates and
+                    automated systems to cover more clients than I can properly look after.
+                    <br>
+                    <br>
+                    The lower price comes from the same decision. No office, no account managers, no big team to fund —
+                    so the saving goes into your price instead of overhead.
+                    <br>
+                    <br>
+                    The honest reason I built it this way: most small businesses need a website that actually works, not
+                    an agency price tag. This is me trying to make that fair.
+                </p>
             </section>
         </div>
         <?php require_once('includes/sections/cta.php'); ?>
