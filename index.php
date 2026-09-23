@@ -36,59 +36,59 @@
 
     <!-- Schema.org: LocalBusiness -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "slashkode",
-        "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
-        "url": "https://slashkode.com.au/",
-        "telephone": "+61499167608",
-        "email": "info@slashkode.com.au",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Melbourne",
-            "addressRegion": "VIC",
-            "addressCountry": "AU"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Melbourne"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Jatinder Singh"
-        },
-        "makesOffer": [{
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Website Design & Development"
-                }
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "slashkode",
+            "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
+            "url": "https://slashkode.com.au/",
+            "telephone": "+61499167608",
+            "email": "info@slashkode.com.au",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Search Engine Optimisation (SEO)"
-                }
+            "areaServed": {
+                "@type": "City",
+                "name": "Melbourne"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "RTO and VET Colleges Website"
-                }
+            "founder": {
+                "@type": "Person",
+                "name": "Jatinder Singh"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Custom Web Applications"
+            "makesOffer": [{
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Website Design & Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Search Engine Optimisation (SEO)"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "RTO and VET Colleges Website"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Applications"
+                    }
                 }
-            }
-        ]
-    }
+            ]
+        }
     </script>
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="public/css/statement.css" />
@@ -116,7 +116,7 @@
                         Minimum cost, maximum results. We make it happen.
                     </h1>
                     <p>
-                        Melbourne website design & development that turns visitors into enquiries
+                        We design and build professional websites for Melbourne small businesses, Migration agencies, RTO and VET colleges and service based business.
 
 
                     </p>
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="mag-zone">
-                        <a href="contact" class="btn herobtnSec">Say hi
+                        <a href="contact" class="btn herobtnSec">About
                             <dotlottie-wc
                                 src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>

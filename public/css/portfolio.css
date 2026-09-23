@@ -1,9 +1,10 @@
 /* =====================================================
    DRAG PORTFOLIO CAROUSEL — Slashkode
+   Redesigned cards: devices + title + description + result
    ===================================================== */
 
 .sk-drag-portfolio {
-  --drag-card-w: min(860px, 84vw); /* was: min(720px, 78vw) */
+  --drag-card-w: min(900px, 86vw);
   --drag-gap: clamp(1.5rem, 3.5vw, 2.5rem);
   padding: 100px 0 60px;
   overflow: hidden;
@@ -19,7 +20,6 @@
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.2;
-
   color: var(--sk-color-primary-dark);
   max-width: 18ch;
 }
@@ -48,17 +48,19 @@
   gap: var(--drag-gap);
   width: max-content;
   will-change: transform;
-  /* padding-left / padding-right are set in JS (dragPortfolio.js),
+  /* padding-left / padding-right are set in JS (portfolio.js),
      computed from the carousel's actual width so the active card
      is centered against its real container, not the viewport. */
 }
 
-/* Card */
+/* =====================================================
+   CARD — new layout matching the attached design
+   ===================================================== */
 .drag-card {
   flex: 0 0 var(--drag-card-w);
   width: var(--drag-card-w);
   background: #fff;
-  border-radius: var(--sk-radius-lg);
+  border-radius: var(--sk-radius-lg, 20px);
   box-shadow: var(--sk-shadow-soft, 0 24px 60px -18px rgba(30, 41, 59, 0.14));
   overflow: hidden;
   backface-visibility: hidden;
@@ -70,26 +72,29 @@
   transform-origin: center center;
 }
 
-.drag-card-tag {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  z-index: 2;
-  background: var(--sk-color-primary-dark);
-  color: #fff;
-  font-family: var(--sk-font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.04em;
-  padding: 0.4rem 0.85rem;
-  border-radius: var(--sk-radius-pill);
-  pointer-events: none;
+.drag-card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem 1.5rem 1.5rem;
+  gap: 1.15rem;
+  height: 100%;
 }
 
+/* Top row: media + title side */
+.drag-card-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.35rem;
+  align-items: center;
+}
+
+/* Media / devices mockup */
 .drag-card-media {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  background: #0f172a;
+  aspect-ratio: 16 / 11;
+  background: #f1efe9;
+  border-radius: 14px;
   overflow: hidden;
 }
 
@@ -97,77 +102,87 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: white;
+  object-position: center;
   display: block;
+  pointer-events: none;
+  background: #f1efe9;
+}
+.drag-card-tags {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-shrink: 0;
+}
+.drag-tag {
+    font-family: var(--sk-font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.65rem;
+    border-radius: var(--sk-radius-pill);
+    background: var(--sk-color-sage-light);
+    color: var(--sk-color-sage);
+    white-space: nowrap;
+}
+.drag-card-tag {
+ 
+  background: var(--sk-color-primary-dark);
+  color: #fff;
+  font-family: var(--sk-font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--sk-radius-pill);
   pointer-events: none;
 }
 
-.drag-card-link {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.92);
-  display: grid;
-  place-items: center;
-  color: var(--sk-color-primary-dark);
-  transition: var(--sk-transition-smooth);
-}
-
-.drag-card-link:hover {
-  background: var(--sk-color-terracotta);
-  color: #fff;
-}
-
-.drag-card-link svg {
-  width: 16px;
-  height: 16px;
-}
-
-.drag-card-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1.15rem 1.4rem;
+/* Right side: title + live button */
+.drag-card-side {
+ 
 }
 
 .drag-card-title {
   font-family: var(--sk-font-heading);
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: var(--sk-color-primary-dark);
   margin: 0;
+}
+
+
+/* Description — what we provided */
+.drag-card-desc {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  max-width: unset;
+}
+
+/* Results / review bar */
+.drag-card-result {
+  margin-top: auto;
+  background: #f9f9f9;
+  border-radius: 14px;
+  padding: 1rem 1.35rem;
+}
+
+.drag-card-result p {
+  margin: 0;
+  font-family: var(--sk-font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.45;
+    max-width: unset;
   letter-spacing: -0.01em;
   color: var(--sk-color-primary-dark);
 }
 
-.drag-card-tags {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  flex-shrink: 0;
-}
-
-.drag-tag {
-  font-family: var(--sk-font-mono);
-  font-size: 0.65rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding: 0.3rem 0.65rem;
-  border-radius: var(--sk-radius-pill);
-  background: var(--sk-color-sage-light);
-  color: var(--sk-color-sage);
-  white-space: nowrap;
-}
-
-.drag-tag.accent {
-  background: #fff0eb;
-  color: var(--sk-color-terracotta);
-}
-
-/* Custom drag cursor */
+/* =====================================================
+   Custom drag cursor
+   ===================================================== */
 .drag-cursor {
   position: absolute;
   top: 0;
@@ -225,10 +240,36 @@
   border-radius: 4px;
 }
 
-/* Responsive */
+/* =====================================================
+   Responsive
+   ===================================================== */
+@media (max-width: 900px) {
+  .sk-drag-portfolio {
+    --drag-card-w: min(88vw, 520px);
+    --drag-gap: 1.25rem;
+  }
+
+  .drag-card-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .drag-card-media {
+    aspect-ratio: 16 / 10;
+  }
+
+  .drag-card-side {
+    /* gap: 0.85rem; */
+  }
+
+  .drag-card-title {
+    font-size: clamp(1.25rem, 4vw, 1.55rem);
+  }
+}
+
 @media (max-width: 768px) {
   .sk-drag-portfolio {
-    --drag-card-w: min(88vw, 420px);
+    --drag-card-w: min(90vw, 420px);
     --drag-gap: 1rem;
     padding: 70px 0 40px;
   }
@@ -241,18 +282,26 @@
     display: none;
   }
 
-  .drag-card-footer {
-    padding: 1rem 1.15rem;
-    flex-direction: column;
+  .drag-card-body {
+    padding: 1.1rem 1.15rem 1.25rem;
+    gap: 0.95rem;
   }
 
-  .drag-card-title {
-    font-size: 1.05rem;
+  .drag-card-desc {
+    font-size: 0.85rem;
+  }
+
+  .drag-card-result {
+    padding: 0.85rem 1.1rem;
+  }
+
+  .drag-card-result p {
+    font-size: 0.85rem;
   }
 }
 
 @media (min-width: 1200px) {
   .sk-drag-portfolio {
-    --drag-card-w: min(920px, 68vw);
+    --drag-card-w: min(940px, 72vw);
   }
 }

@@ -33,28 +33,28 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Website Design & Development",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "slashkode",
-            "url": "https://slashkode.com.au",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Melbourne",
-                "addressRegion": "VIC",
-                "addressCountry": "AU"
-            }
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Melbourne"
-        },
-        "description": "Custom website design and development for Melbourne businesses — responsive UI/UX, GSAP animation, and built-in technical SEO.",
-        "serviceType": "Website Design & Development"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Website Design & Development",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "slashkode",
+                "url": "https://slashkode.com.au",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Melbourne",
+                    "addressRegion": "VIC",
+                    "addressCountry": "AU"
+                }
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Melbourne"
+            },
+            "description": "Custom website design and development for Melbourne businesses — responsive UI/UX, GSAP animation, and built-in technical SEO.",
+            "serviceType": "Website Design & Development"
+        }
     </script>
 
     <?php require_once('../includes/stylesheets.php'); ?>
@@ -95,6 +95,7 @@
                     </div>
                 </div>
             </section>
+            <?php require_once('../includes/sections/pricing-strip.php'); ?>
 
             <?php $portfolioPage = 'web-design';
             require_once('../includes/sections/portfolio.php'); ?>

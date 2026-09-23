@@ -2,61 +2,76 @@
   {
     "id": "aiit",
     "title": "Australian International Institute of Technology",
-    "topTag": "Website",
+    "topTag": "VET College",
     "image": "/public/img/mockups/aiitmockupsample.png",
     "alt": "AIIT RTO website preview – Melbourne VET college",
     "link": "https://www.aiit.edu.au/",
     "cta": "View live site",
-    "chips": ["Website design","RTO / VET", "SEO"],
+    "chips": ["Website design", "RTO / VET", "SEO"],
     "pages": ["home", "web-design", "rto-vet"],
-    "desc":"Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily."
+    "description": "Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily.",
+    "result":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi corrupti porro modi reiciendis cum, sed inventore nemo? A rem natus ullam libero placeat ut laboriosam minus voluptatibus reprehenderit minima."
   },
   {
     "id": "brighton-institute",
     "title": "Brighton Institute of Technology",
-    "topTag": "Website",
+    "topTag": "VET College",
     "image": "/public/img/mockups/bit.png",
     "alt": "Brighton Institute of Technology website preview",
     "link": "https://www.bit.edu.au/",
     "cta": "View live site",
-    "chips": ["Website design","RTO / VET", "Social Media"],
+    "chips": ["Website design", "RTO / VET", "Social Media"],
     "pages": ["home", "web-design", "rto-vet"],
-    "desc":"ASQA-aware website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs without looking generic."
+    "description": "ASQA-aware website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs without looking generic."
   },
   {
     "id": "international-student-tips",
     "title": "International Student Tips",
-    "topTag": "Website + CMS",
+    "topTag": "Blog System + CMS",
     "image": "/public/img/mockups/ist.png",
     "alt": "International Student Tips blog website with admin dashboard",
     "link": "https://internationalstudenttips.com.au/",
     "cta": "Explore more",
     "chips": ["Blog / CMS", "Admin Dashboard", "SEO"],
     "pages": ["home", "web-design", "custom-cms"],
-    "desc":"Content-focused website and admin dashboard for a Melbourne blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience."
+    "description": "Content-focused website and admin dashboard for a Melbourne blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience."
   },
   {
     "id": "yarramovers",
     "title": "Yarramovers",
-    "topTag": "Website",
+    "topTag": "a Moving Company",
     "image": "/public/img/mockups/yara.png",
     "alt": "Yarramovers Melbourne moving company website",
     "link": "https://www.yarramovers.com.au/",
     "cta": "View live site",
     "chips": ["Local Business", "SEO"],
     "pages": ["home", "web-design"],
-    "desc":"Website for a Melbourne moving company designed to generate more local leads. Clear service pages, quote-focused layout, and a structure that helps families and businesses find the right moving option quickly."
+    "description": "Website for a Melbourne moving company designed to generate more local leads. Clear service pages, quote-focused layout, and a structure that helps families and businesses find the right moving option quickly."
+      
   },
-   {
+  {
     "id": "jd",
     "title": "JD Shopfront and Shutters",
-    "topTag": "Website",
+    "topTag": "Shutter installation Company",
     "image": "/public/img/mockups/jdshutter.png",
     "alt": "JD London Shopfront and Shutters company website",
     "link": "https://www.jdshopfrontandshutter.co.uk/",
     "cta": "View live site",
     "chips": ["Service Based Business", "SEO"],
     "pages": ["home", "web-design"],
-    "desc":"Website for a UK-based shopfront and shutter installation company, built to generate more local service enquiries. Clear service pages, a quote-focused layout, and a structure that helps commercial customers find the right shopfront solution quickly."
+    "description": "Website for a UK-based shopfront and shutter installation company, built to generate more local service enquiries. Clear service pages, a quote-focused layout, and a structure that helps commercial customers find the right shopfront solution quickly."
+  },
+
+ {
+    "pages": ["home", "web-design"],
+    "topTag": "Business",
+    "image": "public/img/portfolio/placeholder-devices.webp",
+    "alt": "Example business website on multiple devices",
+    "title": "Your next project",
+    "link": "#contact",
+    "cta": "See live website",
+    "description": "Replace this with the real project description — what we built, the systems we added, and how it helps the client win more enquiries in Melbourne.",
+    "result": "Add a short client result or quote here. Real outcomes build more trust than generic claims.",
+    "chips": ["Web Design", "SEO"]
   }
 ]
