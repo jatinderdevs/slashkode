@@ -1,31 +1,5 @@
 <?php
 
-/**
- * Portfolio carousel — reads data/portfolio.json and renders only the
- * projects tagged for the current page. A project can appear on
- * multiple pages (e.g. the same AIIT build shown on Home, the
- * Web Design service page, AND the RTO/VET service page) because
- * "pages" is an array, not a single value.
- *
- * Usage on any page, BEFORE the require:
- *
- *     $portfolioPage = 'home'; // or 'web-design', 'rto-vet', etc.
- *
- * If $portfolioPage isn't set, it falls back to 'home'.
- *
- * Expected JSON fields per project:
- *   pages      (array)  – which pages this card appears on
- *   topTag     (string) – small badge on the media (e.g. "Education")
- *   image      (string) – path to the multi-device mockup image
- *   alt        (string) – image alt text
- *   title      (string) – large project name
- *   link       (string) – live website URL
- *   cta        (string) – button label (default: "See live website")
- *   description(string) – what we delivered (web design, SEO, forms…)
- *   result     (string) – customer review or measurable result
- *   chips      (array)  – optional tags (kept for flexibility)
- */
-
 function sk_get_portfolio(string $page, string $jsonPath): array
 {
     if (!file_exists($jsonPath)) {
@@ -63,77 +37,75 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
     </div>
 
     <?php if (empty($portfolioItems)) : ?>
-        <!-- No portfolio items found for page "<?php echo htmlspecialchars($portfolioPage); ?>" —
+    <!-- No portfolio items found for page "<?php echo htmlspecialchars($portfolioPage); ?>" —
              check data/portfolio.json has matching "pages" entries. -->
     <?php else : ?>
-        <div class="drag-carousel" id="dragCarousel">
-            <div class="drag-track" id="dragTrack">
-                <?php foreach ($portfolioItems as $index => $item) : ?>
-                    <article class="drag-card" data-index="<?php echo (int) $index; ?>">
-                        <div class="drag-card-body">
+    <div class="drag-carousel" id="dragCarousel">
+        <div class="drag-track" id="dragTrack">
+            <?php foreach ($portfolioItems as $index => $item) : ?>
+            <article class="drag-card" data-index="<?php echo (int) $index; ?>">
+                <div class="drag-card-body">
 
-                            <!-- Top: devices mockup + title + live link -->
-                            <div class="drag-card-hero">
-                                <div class="drag-card-media">
+                    <!-- Top: devices mockup + title + live link -->
+                    <div class="drag-card-hero">
+                        <div class="drag-card-media">
 
-                                    <img src="<?php echo BASE_URL . htmlspecialchars($item['image'] ?? ''); ?>"
-                                        alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
-                                        loading="lazy" draggable="false" />
-                                </div>
-
-                                <div class="drag-card-side">
-                                    <?php if (!empty($item['topTag'])) : ?>
-                                        <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
-                                    <?php endif; ?>
-                                    <h3 class="drag-card-title my-3"><?php echo htmlspecialchars($item['title'] ?? ''); ?></h3>
-                                    <div class="drag-card-tags">
-                                        <?php if (!empty($item['chips'])) : ?>
-                                            <?php foreach ($item['chips'] as $chip) : ?>
-                                                <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
-                                            <?php endforeach; ?>
-                                        <?php endif; ?>
-
-
-                                    </div>
-                                    <?php if (!empty($item['link'])) : ?>
-                                        <a href="<?php echo htmlspecialchars($item['link']); ?>"
-                                            class="sk-btn sk-btn-primary mt-3"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            aria-label="See live website for <?php echo htmlspecialchars($item['title'] ?? ''); ?>">
-                                            <?php echo htmlspecialchars($item['cta'] ?? 'See live website'); ?>
-                                            <span></span>
-                                        </a>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-
-                            <!-- What we delivered -->
-                            <?php if (!empty($item['description'])) : ?>
-                                <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
-                            <?php endif; ?>
-
-                            <!-- Results / review bar -->
-                            <?php if (!empty($item['result'])) : ?>
-                                <div class="drag-card-result">
-                                    <p><?php echo htmlspecialchars($item['result']); ?></p>
-                                </div>
-                            <?php endif; ?>
-
+                            <img src="<?php echo BASE_URL . htmlspecialchars($item['image'] ?? ''); ?>"
+                                alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
+                                loading="lazy" draggable="false" />
                         </div>
-                    </article>
-                <?php endforeach; ?>
-                <!-- Add more projects by adding entries to data/portfolio.json -->
-            </div>
 
-            <!-- Custom drag cursor — follows the pointer on desktop hover -->
-            <div class="drag-cursor" id="dragCursor" aria-hidden="true">
-                <span class="drag-cursor-arrow">←</span>
-                <span>Drag</span>
-                <span class="drag-cursor-arrow">→</span>
-            </div>
+                        <div class="drag-card-side">
+                            <?php if (!empty($item['topTag'])) : ?>
+                            <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
+                            <?php endif; ?>
+                            <h3 class="drag-card-title my-4"><?php echo htmlspecialchars($item['title'] ?? ''); ?></h3>
+                            <div class="drag-card-tags">
+                                <?php if (!empty($item['chips'])) : ?>
+                                <?php foreach ($item['chips'] as $chip) : ?>
+                                <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
+                                <?php endforeach; ?>
+                                <?php endif; ?>
+
+
+                            </div>
+                            <?php if (!empty($item['link'])) : ?>
+                            <a href="<?php echo htmlspecialchars($item['link']); ?>"
+                                class="sk-btn btnlive sk-btn-primary mt-3" target="_blank" rel="noopener noreferrer"
+                                aria-label="See live website for <?php echo htmlspecialchars($item['title'] ?? ''); ?>">
+                                <?php echo htmlspecialchars($item['cta'] ?? 'See live website'); ?>
+                                <span></span>
+                            </a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+
+                    <!-- What we delivered -->
+                    <?php if (!empty($item['description'])) : ?>
+                    <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
+                    <?php endif; ?>
+
+                    <!-- Results / review bar -->
+                    <?php if (!empty($item['result'])) : ?>
+                    <div class="drag-card-result">
+                        <p><?php echo htmlspecialchars($item['result']); ?></p>
+                    </div>
+                    <?php endif; ?>
+
+                </div>
+            </article>
+            <?php endforeach; ?>
+            <!-- Add more projects by adding entries to data/portfolio.json -->
         </div>
 
-        <div class="drag-dots" id="dragDots" role="tablist" aria-label="Portfolio navigation"></div>
+        <!-- Custom drag cursor — follows the pointer on desktop hover -->
+        <div class="drag-cursor" id="dragCursor" aria-hidden="true">
+            <span class="drag-cursor-arrow">←</span>
+            <span>Drag</span>
+            <span class="drag-cursor-arrow">→</span>
+        </div>
+    </div>
+
+    <div class="drag-dots" id="dragDots" role="tablist" aria-label="Portfolio navigation"></div>
     <?php endif; ?>
 </section>

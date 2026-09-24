@@ -72,6 +72,14 @@
   transform-origin: center center;
 }
 
+.btnlive {
+  padding: 12px 25px;
+}
+.drag-card:hover .drag-card-media img {
+  translate: 0 -60%;
+  transition: ease-in-out all 8s;
+}
+
 .drag-card-body {
   display: flex;
   flex-direction: column;
@@ -92,6 +100,7 @@
 .drag-card-media {
   position: relative;
   width: 100%;
+  border: 1px solid #dfdfdf;
   aspect-ratio: 16 / 11;
   background: #f1efe9;
   border-radius: 14px;
@@ -100,7 +109,7 @@
 
 .drag-card-media img {
   width: 100%;
-  height: 100%;
+
   object-fit: contain;
   object-position: center;
   display: block;
@@ -108,24 +117,23 @@
   background: #f1efe9;
 }
 .drag-card-tags {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
 }
 .drag-tag {
-    font-family: var(--sk-font-mono);
-    font-size: 0.65rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.65rem;
-    border-radius: var(--sk-radius-pill);
-    background: var(--sk-color-sage-light);
-    color: var(--sk-color-sage);
-    white-space: nowrap;
+  font-family: var(--sk-font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.65rem;
+  border-radius: var(--sk-radius-pill);
+  background: var(--sk-color-sage-light);
+  color: var(--sk-color-sage);
+  white-space: nowrap;
 }
 .drag-card-tag {
- 
   background: var(--sk-color-primary-dark);
   color: #fff;
   font-family: var(--sk-font-mono);
@@ -138,7 +146,6 @@
 
 /* Right side: title + live button */
 .drag-card-side {
- 
 }
 
 .drag-card-title {
@@ -150,7 +157,6 @@
   color: var(--sk-color-primary-dark);
   margin: 0;
 }
-
 
 /* Description — what we provided */
 .drag-card-desc {
@@ -175,7 +181,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   line-height: 1.45;
-    max-width: unset;
+  max-width: unset;
   letter-spacing: -0.01em;
   color: var(--sk-color-primary-dark);
 }

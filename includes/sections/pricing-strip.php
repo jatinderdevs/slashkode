@@ -23,7 +23,7 @@
                             <polyline points="4 12 9 17 20 6" />
                         </svg>
                     </span>
-                    Up to 10 pages
+                    Up to 10 custom-designed pages
                 </li>
                 <li>
                     <span class="pricing-panel__check" aria-hidden="true">
@@ -32,7 +32,7 @@
                             <polyline points="4 12 9 17 20 6" />
                         </svg>
                     </span>
-                    Hosting &amp; domain included
+                    Website hosting
                 </li>
                 <li>
                     <span class="pricing-panel__check" aria-hidden="true">
@@ -41,7 +41,7 @@
                             <polyline points="4 12 9 17 20 6" />
                         </svg>
                     </span>
-                    On-page SEO foundations
+                    On-page SEO built in
                 </li>
                 <li>
                     <span class="pricing-panel__check" aria-hidden="true">
@@ -50,7 +50,7 @@
                             <polyline points="4 12 9 17 20 6" />
                         </svg>
                     </span>
-                    One update every month
+                    Ongoing maintenance, handled for you
                 </li>
                 <li>
                     <span class="pricing-panel__check" aria-hidden="true">
@@ -59,8 +59,29 @@
                             <polyline points="4 12 9 17 20 6" />
                         </svg>
                     </span>
-                    No lock-in contract
+                    Contact and enquiry forms
                 </li>
+                <li>
+                    <span class="pricing-panel__check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 12 9 17 20 6" />
+                        </svg>
+                    </span>
+                    Photo galleries
+                </li>
+                <li>
+                    <span class="pricing-panel__check" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 12 9 17 20 6" />
+                        </svg>
+                    </span>
+                    <a href="<?php echo BASE_PATH; ?>/price#whats-included" class="pricing-panel__more">See everything
+                        included
+                        &rarr;</a>
+                </li>
+
             </ul>
 
             <div class="pricing-panel__actions">
@@ -70,8 +91,7 @@
                         height="15">
                     <span></span>
                 </a>
-                <a href="<?php echo BASE_PATH; ?>/price.php" class="pricing-panel__more">See everything included
-                    &rarr;</a>
+
             </div>
 
             <p class="pricing-panel__trust">No lock-in&middot; No cancellation fees&middot; No outsourcing&middot; </p>

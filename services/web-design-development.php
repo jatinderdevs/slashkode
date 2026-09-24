@@ -33,28 +33,28 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Website Design & Development",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "slashkode",
-                "url": "https://slashkode.com.au",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Melbourne",
-                    "addressRegion": "VIC",
-                    "addressCountry": "AU"
-                }
-            },
-            "areaServed": {
-                "@type": "City",
-                "name": "Melbourne"
-            },
-            "description": "Custom website design and development for Melbourne businesses — responsive UI/UX, GSAP animation, and built-in technical SEO.",
-            "serviceType": "Website Design & Development"
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Website Design & Development",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "slashkode",
+            "url": "https://slashkode.com.au",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
+            }
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Melbourne"
+        },
+        "description": "Custom website design and development for Melbourne businesses — responsive UI/UX, GSAP animation, and built-in technical SEO.",
+        "serviceType": "Website Design & Development"
+    }
     </script>
 
     <?php require_once('../includes/stylesheets.php'); ?>
@@ -63,7 +63,9 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/whyusSection.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/siteValue.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/inclusions.css" />
 
 </head>
 
@@ -174,170 +176,7 @@
                 </div>
             </section>
 
-            <section class="sk-expand-cards sk-container" aria-label="Services">
-                <div class="wd-section-header">
-                    <span class="wd-section-label wd-reveal">Deliverables</span>
-                    <h2 class="wd-reveal">What you get</h2>
-                    <p class="wd-reveal">
-                        Clear scope. Clean code. Results you can measure.
-                    </p>
-                </div>
-                <!-- ========== DESKTOP (hover expand) ========== -->
-                <div class="sk-ec-desktop" id="skEcDesktop">
-
-                    <!-- Card 1 – starts expanded -->
-                    <div class="sk-ec-card is-active" data-index="0">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path
-                                        d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1" />
-                                    <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Custom UI/UX & Responsive Design</h3>
-                            <p class="sk-ec-desc">Every site starts as a real design, not a theme. We design around how
-                                your
-                                customers actually browse, so it looks right and works right on any screen — from a
-                                phone in
-                                a car park to a widescreen monitor.</p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                alt="Custom UI/UX & Responsive Design" />
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="sk-ec-card" data-index="1">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-                                    <path d="M22 12A10 10 0 0 0 12 2v10z" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Built-in Technical SEO</h3>
-                            <p class="sk-ec-desc">SEO isn't bolted on after launch, it's part of how we build. Clean
-                                code,
-                                fast load times, proper structure and metadata from day one, so Google can actually find
-                                and
-                                rank you.</p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/seo.png" alt="Built-in Technical SEO"
-                                loading="lazy" />
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="sk-ec-card" data-index="2">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <line x1="18" y1="20" x2="18" y2="10" />
-                                    <line x1="12" y1="20" x2="12" y2="4" />
-                                    <line x1="6" y1="20" x2="6" y2="14" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Performance & Analytics</h3>
-                            <p class="sk-ec-desc">We set up the tracking that matters — page speed, load times, and
-                                visitor
-                                behaviour — so you're not guessing whether the site is actually working for you.</p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <!-- TODO: replace with a real screenshot/graphic — currently the same generic stock photo used on all three other service pages -->
-                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                alt="Performance and analytics tracking" loading="lazy" />
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- ========== MOBILE (swipe carousel) ========== -->
-                <div class="sk-ec-mobile" id="skEcMobile">
-                    <div class="sk-ec-track" id="skEcTrack">
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                        alt="Custom UI/UX & Responsive Design" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path
-                                                d="M12 3v3m0 12v3M5.6 5.6l2.1 2.1m8.6 8.6 2.1 2.1M3 12h3m12 0h3M5.6 18.4l2.1-2.1m8.6-8.6 2.1-2.1" />
-                                            <circle cx="12" cy="12" r="2.5" fill="currentColor" stroke="none" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Custom UI/UX & Responsive Design</h3>
-                                    <p class="sk-ec-desc">Every site starts as a real design, not a theme — built to
-                                        look
-                                        right and work right on any screen, from phone to widescreen monitor.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/seo.png" alt="Built-in Technical SEO"
-                                        loading="lazy" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
-                                            <path d="M22 12A10 10 0 0 0 12 2v10z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Built-in Technical SEO</h3>
-                                    <p class="sk-ec-desc">SEO isn't bolted on after launch — clean code, fast load times
-                                        and proper structure from day one, so Google can actually find and rank you.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <!-- TODO: replace with a real screenshot/graphic — currently the same generic stock photo used on all three other service pages -->
-                                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                        alt="Performance and analytics tracking" loading="lazy" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <line x1="18" y1="20" x2="18" y2="10" />
-                                            <line x1="12" y1="20" x2="12" y2="4" />
-                                            <line x1="6" y1="20" x2="6" y2="14" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Performance & Analytics</h3>
-                                    <p class="sk-ec-desc">We set up the tracking that matters — page speed, load times,
-                                        and visitor behaviour — so you're not guessing whether the site is working.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="sk-ec-dots" id="skEcDots">
-                    <button class="is-active" data-index="0" aria-label="Slide 1"></button>
-                    <button data-index="1" aria-label="Slide 2"></button>
-                    <button data-index="2" aria-label="Slide 3"></button>
-                </div>
-
-            </section>
+            <?php require_once('../includes/sections/inclusions.php'); ?>
 
             <section class="sk-container text-center">
                 <span class="sk-statement-eyebrow">/what customer says</span>
@@ -354,7 +193,119 @@
                 </div>
             </section>
         </div>
+        <section class="site-value" aria-labelledby="site-value-title">
+            <div class="site-value__inner">
 
+                <!-- Left: The story -->
+                <div class="site-value__story">
+                    <span class="site-value__eyebrow">Why it matter</span>
+                    <h2 id="site-value-title" class="site-value__title">
+                        Customers decide long before they call
+                    </h2>
+                    <p class="site-value__lead">
+                        In Melbourne, most people search first. They open a few sites, scan quickly, and move on from
+                        anything that feels unfinished or unclear.
+                    </p>
+                    <p class="site-value__lead">
+                        A clear website does more than look good. It answers the quiet questions they already have — so
+                        by the time they reach out, they already trust you.
+                    </p>
+                    <p class="site-value__closer">
+                        It turns “I’ll keep looking” into “this feels right.”
+                    </p>
+                </div>
+
+                <!-- Right: Concrete outcomes -->
+                <div class="site-value__outcomes">
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Look established</h3>
+                        <p class="outcome__text">Present as the reliable choice, even if you’re a small local team.</p>
+                    </article>
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Build trust early</h3>
+                        <p class="outcome__text">People feel confident before they ever pick up the phone.</p>
+                    </article>
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18" />
+                                <path d="M9 21V9" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Show every service</h3>
+                        <p class="outcome__text">Make it obvious what you do so the right customers stay.</p>
+                    </article>
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                                <circle cx="12" cy="13" r="4" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Display real work</h3>
+                        <p class="outcome__text">Photos of completed jobs remove the last bit of doubt.</p>
+                    </article>
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Make enquiries easy</h3>
+                        <p class="outcome__text">Clear forms and calls-to-action so interest doesn’t fade.</p>
+                    </article>
+
+                    <article class="outcome">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="5" y="2" width="14" height="20" rx="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                            </svg>
+                        </div>
+                        <h3 class="outcome__title">Work on every phone</h3>
+                        <p class="outcome__text">Most people check on mobile — your site should feel natural there.</p>
+                    </article>
+
+                    <article class="outcome outcome--wide">
+                        <div class="outcome__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                                <line x1="9" y1="9" x2="9.01" y2="9" />
+                                <line x1="15" y1="9" x2="15.01" y2="9" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="outcome__title">Give them confidence before they reach out</h3>
+                            <p class="outcome__text">When everything is clear and professional, the conversation starts
+                                warmer and moves faster.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
         <section class="sk-section">
             <div class="sk-container">
                 <div class="sk-header">
@@ -385,10 +336,10 @@
                                         d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                                 </svg>
                             </div>
-                            <h3 class="sk-card__title">Discovery &amp; Strategy</h3>
+                            <h3 class="sk-card__title">Pay &amp; Share Your Details</h3>
                             <p class="sk-card__desc">
-                                Mapping your user flow, site map, and key performance indicators so every decision has a
-                                purpose.
+                                Pay the $99 to start, then tell us about your business: what your services are, and
+                                any wording or media you already have.
                             </p>
                         </div>
                     </article>
@@ -404,10 +355,10 @@
                                     <path d="M14 7h6v6" />
                                 </svg>
                             </div>
-                            <h3 class="sk-card__title">Custom Code Development</h3>
+                            <h3 class="sk-card__title">We Build Your Website</h3>
                             <p class="sk-card__desc">
-                                Writing clean, high-performance HTML/CSS/JS and GSAP animations that feel premium and
-                                stay fast.
+                                We design and code your site from scratch, not from a template, with on-page SEO and
+                                mobile-friendly layouts built in.
                             </p>
                         </div>
                     </article>
@@ -423,9 +374,10 @@
                                     <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
                                 </svg>
                             </div>
-                            <h3 class="sk-card__title">Optimization &amp; Testing</h3>
+                            <h3 class="sk-card__title">You Review &amp; Approve</h3>
                             <p class="sk-card__desc">
-                                Cross-browser testing, mobile responsiveness, and SEO checks before anything goes live.
+                                Look through your new site and send us your feedback. We make the changes and check
+                                everything works properly.
                             </p>
                         </div>
                     </article>
@@ -440,10 +392,10 @@
                                     <path d="M5 12h14M12 5l7 7-7 7" />
                                 </svg>
                             </div>
-                            <h3 class="sk-card__title">Launch &amp; Handover</h3>
+                            <h3 class="sk-card__title">Launch &amp; Ongoing Care</h3>
                             <p class="sk-card__desc">
-                                Seamless domain transition, CMS walk-through, and ongoing support options if you want
-                                them.
+                                We connect your domain (you own it) and take your site live. After that, hosting,
+                                maintenance and your monthly update are taken care of.
                             </p>
                         </div>
                     </article>
@@ -470,6 +422,7 @@
     <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/Inclusions.js" defer></script>
 
 </body>
 

@@ -1,7 +1,7 @@
-.heroWork{
+.heroWork {
   text-align: center;
 }
-.heroWork p{
+.heroWork p {
   margin: 0 auto;
 }
 
@@ -9,8 +9,13 @@
   position: relative;
   background: var(--sk-color-bg-warm);
 }
+
+/* Slide panel: unchanged behaviour (one screen tall, pinned by work.js) */
 .work {
-  text-align: center;
+  /* Card width: capped by screen height too, so the whole card
+     always fits inside one screen (panels clip anything taller). */
+  --drag-card-w: min(940px, 92vw, calc((100vh - 6rem) / 0.72));
+
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
@@ -19,53 +24,71 @@
   position: relative;
   overflow: hidden;
   display: flex;
-  padding: 4rem 0 5rem;
+  padding: 2.5rem 0;
   flex-direction: column;
   justify-content: center;
   transform-origin: center center;
   will-change: transform, opacity;
-  background: var(--sk-color-bg-warm);
+  background: transparent;
 }
-.work p {
-  margin: 20px auto;
+
+@supports (height: 100dvh) {
+  .work {
+    --drag-card-w: min(940px, 92vw, calc((100dvh - 6rem) / 0.72));
+  }
 }
-.work-desc {
-  padding-bottom: 0.5rem; /* small buffer under the button */
-}
-.work-media {
-  border-radius: var(--sk-radius-lg);
-  max-width: 70vw; /* adjust to your design */
+
+/* Card: design comes from portfolio.css; these only place it in the panel
+   and undo the panel's centred text / paragraph margins. */
+.work .drag-card {
+  flex: none;
+  width: var(--drag-card-w);
   margin: 0 auto;
-  max-height: 48vh; /* adjust to your design */
-  overflow: hidden;
+  text-align: left;
 }
 
-.work-media img {
-  width: 100%;
-height: 100%;
-  object-fit: cover;
+.work .drag-card p {
+  margin: 0;
 }
-.work h2 {
+
+.work .drag-card-title {
   text-transform: unset;
-  font-weight: 800;
-  font-size: clamp(2rem, 5.8vw, 4.5rem);
-  line-height: 0.92;
-  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  margin: 0;
 }
 
-.tags {
-  margin-bottom: 15px;
+.work .drag-card-tag {
+  display: inline-block;
+  margin-bottom: 0.75rem;
 }
-.tags ul {
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
+
+.work .drag-card-tags {
+  flex-wrap: wrap;
+  margin: 0.9rem 0 1.15rem;
 }
-.tags ul li {
-  border-radius: 40px;
-  padding: 6px 14px;
-  font-size: 14px;
-  background: var(--sk-color-sage-light);
-    color: var(--sk-color-sage);
-    font-family: var(  --sk-font-mono);
+
+/* Phones and small screens: keep the whole card inside one screen */
+@media (max-width: 768px) {
+  .work {
+    --drag-card-w: 92vw;
+    padding: 4.5rem 0 1.5rem;
+  }
+
+  .work .drag-card-media {
+    aspect-ratio: 16 / 9;
+  }
+
+  .work .drag-card-desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .work .drag-card-result {
+    display: none;
+  }
 }

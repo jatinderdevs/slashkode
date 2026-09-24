@@ -64,6 +64,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
 
 </head>
 
@@ -171,7 +172,7 @@
                     </article>
                 </div>
             </section>
-
+            <?php $ctaPage = 'rto'; require_once('../includes/sections/cta.php'); ?>
             <!-- Deliverables / What you get -->
             <section class="sk-expand-cards sk-container" aria-label="What you get with an RTO website">
                 <div class="wd-section-header">
@@ -477,6 +478,7 @@
     <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/cta.js" defer></script>
 
 </body>
 

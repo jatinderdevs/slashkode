@@ -64,6 +64,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
 
 </head>
 
@@ -349,6 +350,7 @@
                     <button data-index="2" aria-label="Slide 3"></button>
                 </div>
             </section>
+            <?php $ctaPage = 'custom-apps'; require_once('../includes/sections/cta.php'); ?>
 
             <!-- Testimonial -->
             <section class="sk-container text-center">
@@ -486,6 +488,7 @@
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
 
+    <script src="<?php echo BASE_PATH; ?>/public/js/cta.js" defer></script>
 </body>
 
 </html>

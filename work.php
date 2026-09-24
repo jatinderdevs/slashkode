@@ -1,31 +1,45 @@
 <?php
 
+/**
+ * Work page: every project in data/portfolio.json, one pinned slide each,
+ * using the same card design as the homepage portfolio.
+ *
+ * - Entries without an "id" (e.g. the "Your next project" template) are skipped.
+ * - The Custom CMS project is added at the end from the array below.
+ */
 
+$portfolioJsonPath = __DIR__ . '/data/portfolio.json';
+$workProjects = [];
 
-function sk_get_portfolio(string $page, string $jsonPath): array
-{
-  if (!file_exists($jsonPath)) {
-    return [];
+if (file_exists($portfolioJsonPath)) {
+  $all = json_decode(file_get_contents($portfolioJsonPath), true);
+  if (is_array($all)) {
+    foreach ($all as $p) {
+      if (!empty($p['id'])) {
+        $workProjects[] = $p;
+      }
+    }
   }
-
-  $json = file_get_contents($jsonPath);
-  $all = json_decode($json, true);
-
-  if (!is_array($all)) {
-    return [];
-  }
-
-  return array_values(array_filter($all, function ($item) use ($page) {
-    return isset($item['pages']) && in_array($page, $item['pages'], true);
-  }));
 }
 
-// Adjust this path if your project structure differs — relative to
-// THIS file's location (includes/sections/portfolio.php), up two
-// levels to project root, then into /data/portfolio.json.
-$portfolioJsonPath = __DIR__ . '/data/portfolio.json';
-$portfolioPage = $portfolioPage ?? 'home';
-$portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
+// Hardcoded project, always last. Move it into portfolio.json if you want it managed there.
+$workProjects[] = [
+  'id'          => 'custom-cms',
+  'title'       => 'Custom CMS & Admin Dashboards',
+  'topTag'      => 'Custom CMS',
+  'image'       => 'public/img/mockups/cms.jpg',
+  'alt'         => 'Custom CMS admin dashboard Melbourne',
+  'link'        => '#',
+  'cta'         => 'Case study',
+  'chips'       => ['Custom CMS', 'Dashboard', 'PHP', 'Tools'],
+  'description' => 'Tailored content management systems and admin dashboards for Melbourne businesses that need more control than a standard website builder. Built for easy updates, secure access, and day-to-day use by non-technical teams.',
+];
+
+// Works whether image paths in the JSON start with "/" or not.
+function sk_work_asset(string $path): string
+{
+  return rtrim(BASE_PATH, '/') . '/' . ltrim($path, '/');
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -103,10 +117,8 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
 
     <?php require_once('includes/stylesheets.php'); ?>
 
-
-
+    <!-- portfolio.css (the card styles) is already loaded by stylesheets.php -->
     <link rel="stylesheet" href="public/css/pages/work.css" />
-
 
     <link rel="stylesheet" href="public/css/faq.css" />
     <link rel="stylesheet" href="public/css/cta.css" />
@@ -124,69 +136,65 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
                         real projects, real outcomes, no filler.</p>
                 </div>
             </section>
-            <section class="works">
 
-                <?php if (!empty($portfolioItems)) : ?>
-                <?php foreach ($portfolioItems as $item) : ?>
+            <section class="works p-0">
+                <?php foreach ($workProjects as $i => $item) : ?>
+                <?php
+                  $link     = $item['link'] ?? '#';
+                  $external = strpos($link, 'http') === 0;
+                ?>
                 <div class="work">
-                    <h2><?php echo htmlspecialchars($item['title'] ?? ''); ?></h2>
+                    <article class="drag-card">
+                        <div class="drag-card-body">
+                            <div class="drag-card-hero">
+                                <div class="drag-card-media">
+                                    <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
+                                        alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
+                                        <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
+                                </div>
 
-                    <?php if (!empty($item['chips'])) : ?>
-                    <div class="tags">
-                        <ul class="nav">
-                            <?php foreach ($item['chips'] as $chip) : ?>
-                            <li><?php echo htmlspecialchars($chip); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                    <?php endif; ?>
+                                <div class="drag-card-side">
+                                    <?php if (!empty($item['topTag'])) : ?>
+                                    <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
+                                    <?php endif; ?>
 
-                    <div class="work-media">
-                        <img src="<?php echo BASE_PATH; ?>/<?php echo htmlspecialchars($item['image'] ?? ''); ?>"
-                            alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>" loading="lazy">
-                    </div>
+                                    <h2 class="drag-card-title"><?php echo htmlspecialchars($item['title'] ?? ''); ?>
+                                    </h2>
 
-                    <div class="work-desc">
-                        <?php if (!empty($item['desc'])) : ?>
-                        <p><?php echo htmlspecialchars($item['desc']); ?></p>
-                        <?php endif; ?>
+                                    <?php if (!empty($item['chips'])) : ?>
+                                    <div class="drag-card-tags">
+                                        <?php foreach ($item['chips'] as $chip) : ?>
+                                        <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
+                                        <?php endforeach; ?>
+                                    </div>
+                                    <?php endif; ?>
 
-                        <?php if (!empty($item['cta'])) : ?>
-                        <a href="<?php echo htmlspecialchars($item['link'] ?? '#'); ?>" class="sk-btn sk-btn-primary">
-                            <?php echo htmlspecialchars($item['cta']); ?>
-                            <span></span>
-                        </a>
-                        <?php endif; ?>
-                    </div>
+                                    <?php if (!empty($item['cta'])) : ?>
+                                    <a href="<?php echo htmlspecialchars($link); ?>"
+                                        <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
+                                        class="sk-btn sk-btn-primary btnlive">
+                                        <?php echo htmlspecialchars($item['cta']); ?>
+                                        <span></span>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+
+                            <?php if (!empty($item['description'])) : ?>
+                            <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
+                            <?php endif; ?>
+
+                            <?php if (!empty($item['result'])) : ?>
+                            <div class="drag-card-result">
+                                <p><?php echo htmlspecialchars($item['result']); ?></p>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </article>
                 </div>
                 <?php endforeach; ?>
-                <?php endif; ?>
-                <!-- 6. Custom CMS -->
-                <div class="work">
-                    <h2>Custom CMS &amp; Admin Dashboards</h2>
-                    <div class="tags">
-                        <ul class="nav">
-                            <li>Custom CMS</li>
-                            <li>Dashboard</li>
-                            <li>PHP</li>
-                            <li>Tools</li>
-                        </ul>
-                    </div>
-                    <div class="work-media">
-                        <img src="<?php echo BASE_PATH; ?>/public/img/mockups/cms.jpg"
-                            alt="Custom CMS admin dashboard Melbourne">
-                    </div>
-                    <div class="work-desc">
-                        <p>Tailored content management systems and admin dashboards for Melbourne businesses that need
-                            more control than a standard website builder. Built for easy updates, secure access, and
-                            day-to-day use by non-technical teams.</p>
-                        <a href="#" class="sk-btn sk-btn-primary">case study
-                            <span></span>
-                        </a>
-                    </div>
-                </div>
-
             </section>
+
             <?php require_once('includes/sections/cta.php'); ?>
 
 

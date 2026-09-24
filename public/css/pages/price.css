@@ -1,4 +1,3 @@
-
 .packages-hero {
   padding: 6.5rem 1.5rem 4.5rem;
   text-align: center;
@@ -24,13 +23,11 @@
   background: var(--sk-color-terracotta);
 }
 
-
-
 .packages-hero__lead {
   font-size: 1.125rem;
   color: var(--sk-color-primary-soft);
   max-width: 42ch;
-  margin: 0 auto ;
+  margin: 0 auto;
   line-height: 1.6;
 }
 
@@ -41,21 +38,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.75rem;
-  
 }
 
-.request-quote{
+.request-quote {
   display: grid;
   place-content: center;
   animation: wave 3s infinite alternate;
-  background: linear-gradient(to left, var(--sk-color-terracotta), var(--sk-color-terracotta-hover));
+  background: var(--sk-color-primary-dark);
 }
-.request-quote p{
-  color:  var(--sk-color-bg-warm);
+.request-quote p {
+  color: rgba(255, 255, 255, 0.78);
 }
-
+.request-quote p strong {
+  color: white;
+}
 .package-card {
-  
   border-radius: var(--sk-radius-lg);
   padding: 2.25rem 2rem 2rem;
   box-shadow: var(--sk-shadow-card);
@@ -65,13 +62,12 @@
   position: relative;
   transition: var(--sk-transition);
 }
-.heading_quote{
-  font-size: 3.5rem;
-color: white;
+.heading_quote {
+  font-size: 3rem;
+  color: white;
 }
 .package-card:hover {
   box-shadow: var(--sk-shadow-soft);
-  
 }
 
 .package-card--featured {
@@ -120,7 +116,7 @@ color: white;
 .package-card__desc {
   font-size: 0.95rem;
   color: var(--sk-color-primary-soft);
-  margin-bottom: 1.5rem;
+
   line-height: 1.55;
 }
 
@@ -133,7 +129,7 @@ color: white;
 
 .package-card__price strong {
   font-family: var(--sk-font-heading);
-  font-size: 2.35rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: -0.03em;
   color: var(--sk-color-primary-dark);
@@ -148,6 +144,9 @@ color: white;
   font-size: 0.8rem;
   color: var(--sk-color-primary-soft);
   margin-bottom: 1.75rem;
+}
+.package-card__note strong {
+  color: var(--sk-color-terracotta);
 }
 
 .package-card__list {
@@ -165,6 +164,9 @@ color: white;
   line-height: 1.45;
   color: var(--sk-color-primary-dark);
 }
+.package-card__list li a {
+  color: var(--sk-color-primary-dark);
+}
 
 .package-card__list li::before {
   content: "";
@@ -180,8 +182,10 @@ color: white;
 .package-card__cta {
   margin-top: auto;
 }
-
-
+.package-card__cta > a:nth-child(2) {
+  margin-left: 1rem;
+  color: var(--sk-color-primary-dark);
+}
 /* ─────────────────────────────────────
    COMPARISON TABLE
 ───────────────────────────────────── */
@@ -334,7 +338,6 @@ color: white;
   border-radius: var(--sk-radius-lg);
   padding: 3.25rem 2.5rem;
   text-align: center;
-  
 }
 
 .packages-cta-band h2 {
@@ -364,7 +367,7 @@ color: white;
 ───────────────────────────────────── */
 .packages-fine-print {
   text-align: center;
-  margin:2rem 0;
+  margin: 2rem 0;
 }
 
 .packages-fine-print p {
