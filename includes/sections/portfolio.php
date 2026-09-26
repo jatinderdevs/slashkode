@@ -30,8 +30,8 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
     <div class="sk-container">
         <div class="drag-portfolio-header">
             <span class="sk-statement-eyebrow">/ Portfolio</span>
-            <h2 class="drag-portfolio-title mb-0 headingeffect">Work we've shipped</h2>
-            <p>A few of the projects we've built from the ground up — real sites,
+            <h2 class="drag-portfolio-title mb-0 headingeffect">Here's some of our work</h2>
+            <p>A few of the projects we've built from the ground up - real sites,
                 real results for Melbourne businesses.</p>
         </div>
     </div>

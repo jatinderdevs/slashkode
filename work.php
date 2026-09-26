@@ -48,27 +48,27 @@ function sk_work_asset(string $path): string
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Our Work | Melbourne Web Design & Development Portfolio | slashkode</title>
+    <title>Our Work | Melbourne Web Design & Development Portfolio | Slashkode</title>
     <meta name="description"
-        content="Real websites built for Melbourne businesses and RTOs — from RTO/VET enrolment platforms to custom CMS dashboards. See the work slashkode has shipped." />
+        content="Real websites built for Melbourne businesses and RTOs — from RTO/VET enrolment platforms to custom CMS dashboards. See the work Slashkode has shipped." />
     <meta name="keywords"
         content="Melbourne web design portfolio, website design examples Melbourne, web development case studies" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/work.php" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/work.php" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | slashkode" />
+    <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | Slashkode" />
     <meta property="og:description"
         content="Real websites built for Melbourne businesses and RTOs — from enrolment platforms to custom dashboards." />
-    <meta property="og:url" content="https://slashkode.com.au/work.php" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/work.php" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Our Work | slashkode Melbourne" />
+    <meta name="twitter:title" content="Our Work | Slashkode Melbourne" />
     <meta name="twitter:description" content="Real Melbourne websites and RTO platforms we've built and shipped." />
 
     <!-- Schema.org: Portfolio as ItemList -->
@@ -76,8 +76,8 @@ function sk_work_asset(string $path): string
     {
         "@context": "https://schema.org",
         "@type": "CollectionPage",
-        "name": "slashkode Portfolio",
-        "description": "Websites and web applications built by slashkode for Melbourne businesses and RTOs.",
+        "name": "Slashkode Portfolio",
+        "description": "Websites and web applications built by Slashkode for Melbourne businesses and RTOs.",
         "mainEntity": {
             "@type": "ItemList",
             "itemListElement": [{
@@ -133,7 +133,7 @@ function sk_work_asset(string $path): string
                 <div class="heroWork">
                     <h1 class="heroheading">Our Work</h1>
                     <p>A look at the Melbourne websites, RTO and VET platforms, and custom applications we've built —
-                        real projects, real outcomes, no filler.</p>
+                        real projects, real outcomes.</p>
                 </div>
             </section>
 

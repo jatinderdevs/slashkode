@@ -11,17 +11,17 @@
     <meta name="keywords"
         content="web design Melbourne, website development Melbourne, SEO Melbourne, RTO website design, custom web applications Melbourne, VET college website, Melbourne web developer" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
+    <meta name="author" content="Slashkode" />
     <meta name="theme-color" content="#0f172a" />
-    <link rel="canonical" href="https://slashkode.com.au/" />
-    <title>slashkode | Web Design & Development, Melbourne</title>
+    <link rel="canonical" href="https://Slashkode.com.au/" />
+    <title>Slashkode | Web Design & Development, Melbourne</title>
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="slashkode | Web Design & Development, Melbourne" />
+    <meta property="og:title" content="Slashkode | Web Design & Development, Melbourne" />
     <meta property="og:description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one." />
-    <meta property="og:url" content="https://slashkode.com.au/" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
     <meta property="og:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
     <meta property="og:image:width" content="1200" />
@@ -29,7 +29,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="slashkode | Web Design & Development, Melbourne" />
+    <meta name="twitter:title" content="Slashkode | Web Design & Development, Melbourne" />
     <meta name="twitter:description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs." />
     <meta name="twitter:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
@@ -39,9 +39,9 @@
     {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
-        "name": "slashkode",
+        "name": "Slashkode",
         "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
-        "url": "https://slashkode.com.au/",
+        "url": "https://Slashkode.com.au/",
         "telephone": "+61499167608",
         "email": "info@slashkode.com.au",
         "priceRange": "$$",
@@ -116,8 +116,8 @@
                         Minimum cost, maximum results. We make it happen.
                     </h1>
                     <p>
-                        We design and build professional websites for Melbourne small businesses, Migration agencies,
-                        RTO and VET colleges and service based business.
+                        We design and build professional websites for Melbourne small businesses, migration agencies,
+                        RTO and VET colleges, and service-based businesses.
 
 
                     </p>
@@ -251,10 +251,10 @@
                 <div class="skills-heading-wrap">
                     <span class="sk-statement-eyebrow">/Services</span>
                     <h2 class="skills-heading headingeffect">
-                        What we are
-                        good at
+                        What we do
                     </h2>
-                    <p>Four things, done properly — not ten things done half-heartedly.</p>
+                    <p>We build websites. From design to launch, and everything a Melbourne business needs to
+                        actually get found and get enquiries.</p>
                 </div>
             </div>
         </section>
@@ -273,7 +273,7 @@
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
                                         <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
-                                            alt="Jatinder Singh, founder and web developer at slashkode" />
+                                            alt="Jatinder Singh, founder and web developer at Slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
@@ -287,16 +287,16 @@
                             <p class="about-bio">
                                 I’m Jatinder, a Melbourne-based web designer and developer.
                                 I work with small businesses across the city who want clean,
-                                fast websites that actually help them get enquiries — not
+                                fast websites that actually drive results - not
                                 just look good.
-                                <a href="<?php echo BASE_PATH; ?>/aboutus.php">More about slashkode →</a>
+                                <a href="<?php echo BASE_PATH; ?>/aboutus.php">More about Slashkode →</a>
                             </p>
                         </div>
                         <div class="about-tags">
                             <span class="about-tag">Design</span>
                             <span class="about-tag">Development</span>
-                            <span class="about-tag">SEO</span>
-                            <span class="about-tag">CMS</span>
+                            <span class="about-tag">web applications</span>
+
                         </div>
                     </article>
 
@@ -305,9 +305,9 @@
                     <article class="bento-card card-cta" data-animate>
                         <div>
                             <h3 class="cta-title">
-                                What kind of problems are you experiencing? <br />
-                                Asking and getting a clear answer.
+                                Not sure where to start?
                             </h3>
+                            <p>Tell us what you're trying to fix or build — we'll point you in the right direction.</p>
                         </div>
                         <a href="contact" class="sk-btn sk-btn-secondary"
                             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">contact
@@ -352,21 +352,24 @@
 
             <section class="sk-container text-center">
                 <div class="about-grid-header">
-                    <span class="sk-statement-eyebrow">/what is catch</span>
+                    <span class="sk-statement-eyebrow">/what is the catch</span>
                     <h2 class="about-grid-title headingeffect">Fair pricing, No catch.</h2>
                 </div>
                 <p class="m-auto">
-                    I keep slashkode small on purpose — a handful of projects at a time, not a pipeline.
-                    That's what lets me actually pay attention to each one, instead of leaning on templates and
-                    automated systems to cover more clients than I can properly look after.
+                    Here's the honest answer: the price is low because the overhead is low. No office, no account
+                    managers, no big team sitting between you and the work - so that cost never gets added to your price
+                    in the first place.
                     <br>
                     <br>
-                    The lower price comes from the same decision. No office, no account managers, no big team to fund —
-                    so the saving goes into your price instead of overhead.
+
+                    It also means support doesn't stop at launch. This runs as an ongoing plan, so once your site is
+                    live, I'm still available for updates, content changes, or help managing things - for a clear, fixed
+                    price, not a surprise bill.
                     <br>
                     <br>
-                    The honest reason I built it this way: most small businesses need a website that actually works, not
-                    an agency price tag. This is me trying to make that fair.
+
+                    If you're a small business that needs a website done properly and someone to actually help after
+                    it's live, that's exactly who this is built for.
                 </p>
             </section>
         </div>

@@ -346,7 +346,7 @@ section {
 }
 /* hero */
 .heroheading {
-  text-transform: capitalize;
+  text-transform: unset;
 }
 .heroheading .wordhero.is-accent,
 .heroheading .is-accent {

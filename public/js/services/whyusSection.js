@@ -1,5 +1,5 @@
 /* =========================================================
-   Expand Cards Section – slashkode
+   Expand Cards Section – Slashkode
    Requires: GSAP 3.x
    ========================================================= */
 (function () {

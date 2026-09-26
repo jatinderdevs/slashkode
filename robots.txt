@@ -5,4 +5,4 @@ Disallow: /data/
 Disallow: /demo/
 Disallow: /*.json$
 
-Sitemap: https://slashkode.com.au/sitemap.xml
+Sitemap: https://Slashkode.com.au/sitemap.xml

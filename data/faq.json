@@ -1,7 +1,7 @@
 [
     {
         "page": "home",
-        "question": "What does slashkode do?",
+        "question": "What does Slashkode do?",
         "answer": [
             "We design and build websites for Melbourne businesses — everything from clean marketing sites to custom web applications, with SEO built in from the start rather than tacked on afterwards.",
             "If you're not sure exactly what you need yet, that's fine too. Tell us what you're trying to achieve and we'll point you toward the right service."
@@ -24,7 +24,7 @@
     },
     {
         "page": "home",
-        "question": "What makes a slashkode website different?",
+        "question": "What makes a Slashkode website different?",
         "answer": [
             "We focus on clarity, performance and real results for Melbourne businesses. Every site is custom-built with SEO in mind from day one, so it loads fast, ranks better and is easy for you to update.",
             "You get a site that works hard for your business, not just one that looks good for a week."
@@ -114,32 +114,32 @@
     },
     {
         "page": "about",
-        "question": "Who is behind slashkode?",
+        "question": "Who is behind Slashkode?",
         "answer": [
-            "slashkode is run by Jatinder, a Melbourne-based web designer and developer with years of experience building websites and custom applications for Australian businesses.",
+            "Slashkode is run by Jatinder, a Melbourne-based web designer and developer with years of experience building websites and custom applications for Australian businesses.",
             "What started as freelance work under jatinderdev.com.au has grown into a focused sole-trader business dedicated to clear, high-performing websites."
         ]
     },
     {
         "page": "about",
-        "question": "Why did you start slashkode?",
+        "question": "Why did you start Slashkode?",
         "answer": [
             "After years of freelancing I wanted a clearer brand that reflected the kind of work I do best — practical, SEO-aware websites for Melbourne businesses that need to grow online.",
-            "slashkode is simply a more focused version of the same hands-on approach."
+            "Slashkode is simply a more focused version of the same hands-on approach."
         ]
     },
     {
         "page": "about",
         "question": "Do you still do logo design or other digital services?",
         "answer": [
-            "No. slashkode is focused on website design, development, SEO and custom web applications. We no longer offer standalone logo design or general digital marketing packages."
+            "No. Slashkode is focused on website design, development, SEO and custom web applications. We no longer offer standalone logo design or general digital marketing packages."
         ]
     },
     {
         "page": "about",
         "question": "Are you based in Melbourne?",
         "answer": [
-            "Yes. slashkode is a Melbourne-based business. Most of our clients are local, and we understand the local market, but we also work happily with clients anywhere in Australia."
+            "Yes. Slashkode is a Melbourne-based business. Most of our clients are local, and we understand the local market, but we also work happily with clients anywhere in Australia."
         ]
     },
     {
@@ -152,7 +152,7 @@
     },
     {
         "page": "services",
-        "question": "What website services does slashkode offer?",
+        "question": "What website services does Slashkode offer?",
         "answer": [
             "We design and develop custom websites, handle technical SEO from the start, build custom web applications, and specialise in RTO and VET college websites that meet industry needs.",
             "Most projects combine design, development and SEO so everything works together."

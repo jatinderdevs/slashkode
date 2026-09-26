@@ -5,27 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Pricing Melbourne | $99 to Start + $39/Fortnightly | slashkode</title>
+    <title>Website Pricing Melbourne | $99 to Start + $39/Fortnightly | Slashkode</title>
     <meta name="description"
         content="Clear website pricing for Melbourne businesses. $99 to start, then $39 fortnightly. Up to 10 pages, hosting, on-page SEO, mobile responsive, enquiry form and more. No lock-in, no cancellation fees. Built by me — no outsourcing." />
     <meta name="keywords"
         content="website pricing Melbourne, affordable website Melbourne, website subscription Melbourne, $39 fortnightly website, web design Melbourne pricing, no lock-in website Melbourne" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/price" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/price" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Website Pricing Melbourne | $99 to Start + $39/Fortnightly | slashkode" />
+    <meta property="og:title" content="Website Pricing Melbourne | $99 to Start + $39/Fortnightly | Slashkode" />
     <meta property="og:description"
         content="Clear website pricing for Melbourne businesses. $99 to start, then $39 fortnightly. Up to 10 pages, hosting, SEO, enquiry form and more. No lock-in. No outsourcing." />
-    <meta property="og:url" content="https://slashkode.com.au/price" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/price" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Website Pricing Melbourne | $99 to Start + $39/Fortnightly | slashkode" />
+    <meta name="twitter:title" content="Website Pricing Melbourne | $99 to Start + $39/Fortnightly | Slashkode" />
     <meta name="twitter:description"
         content="Clear pricing. $99 to start, then $39 fortnightly. Everything included for a professional Melbourne website. No lock-in. No outsourcing." />
 
@@ -34,11 +34,11 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
-        "name": "Website Package - slashkode Melbourne",
+        "name": "Website Package - Slashkode Melbourne",
         "description": "Professional website for Melbourne businesses. $99 to start, then $39 fortnightly. Up to 10 pages, hosting, on-page SEO, mobile responsive, enquiry form, one small change per month. No lock-in contract.",
         "brand": {
             "@type": "Brand",
-            "name": "slashkode"
+            "name": "Slashkode"
         },
         "offers": {
             "@type": "Offer",
@@ -46,7 +46,7 @@
             "price": "99.00",
             "priceValidUntil": "2027-12-31",
             "availability": "https://schema.org/InStock",
-            "url": "https://slashkode.com.au/price",
+            "url": "https://Slashkode.com.au/price",
             "description": "$99 to start the project, then $39 per fortnight ongoing. No lock-in. Cancel anytime with no cancellation fees."
         }
     }

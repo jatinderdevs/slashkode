@@ -7,27 +7,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Web Applications Melbourne | Tailored Business Software | slashkode</title>
+    <title>Custom Web Applications Melbourne | Tailored Business Software | Slashkode</title>
     <meta name="description"
         content="Custom web applications and tailored CMS for Melbourne businesses. Admin dashboards, internal portals, workflow tools and secure systems built to fit how you actually work — not forced into a template." />
     <meta name="keywords"
         content="custom web application development Melbourne, custom CMS Melbourne, admin dashboard development Melbourne, internal business portal development" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/services/custom-web-applications" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/services/custom-web-applications" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Custom Web Applications Melbourne | Tailored Business Software | slashkode" />
+    <meta property="og:title" content="Custom Web Applications Melbourne | Tailored Business Software | Slashkode" />
     <meta property="og:description"
         content="Custom web applications, admin dashboards and internal portals built in Melbourne for the way your business actually works." />
-    <meta property="og:url" content="https://slashkode.com.au/services/custom-web-applications" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/services/custom-web-applications" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Custom Web Applications Melbourne | slashkode" />
+    <meta name="twitter:title" content="Custom Web Applications Melbourne | Slashkode" />
     <meta name="twitter:description"
         content="Tailored web applications, CMS and dashboards built around your processes — not the other way around." />
 
@@ -39,8 +39,8 @@
         "name": "Custom Web Applications",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "slashkode",
-            "url": "https://slashkode.com.au",
+            "name": "Slashkode",
+            "url": "https://Slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",
@@ -111,13 +111,13 @@
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
                                         <img src="<?php echo BASE_PATH; ?>public/img/js.jpg" class="img-fluid"
-                                            alt="Jatinder Singh, Founder of slashkode" />
+                                            alt="Jatinder Singh, Founder of Slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
                                     <div>
                                         <h3 class="about-name">JATINDER SINGH</h3>
-                                        <p class="about-role">Founder &amp; Lead Developer, SLASHKODE</p>
+                                        <p class="about-role">Founder &amp; Lead Developer, Slashkode</p>
                                     </div>
                                 </div>
                             </div>

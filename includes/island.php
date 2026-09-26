@@ -13,7 +13,7 @@
             <div class="sk-island__header-avatar sk-island__header-avatar--initials" aria-hidden="true">JS</div>
             <div>
                 <div class="sk-island__name">Jatinder Singh</div>
-                <div class="sk-island__role">slashkode · Melbourne</div>
+                <div class="sk-island__role">Slashkode · Melbourne</div>
             </div>
         </div>
 

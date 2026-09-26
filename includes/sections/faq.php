@@ -44,8 +44,7 @@ $faqs = sk_get_faqs($faqPage, $faqJsonPath);
             <span class="sk-statement-eyebrow">/FAQ</span>
             <h2 class="faq-title headingeffect">Common questions</h2>
             <p class="faq-subtitle">
-                Straight answers about working together, timelines, and what to
-                expect.
+                Straight answers about timelines, pricing, and how we work together.
             </p>
         </header>
 

@@ -1,5 +1,5 @@
 /**
- * SLASHKODE — Web Design service page
+ * Slashkode — Web Design service page
  * GSAP reveals + FAQ accordion
  */
 document.addEventListener("DOMContentLoaded", () => {

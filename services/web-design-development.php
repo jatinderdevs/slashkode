@@ -7,27 +7,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Website Design & Development Melbourne | slashkode</title>
+    <title>Custom Website Design & Development Melbourne | Slashkode</title>
     <meta name="description"
         content="Custom UI/UX design, fluid GSAP animations, and rock-solid SEO. Responsive websites built for Melbourne small businesses to scale — without the technical stress." />
     <meta name="keywords"
         content="custom website design Melbourne, responsive website design Melbourne, small business website design Melbourne, conversion focused web design" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/services/web-design-development" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/services/web-design-development" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Custom Website Design & Development Melbourne | slashkode" />
+    <meta property="og:title" content="Custom Website Design & Development Melbourne | Slashkode" />
     <meta property="og:description"
         content="Custom UI/UX design, fluid animations, and rock-solid SEO. Responsive websites built for Melbourne small businesses." />
-    <meta property="og:url" content="https://slashkode.com.au/services/web-design-development" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/services/web-design-development" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Custom Website Design & Development Melbourne | slashkode" />
+    <meta name="twitter:title" content="Custom Website Design & Development Melbourne | Slashkode" />
     <meta name="twitter:description"
         content="Custom UI/UX design and responsive builds for Melbourne small businesses." />
 
@@ -39,8 +39,8 @@
         "name": "Website Design & Development",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "slashkode",
-            "url": "https://slashkode.com.au",
+            "name": "Slashkode",
+            "url": "https://Slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",
@@ -112,19 +112,19 @@
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
                                         <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
-                                            alt="Jatinder Singh, Founder of slashkode" />
+                                            alt="Jatinder Singh, Founder of Slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
                                     <div>
                                         <h3 class="about-name">JATINDER SINGH</h3>
-                                        <p class="about-role">Founder &amp; Lead Developer, SLASHKODE</p>
+                                        <p class="about-role">Founder &amp; Lead Developer, Slashkode</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="about-bio">
-                                Every SLASHKODE project is designed, coded, and shipped personally by
+                                Every Slashkode project is designed, coded, and shipped personally by
                                 Jatinder — no outsourcing, no junior hand-offs. Based in Melbourne,
                                 working with local businesses who want a site that actually performs.
                             </p>

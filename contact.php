@@ -5,40 +5,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact slashkode | Request a Free Consultation, Melbourne</title>
+    <title>Contact Slashkode | Request a Free Consultation, Melbourne</title>
     <meta name="description"
-        content="Get in touch with slashkode for a free consultation. Website design, SEO, RTO/VET websites and custom web applications for Melbourne businesses — no pressure, just clarity." />
+        content="Get in touch with Slashkode for a free consultation. Website design, SEO, RTO/VET websites and custom web applications for Melbourne businesses — no pressure, just clarity." />
     <meta name="keywords"
-        content="contact slashkode, request a consultation Melbourne, web design quote Melbourne, book a consultation Melbourne web developer" />
+        content="contact Slashkode, request a consultation Melbourne, web design quote Melbourne, book a consultation Melbourne web developer" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/contact" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/contact" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Contact slashkode | Request a Free Consultation, Melbourne" />
+    <meta property="og:title" content="Contact Slashkode | Request a Free Consultation, Melbourne" />
     <meta property="og:description"
-        content="Get in touch with slashkode for a free consultation on your Melbourne website, SEO, RTO/VET platform or custom web application." />
-    <meta property="og:url" content="https://slashkode.com.au/contact" />
-    <meta property="og:site_name" content="slashkode" />
+        content="Get in touch with Slashkode for a free consultation on your Melbourne website, SEO, RTO/VET platform or custom web application." />
+    <meta property="og:url" content="https://Slashkode.com.au/contact" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Contact slashkode | Melbourne" />
+    <meta name="twitter:title" content="Contact Slashkode | Melbourne" />
     <meta name="twitter:description"
-        content="Request a free consultation with slashkode — Melbourne web design, SEO, and custom applications." />
+        content="Request a free consultation with Slashkode — Melbourne web design, SEO, and custom applications." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        "name": "Contact slashkode",
+        "name": "Contact Slashkode",
         "mainEntity": {
             "@type": "LocalBusiness",
-            "name": "slashkode",
-            "url": "https://slashkode.com.au",
+            "name": "Slashkode",
+            "url": "https://Slashkode.com.au",
             "email": "info@slashkode.com.au",
             "telephone": "+61499167608",
             "address": {
@@ -130,7 +130,7 @@
                             <div class="self-contact-card">
                                 <div class="profile-header">
                                     <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg"
-                                        alt="Jatinder Singh, Founder of slashkode" class="profile-img">
+                                        alt="Jatinder Singh, Founder of Slashkode" class="profile-img">
                                     <div class="profile-info">
                                         <h3>Jatinder Singh</h3>
                                         <p>Lead Developer</p>

@@ -78,7 +78,7 @@
             <section class="sk-container">
                 <div class="heroService">
                     <h1 class="heroheading">Clear web services for Melbourne businesses.</h1>
-                    <p>Website design, development, SEO and custom applications — built to help local businesses look
+                    <p>Website design, development, SEO and custom applications - built to help local businesses look
                         professional, get found, and grow.</p>
                     <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary"> Book a free chat
                         <span></span>
@@ -114,22 +114,22 @@
 
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
-                            <p>Custom-designed, fast websites with clean code and SEO foundations — built so Melbourne
-                                businesses look professional and turn visitors into enquiries.</p>
+                            <p>Custom-designed, fast websites with clean code and SEO foundations - built so your
+                                business look professional and turn visitors into enquiries.</p>
                         </div>
 
                         <div class="subcate">
                             <ul>
-                                <li>Custom UI/UX &amp; Responsive Design</li>
-                                <li>Clean Code (HTML/CSS/JS + GSAP)</li>
-                                <li>Built-in Technical SEO</li>
+                                <li>Designed Around Your Customers</li>
+                                <li>Mobile Responsive</li>
+                                <li>SEO Ready From Day One</li>
                             </ul>
                         </div>
 
                         <div class="subcate">
                             <ul>
-                                <li>Performance &amp; Page Speed</li>
-                                <li>CMS Setup &amp; Handover</li>
+                                <li>Fast Loading Speeds</li>
+                                <li>On Going Maintenance</li>
                                 <li>Conversion-Focused Layouts</li>
                             </ul>
                         </div>
@@ -162,22 +162,22 @@
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
                             <p>SEO built into new sites from day one, or a deep audit and upgrade of your existing
-                                website — speed, keywords, content and conversion. No monthly retainers.</p>
+                                website - speed, keywords, content and conversion. No monthly retainers.</p>
                         </div>
 
                         <div class="subcate">
                             <ul>
                                 <li>On-Page SEO Foundations</li>
-                                <li>Technical SEO Audit</li>
+                                <li>Full Website Health Check</li>
                                 <li>Page Speed Optimisation</li>
                             </ul>
                         </div>
 
                         <div class="subcate">
                             <ul>
-                                <li>Keyword Research &amp; Mapping</li>
-                                <li>Content for Ranking &amp; Brand</li>
-                                <li>Conversion Path Improvements</li>
+
+                                <li>Content That Helps You Rank</li>
+                                <li>Clearer Paths to Enquiries</li>
                             </ul>
                         </div>
                     </div>
@@ -213,7 +213,7 @@
 
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
-                            <p>ASQA-compliant websites for RTOs and VET colleges in Melbourne — course catalogues,
+                            <p>ASQA-compliant websites for RTOs and VET colleges in Melbourne - course catalogues,
                                 student information, enrolment paths and SEO that attract the right enquiries.</p>
                         </div>
 
@@ -262,31 +262,32 @@
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
                             <p>Tailored web applications, admin dashboards and internal portals built around how your
-                                Melbourne business actually works — not forced into a generic template.</p>
+                                Melbourne business actually works - not forced into a generic template.</p>
                         </div>
 
                         <div class="subcate">
                             <ul>
-                                <li>Custom CMS &amp; Admin Dashboards</li>
-                                <li>Internal Portals &amp; Workflows</li>
-                                <li>Role-Based User Systems</li>
+                                <li>Custom Admin Dashboards</li>
+
+                                <li>Tools That Match How You Work</li>
                             </ul>
                         </div>
 
                         <div class="subcate">
                             <ul>
-                                <li>Third-Party Integrations</li>
-                                <li>Secure Authentication</li>
-                                <li>Scalable Architecture</li>
+                                <li>Connects With the Tools You Already Use</li>
+                                <li>Secure Logins for Your Team</li>
+                                <li>Built to Grow as You Do</li>
                             </ul>
                         </div>
                     </div>
                 </section>
 
             </div>
+        </div>
 
-            <?php require_once('includes/sections/cta.php'); ?>
-
+        <?php require_once('includes/sections/cta.php'); ?>
+        <div class="container-fluid">
             <?php $faqPage = 'services';
             require_once('includes/sections/faq.php'); ?>
             <?php require_once('includes/island.php'); ?>

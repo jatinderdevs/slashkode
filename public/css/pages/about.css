@@ -8,14 +8,16 @@
   padding: 4rem 2rem;
   background-color: var(--sk-color-primary-dark);
 }
+.mission .sk-statement-eyebrow {
+  display: inline-block;
+}
 .mission p {
   max-width: unset;
-  color: var( --sk-color-surface-sand);
+  color: var(--sk-color-surface-sand);
   font-size: var(--sk-text-body-lg);
-  
   line-height: 1.6;
 }
-.mission h2{
+.mission h2 {
   color: var(--sk-color-bg-card);
 }
 .local-stats {
@@ -85,7 +87,6 @@
 }
 .myself:hover {
   filter: unset;
-
   border-radius: 48% 52% 45% 55% / 42% 58% 48% 52%;
   transform: scale(1.02);
 }
@@ -106,4 +107,136 @@
 .about-services a {
   margin: 10px 5px;
   border: 1px solid #dfdfdf;
+}
+
+/* ── Why the price is fair ── */
+.why-price {
+  padding: 1rem 0;
+}
+
+.why-price .sk-statement-eyebrow {
+  display: inline-block;
+}
+
+.why-price > .row {
+  align-items: flex-start;
+}
+
+.why-price p {
+  color: var(--sk-color-primary-soft);
+  font-size: var(--sk-text-body);
+}
+
+.why-price-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  color: var(--sk-color-primary-dark);
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+  padding-bottom: 2px;
+}
+
+.why-price-link:hover {
+  color: var(--sk-color-terracotta);
+  border-color: var(--sk-color-terracotta);
+}
+
+.why-price-link img {
+  width: 12px;
+  height: 12px;
+}
+
+.why-price-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.why-price-item {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.1rem;
+  padding: 1.35rem 0;
+  border-top: 1px solid var(--sk-color-surface-sand);
+}
+
+.why-price-item:first-child {
+  border-top: none;
+}
+
+.why-price-num {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  color: var(--sk-color-terracotta);
+  letter-spacing: 0.06em;
+  padding-top: 0.2rem;
+}
+
+.why-price-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.015em;
+}
+
+.why-price-item p {
+  font-size: var(--sk-text-sm);
+  margin: 0;
+  line-height: 1.6;
+  max-width: none;
+}
+
+/* ── Background section ── */
+.about-background {
+  padding: 1rem 0;
+}
+
+.about-background .sk-statement-eyebrow {
+  display: inline-block;
+}
+
+.about-background p {
+  color: var(--sk-color-primary-soft);
+}
+
+.about-credential-tags {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding-top: 0.5rem;
+}
+
+.about-credential-tag {
+  display: inline-block;
+  width: fit-content;
+  background: var(--sk-color-bg-card);
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-pill);
+  padding: 0.5rem 1rem;
+  font-size: var(--sk-text-sm);
+  font-weight: 600;
+  color: var(--sk-color-primary-dark);
+}
+
+/* ── Responsive ── */
+@media (max-width: 767px) {
+  .mission {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .why-price-item {
+    grid-template-columns: 36px 1fr;
+    gap: 0.85rem;
+  }
+
+  .about-credential-tags {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 1.5rem;
+  }
+
+  .about-credential-tag {
+    width: auto;
+  }
 }

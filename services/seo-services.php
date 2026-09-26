@@ -7,27 +7,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SEO Services Melbourne | On-Page SEO & Website Audits | slashkode</title>
+    <title>SEO Services Melbourne | On-Page SEO & Website Audits | Slashkode</title>
     <meta name="description"
         content="On-page SEO and website audits in Melbourne. We build SEO into new sites from day one, and upgrade existing sites for speed, keywords, content and conversions — no monthly retainers required." />
     <meta name="keywords"
         content="SEO services Melbourne, website SEO audit Melbourne, technical SEO Melbourne, on-page SEO Melbourne, local SEO Melbourne" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/services/seo-services" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/services/seo-services" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="SEO Services Melbourne | On-Page SEO & Website Audits | slashkode" />
+    <meta property="og:title" content="SEO Services Melbourne | On-Page SEO & Website Audits | Slashkode" />
     <meta property="og:description"
         content="SEO built into your website — or a deep audit and upgrade of what you already have. Speed, keywords, content and conversion focus. Melbourne based." />
-    <meta property="og:url" content="https://slashkode.com.au/services/seo-services" />
-    <meta property="og:site_name" content="slashkode" />
+    <meta property="og:url" content="https://Slashkode.com.au/services/seo-services" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="SEO Services Melbourne | slashkode" />
+    <meta name="twitter:title" content="SEO Services Melbourne | Slashkode" />
     <meta name="twitter:description"
         content="On-page SEO and full website upgrades. No monthly plans — we fix the site so it can actually rank and convert." />
 
@@ -39,8 +39,8 @@
         "name": "On-Page SEO & Website Audit Services",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "slashkode",
-            "url": "https://slashkode.com.au",
+            "name": "Slashkode",
+            "url": "https://Slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",
@@ -110,13 +110,13 @@
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
                                         <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
-                                            alt="Jatinder Singh, Founder of slashkode" />
+                                            alt="Jatinder Singh, Founder of Slashkode" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
                                     <div>
                                         <h3 class="about-name">JATINDER SINGH</h3>
-                                        <p class="about-role">Founder &amp; Lead Developer, SLASHKODE</p>
+                                        <p class="about-role">Founder &amp; Lead Developer, Slashkode</p>
                                     </div>
                                 </div>
                             </div>

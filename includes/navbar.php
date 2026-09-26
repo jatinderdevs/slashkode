@@ -1,7 +1,7 @@
 <header class="sk_header">
     <div class="island">
         <div class="island-logo--cont">
-            <img class="island-logo" src="<?php echo BASE_PATH; ?>/public/img/logoicon.png" alt="slashkode logo" />
+            <img class="island-logo" src="<?php echo BASE_PATH; ?>/public/img/logoicon.png" alt="Slashkode logo" />
         </div>
         <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="menu-overlay"
             aria-label="Open navigation menu">
@@ -42,8 +42,8 @@
             <div class="sk_navbar">
                 <div class="logo">
                     <a href="<?php echo BASE_PATH; ?>/">
-                        <img src="<?php echo BASE_PATH; ?>/public/img/slashkode.png" width="150" height="40"
-                            class="img-fluid" alt="slashkode logo" />
+                        <img src="<?php echo BASE_PATH; ?>/public/img/Slashkode.png" width="150" height="40"
+                            class="img-fluid" alt="Slashkode logo" />
                     </a>
                 </div>
                 <ul class="nav" aria-label="Primary navigation">

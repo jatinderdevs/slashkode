@@ -5,45 +5,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About slashkode | Melbourne Web Design Studio Founded by Jatinder Singh</title>
+    <title>About Slashkode | Melbourne Web Design Studio Founded by Jatinder Singh</title>
     <meta name="description"
-        content="About slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
+        content="About Slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
     <meta name="keywords"
-        content="about slashkode, Jatinder Singh web developer Melbourne, Melbourne web design studio founder" />
+        content="about Slashkode, Jatinder Singh web developer Melbourne, Melbourne web design studio founder" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/about" />
+    <meta name="author" content="Slashkode" />
+    <link rel="canonical" href="https://Slashkode.com.au/about" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="About slashkode | Melbourne Web Design Studio Founded by Jatinder Singh" />
+    <meta property="og:title" content="About Slashkode | Melbourne Web Design Studio Founded by Jatinder Singh" />
     <meta property="og:description"
-        content="About slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
-    <meta property="og:url" content="https://slashkode.com.au/about" />
-    <meta property="og:site_name" content="slashkode" />
+        content="About Slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
+    <meta property="og:url" content="https://Slashkode.com.au/about" />
+    <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="About slashkode | Melbourne Web Design Studio" />
+    <meta name="twitter:title" content="About Slashkode | Melbourne Web Design Studio" />
     <meta name="twitter:description"
-        content="Meet slashkode — a Melbourne web design studio founded by Jatinder Singh." />
+        content="Meet Slashkode — a Melbourne web design studio founded by Jatinder Singh." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        "name": "About slashkode",
-        "description": "Meet slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
+        "name": "About Slashkode",
+        "description": "Meet Slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
         "mainEntity": {
             "@type": "ProfessionalService",
-            "name": "slashkode",
+            "name": "Slashkode",
             "founder": {
                 "@type": "Person",
                 "name": "Jatinder Singh"
             },
-            "url": "https://slashkode.com.au",
+            "url": "https://Slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",
@@ -78,9 +78,9 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="about-text">
-                                    <h1 class="heroheading">About slashkode</h1>
+                                    <h1 class="heroheading">About Slashkode</h1>
                                     <p>
-                                        I'm Jatinder Singh, founder of slashkode. What began as freelance web work under
+                                        I'm Jatinder Singh, founder of Slashkode. What began as freelance web work under
                                         jatinderdev.com.au is now a Melbourne-based sole-trader agency focused on
                                         helping local businesses grow online properly. We design and build websites,
                                         improve search visibility, create specialist platforms for RTOs and VET
@@ -112,70 +112,136 @@
             </div>
         </section>
 
+        <!-- Why Slashkode exists -->
         <section class="sk-container">
             <div class="mission">
                 <div class="row">
                     <div class="col-md-4">
                         <img src="<?php echo BASE_PATH; ?>/public/img/myself.webp" class="img-fluid myself"
-                            alt="Jatinder Singh, founder of slashkode">
+                            alt="Jatinder Singh, founder of Slashkode">
                     </div>
                     <div class="col-md-8">
+                        <span class="sk-statement-eyebrow">/ Why Slashkode exists</span>
                         <h2 class="headingeffect">
-                            Our mission? Help your business reach its online potential
+                            Too many small businesses were paying agency prices for websites that didn't work
                         </h2>
                         <p>
-                            After years working with Melbourne businesses as a freelancer, I saw the gap clearly: too
-                            many local companies were paying for websites that looked fine but didn't bring enquiries,
-                            or systems that were hard to manage. slashkode was built to close that gap.
+                            After years working with Melbourne businesses as a freelancer, I kept seeing the same
+                            problem: local businesses paying for websites that looked fine but never brought in
+                            enquiries, or stuck with systems that were confusing to manage themselves. Meanwhile,
+                            getting it done properly usually meant a big agency price tag most small businesses
+                            couldn't justify.
                         </p>
                         <p>
-                            We work with business owners who want practical digital support — clear communication,
-                            honest advice, and solutions that match how Melbourne businesses actually run day to day.
-                            Whether you need a new website that converts, better visibility on Google, a compliant RTO
-                            or VET college site, or a custom application that removes repetitive tasks, we keep the
-                            process straightforward and the results measurable.
+                            Slashkode exists to close that gap — a website that's actually built to bring in
+                            business, at a price that makes sense for a business your size, from someone you can
+                            still reach after it's live.
                         </p>
-                        <a href="<?php echo BASE_PATH; ?>/contact" class="mb-3 sk-btn sk-btn-primary">
-                            Contact Now <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
-                                alt="" width="15" height="15">
-                            <span></span>
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Why the pricing works the way it does -->
+        <section class="sk-container">
+            <div class="why-price">
+                <div class="row align-items-center">
+                    <div class="col-md-5">
+                        <span class="sk-statement-eyebrow">/ Why the price is fair</span>
+                        <h2 class="headingeffect">Fair pricing, no catch.</h2>
+                        <p>
+                            No office, no account managers, no big team to fund — so the saving goes into your
+                            price instead of overhead. That's the honest reason it costs less than a typical
+                            agency.
+                        </p>
+                        <p>
+                            It's also why support doesn't stop at launch. Slashkode runs on a simple ongoing plan,
+                            so once your site is live, I'm still around for updates, content changes, or a hand
+                            when you need one — at a clear, fixed price. No surprise invoices for a five-minute
+                            fix.
+                        </p>
+                        <a href="<?php echo BASE_PATH; ?>/price" class="why-price-link">
+                            See full pricing details
+                            <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""
+                                width="13" height="13">
+                        </a>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="why-price-list">
+                            <li class="why-price-item">
+                                <span class="why-price-num">01</span>
+                                <div>
+                                    <h3>Low overhead, lower price</h3>
+                                    <p>No office or account managers sitting between you and the work — so that
+                                        cost never gets added to your price.</p>
+                                </div>
+                            </li>
+                            <li class="why-price-item">
+                                <span class="why-price-num">02</span>
+                                <div>
+                                    <h3>Ongoing, not one-and-done</h3>
+                                    <p>After launch, I'm still available for updates and content changes at a
+                                        clear, fixed price — not a one-off handoff.</p>
+                                </div>
+                            </li>
+                            <li class="why-price-item">
+                                <span class="why-price-num">03</span>
+                                <div>
+                                    <h3>Built for businesses like yours</h3>
+                                    <p>For small businesses that need a website done properly and real support,
+                                        without the budget — or the need — for a big agency.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background relevant to who Slashkode works with -->
+        <section class="sk-container">
+            <div class="about-background">
+                <div class="row">
+                    <div class="col-md-8">
+                        <span class="sk-statement-eyebrow">/ Background</span>
+                        <h2 class="headingeffect">Not just a developer — someone who's worked inside your industry</h2>
+                        <p>
+                            My background is in Computer Science, but a lot of my early career was spent working
+                            in international student services at CRICOS and ESOS-registered institutions —
+                            handling the administration and compliance that RTOs and VET colleges deal with every
+                            day. So when I build a site for a training organisation, I already understand the
+                            students, the paperwork, and what actually needs to be on the page — not just what
+                            looks modern.
+                        </p>
+                        <p>
+                            For other small businesses, it means the same thing in a different form: I take the
+                            time to understand how your business actually runs before I design anything, instead
+                            of dropping in a generic template and calling it done.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about-credential-tags">
+                            <span class="about-credential-tag">Computer Science</span>
+                            <span class="about-credential-tag">CRICOS &amp; ESOS Experience</span>
+                            <span class="about-credential-tag">RTO &amp; VET Compliance</span>
+                            <span class="about-credential-tag">Small Business Focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services — short pointer, full detail lives on /services -->
         <section class="sk-container">
             <div class="about-services shadow">
-                <h2 class="headingeffect">Our Services</h2>
-                <p>We focus on the digital work that delivers the highest return for Melbourne businesses. Every project
-                    starts with understanding your goals, your customers, and the local market — then we build only what
-                    is needed.</p>
-                <div class="servicesbtn">
-                    <a href="<?php echo BASE_PATH; ?>/services/web-design-development"
-                        class="sk-btn sk-btn-secondary">Website
-                        Design & Development <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15"
-                            height="15" alt="">
-                        <span></span>
-                    </a>
-                    <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="sk-btn sk-btn-secondary">Search
-                        Engine Optimise (SEO)
-                        <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15" height="15" alt="">
-                        <span></span>
-                    </a>
-                    <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website"
-                        class="sk-btn sk-btn-secondary">RTO and VET
-                        Colleges Website <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15"
-                            height="15" alt="">
-                        <span></span>
-                    </a>
-                    <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications"
-                        class="sk-btn sk-btn-secondary">Custom web
-                        Applications <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15"
-                            height="15" alt="">
-                        <span></span>
-                    </a>
-                </div>
+                <h2 class="headingeffect">What I build</h2>
+                <p>Websites, SEO, RTO &amp; VET college platforms, and custom web applications — see the full
+                    breakdown on the services page.</p>
+                <a href="<?php echo BASE_PATH; ?>/services" class="sk-btn sk-btn-secondary">
+                    See all services
+                    <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15" height="15" alt="">
+                    <span></span>
+                </a>
             </div>
         </section>
 

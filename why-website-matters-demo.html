@@ -1,335 +1,387 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>What a Website Brings – Demo | Slashkode</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What a Website Brings – Demo | Slashkode</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    :root {
-      --sk-color-primary-dark: #1e293b;
-      --sk-color-primary-soft: #2c3e50;
-      --sk-color-sage: #4a7c59;
-      --sk-color-sage-light: #ebf2ec;
-      --sk-color-terracotta: #f74123;
-      --sk-color-terracotta-hover: #f76d23;
-      --sk-color-bg-warm: #f8f6f0;
-      --sk-color-bg-card: #ffffff;
-      --sk-color-surface-sand: #e5e0d8;
+    <style>
+      :root {
+        --sk-color-primary-dark: #1e293b;
+        --sk-color-primary-soft: #2c3e50;
+        --sk-color-sage: #4a7c59;
+        --sk-color-sage-light: #ebf2ec;
+        --sk-color-terracotta: #f74123;
+        --sk-color-terracotta-hover: #f76d23;
+        --sk-color-bg-warm: #f8f6f0;
+        --sk-color-bg-card: #ffffff;
+        --sk-color-surface-sand: #e5e0d8;
 
-      --sk-font-heading: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-      --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-      --sk-font-mono: "JetBrains Mono", monospace;
+        --sk-font-heading:
+          "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+        --sk-font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        --sk-font-mono: "JetBrains Mono", monospace;
 
-      --sk-radius-md: 16px;
-      --sk-radius-lg: 24px;
-      --sk-max: 1140px;
-    }
+        --sk-radius-md: 16px;
+        --sk-radius-lg: 24px;
+        --sk-max: 1140px;
+      }
 
-    *, *::before, *::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      font-family: var(--sk-font-body);
-      background: var(--sk-color-bg-warm);
-      color: var(--sk-color-primary-dark);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
+      body {
+        font-family: var(--sk-font-body);
+        background: var(--sk-color-bg-warm);
+        color: var(--sk-color-primary-dark);
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
 
-    /* ── Spacer for context ── */
-    .demo-spacer {
-      height: 28vh;
-      display: grid;
-      place-items: center;
-      font-family: var(--sk-font-mono);
-      font-size: 0.75rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--sk-color-primary-soft);
-      opacity: 0.4;
-    }
+      /* ── Spacer for context ── */
+      .demo-spacer {
+        height: 28vh;
+        display: grid;
+        place-items: center;
+        font-family: var(--sk-font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--sk-color-primary-soft);
+        opacity: 0.4;
+      }
 
-    /* ═══════════════════════════════════════
+      /* ═══════════════════════════════════════
        WHAT A WEBSITE BRINGS
     ═══════════════════════════════════════ */
-    .site-value {
-      padding: 5.5rem 1.5rem 6.5rem;
-      background: var(--sk-color-bg-warm);
-    }
-
-    .site-value__inner {
-      max-width: var(--sk-max);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1.05fr;
-      gap: 4.5rem 5.5rem;
-      align-items: start;
-    }
-
-    /* ── Left: Story ── */
-    .site-value__story {
-      max-width: 420px;
-      position: sticky;
-      top: 2.5rem;
-    }
-
-    .site-value__eyebrow {
-      display: inline-block;
-      font-family: var(--sk-font-mono);
-      font-size: 0.78rem;
-      font-weight: 500;
-      letter-spacing: 0.09em;
-      text-transform: uppercase;
-      color: var(--sk-color-terracotta);
-      margin-bottom: 1.1rem;
-    }
-
-    .site-value__title {
-      font-family: var(--sk-font-heading);
-      font-size: clamp(1.9rem, 3.6vw, 2.65rem);
-      font-weight: 800;
-      letter-spacing: -0.025em;
-      line-height: 1.15;
-      color: var(--sk-color-primary-dark);
-      margin-bottom: 1.35rem;
-      text-wrap: balance;
-    }
-
-    .site-value__lead {
-      font-size: 1.05rem;
-      color: var(--sk-color-primary-soft);
-      line-height: 1.7;
-      margin-bottom: 1.4rem;
-    }
-
-    .site-value__lead strong {
-      color: var(--sk-color-primary-dark);
-      font-weight: 600;
-    }
-
-    .site-value__closer {
-      font-size: 1.05rem;
-      font-weight: 600;
-      color: var(--sk-color-primary-dark);
-      line-height: 1.5;
-      padding-top: 0.25rem;
-      border-top: 1px solid var(--sk-color-surface-sand);
-      margin-top: 1.5rem;
-      padding-top: 1.35rem;
-    }
-
-    /* ── Right: Outcomes ── */
-    .site-value__outcomes {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
-    .outcome {
-      background: var(--sk-color-bg-card);
-      border-radius: var(--sk-radius-md);
-      padding: 1.35rem 1.4rem 1.4rem;
-      border: 1px solid rgba(229, 224, 216, 0.7);
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .outcome:hover {
-      border-color: rgba(247, 65, 35, 0.25);
-      box-shadow: 0 8px 28px -12px rgba(30, 41, 59, 0.08);
-    }
-
-    .outcome__icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
-      background: var(--sk-color-sage-light);
-      display: grid;
-      place-items: center;
-      margin-bottom: 0.85rem;
-    }
-
-    .outcome__icon svg {
-      width: 14px;
-      height: 14px;
-      stroke: var(--sk-color-sage);
-      stroke-width: 2.2;
-      fill: none;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-    }
-
-    .outcome__title {
-      font-family: var(--sk-font-heading);
-      font-size: 1.02rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      color: var(--sk-color-primary-dark);
-      margin-bottom: 0.35rem;
-      line-height: 1.3;
-    }
-
-    .outcome__text {
-      font-size: 0.9rem;
-      color: var(--sk-color-primary-soft);
-      line-height: 1.55;
-    }
-
-    /* Wide outcome spans full width for visual rhythm */
-    .outcome--wide {
-      grid-column: 1 / -1;
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 1.1rem;
-      align-items: start;
-      padding: 1.5rem 1.6rem;
-    }
-
-    .outcome--wide .outcome__icon {
-      margin-bottom: 0;
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
-    }
-
-    .outcome--wide .outcome__icon svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    /* ── Mobile ── */
-    @media (max-width: 900px) {
       .site-value {
-        padding: 4rem 1.25rem 5rem;
+        padding: 5.5rem 1.5rem 6.5rem;
+        background: var(--sk-color-bg-warm);
       }
 
       .site-value__inner {
-        grid-template-columns: 1fr;
-        gap: 3rem;
+        max-width: var(--sk-max);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1.05fr;
+        gap: 4.5rem 5.5rem;
+        align-items: start;
       }
 
+      /* ── Left: Story ── */
       .site-value__story {
-        position: static;
-        max-width: none;
+        max-width: 420px;
+        position: sticky;
+        top: 2.5rem;
       }
 
-      .site-value__outcomes {
-        grid-template-columns: 1fr;
+      .site-value__eyebrow {
+        display: inline-block;
+        font-family: var(--sk-font-mono);
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: var(--sk-color-terracotta);
+        margin-bottom: 1.1rem;
       }
 
-      .outcome--wide {
-        grid-template-columns: 1fr;
-        gap: 0.85rem;
-      }
-    }
-
-    @media (max-width: 480px) {
       .site-value__title {
-        font-size: 1.75rem;
+        font-family: var(--sk-font-heading);
+        font-size: clamp(1.9rem, 3.6vw, 2.65rem);
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.15;
+        color: var(--sk-color-primary-dark);
+        margin-bottom: 1.35rem;
+        text-wrap: balance;
       }
-    }
-  </style>
-</head>
-<body>
 
-  <div class="demo-spacer">Scroll to section ↓</div>
+      .site-value__lead {
+        font-size: 1.05rem;
+        color: var(--sk-color-primary-soft);
+        line-height: 1.7;
+        margin-bottom: 1.4rem;
+      }
 
-  <!-- ═══════════════════════════════════════
+      .site-value__lead strong {
+        color: var(--sk-color-primary-dark);
+        font-weight: 600;
+      }
+
+      .site-value__closer {
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--sk-color-primary-dark);
+        line-height: 1.5;
+        padding-top: 0.25rem;
+        border-top: 1px solid var(--sk-color-surface-sand);
+        margin-top: 1.5rem;
+        padding-top: 1.35rem;
+      }
+
+      /* ── Right: Outcomes ── */
+      .site-value__outcomes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .outcome {
+        background: var(--sk-color-bg-card);
+        border-radius: var(--sk-radius-md);
+        padding: 1.35rem 1.4rem 1.4rem;
+        border: 1px solid rgba(229, 224, 216, 0.7);
+        transition:
+          border-color 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .outcome:hover {
+        border-color: rgba(247, 65, 35, 0.25);
+        box-shadow: 0 8px 28px -12px rgba(30, 41, 59, 0.08);
+      }
+
+      .outcome__icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        background: var(--sk-color-sage-light);
+        display: grid;
+        place-items: center;
+        margin-bottom: 0.85rem;
+      }
+
+      .outcome__icon svg {
+        width: 14px;
+        height: 14px;
+        stroke: var(--sk-color-sage);
+        stroke-width: 2.2;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .outcome__title {
+        font-family: var(--sk-font-heading);
+        font-size: 1.02rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--sk-color-primary-dark);
+        margin-bottom: 0.35rem;
+        line-height: 1.3;
+      }
+
+      .outcome__text {
+        font-size: 0.9rem;
+        color: var(--sk-color-primary-soft);
+        line-height: 1.55;
+      }
+
+      /* Wide outcome spans full width for visual rhythm */
+      .outcome--wide {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.1rem;
+        align-items: start;
+        padding: 1.5rem 1.6rem;
+      }
+
+      .outcome--wide .outcome__icon {
+        margin-bottom: 0;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
+      }
+
+      .outcome--wide .outcome__icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      /* ── Mobile ── */
+      @media (max-width: 900px) {
+        .site-value {
+          padding: 4rem 1.25rem 5rem;
+        }
+
+        .site-value__inner {
+          grid-template-columns: 1fr;
+          gap: 3rem;
+        }
+
+        .site-value__story {
+          position: static;
+          max-width: none;
+        }
+
+        .site-value__outcomes {
+          grid-template-columns: 1fr;
+        }
+
+        .outcome--wide {
+          grid-template-columns: 1fr;
+          gap: 0.85rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .site-value__title {
+          font-size: 1.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="demo-spacer">Scroll to section ↓</div>
+
+    <!-- ═══════════════════════════════════════
        WHAT A WEBSITE BRINGS
   ═══════════════════════════════════════ -->
-  <section class="site-value" aria-labelledby="site-value-title">
-    <div class="site-value__inner">
+    <section class="site-value" aria-labelledby="site-value-title">
+      <div class="site-value__inner">
+        <!-- Left: The story -->
+        <div class="site-value__story">
+          <span class="site-value__eyebrow">What changes</span>
+          <h2 id="site-value-title" class="site-value__title">
+            Customers decide long before they call
+          </h2>
+          <p class="site-value__lead">
+            In Melbourne, most people search first. They open a few sites, scan
+            quickly, and move on from anything that feels unfinished or unclear.
+          </p>
+          <p class="site-value__lead">
+            A clear website does more than look good. It answers the quiet
+            questions they already have — so by the time they reach out, they
+            already trust you.
+          </p>
+          <p class="site-value__closer">
+            It turns “I’ll keep looking” into “this feels right.”
+          </p>
+        </div>
 
-      <!-- Left: The story -->
-      <div class="site-value__story">
-        <span class="site-value__eyebrow">What changes</span>
-        <h2 id="site-value-title" class="site-value__title">
-          Customers decide long before they call
-        </h2>
-        <p class="site-value__lead">
-          In Melbourne, most people search first. They open a few sites, scan quickly, and move on from anything that feels unfinished or unclear.
-        </p>
-        <p class="site-value__lead">
-          A clear website does more than look good. It answers the quiet questions they already have — so by the time they reach out, they already trust you.
-        </p>
-        <p class="site-value__closer">
-          It turns “I’ll keep looking” into “this feels right.”
-        </p>
+        <!-- Right: Concrete outcomes -->
+        <div class="site-value__outcomes">
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Look established</h3>
+            <p class="outcome__text">
+              Present as the reliable choice, even if you’re a small local team.
+            </p>
+          </article>
+
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                <polyline points="22 4 12 14.01 9 11.01" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Build trust early</h3>
+            <p class="outcome__text">
+              People feel confident before they ever pick up the phone.
+            </p>
+          </article>
+
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18" />
+                <path d="M9 21V9" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Show every service</h3>
+            <p class="outcome__text">
+              Make it obvious what you do so the right customers stay.
+            </p>
+          </article>
+
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+                />
+                <circle cx="12" cy="13" r="4" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Display real work</h3>
+            <p class="outcome__text">
+              Photos of completed jobs remove the last bit of doubt.
+            </p>
+          </article>
+
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Make enquiries easy</h3>
+            <p class="outcome__text">
+              Clear forms and calls-to-action so interest doesn’t fade.
+            </p>
+          </article>
+
+          <article class="outcome">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <line x1="12" y1="18" x2="12.01" y2="18" />
+              </svg>
+            </div>
+            <h3 class="outcome__title">Work on every phone</h3>
+            <p class="outcome__text">
+              Most people check on mobile — your site should feel natural there.
+            </p>
+          </article>
+
+          <article class="outcome outcome--wide">
+            <div class="outcome__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+            </div>
+            <div>
+              <h3 class="outcome__title">
+                Give them confidence before they reach out
+              </h3>
+              <p class="outcome__text">
+                When everything is clear and professional, the conversation
+                starts warmer and moves faster.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <!-- Right: Concrete outcomes -->
-      <div class="site-value__outcomes">
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
-          <h3 class="outcome__title">Look established</h3>
-          <p class="outcome__text">Present as the reliable choice, even if you’re a small local team.</p>
-        </article>
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <h3 class="outcome__title">Build trust early</h3>
-          <p class="outcome__text">People feel confident before they ever pick up the phone.</p>
-        </article>
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
-          </div>
-          <h3 class="outcome__title">Show every service</h3>
-          <p class="outcome__text">Make it obvious what you do so the right customers stay.</p>
-        </article>
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-          </div>
-          <h3 class="outcome__title">Display real work</h3>
-          <p class="outcome__text">Photos of completed jobs remove the last bit of doubt.</p>
-        </article>
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </div>
-          <h3 class="outcome__title">Make enquiries easy</h3>
-          <p class="outcome__text">Clear forms and calls-to-action so interest doesn’t fade.</p>
-        </article>
-
-        <article class="outcome">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
-          </div>
-          <h3 class="outcome__title">Work on every phone</h3>
-          <p class="outcome__text">Most people check on mobile — your site should feel natural there.</p>
-        </article>
-
-        <article class="outcome outcome--wide">
-          <div class="outcome__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
-          </div>
-          <div>
-            <h3 class="outcome__title">Give them confidence before they reach out</h3>
-            <p class="outcome__text">When everything is clear and professional, the conversation starts warmer and moves faster.</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="demo-spacer">End of section</div>
-
-</body>
+    <div class="demo-spacer">End of section</div>
+  </body>
 </html>

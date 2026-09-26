@@ -8,9 +8,9 @@
     <div class="footer-inner">
         <div class="footer-top">
             <div class="footer-brand footer-anim-item">
-                <a href="<?php echo BASE_PATH; ?>/" class="footer-logo" aria-label="slashkode home">
+                <a href="<?php echo BASE_PATH; ?>/" class="footer-logo" aria-label="Slashkode home">
                     <img src="<?php echo BASE_PATH; ?>/public/img/logo-white.png" class="img-fluid" width="230"
-                        height="60" alt="slashkode logo" />
+                        height="60" alt="Slashkode logo" />
                 </a>
                 <p class="footer-tagline">
                     Web design, development &amp; SEO for Melbourne businesses that
@@ -71,7 +71,7 @@
                     Usually replies within 1 business day
                 </p>
                 <div class="footer-socials" aria-label="Social links">
-                    <a href="https://www.instagram.com/slashkode.au/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/Slashkode.au/" target="_blank" rel="noopener noreferrer"
                         aria-label="Instagram" title="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -101,13 +101,13 @@
         <div class="footer-brand-mark" aria-hidden="true">
             <span id="footer-brand-text">
                 <img src="<?php echo BASE_PATH; ?>/public/img/logo-white-wordmark.png" class="img-fluid"
-                    alt="slashkode" />
+                    alt="Slashkode" />
             </span>
         </div>
 
         <div class="footer-bottom footer-anim-item">
             <div>
-                <span>© <?php echo date('Y'); ?> slashkode. All rights reserved.</span>
+                <span>© <?php echo date('Y'); ?> Slashkode. All rights reserved.</span>
                 <span class="footer-abn"> · ABN <a target="_blank" rel="noopener"
                         href="https://abr.business.gov.au/ABN/View?id=20568892923">20 568 892 923</a></span>
             </div>
