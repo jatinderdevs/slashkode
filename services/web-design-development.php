@@ -83,13 +83,17 @@
                     <div class="text-container">
                         <!-- ── Breadcrumb ── -->
                         <div>
-                            <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
+                            <div class="flexBreadcrumb">
+                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
+                            </div>
+
 
                             <h1 class="heroheading">
                                 Web Design & Development Built to Grow Your Melbourne Business
                             </h1>
                             <p>
-                                We combine clean design, smooth animation, and solid SEO foundations
+                                We combine clean design, and solid SEO foundations
                                 to turn your website into more enquiries — not just a prettier
                                 version of what you had.
                             </p>
@@ -198,7 +202,7 @@
 
                 <!-- Left: The story -->
                 <div class="site-value__story">
-                    <span class="site-value__eyebrow">Why it matter</span>
+                    <span class="site-value__eyebrow">Why it matters</span>
                     <h2 id="site-value-title" class="site-value__title">
                         Customers decide long before they call
                     </h2>

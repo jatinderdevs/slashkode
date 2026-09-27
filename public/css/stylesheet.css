@@ -372,6 +372,31 @@ section {
   will-change: transform;
   display: inline-flex; /* or whatever you already use */
 }
+
+.flexBreadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flexBreadcrumb a {
+  padding: 0 !important;
+}
+.breadcrumb-btn {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  font-family: var(--sk-font-heading);
+
+  letter-spacing: 0.06em;
+  text-transform: capitalize;
+  color: var(--sk-color-terracotta);
+}
+
+.breadcrumb-btn:hover {
+  text-decoration: underline;
+  color: var(--sk-color-primary-dark);
+}
 .herobtnPrimary {
   font-weight: var(--sk-font-semibold);
   background: linear-gradient(

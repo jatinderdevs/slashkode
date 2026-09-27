@@ -78,11 +78,13 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="about-text">
+                                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn text-left">
+                                        /Home</a>
                                     <h1 class="heroheading">About Slashkode</h1>
                                     <p>
                                         I'm Jatinder Singh, founder of Slashkode. What began as freelance web work under
-                                        jatinderdev.com.au is now a Melbourne-based sole-trader agency focused on
-                                        helping local businesses grow online properly. We design and build websites,
+                                        jatinderdev.com.au is now a Melbourne-based establish platform to
+                                        help local businesses grow online properly. We design and build websites,
                                         improve search visibility, create specialist platforms for RTOs and VET
                                         colleges, and develop custom web applications that save time and reduce manual
                                         work.
@@ -123,7 +125,7 @@
                     <div class="col-md-8">
                         <span class="sk-statement-eyebrow">/ Why Slashkode exists</span>
                         <h2 class="headingeffect">
-                            Too many small businesses were paying agency prices for websites that didn't work
+                            Too many small businesses were paying big prices for websites that didn't work
                         </h2>
                         <p>
                             After years working with Melbourne businesses as a freelancer, I kept seeing the same
@@ -133,9 +135,8 @@
                             couldn't justify.
                         </p>
                         <p>
-                            Slashkode exists to close that gap — a website that's actually built to bring in
-                            business, at a price that makes sense for a business your size, from someone you can
-                            still reach after it's live.
+                            Slashkode exists to close that gap - a website that's actually built to bring in
+                            business, at a price that makes sense for a business
                         </p>
                     </div>
                 </div>
@@ -157,7 +158,7 @@
                         <p>
                             It's also why support doesn't stop at launch. Slashkode runs on a simple ongoing plan,
                             so once your site is live, I'm still around for updates, content changes, or a hand
-                            when you need one — at a clear, fixed price. No surprise invoices for a five-minute
+                            when you need one - at a clear, fixed price. No surprise invoices for a five-minute
                             fix.
                         </p>
                         <a href="<?php echo BASE_PATH; ?>/price" class="why-price-link">
@@ -172,7 +173,7 @@
                                 <span class="why-price-num">01</span>
                                 <div>
                                     <h3>Low overhead, lower price</h3>
-                                    <p>No office or account managers sitting between you and the work — so that
+                                    <p>No office or account managers sitting between you and the work - so that
                                         cost never gets added to your price.</p>
                                 </div>
                             </li>
@@ -181,7 +182,7 @@
                                 <div>
                                     <h3>Ongoing, not one-and-done</h3>
                                     <p>After launch, I'm still available for updates and content changes at a
-                                        clear, fixed price — not a one-off handoff.</p>
+                                        clear, fixed price - not a one-off handoff.</p>
                                 </div>
                             </li>
                             <li class="why-price-item">
@@ -189,7 +190,7 @@
                                 <div>
                                     <h3>Built for businesses like yours</h3>
                                     <p>For small businesses that need a website done properly and real support,
-                                        without the budget — or the need — for a big agency.</p>
+                                        without the budget - or the need - for a big agency.</p>
                                 </div>
                             </li>
                         </ul>
@@ -204,19 +205,19 @@
                 <div class="row">
                     <div class="col-md-8">
                         <span class="sk-statement-eyebrow">/ Background</span>
-                        <h2 class="headingeffect">Not just a developer — someone who's worked inside your industry</h2>
+                        <h2 class="headingeffect">Not just a developer - someone who's worked inside your industry</h2>
                         <p>
                             My background is in Computer Science, but a lot of my early career was spent working
-                            in international student services at CRICOS and ESOS-registered institutions —
+                            in international student services at CRICOS and ESOS-registered institutions -
                             handling the administration and compliance that RTOs and VET colleges deal with every
-                            day. So when I build a site for a training organisation, I already understand the
-                            students, the paperwork, and what actually needs to be on the page — not just what
+                            day. So when I build a website for a training organisation, I already understand the
+                            students, the paperwork, and what actually needs to be on the page - not just what
                             looks modern.
                         </p>
                         <p>
-                            For other small businesses, it means the same thing in a different form: I take the
-                            time to understand how your business actually runs before I design anything, instead
-                            of dropping in a generic template and calling it done.
+                            For other businesses, it means the same thing in a different form. I take the
+                            time to understand how your business actually runs before statring project so i can add
+                            maximum value to your business.
                         </p>
                     </div>
                     <div class="col-md-4">

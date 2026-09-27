@@ -68,10 +68,7 @@
             ════════════════════════════════════ -->
             <section class="packages-hero">
                 <div class="sk-container">
-                    <div class="packages-hero__eyebrow">
-                        <span></span>
-                        Clear pricing · Melbourne
-                    </div>
+                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">A professional website without the big upfront cost.</h1>
                     <p class="packages-hero__lead">
                         $99 to start. Then $39 every fortnight. Everything you need to look professional online and
@@ -162,9 +159,7 @@
 
             <?php require_once('includes/sections/inclusions.php'); ?>
 
-            <!-- ════════════════════════════════════
-                 CTA
-            ════════════════════════════════════ -->
+
             <section class="sk-container">
                 <div class="packages-cta-band">
                     <h2>Have a question before you start?</h2>

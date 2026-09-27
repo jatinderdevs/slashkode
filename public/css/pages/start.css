@@ -1,0 +1,123 @@
+/* ═══════════════════════════════════════════════════
+   SLASHKODE — Start My Website page
+   Reuses .wd-hero-card / .wd-lead-form / .sk-btn from
+   stylesheet.css — only new pieces are styled here.
+═══════════════════════════════════════════════════ */
+.start-hero {
+  padding: 30px 0;
+  text-align: center;
+}
+.start-hero-lead {
+  color: var(--sk-color-primary-soft);
+  font-size: var(--sk-text-body-lg);
+  max-width: 46ch;
+  margin: 0 auto;
+}
+
+.start-card {
+  max-width: 840px;
+}
+
+.packages-cta-band {
+  background: var(--sk-color-primary-dark);
+  color: #fff;
+  border-radius: var(--sk-radius-lg);
+  padding: 3.25rem 2.5rem;
+  text-align: center;
+}
+
+.packages-cta-band h2 {
+  font-family: var(--sk-font-heading);
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  color: #fff;
+}
+
+.packages-cta-band p {
+  color: rgba(255, 255, 255, 0.78);
+  max-width: 38ch;
+  margin: 0 auto 1.75rem;
+  font-size: 1.05rem;
+}
+
+.packages-cta-band .sk-btn-primary {
+  width: auto;
+  padding: 0.95rem 2rem;
+  display: inline-flex;
+}
+/* ── Conditional reveal ── */
+.start-extra {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.35s ease;
+}
+
+.start-extra.is-visible {
+  max-height: 220px;
+  opacity: 1;
+}
+
+.start-extra[hidden] {
+  display: none;
+}
+
+/* ── Next-step helper line ── */
+.start-next-info {
+  font-size: var(--sk-text-xs);
+  color: var(--sk-color-primary-soft);
+  text-align: center;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+  max-width: none;
+}
+
+/* ── Trust line ── */
+.start-trust {
+  text-align: center;
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  margin: 2rem auto 0;
+  max-width: none;
+}
+/* ── "Switch flow" link (quote page → start page) ── */
+.start-switch-link {
+  text-align: center;
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  margin: 0.75rem auto 0;
+  max-width: none;
+}
+
+.start-switch-link a {
+  font-weight: 600;
+  color: var(--sk-color-sage);
+}
+
+.start-switch-link a:hover {
+  color: var(--sk-color-terracotta);
+}
+/* ── Post-submit confirmation swap ── */
+.start-confirm {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.start-confirm h2 {
+  margin-bottom: 0.5rem;
+}
+
+.start-confirm p {
+  color: var(--sk-color-primary-soft);
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .start-card {
+    max-width: 100%;
+  }
+}

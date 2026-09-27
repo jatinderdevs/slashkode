@@ -77,6 +77,7 @@
 
             <section class="sk-container">
                 <div class="heroService">
+                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Clear web services for Melbourne businesses.</h1>
                     <p>Website design, development, SEO and custom applications - built to help local businesses look
                         professional, get found, and grow.</p>
@@ -136,52 +137,7 @@
                     </div>
                 </section>
 
-                <!-- 02 Search Engine Optimisation (SEO) -->
-                <section class="service-item">
-                    <div class="service-wrapper">
-                        <div class="s-number">
-                            <span>02</span>
-                        </div>
 
-                        <div class="service-media">
-                            <video muted autoplay loop playsinline>
-                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm" type="video/webm">
-                            </video>
-                        </div>
-
-                        <div class="service-heading">
-                            <h2>Search Engine Optimisation (SEO)</h2>
-                            <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="sk-btn sk-btn-primary">
-                                Explore <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
-                                    alt="" width="15" height="15">
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="service-wrapper-bottom">
-                        <div class="service-desc">
-                            <p>SEO built into new sites from day one, or a deep audit and upgrade of your existing
-                                website - speed, keywords, content and conversion. No monthly retainers.</p>
-                        </div>
-
-                        <div class="subcate">
-                            <ul>
-                                <li>On-Page SEO Foundations</li>
-                                <li>Full Website Health Check</li>
-                                <li>Page Speed Optimisation</li>
-                            </ul>
-                        </div>
-
-                        <div class="subcate">
-                            <ul>
-
-                                <li>Content That Helps You Rank</li>
-                                <li>Clearer Paths to Enquiries</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
 
                 <!-- 03 RTO and VET Colleges Website -->
                 <section class="service-item">
@@ -282,7 +238,52 @@
                         </div>
                     </div>
                 </section>
+                <!-- 02 Search Engine Optimisation (SEO) -->
+                <section class="service-item">
+                    <div class="service-wrapper">
+                        <div class="s-number">
+                            <span>02</span>
+                        </div>
 
+                        <div class="service-media">
+                            <video muted autoplay loop playsinline>
+                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm" type="video/webm">
+                            </video>
+                        </div>
+
+                        <div class="service-heading">
+                            <h2>Search Engine Optimisation (SEO)</h2>
+                            <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="sk-btn sk-btn-primary">
+                                Explore <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
+                                    alt="" width="15" height="15">
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service-wrapper-bottom">
+                        <div class="service-desc">
+                            <p>SEO built into new sites from day one, or a deep audit and upgrade of your existing
+                                website - speed, keywords, content and conversion. No monthly retainers.</p>
+                        </div>
+
+                        <div class="subcate">
+                            <ul>
+                                <li>On-Page SEO Foundations</li>
+                                <li>Full Website Health Check</li>
+                                <li>Page Speed Optimisation</li>
+                            </ul>
+                        </div>
+
+                        <div class="subcate">
+                            <ul>
+
+                                <li>Content That Helps You Rank</li>
+                                <li>Clearer Paths to Enquiries</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
             </div>
         </div>
 

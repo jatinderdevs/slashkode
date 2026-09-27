@@ -62,7 +62,7 @@
             <?php require_once('includes/navbar.php'); ?>
             <div class="sk-container">
                 <section class="contacthero">
-
+                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Request a Consultation</h1>
                     <p>Let's discuss your project goals. Send us a quick message or request a callback for a friendly,
                         practical conversation.</p>

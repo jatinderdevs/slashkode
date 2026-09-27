@@ -637,6 +637,7 @@
 
 .servicebeinto h3 {
   color: white;
+  text-wrap: auto;
 }
 
 .servicebeinto p {

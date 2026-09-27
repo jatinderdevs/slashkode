@@ -8,9 +8,7 @@
   padding: 4rem 2rem;
   background-color: var(--sk-color-primary-dark);
 }
-.mission .sk-statement-eyebrow {
-  display: inline-block;
-}
+
 .mission p {
   max-width: unset;
   color: var(--sk-color-surface-sand);
@@ -18,6 +16,7 @@
   line-height: 1.6;
 }
 .mission h2 {
+  text-wrap: auto;
   color: var(--sk-color-bg-card);
 }
 .local-stats {
@@ -114,10 +113,6 @@
   padding: 1rem 0;
 }
 
-.why-price .sk-statement-eyebrow {
-  display: inline-block;
-}
-
 .why-price > .row {
   align-items: flex-start;
 }
@@ -190,10 +185,6 @@
 /* ── Background section ── */
 .about-background {
   padding: 1rem 0;
-}
-
-.about-background .sk-statement-eyebrow {
-  display: inline-block;
 }
 
 .about-background p {

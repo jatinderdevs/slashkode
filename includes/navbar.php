@@ -30,7 +30,7 @@
                         class="link-num">03</span></a>
                 <a class="menu-link" href="<?php echo BASE_PATH; ?>/about"><span>About</span><span
                         class="link-num">04</span></a>
-                <a class="menu-link" href="<?php echo BASE_PATH; ?>/contact"><span>Request Consultation</span><span
+                <a class="menu-link" href="<?php echo BASE_PATH; ?>/contact"><span>Get started</span><span
                         class="link-num">05</span></a>
             </nav>
         </div>
@@ -62,9 +62,9 @@
                                 class="nav-link-inner"><span class="nav-link-text nav-link-text--top">about</span><span
                                     class="nav-link-text nav-link-text--bottom">About</span></span></a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/contact" class="nav-link-anim"><span
-                                class="nav-link-inner"><span class="nav-link-text nav-link-text--top">Request
-                                    Consultation</span><span class="nav-link-text nav-link-text--bottom">Request
-                                    Consultation</span></span></a></li>
+                                class="nav-link-inner"><span
+                                    class="nav-link-text nav-link-text--top">Contact</span><span
+                                    class="nav-link-text nav-link-text--bottom">Contact</span></span></a></li>
                 </ul>
             </div>
         </div>

@@ -131,6 +131,7 @@ function sk_work_asset(string $path): string
             <?php require_once('includes/navbar.php'); ?>
             <section class="sk-container">
                 <div class="heroWork">
+                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Our Work</h1>
                     <p>A look at the Melbourne websites, RTO and VET platforms, and custom applications we've built —
                         real projects, real outcomes.</p>
