@@ -5,29 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Slashkode | Request a Free Consultation, Melbourne</title>
+    <title>Contact Slashkode | Questions &amp; Enquiries, Melbourne</title>
     <meta name="description"
-        content="Get in touch with Slashkode for a free consultation. Website design, SEO, RTO/VET websites and custom web applications for Melbourne businesses — no pressure, just clarity." />
+        content="Have a question about web design, SEO, RTO/VET websites or custom applications? Contact Slashkode in Melbourne. We reply within one business day." />
     <meta name="keywords"
-        content="contact Slashkode, request a consultation Melbourne, web design quote Melbourne, book a consultation Melbourne web developer" />
+        content="contact Slashkode, contact web developer Melbourne, web design enquiries Melbourne" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/contact" />
+    <meta name="author" content="slashkode" />
+    <link rel="canonical" href="https://slashkode.com.au/contact" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Contact Slashkode | Request a Free Consultation, Melbourne" />
+    <meta property="og:title" content="Contact Slashkode | Questions &amp; Enquiries, Melbourne" />
     <meta property="og:description"
-        content="Get in touch with Slashkode for a free consultation on your Melbourne website, SEO, RTO/VET platform or custom web application." />
-    <meta property="og:url" content="https://Slashkode.com.au/contact" />
-    <meta property="og:site_name" content="Slashkode" />
+        content="Questions about your website, SEO, RTO/VET platform or custom web application? Get in touch. We reply within one business day." />
+    <meta property="og:url" content="https://slashkode.com.au/contact" />
+    <meta property="og:site_name" content="slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Contact Slashkode | Melbourne" />
     <meta name="twitter:description"
-        content="Request a free consultation with Slashkode — Melbourne web design, SEO, and custom applications." />
+        content="Questions about web design, SEO or custom applications? Get in touch with Slashkode in Melbourne." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -35,10 +35,11 @@
         "@context": "https://schema.org",
         "@type": "ContactPage",
         "name": "Contact Slashkode",
+        "url": "https://slashkode.com.au/contact",
         "mainEntity": {
             "@type": "LocalBusiness",
             "name": "Slashkode",
-            "url": "https://Slashkode.com.au",
+            "url": "https://slashkode.com.au",
             "email": "info@slashkode.com.au",
             "telephone": "+61499167608",
             "address": {
@@ -63,9 +64,9 @@
             <div class="sk-container">
                 <section class="contacthero">
                     <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
-                    <h1 class="heroheading">Request a Consultation</h1>
-                    <p>Let's discuss your project goals. Send us a quick message or request a callback for a friendly,
-                        practical conversation.</p>
+                    <h1 class="heroheading">Got a question? Just ask.</h1>
+                    <p>Questions, concerns, or just not sure where to start? Send us a message and we'll reply within
+                        one business day.</p>
                 </section>
 
                 <section class="contactform">
@@ -73,7 +74,7 @@
                         <div class="bento-card item  large-left">
                             <div class="inner-contact-page" id="lead-form">
                                 <h2>Write it out and we'll get back to you within a day.</h2>
-                                <p>Free consultation · No pressure · Call, Zoom or in-person</p>
+                                <p>Free consultation · No pressure · Call or Zoom </p>
                                 <form class="wd-lead-form" action="<?php echo BASE_PATH; ?>/contact" method="get">
                                     <div>
                                         <label for="wd-name">Name</label>
@@ -84,13 +85,10 @@
                                         <input type="email" id="wd-email" name="email" placeholder="you@company.com"
                                             required />
                                     </div>
-                                    <div>
-                                        <label for="wd-url">Website URL (optional)</label>
-                                        <input type="url" id="wd-url" name="website" placeholder="https://" />
-                                    </div>
+
                                     <div>
                                         <label for="wd-goal">Give us a little brief</label>
-                                        <textarea id="message" name="message" rows="3"
+                                        <textarea id="message" name="message" rows="4"
                                             placeholder="Anything you'd like me to know before we talk?"></textarea>
                                     </div>
                                     <button type="submit" class="p-3 sk-btn sk-btn-primary">
@@ -155,34 +153,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="process-section">
-                    <div class="">
-                        <h2 class="prcoess-title">What happens after you submit?</h2>
 
-                        <div class="process-grid">
-                            <!-- Step 1 -->
-                            <div class="process-card">
-                                <span class="step-number">STEP 01</span>
-                                <h3>We Review Within 24H</h3>
-                                <p>We review your requirements and check our calendar to prepare initial thoughts.</p>
-                            </div>
-
-                            <!-- Step 2 -->
-                            <div class="process-card">
-                                <span class="step-number">STEP 02</span>
-                                <h3>Discovery Chat</h3>
-                                <p>We meet face-to-face or on video to map out goals, technical scope, and options.</p>
-                            </div>
-
-                            <!-- Step 3 -->
-                            <div class="process-card">
-                                <span class="step-number">STEP 03</span>
-                                <h3>Actionable Estimate</h3>
-                                <p>You get a clear proposal with fixed pricing and timelines—no sales pressure.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </div>
             <?php $faqPage = 'contact';
             require_once('includes/sections/faq.php'); ?>

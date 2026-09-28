@@ -1,0 +1,111 @@
+/* ═══════════════════════════════════════════════════
+   SLASHKODE — Legal pages (privacy.php, terms.php)
+   Uses root design tokens from stylesheet.css.
+   One narrow reading column, hairline dividers, no cards.
+═══════════════════════════════════════════════════ */
+
+.legal-hero {
+  padding: clamp(3rem, 8vw, 5.5rem) 0 2rem;
+}
+
+.legal-hero h1 {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  margin-bottom: 1rem;
+}
+
+.legal-hero .legal-intro {
+  font-size: var(--sk-text-body-lg);
+  color: var(--sk-color-primary-soft);
+  max-width: 60ch;
+}
+
+.legal-updated {
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  margin: 0;
+}
+
+.legal-body {
+  padding: 0 0 clamp(4rem, 8vw, 6rem);
+}
+
+.legal-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* The short version: a left rule, no box */
+.legal-summary {
+  border-left: 3px solid var(--sk-color-terracotta);
+  padding: 0.25rem 0 0.25rem 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.legal-summary h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-summary ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-summary li {
+  margin-bottom: 0.4rem;
+}
+
+/* Numbered clauses, separated by hairlines */
+.legal-section {
+  border-top: 1px solid var(--sk-color-surface-sand);
+  padding: 2rem 0;
+}
+
+.legal-section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.legal-section p {
+  max-width: none;
+  margin-bottom: 0.9rem;
+}
+
+.legal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.legal-section ul {
+  margin: 0 0 0.9rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-section li {
+  margin-bottom: 0.4rem;
+}
+
+.legal-wrap a {
+  color: var(--sk-color-terracotta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-wrap a:hover {
+  color: var(--sk-color-primary-dark);
+}
+
+/* Link to the other policy at the bottom */
+.legal-other {
+  border-top: 1px solid var(--sk-color-surface-sand);
+  padding-top: 2rem;
+  margin: 0;
+  color: var(--sk-color-primary-soft);
+}
+
+@media (max-width: 560px) {
+  .legal-summary {
+    padding-left: 1.1rem;
+  }
+}

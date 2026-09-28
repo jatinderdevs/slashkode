@@ -185,69 +185,6 @@
   font-weight: 500;
 }
 
-.process-section {
-  padding: 80px 20px;
-  background: #f8f7f4; /* soft warm background matching your site */
-}
-
-.process-title {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #1a1a1a;
-  margin-bottom: 50px;
-  letter-spacing: -0.5px;
-}
-
-/* Grid */
-.process-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-/* Card */
-.process-card {
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 32px 28px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  height: 100%;
-}
-
-.process-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-}
-
-/* Step number */
-.step-number {
-  display: inline-block;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--sk-color-terracotta); /* soft coral matching the reference */
-  letter-spacing: 1px;
-  margin-bottom: 14px;
-}
-
-/* Title */
-.process-card h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--sk-color-primary-dark);
-  margin: 0 0 12px 0;
-  line-height: 1.3;
-}
-
-/* Description */
-.process-card p {
-  font-size: 0.95rem;
-  color: var(--sk-color-primary-soft);
-  line-height: 1.6;
-  margin: 0;
-}
-
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
   .process-grid {

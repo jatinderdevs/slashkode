@@ -51,6 +51,8 @@
 
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/start.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
+
 </head>
 
 <body class="wd-page start-page">
@@ -110,6 +112,8 @@
                 </div>
 
             </section>
+            <?php require_once('includes/sections/process.php'); ?>
+
 
             <?php require_once('includes/island.php'); ?>
         </div>
@@ -120,6 +124,8 @@
     <?php require_once('includes/customjs.php'); ?>
 
     <script src="<?php echo BASE_PATH; ?>/public/js/pages/start.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
+
 </body>
 
 </html>

@@ -216,8 +216,9 @@
             <?php $faqPage = 'price';
             require_once('includes/sections/faq.php'); ?>
             <?php require_once('includes/island.php'); ?>
-            <?php require_once('includes/footer.php'); ?>
         </div>
+        <?php require_once('includes/footer.php'); ?>
+
     </main>
     <?php require_once('includes/customjs.php'); ?>
     <script src="<?php echo BASE_PATH; ?>/public/js/Inclusions.js" defer></script>

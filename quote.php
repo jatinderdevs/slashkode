@@ -34,9 +34,18 @@
     {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://slashkode.com.au/" },
-            { "@type": "ListItem", "position": 2, "name": "Quote", "item": "https://slashkode.com.au/quote" }
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://slashkode.com.au/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Quote",
+                "item": "https://slashkode.com.au/quote"
+            }
         ]
     }
     </script>
@@ -91,7 +100,8 @@
                     </p>
                 </div>
             </section>
-
+            <?php $faqPage = 'home';
+        require_once('includes/sections/faq.php'); ?>
             <?php require_once('includes/island.php'); ?>
         </div>
         <?php require_once('includes/footer.php'); ?>
