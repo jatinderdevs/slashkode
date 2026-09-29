@@ -63,7 +63,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/whyusSection.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
+
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
 
 </head>
@@ -140,36 +140,15 @@
                     <!-- CTA -->
                     <article class="bento-card card-cta" data-animate>
                         <div class="servicebeinto">
-                            <h3>Built for your process, not the other way around</h3>
+                            <h3>Not sure exactly what you need? That's normal.</h3>
                             <p class="available-desc">
-                                No forced templates. No “close enough” SaaS tools. We map how your team actually
-                                works, then build a clean, secure web application that supports those steps —
-                                with an admin experience your staff can actually use.
+                                Most people don't come to me with a finished spec — just a problem they're tired of
+                                dealing with. We talk it through together, and I'll tell you honestly if a custom build
+                                is the right fit, or if something simpler would do the job.
                             </p>
-                            <div class="marquee-wrap">
-                                <div class="marquee-track service_beinto_imgs">
-                                    <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/nodejs.png" alt="Node.js"
-                                            loading="lazy" />
-                                    </div>
-                                    <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mysql.png" alt="MySQL"
-                                            loading="lazy" />
-                                    </div>
-                                    <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/php.png" alt="PHP"
-                                            loading="lazy" />
-                                    </div>
-                                    <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/mongodb.png" alt="MongoDB"
-                                            loading="lazy" />
-                                    </div>
-                                    <div class="marquee-logo">
-                                        <img src="<?php echo BASE_PATH; ?>/public/icons/html.png" alt="HTML"
-                                            loading="lazy" />
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="" class="sk-btn sk-btn-secondary"> Let's Talk <img
+                                    src="/Slashkode//public/icons/top-right.png" class="img-fluid" alt="" width="15"
+                                    height="15"><span></span></a>
                         </div>
                     </article>
                 </div>
@@ -178,10 +157,10 @@
             <!-- Deliverables / What you get -->
             <section class="sk-expand-cards sk-container" aria-label="What you get with a custom web application">
                 <div class="wd-section-header">
-                    <span class="wd-section-label wd-reveal">Deliverables</span>
+                    <span class="wd-section-label wd-reveal">/Deliverables</span>
                     <h2 class="wd-reveal">What you get</h2>
                     <p class="wd-reveal">
-                        Software that matches your workflow. Clean code. Room to grow.
+                        Software that fits your workflow — solid enough to rely on, flexible enough to grow.
                     </p>
                 </div>
 
@@ -201,13 +180,13 @@
                             </div>
                             <h3 class="sk-ec-title">Tailored Web Applications</h3>
                             <p class="sk-ec-desc">
-                                Applications designed around your real processes — client portals, internal tools,
-                                booking systems, approval workflows or industry-specific platforms. Built so your
-                                team works faster, not harder.
+                                Built around how your team actually works — client portals, booking systems, approval
+                                steps, or anything specific to your industry. The goal is simple: your team works
+                                faster, not around the software.
                             </p>
                         </div>
                         <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
+                            <img src="<?php echo BASE_PATH; ?>/public/img/webapp.gif"
                                 alt="Custom web application interface example" />
                         </div>
                     </div>
@@ -224,14 +203,14 @@
                             </div>
                             <h3 class="sk-ec-title">Custom CMS &amp; Admin Dashboards</h3>
                             <p class="sk-ec-desc">
-                                Intuitive admin areas that give you full control over content, users, data and
-                                workflows — without the limitations of generic platforms. Clear permissions,
-                                clean interfaces, and room to extend later.
+                                A simple admin area where you're in full control — update content, manage users, and see
+                                your data without fighting a clunky system built for someone else's business. Set up
+                                properly from day one, with room to add more later.
                             </p>
                         </div>
                         <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/seo.png" alt="Custom CMS and admin dashboard"
-                                loading="lazy" />
+                            <img src="<?php echo BASE_PATH; ?>/public/img/adminapp.gif"
+                                alt="Custom CMS and admin dashboard" loading="lazy" />
                         </div>
                     </div>
 
@@ -247,11 +226,10 @@
                                     <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                                 </svg>
                             </div>
-                            <h3 class="sk-ec-title">Secure User Systems &amp; Integrations</h3>
+                            <h3 class="sk-ec-title">Secure Logins &amp; Smooth Connections </h3>
                             <p class="sk-ec-desc">
-                                Role-based access, secure authentication, and connections to the tools you already
-                                use — payment gateways, email services, existing databases or third-party APIs —
-                                so everything works together cleanly.
+                                Different access levels for different staff, secure logins for everyone, and clean
+                                system to automate emails, genrating reports or update the database.
                             </p>
                         </div>
                         <div class="sk-ec-image">
@@ -486,7 +464,7 @@
     <script src="<?php echo BASE_PATH; ?>/public/js/services/web-design.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
+
 
     <script src="<?php echo BASE_PATH; ?>/public/js/cta.js" defer></script>
 </body>
