@@ -2,7 +2,7 @@
   text-align: center;
 }
 .heroService p {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 .service-item {
   padding: 12vh 3.125em;
@@ -33,6 +33,7 @@
   letter-spacing: 0.05em;
   padding-top: 0.5rem;
   white-space: nowrap;
+  grid-row: 1;
 }
 
 .service-media {
@@ -52,11 +53,10 @@
 }
 
 .service-heading h2 {
-  text-transform: uppercase;
+  
   font-weight: 800;
-  font-size: clamp(3rem, 5.8vw, 6rem);
-  line-height: 0.92;
-  letter-spacing: -0.03em;
+  font-size: clamp(3rem, 5.8vw, 5rem);
+    letter-spacing: -0.03em;
 }
 
 /* ===== BOTTOM ROW ===== */
@@ -76,7 +76,9 @@
   color: var(--sk-primary-dark);
   max-width: 38ch;
 }
-
+.subcate{
+  display: block;
+}
 .subcate ul {
   list-style: none;
   padding: 0;
@@ -108,7 +110,9 @@
   .service-item {
     padding: 8vh 1.5rem;
   }
-
+  .subcate{
+    display: none;
+  }
   .service-wrapper {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -119,6 +123,7 @@
   }
   .service-heading {
     text-align: unset;
+    grid-row: 2;
   }
   .subcate li {
     text-align: unset;

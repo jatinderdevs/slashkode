@@ -30,23 +30,23 @@
 
     <!-- Schema.org — Breadcrumb -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://slashkode.com.au/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Start",
-                "item": "https://slashkode.com.au/start"
-            }
-        ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://slashkode.com.au/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Start",
+                    "item": "https://slashkode.com.au/start"
+                }
+            ]
+        }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -85,7 +85,8 @@
                     <div class="wd-hero-card start-card" id="startCard">
 
                         <div id="startFormWrap">
-                            <?php $formMode = 'standard'; require_once('includes/sections/start-form.php'); ?>
+                            <?php $formMode = 'standard';
+                            require_once('includes/sections/start-form.php'); ?>
                         </div>
 
                         <div id="startConfirm" class="start-confirm" hidden></div>
@@ -112,11 +113,12 @@
                 </div>
 
             </section>
-            <?php require_once('includes/sections/process.php'); ?>
 
 
             <?php require_once('includes/island.php'); ?>
         </div>
+        <?php require_once('includes/sections/process.php'); ?>
+
         <?php $faqPage = 'home';
         require_once('includes/sections/faq.php'); ?>
         <?php require_once('includes/footer.php'); ?>

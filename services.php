@@ -31,37 +31,37 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "name": "slashkode Services",
-        "description": "Web design, SEO, RTO websites and custom web applications for Melbourne businesses.",
-        "itemListElement": [{
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Website Design & Development",
-                "url": "https://slashkode.com.au/services/web-design-development"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Search Engine Optimisation (SEO)",
-                "url": "https://slashkode.com.au/services/seo-services"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "RTO and VET Colleges Website",
-                "url": "https://slashkode.com.au/services/rto-vet-colleges-website"
-            },
-            {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Custom Web Applications",
-                "url": "https://slashkode.com.au/services/custom-web-applications"
-            }
-        ]
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "slashkode Services",
+            "description": "Web design, SEO, RTO websites and custom web applications for Melbourne businesses.",
+            "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Website Design & Development",
+                    "url": "https://slashkode.com.au/services/web-design-development"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Search Engine Optimisation (SEO)",
+                    "url": "https://slashkode.com.au/services/seo-services"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "RTO and VET Colleges Website",
+                    "url": "https://slashkode.com.au/services/rto-vet-colleges-website"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Custom Web Applications",
+                    "url": "https://slashkode.com.au/services/custom-web-applications"
+                }
+            ]
+        }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -75,15 +75,13 @@
         <div class="container-fluid">
             <?php require_once('includes/navbar.php'); ?>
 
-            <section class="sk-container">
+            <section class="sk-container pt-4 pb-0  ">
                 <div class="heroService">
                     <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
-                    <h1 class="heroheading">Clear web services for Melbourne businesses.</h1>
+                    <h1 class="heroheading">Our Services</h1>
                     <p>Website design, development, SEO and custom applications - built to help local businesses look
                         professional, get found, and grow.</p>
-                    <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary"> Book a free chat
-                        <span></span>
-                    </a>
+
                 </div>
             </section>
 
@@ -143,7 +141,7 @@
                 <section class="service-item">
                     <div class="service-wrapper">
                         <div class="s-number">
-                            <span>03</span>
+                            <span>02</span>
                         </div>
 
                         <div class="service-media">
@@ -195,7 +193,7 @@
                 <section class="service-item">
                     <div class="service-wrapper">
                         <div class="s-number">
-                            <span>04</span>
+                            <span>03</span>
                         </div>
 
                         <div class="service-media">
@@ -242,7 +240,7 @@
                 <section class="service-item">
                     <div class="service-wrapper">
                         <div class="s-number">
-                            <span>02</span>
+                            <span>04</span>
                         </div>
 
                         <div class="service-media">

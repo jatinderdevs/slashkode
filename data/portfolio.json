@@ -8,7 +8,7 @@
     "link": "https://www.aiit.edu.au/",
     "cta": "View live site",
     "chips": ["Website design", "RTO / VET", "SEO"],
-    "pages": ["home", "web-design", "rto-vet"],
+    "pages": ["home", "rto-vet"],
     "description": "Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily.",
     "result":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eligendi corrupti porro modi reiciendis cum, sed inventore nemo? A rem natus ullam libero placeat ut laboriosam minus voluptatibus reprehenderit minima."
   },
@@ -21,7 +21,7 @@
     "link": "https://www.bit.edu.au/",
     "cta": "View live site",
     "chips": ["Website design", "RTO / VET", "Social Media"],
-    "pages": ["home", "web-design", "rto-vet"],
+    "pages": [ "rto-vet"],
     "description": "ASQA compliant website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs."
   },
   {
@@ -58,18 +58,42 @@
     "link": "https://www.jdshopfrontandshutter.co.uk/",
     "cta": "View live site",
     "chips": ["Service Based Business", "SEO"],
-    "pages": ["home", "web-design"],
+    "pages": [ "web-design"],
     "description": "Website for a UK-based shopfront and shutter installation company, built to generate more local service enquiries. Clear service pages, a quote-focused layout, and a structure that helps commercial customers find the right shopfront solution quickly."
   },
 
- {
+ 
+  {
+    "id": "rto-commissions",
+    "title": "RTO Commissions",
+    "topTag": "Web Application",
+    "image": "/public/img/mockups/cmsrtocommissions.png",
+    "alt": "RTO Commissions system – education agent management and reporting for RTOs",
+    "link": "https://www.rtocommissions.com.au/",
+    "cta": "View live site",
+    "chips": ["Web Application", "RTO / VET", "Reporting"],
+    "pages": ["home", "custom-cms", "rto-vet", "custom-apps"],
+    "description": "Custom system for RTO colleges to manage education agent data, run automatic calculations, and generate CSV and PDF reports. Built to cut manual work so teams can maintain agent records and commissions with less effort and fewer errors."
+  },
+  {
+    "id": "dalavoro",
+    "title": "Dalavoro",
+    "topTag": "Website + Admin",
+    "image": "/public/img/mockups/dalavoro.png",
+    "alt": "Dalavoro product portfolio website and admin dashboard",
+    "link": "https://www.dalavoro.com.au/index.php",
+    "cta": "View live site",
+    "chips": ["Product Portfolio", "Admin Dashboard", "CMS"],
+    "pages": ["home", "web-design", "custom-cms", "custom-apps"],
+    "description": "Product portfolio website that showcases the range clearly, with an admin dashboard so the team can upload products and manage the site without calling a developer for every update."
+  },{
     "pages": ["home", "web-design"],
     "topTag": "Business",
     "image": "public/img/portfolio/placeholder-devices.webp",
     "alt": "Example business website on multiple devices",
     "title": "Your next project",
     "link": "#contact",
-    "cta": "See live website",
+    "cta": "Start my website",
     "description": "Replace this with the real project description — what we built, the systems we added, and how it helps the client win more enquiries in Melbourne.",
     "result": "Add a short client result or quote here. Real outcomes build more trust than generic claims.",
     "chips": ["Web Design", "SEO"]

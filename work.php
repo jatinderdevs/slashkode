@@ -12,33 +12,33 @@ $portfolioJsonPath = __DIR__ . '/data/portfolio.json';
 $workProjects = [];
 
 if (file_exists($portfolioJsonPath)) {
-  $all = json_decode(file_get_contents($portfolioJsonPath), true);
-  if (is_array($all)) {
-    foreach ($all as $p) {
-      if (!empty($p['id'])) {
-        $workProjects[] = $p;
-      }
+    $all = json_decode(file_get_contents($portfolioJsonPath), true);
+    if (is_array($all)) {
+        foreach ($all as $p) {
+            if (!empty($p['id'])) {
+                $workProjects[] = $p;
+            }
+        }
     }
-  }
 }
 
 // Hardcoded project, always last. Move it into portfolio.json if you want it managed there.
 $workProjects[] = [
-  'id'          => 'custom-cms',
-  'title'       => 'Custom CMS & Admin Dashboards',
-  'topTag'      => 'Custom CMS',
-  'image'       => 'public/img/mockups/cms.jpg',
-  'alt'         => 'Custom CMS admin dashboard Melbourne',
-  'link'        => '#',
-  'cta'         => 'Case study',
-  'chips'       => ['Custom CMS', 'Dashboard', 'PHP', 'Tools'],
-  'description' => 'Tailored content management systems and admin dashboards for Melbourne businesses that need more control than a standard website builder. Built for easy updates, secure access, and day-to-day use by non-technical teams.',
+    'id'          => 'custom-cms',
+    'title'       => 'Custom CMS & Admin Dashboards',
+    'topTag'      => 'Custom CMS',
+    'image'       => 'public/img/mockups/cms.jpg',
+    'alt'         => 'Custom CMS admin dashboard Melbourne',
+    'link'        => '#',
+    'cta'         => 'Case study',
+    'chips'       => ['Custom CMS', 'Dashboard', 'PHP', 'Tools'],
+    'description' => 'Tailored content management systems and admin dashboards for Melbourne businesses that need more control than a standard website builder. Built for easy updates, secure access, and day-to-day use by non-technical teams.',
 ];
 
 // Works whether image paths in the JSON start with "/" or not.
 function sk_work_asset(string $path): string
 {
-  return rtrim(BASE_PATH, '/') . '/' . ltrim($path, '/');
+    return rtrim(BASE_PATH, '/') . '/' . ltrim($path, '/');
 }
 ?>
 <!doctype html>
@@ -73,46 +73,46 @@ function sk_work_asset(string $path): string
 
     <!-- Schema.org: Portfolio as ItemList -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Slashkode Portfolio",
-        "description": "Websites and web applications built by Slashkode for Melbourne businesses and RTOs.",
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Australian International Institute of Technology",
-                    "url": "https://www.aiit.edu.au/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Brighton Institute of Technology",
-                    "url": "https://www.bit.edu.au/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "International Student Tips",
-                    "url": "https://internationalstudenttips.com.au/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Yarramovers",
-                    "url": "https://www.yarramovers.com.au/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "name": "JD Shopfront and Shutters",
-                    "url": "https://www.jdshopfrontandshutter.co.uk/"
-                }
-            ]
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Slashkode Portfolio",
+            "description": "Websites and web applications built by Slashkode for Melbourne businesses and RTOs.",
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Australian International Institute of Technology",
+                        "url": "https://www.aiit.edu.au/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Brighton Institute of Technology",
+                        "url": "https://www.bit.edu.au/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "International Student Tips",
+                        "url": "https://internationalstudenttips.com.au/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Yarramovers",
+                        "url": "https://www.yarramovers.com.au/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "JD Shopfront and Shutters",
+                        "url": "https://www.jdshopfrontandshutter.co.uk/"
+                    }
+                ]
+            }
         }
-    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -129,7 +129,7 @@ function sk_work_asset(string $path): string
     <main>
         <div class="container-fluid">
             <?php require_once('includes/navbar.php'); ?>
-            <section class="sk-container">
+            <section class="sk-container pb-0 pt-4">
                 <div class="heroWork">
                     <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Our Work</h1>
@@ -140,70 +140,71 @@ function sk_work_asset(string $path): string
 
             <section class="works p-0">
                 <?php foreach ($workProjects as $i => $item) : ?>
-                <?php
-                  $link     = $item['link'] ?? '#';
-                  $external = strpos($link, 'http') === 0;
-                ?>
-                <div class="work">
-                    <article class="drag-card">
-                        <div class="drag-card-body">
-                            <div class="drag-card-hero">
-                                <div class="drag-card-media">
-                                    <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
-                                        alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
-                                        <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
-                                </div>
-
-                                <div class="drag-card-side">
-                                    <?php if (!empty($item['topTag'])) : ?>
-                                    <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
-                                    <?php endif; ?>
-
-                                    <h2 class="drag-card-title"><?php echo htmlspecialchars($item['title'] ?? ''); ?>
-                                    </h2>
-
-                                    <?php if (!empty($item['chips'])) : ?>
-                                    <div class="drag-card-tags">
-                                        <?php foreach ($item['chips'] as $chip) : ?>
-                                        <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
-                                        <?php endforeach; ?>
+                    <?php
+                    $link     = $item['link'] ?? '#';
+                    $external = strpos($link, 'http') === 0;
+                    ?>
+                    <div class="work">
+                        <article class="drag-card">
+                            <div class="drag-card-body">
+                                <div class="drag-card-hero">
+                                    <div class="drag-card-media">
+                                        <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
+                                            alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
+                                            <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
                                     </div>
-                                    <?php endif; ?>
 
-                                    <?php if (!empty($item['cta'])) : ?>
-                                    <a href="<?php echo htmlspecialchars($link); ?>"
-                                        <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
-                                        class="sk-btn sk-btn-primary btnlive">
-                                        <?php echo htmlspecialchars($item['cta']); ?>
-                                        <span></span>
-                                    </a>
-                                    <?php endif; ?>
+                                    <div class="drag-card-side">
+                                        <?php if (!empty($item['topTag'])) : ?>
+                                            <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
+                                        <?php endif; ?>
+
+                                        <h2 class="drag-card-title"><?php echo htmlspecialchars($item['title'] ?? ''); ?>
+                                        </h2>
+
+                                        <?php if (!empty($item['chips'])) : ?>
+                                            <div class="drag-card-tags">
+                                                <?php foreach ($item['chips'] as $chip) : ?>
+                                                    <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if (!empty($item['cta'])) : ?>
+                                            <a href="<?php echo htmlspecialchars($link); ?>"
+                                                <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
+                                                class="sk-btn sk-btn-primary btnlive">
+                                                <?php echo htmlspecialchars($item['cta']); ?>
+                                                <span></span>
+                                            </a>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <?php if (!empty($item['description'])) : ?>
-                            <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
-                            <?php endif; ?>
+                                <?php if (!empty($item['description'])) : ?>
+                                    <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
+                                <?php endif; ?>
 
-                            <?php if (!empty($item['result'])) : ?>
-                            <div class="drag-card-result">
-                                <p><?php echo htmlspecialchars($item['result']); ?></p>
+                                <?php if (!empty($item['result'])) : ?>
+                                    <div class="drag-card-result">
+                                        <p><?php echo htmlspecialchars($item['result']); ?></p>
+                                    </div>
+                                <?php endif; ?>
                             </div>
-                            <?php endif; ?>
-                        </div>
-                    </article>
-                </div>
+                        </article>
+                    </div>
                 <?php endforeach; ?>
             </section>
 
-            <?php require_once('includes/sections/cta.php'); ?>
 
-
-            <?php $faqPage = 'work';
-      require_once('includes/sections/faq.php'); ?>
-            <?php require_once('includes/island.php'); ?>
 
         </div>
+        <?php require_once('includes/sections/cta.php'); ?>
+
+
+        <?php $faqPage = 'work';
+        require_once('includes/sections/faq.php'); ?>
+        <?php require_once('includes/island.php'); ?>
         <?php require_once('includes/footer.php'); ?>
 
     </main>
