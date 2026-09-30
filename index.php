@@ -36,59 +36,59 @@
 
     <!-- Schema.org: LocalBusiness -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Slashkode",
-        "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
-        "url": "https://Slashkode.com.au/",
-        "telephone": "+61499167608",
-        "email": "info@slashkode.com.au",
-        "priceRange": "$$",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Melbourne",
-            "addressRegion": "VIC",
-            "addressCountry": "AU"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Melbourne"
-        },
-        "founder": {
-            "@type": "Person",
-            "name": "Jatinder Singh"
-        },
-        "makesOffer": [{
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Website Design & Development"
-                }
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Slashkode",
+            "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
+            "url": "https://Slashkode.com.au/",
+            "telephone": "+61499167608",
+            "email": "info@slashkode.com.au",
+            "priceRange": "$$",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Search Engine Optimisation (SEO)"
-                }
+            "areaServed": {
+                "@type": "City",
+                "name": "Melbourne"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "RTO and VET Colleges Website"
-                }
+            "founder": {
+                "@type": "Person",
+                "name": "Jatinder Singh"
             },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Custom Web Applications"
+            "makesOffer": [{
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Website Design & Development"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Search Engine Optimisation (SEO)"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "RTO and VET Colleges Website"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Custom Web Applications"
+                    }
                 }
-            }
-        ]
-    }
+            ]
+        }
     </script>
     <?php require_once('includes/stylesheets.php'); ?>
 
@@ -110,7 +110,7 @@
         <div class="container-fluid">
             <?php require_once('includes/navbar.php'); ?>
 
-            <section class="hero">
+            <section class="hero ">
                 <div class="sk-container">
                     <h1 class="heroheading">
                         Minimum cost, maximum results. We make it happen.

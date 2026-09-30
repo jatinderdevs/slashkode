@@ -31,27 +31,27 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "name": "About Slashkode",
-        "description": "Meet Slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
-        "mainEntity": {
-            "@type": "ProfessionalService",
-            "name": "Slashkode",
-            "founder": {
-                "@type": "Person",
-                "name": "Jatinder Singh"
-            },
-            "url": "https://Slashkode.com.au",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Melbourne",
-                "addressRegion": "VIC",
-                "addressCountry": "AU"
+        {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About Slashkode",
+            "description": "Meet Slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
+            "mainEntity": {
+                "@type": "ProfessionalService",
+                "name": "Slashkode",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Jatinder Singh"
+                },
+                "url": "https://Slashkode.com.au",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Melbourne",
+                    "addressRegion": "VIC",
+                    "addressCountry": "AU"
+                }
             }
         }
-    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="about-text">
-                                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn text-left">
+                                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn text-left p-0">
                                         /Home</a>
                                     <h1 class="heroheading">About Slashkode</h1>
                                     <p>

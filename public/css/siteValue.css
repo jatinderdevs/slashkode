@@ -166,7 +166,7 @@
   }
 
   .site-value__outcomes {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .outcome--wide {

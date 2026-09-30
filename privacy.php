@@ -23,18 +23,18 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Privacy Policy",
-        "url": "https://slashkode.com.au/privacy",
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "Slashkode",
-            "url": "https://slashkode.com.au"
-        },
-        "dateModified": "2026-09-28"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy",
+            "url": "https://slashkode.com.au/privacy",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "Slashkode",
+                "url": "https://slashkode.com.au"
+            },
+            "dateModified": "2026-09-28"
+        }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -52,7 +52,7 @@
                         <h1 class="heroheading">Privacy Policy</h1>
                         <p class="legal-intro">
                             What personal information we collect, why we collect it, and what we do with it.
-                            We’ve kept it short and in plain English.
+
                         </p>
                         <p class="legal-updated">Last updated 28 September 2026</p>
                     </div>

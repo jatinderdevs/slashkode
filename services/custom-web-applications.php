@@ -33,28 +33,28 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Custom Web Applications",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Slashkode",
-            "url": "https://Slashkode.com.au",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Melbourne",
-                "addressRegion": "VIC",
-                "addressCountry": "AU"
-            }
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Melbourne"
-        },
-        "description": "Custom web application development in Melbourne. Tailored CMS platforms, admin dashboards, internal business portals, workflow tools and secure user systems designed around real business processes.",
-        "serviceType": "Custom Software Development"
-    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Custom Web Applications",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Slashkode",
+                "url": "https://Slashkode.com.au",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Melbourne",
+                    "addressRegion": "VIC",
+                    "addressCountry": "AU"
+                }
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Melbourne"
+            },
+            "description": "Custom web application development in Melbourne. Tailored CMS platforms, admin dashboards, internal business portals, workflow tools and secure user systems designed around real business processes.",
+            "serviceType": "Custom Software Development"
+        }
     </script>
 
     <?php require_once('../includes/stylesheets.php'); ?>
@@ -234,7 +234,7 @@
                         </div>
                         <div class="sk-ec-image">
                             <!-- TODO: replace with a real screenshot/graphic — currently a generic stock photo -->
-                            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
+                            <img src="<?php echo BASE_PATH; ?>/public/img/secureapp.svg"
                                 alt="Secure user management and integrations" loading="lazy" />
                         </div>
                     </div>
@@ -328,131 +328,37 @@
                     <button data-index="2" aria-label="Slide 3"></button>
                 </div>
             </section>
-            <?php $ctaPage = 'custom-apps'; require_once('../includes/sections/cta.php'); ?>
-
-            <!-- Testimonial -->
-            <section class="sk-container text-center">
-                <span class="sk-statement-eyebrow">/what clients say</span>
-                <h2 class="testimonial-quote">
-                    We finally have a system that matches how we actually work. Clear, fast, and built
-                    exactly for our team — no more workarounds or forced processes.
-                </h2>
-                <div class="testimonial-author justify-content-center">
-                    <div class="author-avatar">CL</div>
-                    <div>
-                        <!-- TODO: replace with a real client name/business once available -->
-                        <div class="author-name">Client Lead</div>
-                        <div class="author-role">Melbourne Business</div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Process -->
-            <section class="sk-section">
-                <div class="sk-container">
-                    <div class="sk-header">
-                        <h2 class="sk-header__title">How we build<br>your application</h2>
-                        <div class="sk-header__right">
-                            <p class="sk-header__sub">
-                                Four clear steps. Requirements first. No surprises later.
-                            </p>
-                            <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">
-                                Get Started <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png"
-                                    class="img-fluid" alt="" width="15" height="15" />
-                                <span></span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="sk-cards">
-
-                        <!-- Card 01 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">01</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="3" />
-                                        <path
-                                            d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Discovery &amp; Requirements</h3>
-                                <p class="sk-card__desc">
-                                    We map your current process, pain points, user roles and must-have features
-                                    so the application is shaped around real work — not assumptions.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 02 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">02</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M4 17l6-6 4 4 6-6" />
-                                        <path d="M14 7h6v6" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Architecture &amp; Design</h3>
-                                <p class="sk-card__desc">
-                                    Clear information architecture, user flows and interface design. You review
-                                    the structure and key screens before any heavy development begins.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 03 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">03</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M9 11l3 3L22 4" />
-                                        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Build, Test &amp; Iterate</h3>
-                                <p class="sk-card__desc">
-                                    Clean, maintainable code with regular check-ins. You see working versions early
-                                    so feedback can shape the final product without expensive rework.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Card 04 -->
-                        <article class="sk-card">
-                            <div class="sk-card__fill" aria-hidden="true"></div>
-                            <div class="sk-card__inner">
-                                <span class="sk-card__num">04</span>
-                                <div class="sk-card__icon" aria-hidden="true">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M5 12h14M12 5l7 7-7 7" />
-                                    </svg>
-                                </div>
-                                <h3 class="sk-card__title">Launch &amp; Support</h3>
-                                <p class="sk-card__desc">
-                                    Secure deployment, handover training for your team, and optional ongoing
-                                    support for updates, new features or integrations as your needs grow.
-                                </p>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-            </section>
-
-            <?php $faqPage = 'custom-apps-service';
-            require_once('../includes/sections/faq.php'); ?>
-
-            <?php require_once('../includes/island.php'); ?>
-
-            <?php require_once('../includes/footer.php'); ?>
         </div>
+        <?php $ctaPage = 'custom-apps';
+        require_once('../includes/sections/cta.php'); ?>
+
+        <!-- Testimonial -->
+        <section class="sk-container text-center">
+            <span class="sk-statement-eyebrow">/what clients say</span>
+            <h2 class="testimonial-quote">
+                We finally have a system that matches how we actually work. Clear, fast, and built
+                exactly for our team — no more workarounds or forced processes.
+            </h2>
+            <div class="testimonial-author justify-content-center">
+                <div class="author-avatar">CL</div>
+                <div>
+                    <!-- TODO: replace with a real client name/business once available -->
+                    <div class="author-name">Client Lead</div>
+                    <div class="author-role">Melbourne Business</div>
+                </div>
+            </div>
+        </section>
+
+        <?php require_once('../includes/sections/process.php'); ?>
+
+
+        <?php $faqPage = 'custom-apps-service';
+        require_once('../includes/sections/faq.php'); ?>
+
+        <?php require_once('../includes/island.php'); ?>
+
+        <?php require_once('../includes/footer.php'); ?>
+
     </main>
 
     <!-- GSAP + ScrollTrigger -->
