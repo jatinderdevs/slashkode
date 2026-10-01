@@ -14,14 +14,14 @@
         content="RTO website design Melbourne, VET college website Melbourne, ASQA compliant website, CRICOS website design, Registered Training Organisation website developer, RTO enrolment website" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/services/rto-vet-colleges-website" />
+    <link rel="canonical" href="https://slashkode.com.au/services/rto-vet-colleges-website" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="RTO & VET College Website Design Melbourne | ASQA Compliant | Slashkode" />
     <meta property="og:description"
         content="ASQA-compliant websites for RTOs and VET colleges in Melbourne. Built for compliance, student enrolment journeys and real Google rankings." />
-    <meta property="og:url" content="https://Slashkode.com.au/services/rto-vet-colleges-website" />
+    <meta property="og:url" content="https://slashkode.com.au/services/rto-vet-colleges-website" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -40,7 +40,7 @@
         "provider": {
             "@type": "LocalBusiness",
             "name": "Slashkode",
-            "url": "https://Slashkode.com.au",
+            "url": "https://slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",
@@ -204,7 +204,7 @@
                             </p>
                         </div>
                         <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
+                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.webp"
                                 alt="ASQA compliant RTO website structure" />
                         </div>
                     </div>
@@ -265,7 +265,7 @@
                         <div class="sk-ec-slide">
                             <div class="sk-ec-m-card">
                                 <div class="sk-ec-m-image">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
+                                    <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.webp"
                                         alt="ASQA compliant RTO website structure" />
                                 </div>
                                 <div class="sk-ec-m-body">

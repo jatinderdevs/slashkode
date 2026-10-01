@@ -12,14 +12,14 @@
         content="about Slashkode, Jatinder Singh web developer Melbourne, Melbourne web design studio founder" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/about" />
+    <link rel="canonical" href="https://slashkode.com.au/about" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="About Slashkode | Melbourne Web Design Studio Founded by Jatinder Singh" />
     <meta property="og:description"
         content="About Slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
-    <meta property="og:url" content="https://Slashkode.com.au/about" />
+    <meta property="og:url" content="https://slashkode.com.au/about" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -31,27 +31,27 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "name": "About Slashkode",
-            "description": "Meet Slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
-            "mainEntity": {
-                "@type": "ProfessionalService",
-                "name": "Slashkode",
-                "founder": {
-                    "@type": "Person",
-                    "name": "Jatinder Singh"
-                },
-                "url": "https://Slashkode.com.au",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Melbourne",
-                    "addressRegion": "VIC",
-                    "addressCountry": "AU"
-                }
+    {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Slashkode",
+        "description": "Meet Slashkode — a Melbourne-based web design and development studio helping local businesses, RTOs and VET colleges get online properly.",
+        "mainEntity": {
+            "@type": "ProfessionalService",
+            "name": "Slashkode",
+            "founder": {
+                "@type": "Person",
+                "name": "Jatinder Singh"
+            },
+            "url": "https://slashkode.com.au",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
             }
         }
+    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>

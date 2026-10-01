@@ -13,17 +13,17 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
     <meta name="theme-color" content="#0f172a" />
-    <link rel="canonical" href="https://Slashkode.com.au/" />
+    <link rel="canonical" href="https://slashkode.com.au/" />
     <title>Slashkode | Web Design & Development, Melbourne</title>
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Slashkode | Web Design & Development, Melbourne" />
     <meta property="og:description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one." />
-    <meta property="og:url" content="https://Slashkode.com.au/" />
+    <meta property="og:url" content="https://slashkode.com.au/" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
-    <meta property="og:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
+    <meta property="og:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -32,63 +32,63 @@
     <meta name="twitter:title" content="Slashkode | Web Design & Development, Melbourne" />
     <meta name="twitter:description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs." />
-    <meta name="twitter:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.png" />
+    <meta name="twitter:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.webp" />
 
     <!-- Schema.org: LocalBusiness -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "ProfessionalService",
-            "name": "Slashkode",
-            "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
-            "url": "https://Slashkode.com.au/",
-            "telephone": "+61499167608",
-            "email": "info@slashkode.com.au",
-            "priceRange": "$$",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Melbourne",
-                "addressRegion": "VIC",
-                "addressCountry": "AU"
-            },
-            "areaServed": {
-                "@type": "City",
-                "name": "Melbourne"
-            },
-            "founder": {
-                "@type": "Person",
-                "name": "Jatinder Singh"
-            },
-            "makesOffer": [{
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Website Design & Development"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Search Engine Optimisation (SEO)"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "RTO and VET Colleges Website"
-                    }
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {
-                        "@type": "Service",
-                        "name": "Custom Web Applications"
-                    }
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Slashkode",
+        "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
+        "url": "https://slashkode.com.au/",
+        "telephone": "+61499167608",
+        "email": "info@slashkode.com.au",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Melbourne",
+            "addressRegion": "VIC",
+            "addressCountry": "AU"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Melbourne"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Jatinder Singh"
+        },
+        "makesOffer": [{
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Website Design & Development"
                 }
-            ]
-        }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Search Engine Optimisation (SEO)"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "RTO and VET Colleges Website"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Custom Web Applications"
+                }
+            }
+        ]
+    }
     </script>
     <?php require_once('includes/stylesheets.php'); ?>
 
@@ -215,7 +215,7 @@
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
                         <a href="<?php echo BASE_PATH; ?>/services/web-design-development.php"
-                            class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.png">
+                            class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.webp">
                             <span class="skill-label">Website Design & Development
 
                             </span>
@@ -233,13 +233,13 @@
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
                         <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php"
-                            class="skill-trigger hover-link" data-img="public/img/mockups/bit.png">
+                            class="skill-trigger hover-link" data-img="public/img/mockups/bit.webp">
                             <span class="skill-label">RTO and VET Colleges Website</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
                         <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications.php"
-                            class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.png">
+                            class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.webp">
                             <span class="skill-label">Custom web Applications</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
@@ -289,7 +289,7 @@
                                 I work with small businesses across the city who want clean,
                                 fast websites that actually drive results - not
                                 just look good.
-                                <a href="<?php echo BASE_PATH; ?>/aboutus.php">More about Slashkode →</a>
+                                <a href="<?php echo BASE_PATH; ?>/about">More about Slashkode →</a>
                             </p>
                         </div>
                         <div class="about-tags">
@@ -309,7 +309,7 @@
                             </h3>
                             <p>Tell us what you're trying to fix or build — we'll point you in the right direction.</p>
                         </div>
-                        <a href="contact" class="sk-btn sk-btn-secondary"
+                        <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-secondary"
                             style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">contact
                             now <img src="public/icons/top-right.png" width="15px" height="15px" alt="">
                             <span> </span>

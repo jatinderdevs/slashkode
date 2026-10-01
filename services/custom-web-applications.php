@@ -14,14 +14,14 @@
         content="custom web application development Melbourne, custom CMS Melbourne, admin dashboard development Melbourne, internal business portal development" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/services/custom-web-applications" />
+    <link rel="canonical" href="https://slashkode.com.au/services/custom-web-applications" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Custom Web Applications Melbourne | Tailored Business Software | Slashkode" />
     <meta property="og:description"
         content="Custom web applications, admin dashboards and internal portals built in Melbourne for the way your business actually works." />
-    <meta property="og:url" content="https://Slashkode.com.au/services/custom-web-applications" />
+    <meta property="og:url" content="https://slashkode.com.au/services/custom-web-applications" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -33,28 +33,28 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Custom Web Applications",
-            "provider": {
-                "@type": "LocalBusiness",
-                "name": "Slashkode",
-                "url": "https://Slashkode.com.au",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Melbourne",
-                    "addressRegion": "VIC",
-                    "addressCountry": "AU"
-                }
-            },
-            "areaServed": {
-                "@type": "City",
-                "name": "Melbourne"
-            },
-            "description": "Custom web application development in Melbourne. Tailored CMS platforms, admin dashboards, internal business portals, workflow tools and secure user systems designed around real business processes.",
-            "serviceType": "Custom Software Development"
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Custom Web Applications",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Slashkode",
+            "url": "https://slashkode.com.au",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Melbourne",
+                "addressRegion": "VIC",
+                "addressCountry": "AU"
+            }
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Melbourne"
+        },
+        "description": "Custom web application development in Melbourne. Tailored CMS platforms, admin dashboards, internal business portals, workflow tools and secure user systems designed around real business processes.",
+        "serviceType": "Custom Software Development"
+    }
     </script>
 
     <?php require_once('../includes/stylesheets.php'); ?>
@@ -82,16 +82,19 @@
                     <div class="text-container">
                         <!-- ── Breadcrumb ── -->
                         <div>
-                            <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
+                            <div class="flexBreadcrumb">
+                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
+                            </div>
 
                             <h1 class="heroheading">
                                 Custom Web Applications Built Around How Your Business Actually Works
 
                             </h1>
                             <p>
-                                Off-the-shelf tools force you to change your process. We build the opposite —
-                                tailored web applications, admin dashboards and internal portals that fit the way
-                                your Melbourne business already runs, then make it faster and clearer.
+                                We build software made specifically for your business - not a generic tool you have to
+                                adjust to. We start by learning how your team actually works, then build something
+                                around that, so things get done faster and with less hassle.
                             </p>
                         </div>
                     </div>
@@ -123,7 +126,7 @@
                             </div>
 
                             <p class="about-bio">
-                                Every custom application is designed, coded and delivered by me — no hand-offs,
+                                Every custom application is designed, coded and delivered by me - no hand-offs,
                                 no junior developers guessing at your requirements. Based in Melbourne, working
                                 directly with local businesses that need software that fits, not software they
                                 have to fight.
@@ -142,7 +145,7 @@
                         <div class="servicebeinto">
                             <h3>Not sure exactly what you need? That's normal.</h3>
                             <p class="available-desc">
-                                Most people don't come to me with a finished spec — just a problem they're tired of
+                                Most people don't come to me with a finished spec - just a problem they're tired of
                                 dealing with. We talk it through together, and I'll tell you honestly if a custom build
                                 is the right fit, or if something simpler would do the job.
                             </p>
@@ -154,180 +157,8 @@
                 </div>
             </section>
 
-            <!-- Deliverables / What you get -->
-            <section class="sk-expand-cards sk-container" aria-label="What you get with a custom web application">
-                <div class="wd-section-header">
-                    <span class="wd-section-label wd-reveal">/Deliverables</span>
-                    <h2 class="wd-reveal">What you get</h2>
-                    <p class="wd-reveal">
-                        Software that fits your workflow — solid enough to rely on, flexible enough to grow.
-                    </p>
-                </div>
-
-                <!-- ========== DESKTOP (hover expand) ========== -->
-                <div class="sk-ec-desktop" id="skEcDesktop">
-
-                    <!-- Card 1 – starts expanded -->
-                    <div class="sk-ec-card is-active" data-index="0">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                    <path d="M3 9h18" />
-                                    <path d="M9 21V9" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Tailored Web Applications</h3>
-                            <p class="sk-ec-desc">
-                                Built around how your team actually works — client portals, booking systems, approval
-                                steps, or anything specific to your industry. The goal is simple: your team works
-                                faster, not around the software.
-                            </p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/webapp.gif"
-                                alt="Custom web application interface example" />
-                        </div>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="sk-ec-card" data-index="1">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 20h9" />
-                                    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Custom CMS &amp; Admin Dashboards</h3>
-                            <p class="sk-ec-desc">
-                                A simple admin area where you're in full control — update content, manage users, and see
-                                your data without fighting a clunky system built for someone else's business. Set up
-                                properly from day one, with room to add more later.
-                            </p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <img src="<?php echo BASE_PATH; ?>/public/img/adminapp.gif"
-                                alt="Custom CMS and admin dashboard" loading="lazy" />
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="sk-ec-card" data-index="2">
-                        <div class="sk-ec-content">
-                            <div class="sk-ec-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg>
-                            </div>
-                            <h3 class="sk-ec-title">Secure Logins &amp; Smooth Connections </h3>
-                            <p class="sk-ec-desc">
-                                Different access levels for different staff, secure logins for everyone, and clean
-                                system to automate emails, genrating reports or update the database.
-                            </p>
-                        </div>
-                        <div class="sk-ec-image">
-                            <!-- TODO: replace with a real screenshot/graphic — currently a generic stock photo -->
-                            <img src="<?php echo BASE_PATH; ?>/public/img/secureapp.svg"
-                                alt="Secure user management and integrations" loading="lazy" />
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- ========== MOBILE (swipe carousel) ========== -->
-                <div class="sk-ec-mobile" id="skEcMobile">
-                    <div class="sk-ec-track" id="skEcTrack">
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/mockups/aiitmockupsample.png"
-                                        alt="Custom web application interface example" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                                            <path d="M3 9h18" />
-                                            <path d="M9 21V9" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Tailored Web Applications</h3>
-                                    <p class="sk-ec-desc">
-                                        Applications built around your real processes — portals, internal tools,
-                                        workflows and industry-specific platforms that make daily work clearer and
-                                        faster.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/seo.png"
-                                        alt="Custom CMS and admin dashboard" loading="lazy" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M12 20h9" />
-                                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Custom CMS &amp; Admin Dashboards</h3>
-                                    <p class="sk-ec-desc">
-                                        Admin areas that give you real control over content, users and data —
-                                        without the limits of generic platforms or confusing interfaces.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sk-ec-slide">
-                            <div class="sk-ec-m-card">
-                                <div class="sk-ec-m-image">
-                                    <!-- TODO: replace with a real screenshot/graphic — currently a generic stock photo -->
-                                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80"
-                                        alt="Secure user management and integrations" loading="lazy" />
-                                </div>
-                                <div class="sk-ec-m-body">
-                                    <div class="sk-ec-icon">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                            <circle cx="9" cy="7" r="4" />
-                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                        </svg>
-                                    </div>
-                                    <h3 class="sk-ec-title">Secure User Systems &amp; Integrations</h3>
-                                    <p class="sk-ec-desc">
-                                        Role-based access, secure logins, and clean connections to the tools and
-                                        data sources you already rely on.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="sk-ec-dots" id="skEcDots">
-                    <button class="is-active" data-index="0" aria-label="Slide 1"></button>
-                    <button data-index="1" aria-label="Slide 2"></button>
-                    <button data-index="2" aria-label="Slide 3"></button>
-                </div>
-            </section>
+            <?php $deliverablesPage = 'custom-apps';
+                require_once('../includes/sections/deliverables.php'); ?>
         </div>
         <?php $ctaPage = 'custom-apps';
         require_once('../includes/sections/cta.php'); ?>
@@ -337,7 +168,7 @@
             <span class="sk-statement-eyebrow">/what clients say</span>
             <h2 class="testimonial-quote">
                 We finally have a system that matches how we actually work. Clear, fast, and built
-                exactly for our team — no more workarounds or forced processes.
+                exactly for our team - no more workarounds or forced processes.
             </h2>
             <div class="testimonial-author justify-content-center">
                 <div class="author-avatar">CL</div>

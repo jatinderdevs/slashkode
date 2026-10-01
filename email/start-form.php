@@ -33,8 +33,14 @@ $fc = $formPresets[$formMode] ?? $formPresets['standard'];
 ?>
 
 <h2 class="wd-hero-card-title"><?php echo htmlspecialchars($fc['title']); ?></h2>
-
-<form class="wd-lead-form start-form" id="startForm" data-mode="<?php echo htmlspecialchars($formMode); ?>" novalidate>
+<?php if (!empty($formError)) : ?>
+<p class="wd-form-note"><?php echo htmlspecialchars($formError); ?></p>
+<?php endif; ?>
+<form class="wd-lead-form start-form" id="startForm" method="post" action="">
+    <input type="hidden" name="mode" value="<?php echo htmlspecialchars($formMode); ?>" />
+    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+        <input type="text" name="company_url" tabindex="-1" autocomplete="off" />
+    </div>
     <div>
         <label for="start-name">Your name</label>
         <input type="text" id="start-name" name="name" placeholder="Your full name" required />
@@ -54,7 +60,7 @@ $fc = $formPresets[$formMode] ?? $formPresets['standard'];
     <div class="form-row">
         <div>
             <label for="start-business">Business name</label>
-            <input type="text" id="start-business" name="business" placeholder="Your business name" required />
+            <input type="text" id="start-business" name="business_name" placeholder="Your business name" required />
         </div>
         <div>
             <label for="start-website">Current website (if any)</label>
@@ -74,7 +80,7 @@ $fc = $formPresets[$formMode] ?? $formPresets['standard'];
         <?php echo htmlspecialchars($fc['submit_label']); ?>
         <span></span>
     </button>
-
+    <p class="start-status" id="startStatus" role="status" aria-live="polite"></p>
     <p class="start-next-info" id="startNextInfo">
         <?php echo htmlspecialchars($fc['next_info']); ?>
     </p>

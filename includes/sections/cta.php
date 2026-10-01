@@ -16,8 +16,8 @@
 // Where the buttons go. When the onboarding / pay-and-start page exists,
 // point $ctaStartUrl at it and every "Start my website" button updates at once.
 $ctaBase = rtrim(defined('BASE_PATH') ? BASE_PATH : '', '/');
-$ctaStartUrl = $ctaBase . '/contactus.php?type=start';
-$ctaQuoteUrl = $ctaBase . '/contactus.php?type=quote';
+$ctaStartUrl = $ctaBase . '/quote';
+$ctaQuoteUrl = $ctaBase . '/quote';
 
 $ctaPresets = [
 
@@ -50,7 +50,7 @@ to you. Tell us about your RTO and we\'ll quote it.',
 'desc' => 'Tell us about your website and we\'ll show you what\'s holding it back on Google. No monthly retainer, just a
 clear quote.',
 'sub' => '',
-'button' => 'Request a quote',
+'button' => 'Get Started',
 'url' => $ctaQuoteUrl,
 'note' => 'Free chat. Clear quote. No pressure.',
 ],
@@ -89,7 +89,9 @@ $cta = $ctaPresets[$ctaPage] ?? $ctaPresets['default'];
 
         <div class="cta-actions<?php echo empty($cta['sub']) ? ' mt-4' : ''; ?>" data-actions>
             <a href="<?php echo htmlspecialchars($cta['url']); ?>" class="sk-btn sk-btn-primary">
-                <?php echo htmlspecialchars($cta['button']); ?> →
+                <?php echo htmlspecialchars($cta['button']); ?> <img
+                    src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt="" width="15"
+                    height="15" />
                 <span></span>
             </a>
         </div>

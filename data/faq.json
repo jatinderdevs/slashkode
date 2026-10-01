@@ -3,258 +3,325 @@
         "page": "home",
         "question": "What does Slashkode do?",
         "answer": [
-            "We design and build websites for Melbourne businesses — everything from clean marketing sites to custom web applications, with SEO built in from the start rather than tacked on afterwards.",
-            "If you're not sure exactly what you need yet, that's fine too. Tell us what you're trying to achieve and we'll point you toward the right service."
+            "We design, build and look after websites for Melbourne businesses. That means clean, fast business websites with SEO built in from the start, specialist websites for RTOs and VET colleges, and custom web applications when a standard website isn't enough.",
+            "We don't do graphic design, social media management or general digital marketing. Four things, done properly."
         ]
     },
     {
         "page": "home",
-        "question": "Do you only work with Melbourne businesses?",
+        "question": "How much does a website cost?",
         "answer": [
-            "Melbourne is where we're based and where most of our clients are, but most of our work happens remotely anyway. We're happy to work with businesses anywhere in Australia."
+            "Our standard website package is $99 to start, then $39 fortnightly. There's no lock-in contract and no cancellation fees.",
+            "Anything bigger, like an online store, extra pages, an RTO or VET college website or a custom application, is quoted based on what you actually need. No pressure, just a clear price before we start."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "Why is your price so low? What's the catch?",
+        "answer": [
+            "There isn't one. I keep Slashkode small on purpose: no big team, no account managers and no add-on overheads to pay for. That's what lets me keep the price fair for small businesses that need real help but don't have an agency budget.",
+            "I also limit how many projects I take on at once, so each one gets proper attention."
+        ]
+    },
+    {
+        "page": "home",
+        "question": "Who will I actually be dealing with?",
+        "answer": [
+            "Me, Jatinder. The person you first talk to is the person who designs, builds and looks after your website. No outsourcing and no junior hand-offs, so what was promised is what gets built."
         ]
     },
     {
         "page": "home",
         "question": "How do we get started?",
         "answer": [
-            "Send us a short note about what you're building and where things are at. We'll reply within a couple of business days with a few questions and, if it's a good fit, a proposed scope and timeline.",
-            "No long forms or sales calls required — just a clear conversation so we both know it's the right match."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "What makes a Slashkode website different?",
-        "answer": [
-            "We focus on clarity, performance and real results for Melbourne businesses. Every site is custom-built with SEO in mind from day one, so it loads fast, ranks better and is easy for you to update.",
-            "You get a site that works hard for your business, not just one that looks good for a week."
+            "Send us a short message about your business and what you need, or request a free consultation. We reply within one business day with a few questions and a clear next step.",
+            "No pressure and no obligation. Once you're happy to go ahead, you pay the $99 start fee, send through your information and we begin building."
         ]
     },
     {
         "page": "home",
         "question": "Can you help if I already have a website?",
         "answer": [
-            "Yes. Many clients come to us with an existing site that needs a refresh, better SEO, or a complete rebuild. We'll look at what's working, what's not, and recommend the simplest path forward."
+            "Yes. Many people come to us with a website that's slow, dated or not bringing in enquiries. We'll look at what's working and what isn't, then recommend the simplest path forward, whether that's an SEO audit and upgrade or a fresh rebuild."
         ]
     },
     {
-        "page": "contact",
-        "question": "How much does a website cost?",
+        "page": "home",
+        "question": "Do you only work with Melbourne businesses?",
         "answer": [
-            "It depends on scope — a small marketing site costs a lot less than a custom web application or a full RTO/VET college build. Rather than guess, send us a short note about what you need and we'll give you a proper estimate."
+            "Melbourne is where we're based and who we build for, and we understand the local market. Most of our work happens online anyway, so if you're outside Melbourne, get in touch and we'll let you know honestly whether we're a good fit."
         ]
     },
     {
         "page": "contact",
         "question": "How quickly will you reply?",
         "answer": [
-            "We aim to reply within one to two business days. If your project is a good fit we'll follow up with clear next steps and a realistic timeline."
+            "We usually reply within one business day. If your project is a good fit, we'll follow up with clear next steps."
+        ]
+    },
+    {
+        "page": "contact",
+        "question": "What happens after I send a message?",
+        "answer": [
+            "We review your message within 24 hours, then arrange a discovery chat by phone, Zoom or in person to map out your goals and options. After that you get a clear proposal with fixed pricing and timelines, with no sales pressure."
         ]
     },
     {
         "page": "contact",
         "question": "Do I need to fill out a long form or book a call?",
         "answer": [
-            "No. Just send a short message about what you're looking for. We prefer a simple conversation over long forms or forced sales calls."
+            "No. A short message is enough. If you'd like to talk it through first, a free consultation is available by call, Zoom or in person, with no obligation."
         ]
     },
     {
         "page": "contact",
-        "question": "What information should I include when I get in touch?",
+        "question": "What should I include when I get in touch?",
         "answer": [
-            "A few sentences about your business, what you need the website to do, and any deadlines or budget range you have in mind is perfect. Screenshots or links to sites you like are also helpful."
+            "A few lines about your business, what you want the website to do and any deadline you have in mind is perfect. Your current website address (if you have one) or links to sites you like are also helpful. You don't need to mention a budget."
+        ]
+    },
+    {
+        "page": "contact",
+        "question": "How much does a website cost?",
+        "answer": [
+            "Our standard website package is $99 to start, then $39 fortnightly, with no lock-in and no cancellation fees. Larger projects, like online stores, RTO and VET college websites or custom applications, are quoted once we understand what you need."
+        ]
+    },
+    {
+        "page": "contact",
+        "question": "Can I contact you on WhatsApp or by phone?",
+        "answer": [
+            "Yes. WhatsApp is often the quickest way to ask a simple question, and you can also call or email. Our details are on this page, and we reply to email within one business day."
         ]
     },
     {
         "page": "contact",
         "question": "Are you available for projects outside Melbourne?",
         "answer": [
-            "Yes. While we're based in Melbourne, most of our work is done remotely. We regularly work with clients across Australia and are comfortable with different time zones."
+            "Melbourne businesses are our focus, but we're happy to hear from you if you're elsewhere. Enquiries outside Melbourne are considered case by case, and we'll tell you honestly if we're the right fit."
         ]
     },
     {
         "page": "website-service",
-        "question": "What services do you offer?",
+        "question": "What's included in a Slashkode website?",
         "answer": [
-            "We focus on four core areas: website design and development, SEO, custom web applications, and RTO & VET college websites. Most projects blend two or three of these.",
-            "If something falls outside our scope, we'll say so early and point you in the right direction."
+            "Our standard package includes up to 10 custom-designed pages, fully mobile-responsive design, website hosting, help connecting your domain, on-page SEO, contact and lead generation forms, click-to-call and WhatsApp messaging, Google Maps integration, photo galleries, testimonial sections and Google Search Console monitoring.",
+            "It also includes ongoing maintenance and one small update every month, such as an image, content or link change."
         ]
     },
     {
         "page": "website-service",
-        "question": "How long does a typical Melbourne website project take?",
+        "question": "Is my website custom-built or a template?",
         "answer": [
-            "A focused landing page or small marketing site usually takes 2–4 weeks. Full multi-page websites with custom animation sit around 5–8 weeks. Larger builds — like RTO/VET sites or custom web apps — can stretch to 10–12 weeks.",
-            "Timeline depends on how quickly feedback and content come back from your side, and we'll share a clear schedule upfront so there are no surprises."
+            "Custom-built. We design every site from scratch and write clean, modern code rather than using a drag-and-drop builder or a dressed-up template. That keeps your site fast, easier to look after and different from everyone else's."
         ]
     },
     {
         "page": "website-service",
-        "question": "Do you work with remote or international clients?",
+        "question": "How long does a website project take?",
         "answer": [
-            "Yes — most of our work happens remotely. We're comfortable working across time zones and use async tools so nothing has to wait on a live call.",
-            "We can jump on calls when it's useful, but the process is built so progress continues either way."
+            "A standard website usually takes a few weeks from when we have your information. The biggest factor is how quickly your content and feedback come back. Larger builds are quoted with a clear timeline before we start.",
+            "You'll always know what's next: you provide your information, we build, you review and check it, then we launch."
         ]
     },
     {
         "page": "website-service",
-        "question": "What's included in a custom website design project?",
+        "question": "Will my website rank on Google?",
         "answer": [
-            "Every project includes a strategy kickoff, design, development, basic SEO setup, performance checks, and a proper handover with documentation so you can update content yourself later.",
-            "Source files and a short training session are included. Ongoing maintenance or new features can be arranged separately after launch."
+            "Your website is built on solid SEO foundations from day one: clean structure, fast load times, proper headings and metadata, and content aimed at what your customers search for. That gives it a real chance to rank.",
+            "No one can honestly guarantee specific rankings, so we won't promise them."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "Who looks after my website after it launches?",
+        "answer": [
+            "I do. Hosting, maintenance and monitoring are included, along with one small update each month. You always own your domain. If you need more changes than that, we'll quote them before starting any work."
+        ]
+    },
+    {
+        "page": "website-service",
+        "question": "What if I need more than 10 pages or an online store?",
+        "answer": [
+            "No problem. Extra pages, online stores, booking with payments and other bigger requirements fall outside the standard package, so we quote them based on what you actually need."
         ]
     },
     {
         "page": "website-service",
         "question": "How do we get started?",
         "answer": [
-            "Send us a short note about what you're building and where things are at. We'll reply within a couple of business days with a few questions and, if it's a good fit, a proposed scope and timeline.",
-            "No long forms or sales calls required — just a clear conversation so we both know it's the right match."
+            "Send us a short message about your business, or request a free consultation. We reply within one business day, and once you're happy to go ahead you pay the $99 start fee and send through your information."
         ]
     },
     {
         "page": "about",
         "question": "Who is behind Slashkode?",
         "answer": [
-            "Slashkode is run by Jatinder, a Melbourne-based web designer and developer with years of experience building websites and custom applications for Australian businesses.",
-            "What started as freelance work under jatinderdev.com.au has grown into a focused sole-trader business dedicated to clear, high-performing websites."
+            "Slashkode is run by me, Jatinder Singh, a Melbourne-based web designer and developer. What started as freelance work under jatinderdev.com.au is now a focused sole-trader business helping local businesses grow online properly."
         ]
     },
     {
         "page": "about",
         "question": "Why did you start Slashkode?",
         "answer": [
-            "After years of freelancing I wanted a clearer brand that reflected the kind of work I do best — practical, SEO-aware websites for Melbourne businesses that need to grow online.",
-            "Slashkode is simply a more focused version of the same hands-on approach."
+            "After years of working with Melbourne businesses, I kept seeing websites that looked fine but didn't bring in enquiries, or systems that were hard to manage. Slashkode was built to close that gap with practical, SEO-aware websites and honest advice."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Do you outsource any of the work?",
+        "answer": [
+            "No. Every Slashkode project is designed, built and looked after by me personally. There are no junior hand-offs and no overseas teams guessing at your requirements."
         ]
     },
     {
         "page": "about",
         "question": "Do you still do logo design or other digital services?",
         "answer": [
-            "No. Slashkode is focused on website design, development, SEO and custom web applications. We no longer offer standalone logo design or general digital marketing packages."
-        ]
-    },
-    {
-        "page": "about",
-        "question": "Are you based in Melbourne?",
-        "answer": [
-            "Yes. Slashkode is a Melbourne-based business. Most of our clients are local, and we understand the local market, but we also work happily with clients anywhere in Australia."
+            "No. Slashkode focuses on website design and development, SEO, RTO and VET college websites, and custom web applications. We don't offer graphic design, logo design, social media management or general digital marketing."
         ]
     },
     {
         "page": "about",
         "question": "What kind of businesses do you work with?",
         "answer": [
-            "We work with small to mid-sized businesses, professional services, education providers (including RTOs and VET colleges), and anyone who needs a clean, fast website that actually supports their goals.",
-            "If you're not sure whether we're a good fit, just ask — we're happy to tell you honestly."
+            "Small businesses, service-based businesses, migration agencies, and education providers including RTOs and VET colleges. Anyone who wants a clean, fast website that actually brings in enquiries.",
+            "If you're not sure whether we're a good fit, just ask. We'll tell you honestly."
+        ]
+    },
+    {
+        "page": "about",
+        "question": "Are you based in Melbourne?",
+        "answer": [
+            "Yes. Slashkode is a Melbourne-based sole-trader business and we understand the local market. We're happy to meet in person, on a call or on Zoom."
         ]
     },
     {
         "page": "services",
-        "question": "What website services does Slashkode offer?",
+        "question": "What services does Slashkode offer?",
         "answer": [
-            "We design and develop custom websites, handle technical SEO from the start, build custom web applications, and specialise in RTO and VET college websites that meet industry needs.",
-            "Most projects combine design, development and SEO so everything works together."
+            "Four things: website design and development, SEO, RTO and VET college websites, and custom web applications. Most projects combine design, development and SEO so everything works together."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "How much do your services cost?",
+        "answer": [
+            "Our standard website package is $99 to start, then $39 fortnightly, with no lock-in and no cancellation fees. RTO and VET college websites, custom web applications and SEO audits fall outside that package and are quoted based on your needs."
+        ]
+    },
+    {
+        "page": "services",
+        "question": "Which service do I need?",
+        "answer": [
+            "If you need a professional website that brings in enquiries, start with website design and development. If you already have a site that isn't performing, an SEO audit and upgrade is the place to begin. If you run an RTO or VET college, or need a tool your team uses daily, the RTO and custom application services are built for that.",
+            "Not sure? Tell us what you're trying to achieve and we'll point you in the right direction."
         ]
     },
     {
         "page": "services",
         "question": "Do you offer SEO as a separate service?",
         "answer": [
-            "SEO is built into every website project we take on. We can also review an existing site and recommend improvements, but we don't run ongoing monthly SEO packages as a standalone service."
+            "SEO is built into every website we create. For an existing site, we can run a one-off audit and upgrade. We don't sell ongoing monthly SEO retainers."
         ]
     },
     {
         "page": "services",
         "question": "Can you build a custom web application?",
         "answer": [
-            "Yes. We build custom web applications and admin systems when a standard website isn't enough. These are usually tailored tools that help a business manage content, users or specific workflows."
+            "Yes. When a standard website isn't enough, we build custom web applications, admin dashboards and internal portals around how your business actually works, rather than forcing you into a generic template."
         ]
     },
     {
         "page": "services",
         "question": "Do you build websites for RTOs and VET colleges?",
         "answer": [
-            "Yes. We have solid experience building websites for Registered Training Organisations and VET providers. We understand the need for clear course information, compliance-friendly structure and easy content updates."
+            "Yes. RTO and VET college websites are a specialty. We build around ASQA's requirements, with clear course catalogues, student information and enrolment paths that turn search traffic into real enquiries."
         ]
     },
-    
     {
         "page": "work",
         "question": "What kind of projects do you show in your work section?",
         "answer": [
-            "We feature a mix of marketing websites, custom web applications and education-sector sites (including RTO and VET college projects). Each one highlights the real problem we solved and the outcome for the client."
-        ]
-    },
-    {
-        "page": "work",
-        "question": "Can I see examples of Melbourne businesses you've worked with?",
-        "answer": [
-            "Yes. Many of the projects in our work section are for Melbourne and Australian businesses. We focus on results that matter locally — clearer messaging, better performance and stronger online presence."
-        ]
-    },
-    {
-        "page": "work",
-        "question": "Do you only show finished websites?",
-        "answer": [
-            "Most of the work we share is live websites and applications. Where it adds clarity we also explain the process or the specific challenge the project solved."
-        ]
-    },
-    {
-        "page": "work",
-        "question": "Can I request a project similar to one of your past works?",
-        "answer": [
-            "Absolutely. If you see a project that feels close to what you need, mention it when you get in touch. It helps us understand the direction and style you're after."
+            "A mix of business websites, RTO and VET college projects and custom CMS and admin dashboard work. Each one shows the real problem we were solving and what we built."
         ]
     },
     {
         "page": "work",
         "question": "Are all projects custom, or do you use templates?",
         "answer": [
-            "Every project is custom-built. We don't use off-the-shelf templates. This keeps the design and performance tailored to each business and makes the site easier to maintain long-term."
+            "Every project is custom-built. We don't use off-the-shelf templates, which keeps each site fast, tailored to the business and easier to look after long-term."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Can I request a project similar to one of your past works?",
+        "answer": [
+            "Absolutely. If you see something close to what you need, mention it when you get in touch. It helps us understand the direction and style you're after."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "Do you build custom systems as well as websites?",
+        "answer": [
+            "Yes. Alongside websites, we build custom CMS platforms and admin dashboards for businesses that need more control than a standard website builder gives them. You can see an example in the work above."
+        ]
+    },
+    {
+        "page": "work",
+        "question": "How much would a project like this cost?",
+        "answer": [
+            "Our standard website package is $99 to start, then $39 fortnightly. Bigger projects like those with custom functionality are quoted based on your needs, and we'll give you a clear price before any work starts."
         ]
     },
     {
         "page": "seo-service",
         "question": "Why don't you offer SEO as a monthly retainer?",
         "answer": [
-            "We believe SEO should be built into the website itself — structure, speed, keywords and content — rather than sold as an ongoing subscription. Once those foundations are right, they tend to stay right, so you're not paying every month for something that should already be solid."
+            "We believe SEO belongs in the website itself: structure, speed, keywords and content. Once those foundations are right, they tend to stay right, so you shouldn't pay every month for something that should already be solid."
         ]
     },
     {
         "page": "seo-service",
         "question": "Can you audit my existing website's SEO?",
         "answer": [
-            "Yes. We run a full technical and content audit of your Melbourne website — page speed, structure, on-page SEO and keyword targeting — then deliver a clear, practical upgrade plan."
+            "Yes. We run a full technical and content audit of your website, covering page speed, structure, on-page SEO and keyword targeting, then upgrade what's holding it back. An audit is a one-off piece of work, quoted once we've looked at your site."
+        ]
+    },
+    {
+        "page": "seo-service",
+        "question": "Does a new website from Slashkode include SEO?",
+        "answer": [
+            "Yes. On-page SEO is part of every website we build, along with Google Search Console monitoring, so your site is ready to be found from day one."
         ]
     },
     {
         "page": "seo-service",
         "question": "Do you guarantee first-page Google rankings?",
         "answer": [
-            "No one can honestly guarantee specific rankings — anyone who does isn't being straight with you. What we do guarantee is a website built on solid, current SEO fundamentals: speed, structure and content genuinely aimed at what your customers actually search for."
+            "No. Anyone who guarantees a specific ranking isn't being straight with you. What we do is build your site on solid, current SEO fundamentals: speed, structure and content aimed at what your customers actually search for."
         ]
     },
     {
         "page": "seo-service",
         "question": "How is your SEO different from a typical Melbourne agency?",
         "answer": [
-            "Most agencies sell SEO as a separate monthly line item. We build it into the website itself as part of design and development, or provide a one-off audit and upgrade if you already have a site — no ongoing retainer required."
+            "Most agencies sell SEO as a monthly line item. We build it into the website as part of design and development, or provide a one-off audit and upgrade if you already have a site, with no ongoing retainer required."
         ]
     },
     {
         "page": "rto-vet-service",
-        "question": "Do you understand ASQA compliance requirements for RTO websites?",
+        "question": "Do you understand ASQA requirements for RTO websites?",
         "answer": [
-            "Yes. We have direct experience in Australian international student services at CRICOS/ESOS-registered institutions, so ASQA requirements like scope of registration, fees and charges, and complaints and appeals aren't an afterthought — they're built into the site structure from day one."
+            "Yes. I have direct experience in Australian international student services at CRICOS and ESOS-registered institutions, so ASQA-required information like scope of registration, fees and charges, and complaints and appeals is built into the site structure from day one.",
+            "We build around ASQA's requirements, but your RTO remains responsible for the accuracy of the information published."
         ]
     },
     {
         "page": "rto-vet-service",
         "question": "What ASQA-required information do you include on RTO websites?",
         "answer": [
-            "Standard requirements like scope of registration, fees and charges, refund policy, complaints and appeals process, and USI information are built into the site structure from the start, not added later as an afterthought."
+            "Standard requirements like your RTO code, scope of registration, fees and charges, refund policy, complaints and appeals process, student rights and USI information are planned into the site structure from the start, not added later."
         ]
     },
     {
@@ -268,63 +335,220 @@
         "page": "rto-vet-service",
         "question": "How is an RTO or VET college website different from a regular business website?",
         "answer": [
-            "RTO and VET websites need to balance ASQA compliance information, clear course catalogues, and a straightforward enrolment journey for prospective students — on top of everything a standard business website needs to do well, like speed, SEO and clear calls to action."
+            "RTO and VET websites balance compliance information, a clear course catalogue and a straightforward enrolment journey, on top of everything a business website needs to do well, like speed, SEO and clear calls to action."
+        ]
+    },
+    {
+        "page": "rto-vet-service",
+        "question": "How much does an RTO or VET college website cost?",
+        "answer": [
+            "RTO and VET college websites are quoted individually because the scope varies with the number of courses, pages and enrolment features. Request a quote and we'll give you a clear price and timeline before any work starts."
         ]
     },
     {
         "page": "custom-apps-service",
         "question": "What's the difference between a website and a custom web application?",
         "answer": [
-            "A website presents information to visitors. A custom web application usually involves logins, data and workflows — things like an admin dashboard, a client portal or an internal tool your team uses daily. If a standard website or off-the-shelf SaaS tool can't do what you need, that's usually where a custom application comes in."
+            "A website presents information to visitors. A custom web application usually involves logins, data and workflows, such as an admin dashboard, a client portal or an internal tool your team uses daily. If a website or an off-the-shelf tool can't do what you need, that's where a custom application comes in."
         ]
     },
     {
         "page": "custom-apps-service",
         "question": "Can you build a custom CMS instead of using WordPress or Squarespace?",
         "answer": [
-            "Yes. When a generic CMS becomes limiting, we build a custom admin system tailored to exactly how your Melbourne business manages content, so you're not fighting a platform that wasn't built for your workflow."
+            "Yes. When a generic CMS becomes limiting, we build a custom admin system around exactly how your business manages content, so you're not fighting a platform that wasn't built for your workflow."
+        ]
+    },
+    {
+        "page": "custom-apps-service",
+        "question": "How much does a custom web application cost?",
+        "answer": [
+            "Custom applications are quoted individually, since cost depends on what the application needs to do. Request a quote, and after a discovery chat you'll get a clear proposal with pricing and timelines."
+        ]
+    },
+    {
+        "page": "custom-apps-service",
+        "question": "What technology do you build with?",
+        "answer": [
+            "We choose the tools that fit the job, commonly PHP, MySQL, Node.js and MongoDB, with clean, maintainable code. We'll explain the approach in plain language, without the jargon."
         ]
     },
     {
         "page": "custom-apps-service",
         "question": "Do you offer ongoing support after a custom application launches?",
         "answer": [
-            "Yes. Custom applications generally need occasional updates as your business changes. We offer ongoing development and care through our Custom Application Plan, or you can arrange support as needed after launch."
+            "Yes. Custom applications usually need updates as your business changes, so ongoing support and new features can be arranged after launch. We'll agree on it with you upfront so there are no surprises."
         ]
     },
     {
         "page": "custom-apps-service",
         "question": "How long does a custom web application take to build?",
         "answer": [
-            "It depends heavily on scope — a simple internal tool might take a few weeks, while a full admin dashboard or multi-user portal can take several months. We'll give you a realistic timeline once we understand your requirements."
+            "It depends on scope. A simple internal tool might take a few weeks, while a full admin dashboard or multi-user portal can take several months. You'll get a realistic timeline once we understand your requirements."
+        ]
+    },
+    {
+        "page": "price",
+        "question": "How much does it cost?",
+        "answer": [
+            "$99 to start, then $39 fortnightly. Prices are in AUD."
+        ]
+    },
+    {
+        "page": "price",
+        "question": "What's included in the plan?",
+        "answer": [
+            "Up to 10 custom pages, website hosting, help connecting your domain, on-page SEO, fully mobile-responsive design, contact and lead generation forms, email integration, WhatsApp messaging and click-to-call, Google Maps, social media links, photo galleries, testimonial sections, Google Search Console monitoring, ongoing maintenance and one small update every month."
         ]
     },
     {
         "page": "price",
         "question": "Is there a contract, or can I cancel anytime?",
         "answer": [
-            "Both plans have a 3-month minimum so we have enough time to actually get things done, then continue month-to-month with 30 days' notice if you'd like to stop."
+            "There's no lock-in contract and no cancellation fees. You can cancel anytime."
         ]
     },
     {
         "page": "price",
-        "question": "What happens if my needs change after I sign up?",
+        "question": "Will I own my domain?",
         "answer": [
-            "Just let us know. Plans can be adjusted, or you can switch between Website Care and Custom Application support if your priorities shift."
+            "Yes. Your domain is always yours. We simply help you connect it to your new website."
         ]
     },
     {
         "page": "price",
-        "question": "Do the monthly plans include SEO?",
+        "question": "Why is your price so low? What's the catch?",
         "answer": [
-            "The Website Care Plan includes general website health monitoring, but ongoing SEO work isn't sold as part of a monthly plan — SEO is either built into a website project from the start or delivered as a one-off audit and upgrade."
+            "There's no catch. I run Slashkode lean on purpose, with no big team and no add-on overheads, and I take on a limited number of projects at a time. That lets me offer a fair price to small businesses without compromising on the service."
         ]
     },
     {
         "page": "price",
-        "question": "What's not included in the monthly plans?",
+        "question": "What counts as one small update a month?",
         "answer": [
-            "Larger one-off projects — like a full site redesign or a new custom application built from scratch — are quoted separately rather than folded into a monthly plan."
+            "A quick change like swapping an image, editing a piece of content or updating a link. Bigger changes, like new pages or new features, are quoted separately before any work starts."
+        ]
+    },
+    {
+        "page": "price",
+        "question": "Do the plans include SEO?",
+        "answer": [
+            "On-page SEO is built into your website and your site is monitored through Google Search Console. We don't sell separate ongoing monthly SEO packages. If you'd like a deeper review of an existing site, a one-off audit and upgrade can be quoted."
+        ]
+    },
+    {
+        "page": "price",
+        "question": "What's not included?",
+        "answer": [
+            "Anything beyond the standard package, like more than 10 pages, online stores, booking with payments, RTO and VET college websites or custom applications, is quoted separately. You'll always get a clear price before we start."
+        ]
+    },
+      {
+        "page": "start",
+        "question": "What happens after I click Start my website?",
+        "answer": [
+            "It's four simple steps: you pay the $99 start fee and send through your information, we build your website, you review and check it, then we launch.",
+            "You'll always know what's next, and I'm the one handling every step."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "How much does it cost?",
+        "answer": [
+            "$99 to start, then $39 fortnightly. Prices are in AUD. There's no lock-in contract and no cancellation fees."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "What information do I need to send?",
+        "answer": [
+            "Your business name and contact details, a short description of what you do, your logo if you have one, and any photos or text you'd like on the site. A link to your current website or to sites you like is also helpful.",
+            "Don't worry if you don't have everything ready. We'll guide you through it."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "What's included in the package?",
+        "answer": [
+            "Up to 10 custom pages, website hosting, help connecting your domain, on-page SEO, fully mobile-responsive design, contact and lead generation forms, WhatsApp messaging and click-to-call, Google Maps, Google Search Console monitoring, ongoing maintenance and one small update every month."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "Will I get to review the website before it goes live?",
+        "answer": [
+            "Yes. Nothing launches until you've reviewed and checked it. If something needs changing, tell us and we'll adjust it before going live."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "Do I own my domain?",
+        "answer": [
+            "Yes. Your domain is always yours. We simply help you connect it to your new website."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "Can I cancel if I change my mind?",
+        "answer": [
+            "Yes. There's no lock-in and no cancellation fees, so you can cancel anytime."
+        ]
+    },
+    {
+        "page": "start",
+        "question": "What if I need more than the standard package?",
+        "answer": [
+            "If you need more than 10 pages, an online store, booking with payments or a custom application, that's quoted separately. Request a quote and you'll get a clear price before we start."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "When should I request a quote instead of starting the standard package?",
+        "answer": [
+            "Request a quote if you need an RTO or VET college website, a custom web application, an SEO audit and upgrade for an existing site, or anything bigger than the standard package, like an online store or extra pages."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "What happens after I request a quote?",
+        "answer": [
+            "We review your request within one business day, then arrange a discovery chat by phone, Zoom or in person to understand your goals and requirements. After that you receive a clear proposal with pricing and timelines, with no sales pressure."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "Is there a cost or obligation to get a quote?",
+        "answer": [
+            "No. Quotes and the discovery chat are free, and there's no obligation to go ahead."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "What should I include in my quote request?",
+        "answer": [
+            "A few lines about your business, what you need built and any deadline you have in mind. If you already have a website, include the address. You don't need to mention a budget."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "How long does it take to receive a quote?",
+        "answer": [
+            "We reply within one business day to arrange a chat. Your written quote follows once we understand what you need, so it's accurate rather than a guess."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "Will the price change once the project starts?",
+        "answer": [
+            "No surprises. The quote sets out pricing and timelines upfront. If your requirements change later, we'll talk about it and agree on any extra cost before doing the work."
+        ]
+    },
+    {
+        "page": "quote",
+        "question": "Who will I be dealing with?",
+        "answer": [
+            "Me, Jatinder. The person who quotes your project is the person who builds and looks after it. No outsourcing and no junior hand-offs."
         ]
     }
+    
 ]

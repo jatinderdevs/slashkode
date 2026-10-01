@@ -14,14 +14,14 @@
         content="custom website design Melbourne, responsive website design Melbourne, small business website design Melbourne, conversion focused web design" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/services/web-design-development" />
+    <link rel="canonical" href="https://slashkode.com.au/services/web-design-development" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Custom Website Design & Development Melbourne | Slashkode" />
     <meta property="og:description"
         content="Custom UI/UX design, fluid animations, and rock-solid SEO. Responsive websites built for Melbourne small businesses." />
-    <meta property="og:url" content="https://Slashkode.com.au/services/web-design-development" />
+    <meta property="og:url" content="https://slashkode.com.au/services/web-design-development" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -40,7 +40,7 @@
         "provider": {
             "@type": "LocalBusiness",
             "name": "Slashkode",
-            "url": "https://Slashkode.com.au",
+            "url": "https://slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Melbourne",

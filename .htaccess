@@ -5,6 +5,8 @@
 #RewriteCond %{HTTP_HOST} ^www\. [NC]
 #RewriteRule ^ https://slashkode.com.au%{REQUEST_URI} [L,R=301]
 
+RewriteRule ^(email|includes|data)(/|$) - [F,L]
+
 # Serve .php files without the extension in the URL
 RewriteEngine On
 
@@ -20,3 +22,7 @@ RewriteRule ^ /%1 [R=301,L]
 
 # Stop raw directory listings if a folder has no index file
 Options -Indexes
+
+<FilesMatch "^\.|^(env|config)\.php$|\.(env|sql|log|bak|ini)$">
+    Require all denied
+</FilesMatch>

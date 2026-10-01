@@ -228,7 +228,7 @@
             </div>
             <div class="inc-band__actions">
 
-                <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-secondary">Request a quote
+                <a href="<?php echo BASE_PATH; ?>/quote" class="sk-btn sk-btn-secondary">Request a quote
                     <span></span></a>
             </div>
         </div>

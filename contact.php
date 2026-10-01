@@ -1,4 +1,8 @@
-<?php require_once __DIR__ . '/config.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/email/email-helper.php';
+$formError = sk_handle_form('contact');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +79,18 @@
                             <div class="inner-contact-page" id="lead-form">
                                 <h2>Write it out and we'll get back to you within a day.</h2>
                                 <p>Free consultation · No pressure · Call or Zoom </p>
-                                <form class="wd-lead-form" action="<?php echo BASE_PATH; ?>/contact" method="get">
+                                <?php if (!empty($formError)) : ?>
+                                <p class="wd-form-note" style="color:#E52F22;font-weight:600;">
+                                    <?php echo htmlspecialchars($formError); ?>
+                                </p>
+                                <?php endif; ?>
+
+                                <form class="wd-lead-form" action="" method="post">
+                                    <!-- honeypot -->
+                                    <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                                        <input type="text" name="company_url" tabindex="-1" autocomplete="off" />
+                                    </div>
+
                                     <div>
                                         <label for="wd-name">Name</label>
                                         <input type="text" id="wd-name" name="name" placeholder="Your name" required />
@@ -85,10 +100,9 @@
                                         <input type="email" id="wd-email" name="email" placeholder="you@company.com"
                                             required />
                                     </div>
-
                                     <div>
-                                        <label for="wd-goal">Give us a little brief</label>
-                                        <textarea id="message" name="message" rows="4"
+                                        <label for="wd-message">Give us a little brief</label>
+                                        <textarea id="wd-message" name="message" rows="4"
                                             placeholder="Anything you'd like me to know before we talk?"></textarea>
                                     </div>
                                     <button type="submit" class="p-3 sk-btn sk-btn-primary">

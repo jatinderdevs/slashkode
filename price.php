@@ -12,14 +12,14 @@
         content="website pricing Melbourne, affordable website Melbourne, website subscription Melbourne, $39 fortnightly website, web design Melbourne pricing, no lock-in website Melbourne" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/price" />
+    <link rel="canonical" href="https://slashkode.com.au/price" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Website Pricing Melbourne | $99 to Start + $39/Fortnightly | Slashkode" />
     <meta property="og:description"
         content="Clear website pricing for Melbourne businesses. $99 to start, then $39 fortnightly. Up to 10 pages, hosting, SEO, enquiry form and more. No lock-in. No outsourcing." />
-    <meta property="og:url" content="https://Slashkode.com.au/price" />
+    <meta property="og:url" content="https://slashkode.com.au/price" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -46,7 +46,7 @@
             "price": "99.00",
             "priceValidUntil": "2027-12-31",
             "availability": "https://schema.org/InStock",
-            "url": "https://Slashkode.com.au/price",
+            "url": "https://slashkode.com.au/price",
             "description": "$99 to start the project, then $39 per fortnight ongoing. No lock-in. Cancel anytime with no cancellation fees."
         }
     }
@@ -118,7 +118,7 @@
                         </p>
 
                         <div class="package-card__cta">
-                            <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">Start my website
+                            <a href="<?php echo BASE_PATH; ?>/start" class="sk-btn sk-btn-primary">Start my website
                                 <span></span></a>
                             <a href="#whats-included" class="pricing-panel__more">Have a question →</a>
                         </div>
@@ -144,7 +144,7 @@
                         </p>
 
                         <div class="package-card__cta">
-                            <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-secondary border">Request a
+                            <a href="<?php echo BASE_PATH; ?>/quote" class="sk-btn sk-btn-secondary border">Request a
                                 quote
                                 <span></span></a>
                         </div>

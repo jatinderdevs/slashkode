@@ -3,6 +3,7 @@ Allow: /
 Disallow: /includes/
 Disallow: /data/
 Disallow: /demo/
+Disallow: /config.php
 Disallow: /*.json$
 
-Sitemap: https://Slashkode.com.au/sitemap.xml
+Sitemap: https://slashkode.com.au/sitemap.xml

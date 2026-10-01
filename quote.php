@@ -1,4 +1,8 @@
-<?php require_once __DIR__ . '/config.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/email/email-helper.php';
+$formError = sk_handle_form('quote');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -85,7 +89,8 @@
                     <div class="wd-hero-card start-card" id="startCard">
 
                         <div id="startFormWrap">
-                            <?php $formMode = 'quote'; require_once('includes/sections/start-form.php'); ?>
+                            <?php $formMode = 'quote';
+                            require_once('email/start-form.php'); ?>
                         </div>
 
                         <div id="startConfirm" class="start-confirm" hidden></div>
@@ -100,7 +105,7 @@
                     </p>
                 </div>
             </section>
-            <?php $faqPage = 'home';
+            <?php $faqPage = 'quote';
         require_once('includes/sections/faq.php'); ?>
             <?php require_once('includes/island.php'); ?>
         </div>
@@ -108,7 +113,7 @@
     </main>
     <?php require_once('includes/customjs.php'); ?>
 
-    <script src="<?php echo BASE_PATH; ?>/public/js/pages/start.js" defer></script>
+
 </body>
 
 </html>

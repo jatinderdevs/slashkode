@@ -1,4 +1,8 @@
-<?php require_once __DIR__ . '/config.php'; ?>
+<?php
+require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/email/email-helper.php';
+$formError = sk_handle_form('start');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,23 +34,23 @@
 
     <!-- Schema.org — Breadcrumb -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "BreadcrumbList",
-            "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://slashkode.com.au/"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Start",
-                    "item": "https://slashkode.com.au/start"
-                }
-            ]
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://slashkode.com.au/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Start",
+                "item": "https://slashkode.com.au/start"
+            }
+        ]
+    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -86,7 +90,7 @@
 
                         <div id="startFormWrap">
                             <?php $formMode = 'standard';
-                            require_once('includes/sections/start-form.php'); ?>
+                            require_once('email/start-form.php'); ?>
                         </div>
 
                         <div id="startConfirm" class="start-confirm" hidden></div>
@@ -97,7 +101,7 @@
 
                     <p class="start-switch-link">
                         Need something beyond the standard package?
-                        <a href="<?php echo BASE_PATH; ?>/quote.php">Request a quote &rarr;</a>
+                        <a href="<?php echo BASE_PATH; ?>/quote">Request a quote &rarr;</a>
                     </p>
                 </div>
             </section>
@@ -119,13 +123,13 @@
         </div>
         <?php require_once('includes/sections/process.php'); ?>
 
-        <?php $faqPage = 'home';
+        <?php $faqPage = 'start';
         require_once('includes/sections/faq.php'); ?>
         <?php require_once('includes/footer.php'); ?>
     </main>
     <?php require_once('includes/customjs.php'); ?>
 
-    <script src="<?php echo BASE_PATH; ?>/public/js/pages/start.js" defer></script>
+
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
 
 </body>

@@ -42,7 +42,7 @@
             <div class="sk_navbar">
                 <div class="logo">
                     <a href="<?php echo BASE_PATH; ?>/">
-                        <img src="<?php echo BASE_PATH; ?>/public/img/Slashkode.png" width="150" height="40"
+                        <img src="<?php echo BASE_PATH; ?>/public/img/slashkode.png" width="150" height="40"
                             class="img-fluid" alt="Slashkode logo" />
                     </a>
                 </div>

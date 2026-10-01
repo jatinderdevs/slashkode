@@ -27,7 +27,7 @@ $workProjects[] = [
     'id'          => 'custom-cms',
     'title'       => 'Custom CMS & Admin Dashboards',
     'topTag'      => 'Custom CMS',
-    'image'       => 'public/img/mockups/cms.jpg',
+    'image'       => 'public/img/mockups/cms.webp',
     'alt'         => 'Custom CMS admin dashboard Melbourne',
     'link'        => '#',
     'cta'         => 'Case study',
@@ -55,14 +55,14 @@ function sk_work_asset(string $path): string
         content="Melbourne web design portfolio, website design examples Melbourne, web development case studies" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://Slashkode.com.au/work.php" />
+    <link rel="canonical" href="https://slashkode.com.au/work.php" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | Slashkode" />
     <meta property="og:description"
         content="Real websites built for Melbourne businesses and RTOs — from enrolment platforms to custom dashboards." />
-    <meta property="og:url" content="https://Slashkode.com.au/work.php" />
+    <meta property="og:url" content="https://slashkode.com.au/work.php" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
@@ -73,46 +73,46 @@ function sk_work_asset(string $path): string
 
     <!-- Schema.org: Portfolio as ItemList -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Slashkode Portfolio",
-            "description": "Websites and web applications built by Slashkode for Melbourne businesses and RTOs.",
-            "mainEntity": {
-                "@type": "ItemList",
-                "itemListElement": [{
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Australian International Institute of Technology",
-                        "url": "https://www.aiit.edu.au/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Brighton Institute of Technology",
-                        "url": "https://www.bit.edu.au/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "International Student Tips",
-                        "url": "https://internationalstudenttips.com.au/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Yarramovers",
-                        "url": "https://www.yarramovers.com.au/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "JD Shopfront and Shutters",
-                        "url": "https://www.jdshopfrontandshutter.co.uk/"
-                    }
-                ]
-            }
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Slashkode Portfolio",
+        "description": "Websites and web applications built by Slashkode for Melbourne businesses and RTOs.",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [{
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Australian International Institute of Technology",
+                    "url": "https://www.aiit.edu.au/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Brighton Institute of Technology",
+                    "url": "https://www.bit.edu.au/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "International Student Tips",
+                    "url": "https://internationalstudenttips.com.au/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Yarramovers",
+                    "url": "https://www.yarramovers.com.au/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "JD Shopfront and Shutters",
+                    "url": "https://www.jdshopfrontandshutter.co.uk/"
+                }
+            ]
         }
+    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -140,59 +140,59 @@ function sk_work_asset(string $path): string
 
             <section class="works p-0">
                 <?php foreach ($workProjects as $i => $item) : ?>
-                    <?php
+                <?php
                     $link     = $item['link'] ?? '#';
                     $external = strpos($link, 'http') === 0;
                     ?>
-                    <div class="work">
-                        <article class="drag-card">
-                            <div class="drag-card-body">
-                                <div class="drag-card-hero">
-                                    <div class="drag-card-media">
-                                        <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
-                                            alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
-                                            <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
-                                    </div>
-
-                                    <div class="drag-card-side">
-                                        <?php if (!empty($item['topTag'])) : ?>
-                                            <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
-                                        <?php endif; ?>
-
-                                        <h2 class="drag-card-title"><?php echo htmlspecialchars($item['title'] ?? ''); ?>
-                                        </h2>
-
-                                        <?php if (!empty($item['chips'])) : ?>
-                                            <div class="drag-card-tags">
-                                                <?php foreach ($item['chips'] as $chip) : ?>
-                                                    <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
-                                                <?php endforeach; ?>
-                                            </div>
-                                        <?php endif; ?>
-
-                                        <?php if (!empty($item['cta'])) : ?>
-                                            <a href="<?php echo htmlspecialchars($link); ?>"
-                                                <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
-                                                class="sk-btn sk-btn-primary btnlive">
-                                                <?php echo htmlspecialchars($item['cta']); ?>
-                                                <span></span>
-                                            </a>
-                                        <?php endif; ?>
-                                    </div>
+                <div class="work">
+                    <article class="drag-card">
+                        <div class="drag-card-body">
+                            <div class="drag-card-hero">
+                                <div class="drag-card-media">
+                                    <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
+                                        alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
+                                        <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
                                 </div>
 
-                                <?php if (!empty($item['description'])) : ?>
-                                    <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
-                                <?php endif; ?>
+                                <div class="drag-card-side">
+                                    <?php if (!empty($item['topTag'])) : ?>
+                                    <span class="drag-card-tag"><?php echo htmlspecialchars($item['topTag']); ?></span>
+                                    <?php endif; ?>
 
-                                <?php if (!empty($item['result'])) : ?>
-                                    <div class="drag-card-result">
-                                        <p><?php echo htmlspecialchars($item['result']); ?></p>
+                                    <h2 class="drag-card-title"><?php echo htmlspecialchars($item['title'] ?? ''); ?>
+                                    </h2>
+
+                                    <?php if (!empty($item['chips'])) : ?>
+                                    <div class="drag-card-tags">
+                                        <?php foreach ($item['chips'] as $chip) : ?>
+                                        <span class="drag-tag"><?php echo htmlspecialchars($chip); ?></span>
+                                        <?php endforeach; ?>
                                     </div>
-                                <?php endif; ?>
+                                    <?php endif; ?>
+
+                                    <?php if (!empty($item['cta'])) : ?>
+                                    <a href="<?php echo htmlspecialchars($link); ?>"
+                                        <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
+                                        class="sk-btn sk-btn-primary btnlive">
+                                        <?php echo htmlspecialchars($item['cta']); ?>
+                                        <span></span>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
                             </div>
-                        </article>
-                    </div>
+
+                            <?php if (!empty($item['description'])) : ?>
+                            <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
+                            <?php endif; ?>
+
+                            <?php if (!empty($item['result'])) : ?>
+                            <div class="drag-card-result">
+                                <p><?php echo htmlspecialchars($item['result']); ?></p>
+                            </div>
+                            <?php endif; ?>
+                        </div>
+                    </article>
+                </div>
                 <?php endforeach; ?>
             </section>
 

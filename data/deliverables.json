@@ -1,0 +1,29 @@
+[
+    {
+        "id": "tailored-web-applications",
+        "pages": ["custom-apps"],
+        "icon": "/public/icons/search.gif",
+        "title": "Tailored Web Applications",
+        "desc": "Built around how your team actually works \u2014 client portals, booking systems, approval steps, or anything specific to your industry. The goal is simple: your team works faster, not around the software.",
+        "image": "/public/img/webapp.gif",
+        "alt": "Custom web application interface example"
+    },
+    {
+        "id": "custom-cms-dashboards",
+        "pages": ["custom-apps"],
+        "icon": "/public/icons/admin.gif",
+        "title": "Custom CMS & Admin Dashboards",
+        "desc": "A simple admin area where you're in full control \u2014 update content, manage users, and see your data without fighting a clunky system built for someone else's business. Set up properly from day one, with room to add more later.",
+        "image": "/public/img/adminapp.gif",
+        "alt": "Custom CMS and admin dashboard example"
+    },
+    {
+        "id": "secure-logins-connections",
+        "pages": ["custom-apps"],
+        "icon": "/public/icons/link.gif",
+        "title": "Secure Logins & Smooth Connections",
+        "desc": "Different access levels for different staff, secure logins for everyone, and clean connections to the tools you already use \u2014 like payment systems, email, or other software you rely on \u2014 so nothing needs to be done twice.",
+        "image": "/public/img/secureapp.svg",
+        "alt": "Secure logins and integrations example"
+    }
+]

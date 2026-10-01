@@ -8,11 +8,18 @@
   background: var(--sk-color-bg-warm);
 }
 
-/* ── Breadcrumb ── */
-.wd-breadcrumb {
-  /* padding: 1.25rem 0 0; */
+.includes > .row:hover {
+  color: var(--sk-color-bg-card);
+  background: var(--sk-color-primary-soft);
 }
-
+.includes > .row:hover h3 {
+  color: var(--sk-color-bg-card);
+}
+.dont p {
+  max-width: 100%;
+  color: var(--sk-color-primary-soft);
+  font-size: 14px;
+}
 .wd-breadcrumb-list {
   display: flex;
   flex-wrap: wrap;

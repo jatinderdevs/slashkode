@@ -204,19 +204,19 @@ h1 {
     var(--sk-color-terracotta-hover)
   );
   color: #ffffff;
-  animation: wave 2s infinite alternate;
+  /* animation: wave 2s infinite alternate; */
   box-shadow: 0 4px 14px rgba(247, 65, 35, 0.25);
   animation: wave 3s infinite alternate;
   background-size: 200%;
 }
-@keyframes wave {
+/* @keyframes wave {
   0% {
     background-position: left;
   }
   100% {
     background-position: right;
   }
-}
+} */
 .sk-btn-primary > img {
   filter: invert(1);
 }
@@ -565,16 +565,15 @@ h2.split-chars,
 }
 @media (max-width: 767px) {
   .mag-zone {
-  
-  height: 80px;
-}
-.hero{
-  padding-top: 4rem;
-  padding-bottom: 0;
-}
-section {
-  padding: 50px 0;
-}
+    height: 80px;
+  }
+  .hero {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
+  section {
+    padding: 50px 0;
+  }
 }
 
 .wd-form-note {

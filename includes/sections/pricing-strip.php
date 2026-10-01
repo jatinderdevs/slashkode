@@ -85,7 +85,7 @@
             </ul>
 
             <div class="pricing-panel__actions">
-                <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">
+                <a href="<?php echo BASE_PATH; ?>/start" class="sk-btn sk-btn-primary">
                     Start my website
                     <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt="" width="15"
                         height="15">
