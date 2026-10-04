@@ -25,7 +25,7 @@ $ctaPresets = [
 'default' => [
 'label' => 'Start your website',
 'heading' => 'Stand out from your competitors online.',
-'desc' => 'A professional website builds trust and brings in enquiries for your Melbourne business.',
+'desc' => 'A professional website builds trust and brings in enquiries for your business.',
 'sub' => 'Only $99 to start. Then $39 fortnightly, once your site is live.',
 'button' => 'Start my website',
 'url' => $ctaStartUrl,
@@ -34,14 +34,14 @@ $ctaPresets = [
 
 // Quoted services: no price shown, button goes to the quote request
 'rto' => [
-'label' => 'Request a quote',
+'label' => 'Start my website',
 'heading' => 'A website your students can trust.',
 'desc' => 'Clear course pages, the required information in the right places, and enrolment enquiries that come straight
-to you. Tell us about your RTO and we\'ll quote it.',
-'sub' => '',
-'button' => 'Request a quote',
-'url' => $ctaQuoteUrl,
-'note' => 'Free chat. Clear quote. No pressure.',
+to you. ',
+'sub' => 'Only $99 to start. Then $39 fortnightly, once your site is live.',
+'button' => 'Start my website',
+'url' => $ctaStartUrl,
+'note' => 'No lock-in. No cancellation fees.',
 ],
 
 'seo' => [

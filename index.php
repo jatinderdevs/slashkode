@@ -116,9 +116,9 @@
                         Minimum cost, maximum results. We make it happen.
                     </h1>
                     <p>
-                        We design and build professional websites for Melbourne small businesses, migration agencies,
-                        RTO and VET colleges, and service-based businesses.
-
+                        We design and build professional websites for small businesses, migration agencies,
+                        RTO and VET colleges, and service-based businesses. Sites that turn visitors into enquiries,
+                        built and looked after.
 
                     </p>
 
@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="mag-zone">
-                        <a href="contact" class="btn herobtnSec">About
+                        <a href="about" class="btn herobtnSec">About
                             <dotlottie-wc
                                 src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -226,11 +226,7 @@
 
 
 
-                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger hover-link"
-                            data-img="public/img/seo.png">
-                            <span class="skill-label">Search Engine Optimise (SEO)</span>
-                            <span class="skill-icon" aria-hidden="true">
-                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
+
 
                         <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php"
                             class="skill-trigger hover-link" data-img="public/img/mockups/bit.webp">
@@ -244,6 +240,11 @@
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
                         <div class="cursor-img"></div>
+                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger hover-link"
+                            data-img="public/img/seo.png">
+                            <span class="skill-label">Search Engine Optimise (SEO)</span>
+                            <span class="skill-icon" aria-hidden="true">
+                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
                     </div>
                 </div>
 
@@ -253,7 +254,7 @@
                     <h2 class="skills-heading headingeffect">
                         What we do
                     </h2>
-                    <p>We build websites. From design to launch, and everything a Melbourne business needs to
+                    <p>We build websites. From design to launch, and everything a business needs to
                         actually get found and get enquiries.</p>
                 </div>
             </div>

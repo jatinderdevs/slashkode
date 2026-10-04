@@ -119,7 +119,7 @@ $formError = sk_handle_form('contact');
                                 <img src="<?php echo BASE_PATH; ?>/public/icons/whatsap.webp" width="52" alt="WhatsApp">
                                 <h3>Start a WhatsApp Chat</h3>
                                 <p>Instant replies • No forms</p>
-                                <a href="https://wa.me/61499167608" class="sk-btn sk-btn-primary">
+                                <a href="https://wa.me/61499167608" class="btn-block sk-btn sk-btn-primary">
                                     Say Hi <span></span>
                                 </a>
                             </div>
@@ -131,7 +131,8 @@ $formError = sk_handle_form('contact');
                                 <img src="<?php echo BASE_PATH; ?>/public/icons/meeting.webp" width="52" alt="Calendar">
                                 <h3>Book a Free Consultation</h3>
                                 <p>15-min discovery call • No obligation</p>
-                                <a href="#booking" class="sk-btn sk-btn-primary">
+                                <a href="" style="   pointer-events: none;      cursor: not-allowed;   opacity: 0.6;  "
+                                    class="btn-block sk-btn sk-btn-primary">
                                     Schedule Now <span></span>
                                 </a>
                             </div>
@@ -141,11 +142,14 @@ $formError = sk_handle_form('contact');
                         <div class="bento-card item profile-card">
                             <div class="self-contact-card">
                                 <div class="profile-header">
-                                    <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg"
-                                        alt="Jatinder Singh, Founder of Slashkode" class="profile-img">
+                                    <div class="profile-img">
+                                        <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg"
+                                            alt="Jatinder Singh, Founder of Slashkode" class="">
+                                    </div>
+
                                     <div class="profile-info">
                                         <h3>Jatinder Singh</h3>
-                                        <p>Lead Developer</p>
+                                        <p>Founder and Developer</p>
                                     </div>
                                 </div>
                                 <div class="profile-contact">

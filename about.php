@@ -119,7 +119,7 @@
             <div class="mission">
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="<?php echo BASE_PATH; ?>/public/img/myself.webp" class="img-fluid myself"
+                        <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid myself"
                             alt="Jatinder Singh, founder of Slashkode">
                     </div>
                     <div class="col-md-8">
@@ -236,7 +236,7 @@
         <section class="sk-container">
             <div class="about-services shadow">
                 <h2 class="headingeffect">What I build</h2>
-                <p>Websites, SEO, RTO &amp; VET college platforms, and custom web applications — see the full
+                <p>Websites, SEO, RTO &amp; VET college platforms, and custom web applications - see the full
                     breakdown on the services page.</p>
                 <a href="<?php echo BASE_PATH; ?>/services" class="sk-btn sk-btn-secondary">
                     See all services

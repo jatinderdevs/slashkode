@@ -82,11 +82,11 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> / home</a>
                                 <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
                             <h1 class="heroheading">
-                                On-page SEO and website SEO audits for Melbourne businesses
+                                On-page SEO and website SEO audits for businesses
                             </h1>
                             <p>
                                 Every website we build has SEO done properly from day one. Already have a
@@ -125,7 +125,7 @@
                                 I'm a website developer, so I understand how websites are built and how search engines
                                 read
                                 them. After
-                                years of building websites for Melbourne businesses, I know what helps a site get found
+                                years of building websites for different businesses, I know what helps a site get found
                                 and what
                                 holds it back. I do the work myself, start to finish, and I'll add
                                 real value

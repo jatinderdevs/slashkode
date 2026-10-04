@@ -13,7 +13,7 @@
                         height="60" alt="Slashkode logo" />
                 </a>
                 <p class="footer-tagline">
-                    Web design, development &amp; SEO for Melbourne businesses that
+                    Web design, development &amp; SEO for small businesses that
                     want clarity, speed and trust online.
                 </p>
                 <span class="footer-location">

@@ -31,7 +31,7 @@
                         </svg>
                         <div>
                             <h4>Up to 10 custom-designed pages</h4>
-                            <p>Designed around your business, not pulled from a template.</p>
+                            <p>Designed around your business.</p>
                         </div>
                     </li>
                     <li class="inc-item">

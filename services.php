@@ -31,37 +31,37 @@
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "ItemList",
-            "name": "slashkode Services",
-            "description": "Web design, SEO, RTO websites and custom web applications for Melbourne businesses.",
-            "itemListElement": [{
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Website Design & Development",
-                    "url": "https://slashkode.com.au/services/web-design-development"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Search Engine Optimisation (SEO)",
-                    "url": "https://slashkode.com.au/services/seo-services"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "RTO and VET Colleges Website",
-                    "url": "https://slashkode.com.au/services/rto-vet-colleges-website"
-                },
-                {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Custom Web Applications",
-                    "url": "https://slashkode.com.au/services/custom-web-applications"
-                }
-            ]
-        }
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "slashkode Services",
+        "description": "Web design, SEO, RTO websites and custom web applications for Melbourne businesses.",
+        "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Website Design & Development",
+                "url": "https://slashkode.com.au/services/web-design-development"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Search Engine Optimisation (SEO)",
+                "url": "https://slashkode.com.au/services/seo-services"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "RTO and VET Colleges Website",
+                "url": "https://slashkode.com.au/services/rto-vet-colleges-website"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Custom Web Applications",
+                "url": "https://slashkode.com.au/services/custom-web-applications"
+            }
+        ]
+    }
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
@@ -167,7 +167,7 @@
 
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
-                            <p>ASQA-compliant websites for RTOs and VET colleges in Melbourne - course catalogues,
+                            <p>ASQA-compliant websites for RTOs and VET colleges in Australia - course catalogues,
                                 student information, enrolment paths and SEO that attract the right enquiries.</p>
                         </div>
 
@@ -216,7 +216,7 @@
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
                             <p>Tailored web applications, admin dashboards and internal portals built around how your
-                                Melbourne business actually works - not forced into a generic template.</p>
+                                business actually works - not forced into a generic template.</p>
                         </div>
 
                         <div class="subcate">
@@ -262,7 +262,7 @@
                     <div class="service-wrapper-bottom">
                         <div class="service-desc">
                             <p>SEO built into new sites from day one, or a deep audit and upgrade of your existing
-                                website - speed, keywords, content and conversion. No monthly retainers.</p>
+                                website - speed, keywords, content and conversion.</p>
                         </div>
 
                         <div class="subcate">

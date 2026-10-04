@@ -84,17 +84,17 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> / home</a>
                                 <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
 
 
                             <h1 class="heroheading">
-                                Web Design & Development Built to Grow Your Melbourne Business
+                                Web Design & Development Built to Grow Your Business
                             </h1>
                             <p>
                                 We combine clean design, and solid SEO foundations
-                                to turn your website into more enquiries — not just a prettier
+                                to turn your website into more enquiries - not just a prettier
                                 version of what you had.
                             </p>
                         </div>
@@ -207,11 +207,10 @@
                         Customers decide long before they call
                     </h2>
                     <p class="site-value__lead">
-                        In Melbourne, most people search first. They open a few sites, scan quickly, and move on from
-                        anything that feels unfinished or unclear.
+                        Most people search first, before buying service or product.
                     </p>
                     <p class="site-value__lead">
-                        A clear website does more than look good. It answers the quiet questions they already have — so
+                        A clear website does more than look good. It answers the quiet questions they already have - so
                         by the time they reach out, they already trust you.
                     </p>
                     <p class="site-value__closer">
@@ -288,7 +287,7 @@
                             </svg>
                         </div>
                         <h3 class="outcome__title">Work on every phone</h3>
-                        <p class="outcome__text">Most people check on mobile — your site should feel natural there.</p>
+                        <p class="outcome__text">Most people check on mobile - your site should feel natural there.</p>
                     </article>
 
                     <article class="outcome outcome--wide">

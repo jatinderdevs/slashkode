@@ -69,8 +69,8 @@
                                 <li>$99 to start. Then $39 fortnightly once your website is live.</li>
                                 <li>No lock-in. Cancel any time, with no cancellation fees.</li>
                                 <li>You own your domain and the materials you give us. The website we build stays
-                                    with Slashkode. If you cancel it’s turned off, and you can buy a copy for a
-                                    one-off $1,999.</li>
+                                    with Slashkode. If you cancel it’s turned off, and if you want a copy of it
+                                    you can ask and we’ll give you a clear price.</li>
                                 <li>Anything beyond the standard plan is quoted first, and we never start paid extras
                                     without your OK.</li>
                                 <li>Nothing here takes away your rights under Australian Consumer Law.</li>
@@ -146,8 +146,8 @@
                                     and text). Ask any time and we’ll send them back at no cost.</li>
                                 <li>The website we built stays with Slashkode, including its code, design and
                                     layout.</li>
-                                <li>If you’d like to take your website with you, you can buy a copy for a one-off
-                                    $1,999 (AUD). See section 7.</li>
+                                <li>If you’d like to take your website with you, just ask and we’ll give you a clear
+                                    price for a full copy. See section 7.</li>
                                 <li>The $99 start fee covers setup work we begin straight away, so it isn’t refunded
                                     once work has started. If we haven’t delivered what we agreed, we’ll make it
                                     right, including a fair refund where that’s the right outcome.</li>
@@ -190,8 +190,9 @@
                                 your payments stop, it’s turned off.
                             </p>
                             <p>
-                                <strong>Want to take your website with you?</strong> You can buy a copy for a
-                                one-off $1,999 (AUD). Once it’s paid, we’ll give you the website’s files, code,
+                                <strong>Want to take your website with you?</strong> Just ask and we’ll give you a
+                                clear price in writing for a full copy. Once it’s paid, we’ll give you the website’s
+                                files, code,
                                 design and content, and you can use and host them anywhere. We keep the right to
                                 reuse our general code and techniques on other projects, but never your content or
                                 branding.
@@ -309,8 +310,9 @@
                 </div>
             </div>
 
-            <?php require_once('includes/footer.php'); ?>
         </div>
+        <?php require_once('includes/footer.php'); ?>
+
     </main>
     <?php require_once('includes/customjs.php'); ?>
 </body>

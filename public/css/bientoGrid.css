@@ -72,7 +72,9 @@
   margin-bottom: 1.5rem;
   border: 2px solid #d4e5d8;
 }
-
+.about-avatar img {
+  translate: 0 -28px;
+}
 .about-name {
   font-family: var(--sk-font-heading);
   font-size: 1.5rem;

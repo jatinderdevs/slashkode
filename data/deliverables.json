@@ -4,7 +4,7 @@
         "pages": ["custom-apps"],
         "icon": "/public/icons/search.gif",
         "title": "Tailored Web Applications",
-        "desc": "Built around how your team actually works \u2014 client portals, booking systems, approval steps, or anything specific to your industry. The goal is simple: your team works faster, not around the software.",
+        "desc": "Built around how your team actually works - client portals, booking systems, approval steps, or anything specific to your industry. The goal is simple: your team works faster, not around the software.",
         "image": "/public/img/webapp.gif",
         "alt": "Custom web application interface example"
     },
@@ -13,8 +13,8 @@
         "pages": ["custom-apps"],
         "icon": "/public/icons/admin.gif",
         "title": "Custom CMS & Admin Dashboards",
-        "desc": "A simple admin area where you're in full control \u2014 update content, manage users, and see your data without fighting a clunky system built for someone else's business. Set up properly from day one, with room to add more later.",
-        "image": "/public/img/adminapp.gif",
+        "desc": "A simple admin area where you're in full control - update content, manage users, and see your data without fighting a clunky system built for someone else's business. Set up properly from day one, with room to add more later.",
+        "image": "/public/img/dashboard.svg",
         "alt": "Custom CMS and admin dashboard example"
     },
     {
@@ -22,8 +22,35 @@
         "pages": ["custom-apps"],
         "icon": "/public/icons/link.gif",
         "title": "Secure Logins & Smooth Connections",
-        "desc": "Different access levels for different staff, secure logins for everyone, and clean connections to the tools you already use \u2014 like payment systems, email, or other software you rely on \u2014 so nothing needs to be done twice.",
+        "desc": "Different access levels for different staff, secure logins for everyone, and clean connections to the tools you already use - like payment systems, email, or other software you rely on - so nothing needs to be done twice.",
         "image": "/public/img/secureapp.svg",
+        "alt": "Secure logins and integrations example"
+    },
+    {
+        "id": "tailored-web-applications",
+        "pages": ["rto-deliver"],
+        "icon": "/public/icons/admin.gif",
+        "title": "ASQA-Compliant Site Structure",
+        "desc": "RTO code, scope of registration, fees and charges, refund policy, complaints & appeals, USI information and student rights are built into the site from day one - not added later as an afterthought.",
+        "image": "/public/img/website-tick.svg",
+        "alt": "Custom web application interface example"
+    },
+    {
+        "id": "custom-cms-dashboards",
+        "pages": ["rto-deliver"],
+        "icon": "/public/icons/link.gif",
+        "title": "Course Catalogue & Landing Pages",
+        "desc": "Individual pages for each qualification with clear entry requirements, outcomes, fees and enrolment CTAs. Structured so students and Google both understand exactly what you offer.",
+        "image": "/public/img/landing.svg",
+        "alt": "Custom CMS and admin dashboard example"
+    },
+    {
+        "id": "secure-logins-connections",
+        "pages": ["rto-deliver"],
+        "icon": "/public/icons/search.gif",
+        "title": "VET-Focused SEO Foundations",
+        "desc": "On-page SEO built around how students actually search: “Certificate III aged care Melbourne”, “RTO business courses Victoria”, funded training terms and local intent keywords that bring the right enquiries.",
+        "image": "/public/img/rto-seo.svg",
         "alt": "Secure logins and integrations example"
     }
 ]

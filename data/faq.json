@@ -3,8 +3,8 @@
         "page": "home",
         "question": "What does Slashkode do?",
         "answer": [
-            "We design, build and look after websites for Melbourne businesses. That means clean, fast business websites with SEO built in from the start, specialist websites for RTOs and VET colleges, and custom web applications when a standard website isn't enough.",
-            "We don't do graphic design, social media management or general digital marketing. Four things, done properly."
+            "We design, build and look after websites for businesses. That means clean, fast business websites with SEO built in from the start, specialist websites for RTOs and VET colleges, and custom web applications when a standard website isn't enough."
+            
         ]
     },
     {
@@ -57,13 +57,6 @@
         "question": "How quickly will you reply?",
         "answer": [
             "We usually reply within one business day. If your project is a good fit, we'll follow up with clear next steps."
-        ]
-    },
-    {
-        "page": "contact",
-        "question": "What happens after I send a message?",
-        "answer": [
-            "We review your message within 24 hours, then arrange a discovery chat by phone, Zoom or in person to map out your goals and options. After that you get a clear proposal with fixed pricing and timelines, with no sales pressure."
         ]
     },
     {
@@ -157,7 +150,7 @@
         "page": "about",
         "question": "Who is behind Slashkode?",
         "answer": [
-            "Slashkode is run by me, Jatinder Singh, a Melbourne-based web designer and developer. What started as freelance work under jatinderdev.com.au is now a focused sole-trader business helping local businesses grow online properly."
+            "Slashkode is run by me, Jatinder Singh, a Melbourne-based web designer and developer. What started as freelance work under jatinderdev.com.au is now a focused business helping local businesses grow online properly."
         ]
     },
     {
@@ -193,21 +186,21 @@
         "page": "about",
         "question": "Are you based in Melbourne?",
         "answer": [
-            "Yes. Slashkode is a Melbourne-based sole-trader business and we understand the local market. We're happy to meet in person, on a call or on Zoom."
+            "Yes. Slashkode is a Melbourne-based business and we understand the local market. We're happy to meet in person, on a call or on Zoom."
         ]
     },
     {
         "page": "services",
         "question": "What services does Slashkode offer?",
         "answer": [
-            "Four things: website design and development, SEO, RTO and VET college websites, and custom web applications. Most projects combine design, development and SEO so everything works together."
+            "Website design and development, SEO, RTO and VET college websites, and custom web applications. Most projects combine design, development and SEO so everything works together."
         ]
     },
     {
         "page": "services",
         "question": "How much do your services cost?",
         "answer": [
-            "Our standard website package is $99 to start, then $39 fortnightly, with no lock-in and no cancellation fees. RTO and VET college websites, custom web applications and SEO audits fall outside that package and are quoted based on your needs."
+            "Our standard website package is $99 to start, then $39 fortnightly, with no lock-in and no cancellation fees. Custom web applications and SEO audits fall outside that package and are quoted based on your needs."
         ]
     },
     {
@@ -239,13 +232,7 @@
             "Yes. RTO and VET college websites are a specialty. We build around ASQA's requirements, with clear course catalogues, student information and enrolment paths that turn search traffic into real enquiries."
         ]
     },
-    {
-        "page": "work",
-        "question": "What kind of projects do you show in your work section?",
-        "answer": [
-            "A mix of business websites, RTO and VET college projects and custom CMS and admin dashboard work. Each one shows the real problem we were solving and what we built."
-        ]
-    },
+    
     {
         "page": "work",
         "question": "Are all projects custom, or do you use templates?",
@@ -342,7 +329,8 @@
         "page": "rto-vet-service",
         "question": "How much does an RTO or VET college website cost?",
         "answer": [
-            "RTO and VET college websites are quoted individually because the scope varies with the number of courses, pages and enrolment features. Request a quote and we'll give you a clear price and timeline before any work starts."
+            "Our standard RTO and VET college package starts at $99 (AUD) and includes up to 10 pages, so it's a simple, clear starting point.",
+    "If your requirements are different, for example more courses, extra pages or custom enrolment features, <a href=\"/contact\">request a quote</a> and we'll give you a clear price and timeline before any work starts."
         ]
     },
     {

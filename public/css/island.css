@@ -63,6 +63,7 @@
   font-family: var(--sk-font-heading);
   font-weight: 700;
   font-size: 0.95rem;
+  overflow: hidden;
   color: var(--sk-color-primary-dark);
   background: linear-gradient(135deg, #e5e0d8 0%, #d4cfc6 100%);
 }

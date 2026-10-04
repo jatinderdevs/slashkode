@@ -72,7 +72,7 @@
                     <h1 class="heroheading">A professional website without the big upfront cost.</h1>
                     <p class="packages-hero__lead">
                         $99 to start. Then $39 every fortnight. Everything you need to look professional online and
-                        start receiving enquiries — with no lock-in and no surprises.
+                        start receiving enquiries - with no lock-in and no surprises.
                     </p>
                 </div>
             </section>
@@ -88,7 +88,7 @@
 
                         <h2>Website Care Plan</h2>
                         <p class="package-card__desc">
-                            A clear, professional website designed around your business — so visitors can find you,
+                            A clear, professional website designed around your business - so visitors can find you,
                             understand what you do, and get in touch easily.
                         </p>
 
@@ -113,14 +113,14 @@
 
                         </ul>
 
-                        <p class="package-card__note">
+                        <!-- <p class="package-card__note">
                             No outsourcing. No handover.
-                        </p>
+                        </p> -->
 
                         <div class="package-card__cta">
                             <a href="<?php echo BASE_PATH; ?>/start" class="sk-btn sk-btn-primary">Start my website
                                 <span></span></a>
-                            <a href="#whats-included" class="pricing-panel__more">Have a question →</a>
+                            <a href="<?php echo BASE_PATH; ?>/contact" class="pricing-panel__more">Have a question →</a>
                         </div>
                     </article>
                     <article class="package-card request-quote">
@@ -152,7 +152,7 @@
                 </div>
                 <div class="packages-fine-print">
                     <p>No lock-in contract. Cancel anytime with no cancellation fees. You always own your domain. Prices
-                        are in AUD. The $39/fortnightly covers the ongoing package as listed — any additional work
+                        are in AUD. The $39/fortnightly covers the ongoing package as listed - any additional work
                         outside the inclusions is quoted separately before it begins.</p>
                 </div>
             </section>
@@ -160,10 +160,10 @@
             <?php require_once('includes/sections/inclusions.php'); ?>
 
 
-            <section class="sk-container">
+            <section class="container-fluid">
                 <div class="packages-cta-band">
                     <h2>Have a question before you start?</h2>
-                    <p>Happy to talk it through. Send a message or book a short chat — I’ll answer clearly and with no
+                    <p>Happy to talk it through. Send a message - I’ll answer clearly and with no
                         pressure.</p>
                     <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-primary">Let’s talk
                         <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""
@@ -173,39 +173,8 @@
 
             </section>
 
-            <!-- ════════════════════════════════════
-                 HOW IT WORKS
-            ════════════════════════════════════ -->
-            <section class="how-section">
-                <div class="sk-container">
-                    <div class="how-section__header">
-                        <h2>How it works</h2>
-                        <p
-                            style="color: var(--sk-color-primary-soft, #2c3e50); max-width: 42ch; margin: 0.5rem auto 0;">
-                            Simple steps. You always know what’s happening.</p>
-                    </div>
 
-                    <div class="how-grid">
-                        <div class="how-card">
-                            <div class="how-card__num">01</div>
-                            <h3>Quick chat</h3>
-                            <p>Tell me about your business and what you need the website to do. No pressure — just
-                                clarity.</p>
-                        </div>
-                        <div class="how-card">
-                            <div class="how-card__num">02</div>
-                            <h3>Start for $99</h3>
-                            <p>Once you’re ready, we begin. I design and build your website around your business.</p>
-                        </div>
-                        <div class="how-card">
-                            <div class="how-card__num">03</div>
-                            <h3>Review &amp; go live</h3>
-                            <p>You review the site, we make any adjustments, then it goes live. Ongoing care starts at
-                                $39/fortnightly.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
 
 

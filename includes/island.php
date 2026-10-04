@@ -18,23 +18,7 @@
         </div>
 
         <ul class="sk-island__actions">
-            <li>
-                <a class="sk-island__action" href="#book" id="skBookLink">
-                    <span class="sk-island__action-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                            <line x1="16" y1="2" x2="16" y2="6" />
-                            <line x1="8" y1="2" x2="8" y2="6" />
-                            <line x1="3" y1="10" x2="21" y2="10" />
-                        </svg>
-                    </span>
-                    <span class="sk-island__action-text">
-                        <span class="sk-island__action-label">Book a free consultation</span>
-                        <span class="sk-island__action-meta">30 min · no obligation</span>
-                    </span>
-                </a>
-            </li>
+
             <li>
                 <a class="sk-island__action" href="tel:+61499167608">
                     <span class="sk-island__action-icon" aria-hidden="true">
@@ -83,18 +67,12 @@
 
     <div class="sk-island__pill" id="skIslandPill" role="button" tabindex="0" aria-expanded="false"
         aria-controls="skIslandPanel" aria-label="Open contact options">
-        <div class="sk-island__avatar sk-island__avatar--initials" aria-hidden="true">JS</div>
+        <div class="sk-island__avatar sk-island__avatar--initials" aria-hidden="true">
+            <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid" alt="">
+        </div>
 
         <div class="sk-island__icons">
-            <a class="sk-island__icon-btn" href="#book" aria-label="Book a free consultation" title="Book consultation">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                    <line x1="16" y1="2" x2="16" y2="6" />
-                    <line x1="8" y1="2" x2="8" y2="6" />
-                    <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-            </a>
+
             <a class="sk-island__icon-btn" href="tel:+61499167608" aria-label="Call us" title="Call">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"
                     stroke-linejoin="round">
