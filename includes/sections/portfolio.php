@@ -50,7 +50,7 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
                     <div class="drag-card-hero">
                         <div class="drag-card-media">
 
-                            <img src="<?php echo BASE_URL . htmlspecialchars($item['image'] ?? ''); ?>"
+                            <img src="<?php echo BASE_PATH . htmlspecialchars($item['image'] ?? ''); ?>"
                                 alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
                                 loading="lazy" draggable="false" />
                         </div>

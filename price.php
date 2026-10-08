@@ -54,7 +54,7 @@
 
     <?php require_once('includes/stylesheets.php'); ?>
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/price.css" />
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/Inclusions.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/inclusions.css" />
 
 </head>
 
@@ -190,7 +190,7 @@
 
     </main>
     <?php require_once('includes/customjs.php'); ?>
-    <script src="<?php echo BASE_PATH; ?>/public/js/Inclusions.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/inclusions.js" defer></script>
 </body>
 
 </html>

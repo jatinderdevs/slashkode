@@ -27,12 +27,12 @@ $workProjects[] = [
     'id'          => 'custom-cms',
     'title'       => 'Custom CMS & Admin Dashboards',
     'topTag'      => 'Custom CMS',
-    'image'       => 'public/img/mockups/cms.webp',
+    'image'       => 'public/img/cms.svg',
     'alt'         => 'Custom CMS admin dashboard Melbourne',
-    'link'        => '#',
+    'link'        => 'https://slashkode.com.au/contact',
     'cta'         => 'Case study',
     'chips'       => ['Custom CMS', 'Dashboard', 'PHP', 'Tools'],
-    'description' => 'Tailored content management systems and admin dashboards for Melbourne businesses that need more control than a standard website builder. Built for easy updates, secure access, and day-to-day use by non-technical teams.',
+    'description' => 'Tailored content management systems and admin dashboards for businesses that need more control than a standard website builder. Built for easy updates, secure access, and day-to-day use by non-technical teams.',
 ];
 
 // Works whether image paths in the JSON start with "/" or not.
@@ -62,7 +62,7 @@ function sk_work_asset(string $path): string
     <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | Slashkode" />
     <meta property="og:description"
         content="Real websites built for Melbourne businesses and RTOs — from enrolment platforms to custom dashboards." />
-    <meta property="og:url" content="https://slashkode.com.au/work.php" />
+    <meta property="og:url" content="https://slashkode.com.au/work" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 

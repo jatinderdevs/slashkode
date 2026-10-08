@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Design, SEO & Custom Applications Melbourne | slashkode</title>
+    <title>Web Design, SEO & Custom Applications Melbourne | Slashkode</title>
     <meta name="description"
         content="Clear web services for Melbourne businesses. Website design & development, on-page SEO, RTO & VET college websites, and custom web applications — built to look professional, get found, and grow." />
     <meta name="keywords"
@@ -96,7 +96,8 @@
 
                         <div class="service-media">
                             <video muted autoplay loop playsinline>
-                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm" type="video/webm">
+                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/videomockup.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
@@ -146,10 +147,11 @@
 
                         <div class="service-media">
 
+
                             <video muted autoplay loop playsinline alt="RTO and VET college website example"
                                 loading="lazy">
-                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/rtomockup.webm"
-                                    type="video/webm">
+                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/rtomockup.mp4"
+                                    type="video/mp4">
                             </video>
 
                         </div>
@@ -197,9 +199,7 @@
                         </div>
 
                         <div class="service-media">
-                            <video muted autoplay loop playsinline>
-                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm" type="video/webm">
-                            </video>
+                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/cmsapp.webp" class="img-fluid" alt="">
                         </div>
 
                         <div class="service-heading">
@@ -244,9 +244,8 @@
                         </div>
 
                         <div class="service-media">
-                            <video muted autoplay loop playsinline>
-                                <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm" type="video/webm">
-                            </video>
+                            <img src="<?php echo BASE_PATH; ?>/public/img/mockups/seo.webp" class="img-fluid" alt="">
+
                         </div>
 
                         <div class="service-heading">

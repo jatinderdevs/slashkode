@@ -438,7 +438,7 @@ h2.split-chars,
 
 /* //testimonial */
 .beinto-testi-font {
-  font-size: clamp(1.05rem, 2vw, 1.15rem);
+  font-size: clamp(1.05rem, 2vw, 2.15rem);
 }
 .testimonial-quote {
   font-family: var(--sk-font-heading);

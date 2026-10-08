@@ -56,7 +56,7 @@
 
     <?php require_once('includes/stylesheets.php'); ?>
 
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/statement.css" />
+
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/servicesSection.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/portfolio.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/faq.css" />
@@ -94,8 +94,8 @@
                             <div class="col-md-5">
                                 <div class="about-thumbnail">
                                     <video width="640" height="360" muted autoplay loop class="img-fluid">
-                                        <source src="<?php echo BASE_PATH; ?>/public/img/mockups/about.webm"
-                                            type="video/webm">
+                                        <source src="<?php echo BASE_PATH; ?>/public/img/mockups/videomockup.mp4"
+                                            type="video/mp4">
                                         Your browser does not support the HTML5 video tag.
                                     </video>
                                 </div>

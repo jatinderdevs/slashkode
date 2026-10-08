@@ -59,7 +59,7 @@
 
     <?php require_once('../includes/stylesheets.php'); ?>
 
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/services/web-design.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/web-design.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/whyusSection.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
@@ -113,7 +113,7 @@
                             <div class="row align-items-center no-gutters">
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
-                                        <img src="<?php echo BASE_PATH; ?>public/img/js.jpg" class="img-fluid"
+                                        <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
                                             alt="Jatinder Singh, Founder of Slashkode" />
                                     </div>
                                 </div>
@@ -149,9 +149,9 @@
                                 dealing with. We talk it through together, and I'll tell you honestly if a custom build
                                 is the right fit, or if something simpler would do the job.
                             </p>
-                            <a href="" class="sk-btn sk-btn-secondary"> Let's Talk <img
-                                    src="/Slashkode//public/icons/top-right.png" class="img-fluid" alt="" width="15"
-                                    height="15"><span></span></a>
+                            <a href="<?php echo BASE_PATH; ?>/contact" class="sk-btn sk-btn-secondary"> Let's Talk <img
+                                    src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""
+                                    width="15" height="15"><span></span></a>
                         </div>
                     </article>
                 </div>

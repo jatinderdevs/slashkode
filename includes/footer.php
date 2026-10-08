@@ -88,7 +88,8 @@
                         </svg>
                     </a>
                     <!-- TODO: replace # with real Facebook page URL -->
-                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                    <a href="https://www.facebook.com/slashkode.au" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook" title="Facebook">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.53-3.98 3.87-3.98 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.61V12h2.86l-.46 2.89h-2.4v6.98A10 10 0 0 0 22 12z" />

@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTO & VET College Website Design Melbourne | ASQA Compliant | Slashkode</title>
+    <title>RTO & VET College Website Design Melbourne | Built Around ASQA Requirements | Slashkode</title>
     <meta name="description"
         content="ASQA-compliant RTO and VET college websites built in Melbourne. Course catalogues, enrolment forms, student information and SEO that actually bring enquiries — not just a pretty site." />
     <meta name="keywords"
@@ -18,7 +18,8 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="RTO & VET College Website Design Melbourne | ASQA Compliant | Slashkode" />
+    <meta property="og:title"
+        content="RTO & VET College Website Design Melbourne | Built Around ASQA Requirements| Slashkode" />
     <meta property="og:description"
         content="ASQA-compliant websites for RTOs and VET colleges in Melbourne. Built for compliance, student enrolment journeys and real Google rankings." />
     <meta property="og:url" content="https://slashkode.com.au/services/rto-vet-colleges-website" />
@@ -59,7 +60,7 @@
 
     <?php require_once('../includes/stylesheets.php'); ?>
 
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/services/web-design.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/web-design.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/whyusSection.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />

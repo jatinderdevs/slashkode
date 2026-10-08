@@ -23,16 +23,14 @@
     <meta property="og:url" content="https://slashkode.com.au/" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
-    <meta property="og:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Slashkode | Web Design & Development, Melbourne" />
     <meta name="twitter:description"
         content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs." />
-    <meta name="twitter:image" content="<?php echo BASE_URL; ?>/public/img/mockups/aiitmockupsample.webp" />
+
 
     <!-- Schema.org: LocalBusiness -->
     <script type="application/ld+json">
@@ -40,7 +38,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Slashkode",
-        "image": "<?php echo BASE_URL; ?>/public/img/logo.png",
+        "image": "<?php echo BASE_PATH; ?>/public/img/logo.png",
         "url": "https://slashkode.com.au/",
         "telephone": "+61499167608",
         "email": "info@slashkode.com.au",
@@ -319,17 +317,15 @@
                     <!-- Testimonial -->
                     <article class="bento-card card-testimonial" data-animate>
                         <p class="testimonial-quote beinto-testi-font">
-                            Working with them completely changed how we present our brand.
-                            Clear thinking, beautiful execution, and genuine care for
-                            results.
+                            A good website isn't decoration. It's a decision your customers make in seconds.
                         </p>
-                        <div class="testimonial-author">
+                        <!-- <div class="testimonial-author">
                             <div class="author-avatar">EF</div>
                             <div>
                                 <div class="author-name">Emily Foster</div>
                                 <div class="author-role">Founder, Sarter</div>
                             </div>
-                        </div>
+                        </div> -->
                     </article>
 
                     <!-- Available -->

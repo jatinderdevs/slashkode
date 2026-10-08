@@ -7,6 +7,10 @@
 
 RewriteRule ^(email|includes|data)(/|$) - [F,L]
 
+# 3. Homepage: /index and /index.php -> /
+RewriteCond %{THE_REQUEST} \s/+index(\.php)?[\s?] [NC]
+RewriteRule ^ / [R=301,L]
+
 # Serve .php files without the extension in the URL
 RewriteEngine On
 

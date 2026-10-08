@@ -38,7 +38,7 @@
     </script>
 
     <?php require_once('includes/stylesheets.php'); ?>
-    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>public/css/pages/privacyandterms.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/privacyandterms.css" />
 </head>
 
 <body>
