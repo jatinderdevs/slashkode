@@ -48,24 +48,26 @@ function initHeroHighlight() {
     ease: "bounce.out",
   });
 
-
   const accentCount = 1;
 
   const candidates = split.words.filter((w) => {
-    const t = w.textContent.trim().toLowerCase().replace(/[.,!?']/g, "");
-    return t.length > 2;
+    const t = w.textContent
+      .trim()
+      .toLowerCase()
+      .replace(/[.,!?']/g, "");
+    return t.length >= 4;
   });
   // Shuffle the words and take the first N
   const randomWords = gsap.utils.shuffle(candidates).slice(0, accentCount);
 
   // Apply the brand colour
   randomWords.forEach((word) => {
-    word.classList.add("is-accent");   // or just set style
+    word.classList.add("is-accent"); // or just set style
     // Optional soft pop so it feels intentional
     gsap.fromTo(
       word,
       { scale: 0.9 },
-      { scale: 1, duration: 0.4, ease: "back.out(1.7)", delay: 0.3 }
+      { scale: 1, duration: 0.4, ease: "back.out(1.7)", delay: 0.3 },
     );
   });
 }

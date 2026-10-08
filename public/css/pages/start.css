@@ -121,3 +121,21 @@
     max-width: 100%;
   }
 }
+.wd-lead-form .wd-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.wd-lead-form .wd-consent input {
+  width: auto;
+  margin-top: 0.3rem;
+  accent-color: var(--sk-color-terracotta);
+}
+.wd-lead-form .wd-consent label {
+  margin: 0;
+  font-size: var(--sk-text-xs);
+}
+.wd-lead-form .wd-consent a {
+  text-decoration: underline;
+  color: var(--sk-color-terracotta);
+}

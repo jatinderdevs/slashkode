@@ -157,14 +157,18 @@
                 </div>
             </section>
 
-            <?php $deliverablesPage = 'custom-apps';
-                require_once('../includes/sections/deliverables.php'); ?>
+
         </div>
+        <br>
+        <?php require_once('../includes/sections/process.php'); ?>
+        <?php $deliverablesPage = 'custom-apps';
+                require_once('../includes/sections/deliverables.php'); ?>
+
         <?php $ctaPage = 'custom-apps';
         require_once('../includes/sections/cta.php'); ?>
 
         <!-- Testimonial -->
-        <section class="sk-container text-center">
+        <!-- <section class="sk-container text-center">
             <span class="sk-statement-eyebrow">/what clients say</span>
             <h2 class="testimonial-quote">
                 We finally have a system that matches how we actually work. Clear, fast, and built
@@ -173,14 +177,13 @@
             <div class="testimonial-author justify-content-center">
                 <div class="author-avatar">CL</div>
                 <div>
-                    <!-- TODO: replace with a real client name/business once available -->
+
                     <div class="author-name">Client Lead</div>
                     <div class="author-role">Melbourne Business</div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <?php require_once('../includes/sections/process.php'); ?>
 
 
         <?php $faqPage = 'custom-apps-service';

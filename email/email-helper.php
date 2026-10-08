@@ -2,6 +2,8 @@
 
 define('SK_ADMIN_EMAIL', 'info@slashkode.com.au');
 define('SK_FROM', 'Slashkode <info@mail.slashkode.com.au>');
+define('SK_TERMS_VERSION', '2026-10-04'); // change whenever Terms/Privacy change
+date_default_timezone_set('Australia/Melbourne');
 
 /**
  * Send one email through the Resend API. Returns true/false.
@@ -62,7 +64,11 @@ function sk_email_wrapper($contentHtml)
 </head>
 <body>
   <div class='container'>
-    <div class='header'><h1>slash<span>kode</span></h1></div>
+   <div class='header'>
+  <img src='https://slashkode.com.au/public/img/logo-white.png'
+       alt='slashkode' width='160'
+       style='display:block;margin:0 auto;border:0;height:auto;max-width:160px;font-size:22px;font-weight:700;color:#ffffff;'>
+</div>
     <div class='content'>{$contentHtml}</div>
     <div class='footer'>
       <strong>Slashkode</strong> · Web Design &amp; Development Melbourne<br>
@@ -87,18 +93,18 @@ function sk_form_copy($type, $data)
             'subject' => 'Slashkode $99 Website Package – Next Steps',
             'intro'   => "We've received your details" . ($biz ? " for <strong>{$biz}</strong>" : '') . " and are ready to get your project started.",
             'next'    => '<ol style="margin:10px 0 0;padding-left:20px;">
-                <li>Jazz will review the details you sent.</li>
+                <li>We will review the details you sent.</li>
                 <li>You\'ll get a follow-up email or WhatsApp with your <strong>$99 kick-off payment link</strong>.</li>
                 <li>Once that\'s paid, we start building your website.</li>
               </ol>',
-            'footer'  => 'No lock-in · No cancellation fees · Built and managed directly by Jazz in Melbourne.',
+            'footer'  => 'No lock-in · No cancellation fees · Built and managed in Melbourne.',
         ],
         'quote' => [
             'label'   => 'Custom Quote Request',
             'admin'   => 'New Quote Request',
             'subject' => "We've received your quote request",
             'intro'   => "We've received your quote request" . ($biz ? " for <strong>{$biz}</strong>" : '') . '.',
-            'next'    => "Jazz will review your requirements and come back within 24 hours with a detailed scope and estimate, or a quick call request if we need to clarify anything.",
+            'next'    => "We will review your requirements and come back within 24 hours with a detailed scope and estimate, or a quick call request if we need to clarify anything.",
             'footer'  => 'No pressure, no lock-in.',
         ],
         'contact' => [
@@ -125,10 +131,12 @@ function sk_client_email($type, $data)
     $body  = "<p>Hi {$name},</p>";
     $body .= "<p>Thanks for contacting <strong>Slashkode</strong>! {$c['intro']}</p>";
     $body .= "<div class='box'><strong>What happens next:</strong><br>{$c['next']}</div>";
+    $body .= "<p style='font-size:13px;color:#6B6B67;'>You accepted our Terms of Use and Privacy Policy when you submitted this form ("
+       . htmlspecialchars($data['terms_accepted']) . ").</p>";
     if ($c['footer']) {
         $body .= "<p>{$c['footer']}</p>";
     }
-    $body .= "<p>Cheers,<br><strong>Jazz (Jatinder)</strong><br>Founder &amp; Lead Developer, Slashkode</p>";
+    $body .= "<p>Cheers,<br><strong>Jatinder</strong><br>Founder &amp; Developer, Slashkode</p>";
 
     return sk_email_wrapper($body);
 }
@@ -183,6 +191,11 @@ function sk_handle_form($type)
     if (empty($data['name']) || !filter_var($data['email'] ?? '', FILTER_VALIDATE_EMAIL)) {
         return 'Please check your name and email address.';
     }
+    if (empty($_POST['accept_terms'])) {
+    return 'Please tick the box to accept the Terms of Use and Privacy Policy.';
+}
+$data['terms_accepted'] = 'Yes - Terms of Use & Privacy Policy (version '
+    . SK_TERMS_VERSION . ') on ' . date('j M Y, g:i a T');
 
     $c   = sk_form_copy($type, $data);
     $who = preg_replace('/[\r\n]+/', ' ', $data['business_name'] ?? $data['name']);

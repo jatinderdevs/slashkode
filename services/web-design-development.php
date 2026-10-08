@@ -182,7 +182,7 @@
 
             <?php require_once('../includes/sections/inclusions.php'); ?>
 
-            <section class="sk-container text-center">
+            <!-- <section class="sk-container text-center">
                 <span class="sk-statement-eyebrow">/what customer says</span>
                 <h2 class="testimonial-quote">Working with them completely changed how we present our brand. Clear
                     thinking,
@@ -190,12 +190,12 @@
                 <div class="testimonial-author justify-content-center">
                     <div class="author-avatar">EF</div>
                     <div>
-                        <!-- TODO: this exact testimonial also appears on index.php — replace with a distinct real quote -->
+                        
                         <div class="author-name">Emily Foster</div>
                         <div class="author-role">Founder, Sarter</div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
         <section class="site-value" aria-labelledby="site-value-title">
             <div class="site-value__inner">

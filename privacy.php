@@ -178,8 +178,8 @@
                         <section class="legal-section">
                             <h2>8. How we protect it</h2>
                             <p>
-                                We use trusted providers and keep access limited to the person doing the work. There’s
-                                no outsourcing, so no staff or contractors see your information. No system is
+                                We use trusted providers and keep access limited to the person doing the work. No system
+                                is
                                 100% secure. If a breach could seriously affect you, we’ll tell you as soon as we can
                                 and do what the law requires.
                             </p>
@@ -205,9 +205,7 @@
                             <p>
                                 If you’re unhappy with how we’ve handled your information, please tell us first at
                                 <a href="mailto:info@slashkode.com.au">info@slashkode.com.au</a> and we’ll try to fix
-                                it. If you’re still not satisfied, you can contact the Office of the Australian
-                                Information Commissioner at
-                                <a href="https://www.oaic.gov.au" target="_blank" rel="noopener">oaic.gov.au</a>.
+                                it.
                             </p>
                         </section>
 

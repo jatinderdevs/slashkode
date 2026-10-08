@@ -75,6 +75,15 @@ $fc = $formPresets[$formMode] ?? $formPresets['standard'];
             placeholder="<?php echo htmlspecialchars($fc['extra_placeholder']); ?>" required></textarea>
     </div>
     <?php endif; ?>
+    <div class="wd-consent">
+        <input type="checkbox" id="start-consent" name="accept_terms" value="1" required />
+        <label for="start-consent">
+            I've read and accept the
+            <a href="<?php echo BASE_PATH; ?>/terms" target="_blank" rel="noopener">Terms of Use</a>
+            and
+            <a href="<?php echo BASE_PATH; ?>/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
+        </label>
+    </div>
 
     <button type="submit" class="p-3 sk-btn sk-btn-primary">
         <?php echo htmlspecialchars($fc['submit_label']); ?>

@@ -161,7 +161,7 @@
             require_once('../includes/sections/deliverables.php');  ?>
 
             <!-- Testimonial -->
-            <section class="sk-container text-center">
+            <!-- <section class="sk-container text-center">
                 <span class="sk-statement-eyebrow">/what RTO clients say</span>
                 <h2 class="testimonial-quote">
                     Finally a developer who understands ASQA requirements and student enrolment journeys.
@@ -170,12 +170,12 @@
                 <div class="testimonial-author justify-content-center">
                     <div class="author-avatar">RTO</div>
                     <div>
-                        <!-- TODO: replace with a real client name/RTO once available -->
+                        
                         <div class="author-name">RTO Director</div>
                         <div class="author-role">Melbourne Registered Training Organisation</div>
                     </div>
                 </div>
-            </section>
+            </section> -->
         </div>
 
         <?php require_once('../includes/sections/process.php'); ?>
