@@ -73,7 +73,6 @@
   color: var(--sk-color-terracotta);
 }
 .myself {
-  filter: grayscale(1);
   width: 100%;
   max-width: 420px;
   aspect-ratio: 4 / 5;

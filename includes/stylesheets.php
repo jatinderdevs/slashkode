@@ -1,3 +1,16 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MF4Q9KZ8NJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+
+function gtag() {
+    dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-MF4Q9KZ8NJ');
+</script>
+
 <?php require_once __DIR__ . '/../config.php'; ?>
 
 <meta property="og:image" content="https://slashkode.com.au/public/img/thumbnail.jpg" />
