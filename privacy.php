@@ -33,7 +33,7 @@
             "name": "Slashkode",
             "url": "https://slashkode.com.au"
         },
-        "dateModified": "2026-10-04"
+        "dateModified": "2026-10-10"
     }
     </script>
 
@@ -54,7 +54,7 @@
                             What personal information we collect, why we collect it, and what we do with it.
 
                         </p>
-                        <p class="legal-updated">Last updated 4 October 2026</p>
+                        <p class="legal-updated">Last updated 10 October 2026</p>
                     </div>
                 </div>
             </section>
@@ -69,6 +69,7 @@
                                 <li>We only collect what we need to reply to you and to do your project.</li>
                                 <li>We never sell or rent your information.</li>
                                 <li>Card payments are handled by Stripe. We never store your card details.</li>
+                                <li>We use Google Analytics to see which pages are helpful.</li>
                                 <li>We don’t send marketing emails unless you ask us to.</li>
                                 <li>You can ask to see, fix or delete your information any time at
                                     <a href="mailto:info@slashkode.com.au">info@slashkode.com.au</a>.
@@ -100,13 +101,16 @@
                                 <li>the content for your website, such as text, images and logos</li>
                                 <li>your domain details, and the access we need to connect your domain to your
                                     website</li>
+                                <li>a record that you accepted our Terms (the date, time and version)</li>
                                 <li>a record of what you’ve paid and when. Card payments are handled by Stripe, so
                                     your card details go straight to Stripe and are never stored on our website or
                                     in our systems. We can see limited details such as the card type and last four
                                     digits.</li>
                             </ul>
                             <p><strong>When you visit our website:</strong> basic technical information such as your
-                                IP address, browser type and the pages you view.</p>
+                                IP address, browser type and the pages you view. Google Analytics also shows us things
+                                like how long people stay, what device they use, roughly where they are (for example,
+                                the city) and how they found us, such as a Google search or a link.</p>
                         </section>
 
                         <section class="legal-section">
@@ -115,6 +119,9 @@
                                 <li>To reply to your enquiry and prepare a quote</li>
                                 <li>To build, host and look after your website</li>
                                 <li>To take payments, send invoices and keep our financial records</li>
+                                <li>To send emails about your enquiry, payments and project</li>
+                                <li>To understand how people use our website, so we can improve it and be found in
+                                    search</li>
                                 <li>To keep our website secure and working properly</li>
                                 <li>To meet our legal and tax obligations</li>
                             </ul>
@@ -124,11 +131,22 @@
                         <section class="legal-section">
                             <h2>4. Who we share it with</h2>
                             <p>
-                                We only share information with the services we need to run the business: email
-                                (Google Workspace), our web hosting and domain providers, messaging (WhatsApp)
-                                and payments (Stripe). They only receive what they need to do their job. Some of
-                                them store data outside Australia, for example on Google, WhatsApp or Stripe
-                                servers. Stripe’s own privacy policy is at
+                                We only share information with the services we need to run the business:
+                            </p>
+                            <ul>
+                                <li><strong>Google Workspace</strong> for our email</li>
+                                <li><strong>Resend</strong> to send emails from our website and from client websites,
+                                    such as enquiry notifications, confirmations and receipts</li>
+                                <li><strong>Stripe</strong> for payments</li>
+                                <li><strong>Google Analytics and Google Search Console</strong> to see how our website
+                                    is used and how it appears in Google searches</li>
+                                <li>our <strong>web hosting and domain providers</strong></li>
+                                <li><strong>WhatsApp</strong> if you message us there</li>
+                            </ul>
+                            <p>
+                                They only receive what they need to do their job. Some of them store data outside
+                                Australia, for example on Google, Resend, WhatsApp or Stripe servers. Stripe’s own
+                                privacy policy is at
                                 <a href="https://stripe.com/privacy" target="_blank"
                                     rel="noopener">stripe.com/privacy</a>.
                             </p>
@@ -150,11 +168,22 @@
                         </section>
 
                         <section class="legal-section">
-                            <h2>6. Cookies</h2>
+                            <h2>6. Cookies and analytics</h2>
                             <p>
-                                We don’t use advertising cookies and we don’t track you across other websites. If we
-                                add analytics in future, we’ll use it to see which pages are helpful, not to identify
-                                you, and we’ll update this page first.
+                                We use Google Analytics, which sets cookies in your browser to count visits and see
+                                which pages are helpful. We use that information to improve our website, not to
+                                identify you.
+                            </p>
+                            <p>
+                                We also use Google Search Console. It shows us how our pages appear in Google
+                                searches and doesn’t track you personally.
+                            </p>
+                            <p>
+                                You can turn cookies off or delete them in your browser settings. You can also stop
+                                Google Analytics with Google’s opt-out add-on at
+                                <a href="https://tools.google.com/dlpage/gaoptout" target="_blank"
+                                    rel="noopener">tools.google.com/dlpage/gaoptout</a>. The website will still
+                                work.
                             </p>
                         </section>
 
@@ -165,6 +194,10 @@
                                     delete them.</li>
                                 <li><strong>Client records:</strong> for as long as you’re a client. After you
                                     cancel, we keep invoices and payment records for 5 years, as tax law requires.</li>
+                                <li><strong>Records of accepting our Terms:</strong> for 7 years after you stop being
+                                    a client, in case we need to show what was agreed.</li>
+                                <li><strong>Analytics data:</strong> up to 14 months, then Google deletes it
+                                    automatically.</li>
                                 <li><strong>Your website:</strong> if you cancel, your website is turned off. The
                                     website we built, including its code and design, stays with Slashkode (see our
                                     <a href="<?php echo BASE_PATH; ?>/terms">Terms</a>). The materials you gave us,

@@ -114,7 +114,7 @@
             </div>
             <div class="footer-bottom-links">
                 <a href="<?php echo BASE_PATH; ?>/privacy">Privacy Policy</a>
-                <a href="<?php echo BASE_PATH; ?>/terms">Terms of Use</a>
+                <a href="<?php echo BASE_PATH; ?>/terms">Terms of Service</a>
             </div>
         </div>
     </div>

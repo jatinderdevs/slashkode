@@ -79,7 +79,7 @@ $fc = $formPresets[$formMode] ?? $formPresets['standard'];
         <input type="checkbox" id="start-consent" name="accept_terms" value="1" required />
         <label for="start-consent">
             I've read and accept the
-            <a href="<?php echo BASE_PATH; ?>/terms" target="_blank" rel="noopener">Terms of Use</a>
+            <a href="<?php echo BASE_PATH; ?>/terms" target="_blank" rel="noopener">Terms of Service</a>
             and
             <a href="<?php echo BASE_PATH; ?>/privacy" target="_blank" rel="noopener">Privacy Policy</a>.
         </label>

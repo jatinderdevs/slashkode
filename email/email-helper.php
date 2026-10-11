@@ -2,7 +2,7 @@
 
 define('SK_ADMIN_EMAIL', 'info@slashkode.com.au');
 define('SK_FROM', 'Slashkode <info@mail.slashkode.com.au>');
-define('SK_TERMS_VERSION', '2026-10-04'); // change whenever Terms/Privacy change
+define('SK_TERMS_VERSION', '2026-10-10'); // change whenever Terms/Privacy change
 date_default_timezone_set('Australia/Melbourne');
 
 /**
@@ -131,7 +131,7 @@ function sk_client_email($type, $data)
     $body  = "<p>Hi {$name},</p>";
     $body .= "<p>Thanks for contacting <strong>Slashkode</strong>! {$c['intro']}</p>";
     $body .= "<div class='box'><strong>What happens next:</strong><br>{$c['next']}</div>";
-    $body .= "<p style='font-size:13px;color:#6B6B67;'>You accepted our Terms of Use and Privacy Policy when you submitted this form ("
+    $body .= "<p style='font-size:13px;color:#6B6B67;'>You accepted our Terms of Service and Privacy Policy when you submitted this form ("
        . htmlspecialchars($data['terms_accepted']) . ").</p>";
     if ($c['footer']) {
         $body .= "<p>{$c['footer']}</p>";
@@ -192,9 +192,9 @@ function sk_handle_form($type)
         return 'Please check your name and email address.';
     }
     if (empty($_POST['accept_terms'])) {
-    return 'Please tick the box to accept the Terms of Use and Privacy Policy.';
+    return 'Please tick the box to accept the Terms of Service and Privacy Policy.';
 }
-$data['terms_accepted'] = 'Yes - Terms of Use & Privacy Policy (version '
+$data['terms_accepted'] = 'Yes - Terms of Service & Privacy Policy (version '
     . SK_TERMS_VERSION . ') on ' . date('j M Y, g:i a T');
 
     $c   = sk_form_copy($type, $data);

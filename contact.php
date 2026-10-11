@@ -110,7 +110,7 @@ $formError = sk_handle_form('contact');
                                         <label for="wd-consent">
                                             I've read and accept the
                                             <a href="<?php echo BASE_PATH; ?>/terms" target="_blank"
-                                                rel="noopener">Terms of Use</a>
+                                                rel="noopener">Terms of Service</a>
                                             and
                                             <a href="<?php echo BASE_PATH; ?>/privacy" target="_blank"
                                                 rel="noopener">Privacy Policy</a>.
