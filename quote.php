@@ -69,7 +69,7 @@ $formError = sk_handle_form('quote');
             <section class="wd-hero start-hero">
                 <div class="sk-container">
                     <div class="text-container">
-                        <a href="<?php echo BASE_PATH; ?>/index.php" class="breadcrumb-btn"> / Home</a>
+                        <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / Home</a>
 
                         <h1 class="heroheading">Let's scope out your project</h1>
                         <p class="start-hero-lead">
@@ -101,7 +101,7 @@ $formError = sk_handle_form('quote');
 
                     <p class="start-switch-link">
                         Think the $99 standard package covers it instead?
-                        <a href="<?php echo BASE_PATH; ?>/start.php">Start here &rarr;</a>
+                        <a href="<?php echo BASE_PATH; ?>/start">Start here &rarr;</a>
                     </p>
                 </div>
             </section>

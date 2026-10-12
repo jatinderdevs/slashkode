@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design, SEO & Custom Applications Melbourne | Slashkode</title>
     <meta name="description"
-        content="Clear web services for Melbourne businesses. Website design & development, on-page SEO, RTO & VET college websites, and custom web applications — built to look professional, get found, and grow." />
+        content="Website design, on-page SEO, RTO and VET college websites and custom web applications for Melbourne businesses." />
     <meta name="keywords"
         content="web design and digital services Melbourne, website services Melbourne businesses, SEO and web development Melbourne, RTO website design, custom web applications Melbourne" />
     <meta name="robots" content="index, follow" />
@@ -16,7 +16,7 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Web Design, SEO & Custom Applications Melbourne | slashkode" />
+    <meta property="og:title" content="Web Design, SEO & Custom Applications Melbourne | Slashkode" />
     <meta property="og:description"
         content="Website design, SEO, RTO websites and custom web applications for Melbourne businesses. Clear services, local focus, results that matter." />
     <meta property="og:url" content="https://slashkode.com.au/services" />
@@ -25,7 +25,7 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Services | slashkode Melbourne" />
+    <meta name="twitter:title" content="Services | Slashkode Melbourne" />
     <meta name="twitter:description"
         content="Website design, SEO, RTO & VET college sites, and custom web applications for Melbourne businesses." />
 
@@ -77,7 +77,7 @@
 
             <section class="sk-container pt-4 pb-0  ">
                 <div class="heroService">
-                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
+                    <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Our Services</h1>
                     <p>Website design, development, SEO and custom applications - built to help local businesses look
                         professional, get found, and grow.</p>

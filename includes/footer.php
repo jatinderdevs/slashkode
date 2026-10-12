@@ -48,6 +48,11 @@
                     <li><a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO &amp; VET College
                             Websites</a></li>
                 </ul>
+                <a href="<?php echo BASE_PATH; ?>/quote" class="my-2 sk-btn sk-btn-secondary">
+                    Request a quote <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
+                        alt="" width="15" height="15" />
+                    <span></span>
+                </a>
             </div>
 
             <div class="footer-cta-col footer-anim-item">
@@ -58,6 +63,7 @@
                     Sole trader · Melbourne, VIC<br />
                     Australian-owned &amp; operated
                 </p>
+
                 <a href="<?php echo BASE_PATH; ?>/start" class="mb-3 sk-btn sk-btn-primary">
                     Start a project <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid"
                         alt="" width="15" height="15" />

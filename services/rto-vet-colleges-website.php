@@ -7,9 +7,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTO & VET College Website Design Melbourne | Built Around ASQA Requirements | Slashkode</title>
+    <title>RTO & VET College Website Design Melbourne | Slashkode</title>
     <meta name="description"
-        content="ASQA-compliant RTO and VET college websites built in Melbourne. Course catalogues, enrolment forms, student information and SEO that actually bring enquiries — not just a pretty site." />
+        content="Websites for RTOs and VET colleges built around ASQA requirements: course pages, enrolment paths and SEO. Melbourne-based, quoted per project." />
     <meta name="keywords"
         content="RTO website design Melbourne, VET college website Melbourne, ASQA compliant website, CRICOS website design, Registered Training Organisation website developer, RTO enrolment website" />
     <meta name="robots" content="index, follow" />
@@ -83,7 +83,7 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
                                 <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
 

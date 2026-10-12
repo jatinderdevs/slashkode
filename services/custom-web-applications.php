@@ -7,9 +7,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Web Applications Melbourne | Tailored Business Software | Slashkode</title>
+    <title>Custom Web Application Development Melbourne | Slashkode</title>
     <meta name="description"
-        content="Custom web applications and tailored CMS for Melbourne businesses. Admin dashboards, internal portals, workflow tools and secure systems built to fit how you actually work — not forced into a template." />
+        content="Custom web applications, CMS and admin dashboards for Melbourne businesses, built around your workflow. Quoted per project." />
     <meta name="keywords"
         content="custom web application development Melbourne, custom CMS Melbourne, admin dashboard development Melbourne, internal business portal development" />
     <meta name="robots" content="index, follow" />
@@ -83,7 +83,7 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
                                 <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
 

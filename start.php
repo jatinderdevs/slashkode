@@ -9,7 +9,7 @@ $formError = sk_handle_form('start');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Start Your Website | $99 to Start, $39/Fortnightly | Slashkode Melbourne</title>
+    <title>Start Your Website | $99 to Start | Slashkode Melbourne</title>
     <meta name="description"
         content="Start your website with Slashkode for $99, then $39 fortnightly — no lock-in, no cancellation fees. Tell us about your business and we'll get you online." />
     <meta name="keywords"
@@ -70,7 +70,7 @@ $formError = sk_handle_form('start');
             <section class="wd-hero start-hero">
                 <div class="sk-container">
                     <div class="text-container">
-                        <a href="<?php echo BASE_PATH; ?>/index.php" class="breadcrumb-btn"> / Home</a>
+                        <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / Home</a>
 
                         <h1 class="heroheading">Let's get your website started</h1>
                         <p class="start-hero-lead">

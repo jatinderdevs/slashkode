@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Slashkode | Melbourne Web Design Studio Founded by Jatinder Singh</title>
+    <title>About Slashkode | Melbourne Web Design by Jatinder Singh</title>
     <meta name="description"
         content="About Slashkode — a Melbourne web design studio founded by Jatinder Singh, helping local businesses, RTOs and VET colleges get online properly." />
     <meta name="keywords"
@@ -78,7 +78,7 @@
                         <div class="row">
                             <div class="col-md-7">
                                 <div class="about-text">
-                                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn text-left p-0">
+                                    <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn text-left p-0">
                                         /Home</a>
                                     <h1 class="heroheading">About Slashkode</h1>
                                     <p>

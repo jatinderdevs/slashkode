@@ -38,7 +38,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Slashkode",
-        "image": "<?php echo BASE_PATH; ?>/public/img/logo.png",
+        "image": "https://slashkode.com.au/public/img/slashkode.png",
         "url": "https://slashkode.com.au/",
         "telephone": "+61499167608",
         "email": "info@slashkode.com.au",
@@ -90,10 +90,10 @@
     </script>
     <?php require_once('includes/stylesheets.php'); ?>
 
-    <link rel="stylesheet" href="public/css/servicesSection.css" />
-    <link rel="stylesheet" href="public/css/bientoGrid.css" />
-    <link rel="stylesheet" href="public/css/cta.css" />
-    <link rel="stylesheet" href="public/css/marquee.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/servicesSection.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
     <!-- Preconnect: speeds up the external script/font hosts used on this page -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
     <link rel="preconnect" href="https://unpkg.com" crossorigin />
@@ -121,7 +121,7 @@
                     </p>
 
                     <div class="mag-zone">
-                        <a href="work.php" class="btn herobtnPrimary">See the work &nbsp;
+                        <a href="<?php echo BASE_PATH; ?>/work" class="btn herobtnPrimary">See the work &nbsp;
                             <dotlottie-wc
                                 src="https://lottie.host/3c7a293d-42c4-4658-a8db-6f2e4bfef31c/UY9L97Lncp.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -129,7 +129,7 @@
                     </div>
 
                     <div class="mag-zone">
-                        <a href="about" class="btn herobtnSec">About
+                        <a href="<?php echo BASE_PATH; ?>/about" class="btn herobtnSec">About
                             <dotlottie-wc
                                 src="https://lottie.host/71c80212-4aaf-402d-8583-480cda67cd87/noiOV1yXZQ.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>
@@ -212,7 +212,7 @@
                 <!-- Left: expandable list -->
                 <div class="skills-list" role="list">
                     <div class="skill-item" role="listitem">
-                        <a href="<?php echo BASE_PATH; ?>/services/web-design-development.php"
+                        <a href="<?php echo BASE_PATH; ?>/services/web-design-development"
                             class="skill-trigger hover-link" data-img="public/img/mockups/aiitmockupsample.webp">
                             <span class="skill-label">Website Design & Development
 
@@ -226,19 +226,19 @@
 
 
 
-                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website.php"
+                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website"
                             class="skill-trigger hover-link" data-img="public/img/mockups/bit.webp">
                             <span class="skill-label">RTO and VET Colleges Website</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
-                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications.php"
+                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications"
                             class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.webp">
                             <span class="skill-label">Custom web Applications</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
                         <div class="cursor-img"></div>
-                        <a href="<?php echo BASE_PATH; ?>/services/seo-services.php" class="skill-trigger hover-link"
+                        <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="skill-trigger hover-link"
                             data-img="public/img/seo.png">
                             <span class="skill-label">Search Engine Optimise (SEO)</span>
                             <span class="skill-icon" aria-hidden="true">

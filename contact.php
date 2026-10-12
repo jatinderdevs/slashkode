@@ -67,7 +67,7 @@ $formError = sk_handle_form('contact');
             <?php require_once('includes/navbar.php'); ?>
             <div class="sk-container">
                 <section class="contacthero">
-                    <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> /Home</a>
+                    <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Got a question? Just ask.</h1>
                     <p>Questions, concerns, or just not sure where to start? Send us a message and we'll reply within
                         one business day.</p>

@@ -84,7 +84,7 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo BASE_PATH; ?>/index" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
                                 <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
 
@@ -328,7 +328,7 @@
     <script src="<?php echo BASE_PATH; ?>/public/js/services/whyusSection.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/services/process.js" defer></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/marquee.js" defer></script>
-    <script src="<?php echo BASE_PATH; ?>/public/js/Inclusions.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/inclusions.js" defer></script>
 
 </body>
 
