@@ -16,7 +16,7 @@
 // Where the buttons go. When the onboarding / pay-and-start page exists,
 // point $ctaStartUrl at it and every "Start my website" button updates at once.
 $ctaBase = rtrim(defined('BASE_PATH') ? BASE_PATH : '', '/');
-$ctaStartUrl = $ctaBase . '/quote';
+$ctaStartUrl = $ctaBase . '/start';
 $ctaQuoteUrl = $ctaBase . '/quote';
 
 $ctaPresets = [
