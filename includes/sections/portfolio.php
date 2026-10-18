@@ -84,11 +84,26 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
                     <?php if (!empty($item['description'])) : ?>
                     <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
                     <?php endif; ?>
-
                     <!-- Results / review bar -->
                     <?php if (!empty($item['result'])) : ?>
+
                     <div class="drag-card-result">
-                        <p><?php echo htmlspecialchars($item['result']); ?></p>
+                        <?php 
+                            $stars = intval($item['stars']); 
+                            for ($i = 0; $i < $stars; $i++): 
+                            ?>
+                        <img src="<?php echo BASE_PATH; ?>/public/icons/star.png" width="20px" alt="">
+                        <?php endfor; ?>
+                        <p class="my-2"><?php echo htmlspecialchars($item['result']); ?></p>
+                        <div class="d-flex align-items-center ">
+
+                            <!-- Optional Avatar/Image can go here -->
+                            <div>
+                                <span class="d-block font-weight-bold text-dark text-decoration-none" href="">
+                                    <?php echo htmlspecialchars($item['reviewBy']); ?></span>
+                                <small class="text-muted"><?php echo htmlspecialchars($item['role']); ?></small>
+                            </div>
+                        </div>
                     </div>
                     <?php endif; ?>
 

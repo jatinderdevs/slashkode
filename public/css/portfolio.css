@@ -185,6 +185,9 @@
   letter-spacing: -0.01em;
   color: var(--sk-color-primary-dark);
 }
+.drag-card-result span {
+  font-size: 0.9rem;
+}
 
 /* =====================================================
    Custom drag cursor

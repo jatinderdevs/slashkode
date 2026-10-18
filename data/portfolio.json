@@ -10,7 +10,10 @@
     "chips": ["Website design", "RTO / VET", "SEO"],
     "pages": ["home", "rto-vet"],
     "description": "Full website design and development for a Melbourne RTO. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily.",
-    "result":""
+    "stars":5,
+    "result":"Thanks to Jatinder - Slashkode for building our RTO website! He made the whole process completely stress-free and delivered a modern, student-friendly site that ticks all our compliance boxes. Great communication, Great understanding of the RTO industry, Highly recommend!",
+    "reviewBy":"Khalid Hussain",
+    "role":"CEO at AIIT College"
   },
   {
     "id": "brighton-institute",
@@ -84,7 +87,7 @@
     "link": "https://www.dalavoro.com.au/index.php",
     "cta": "View live site",
     "chips": ["Product Portfolio", "Admin Dashboard", "CMS"],
-    "pages": ["home", "web-design", "custom-cms", "custom-apps"],
+    "pages": ["web-design", "custom-cms", "custom-apps"],
     "description": "Product portfolio website that showcases the range clearly, with an admin dashboard so the team can upload products and manage the site without calling a developer for every update."
   }
 ]
