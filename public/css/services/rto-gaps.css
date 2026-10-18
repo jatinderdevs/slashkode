@@ -1,0 +1,168 @@
+/* ═══════════════════════════════════════════════════
+   SLASHKODE — RTO page: "What a good RTO website needs to get right"
+   Uses root design tokens from stylesheet.css
+═══════════════════════════════════════════════════ */
+
+.rto-gaps {
+  padding-top: clamp(3rem, 7vw, 5rem);
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.rto-gaps__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+/* ── Left column ── */
+.rto-gaps__title {
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+.rto-gaps__intro {
+  color: var(--sk-color-primary-soft);
+  margin-bottom: 1.75rem;
+}
+
+.rto-gaps__cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.rto-gaps__card {
+  position: relative;
+  background: var(--sk-color-bg-card);
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-md);
+  padding: 1.4rem 1.5rem 1.4rem 1.75rem;
+  box-shadow: var(--sk-shadow-card);
+  overflow: hidden;
+  transition: var(--sk-transition-smooth);
+}
+
+.rto-gaps__card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: var(--sk-color-terracotta);
+}
+
+.rto-gaps__card:hover {
+  box-shadow: var(--sk-shadow-soft);
+  transform: translateY(-3px);
+}
+
+.rto-gaps__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--sk-color-sage-light);
+  color: var(--sk-color-sage);
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.rto-gaps__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.rto-gaps__card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.rto-gaps__card p {
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  line-height: 1.6;
+  margin: 0;
+  max-width: none;
+}
+
+/* ── Right column: checklist panel ── */
+.rto-gaps__panel {
+  position: sticky;
+  top: 2rem;
+  background: var(--sk-color-primary-dark);
+  color: var(--sk-color-bg-warm);
+  border-radius: var(--sk-radius-lg);
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.rto-gaps__panel h3 {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.rto-gaps__panel-sub {
+  font-size: var(--sk-text-sm);
+  color: rgba(248, 246, 240, 0.7);
+  margin-bottom: 1.25rem;
+  max-width: none;
+}
+
+.rto-gaps__list {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+}
+
+.rto-gaps__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  font-size: var(--sk-text-sm);
+  line-height: 1.5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rto-gaps__list li:last-child {
+  border-bottom: none;
+}
+
+.rto-gaps__list svg {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--sk-color-terracotta-hover);
+}
+
+.rto-gaps__disclaimer {
+  font-size: var(--sk-text-xs);
+  line-height: 1.6;
+  color: rgba(248, 246, 240, 0.65);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--sk-radius-sm);
+  padding: 0.9rem 1rem;
+  margin: 0;
+  max-width: none;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .rto-gaps__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rto-gaps__panel {
+    position: static;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rto-gaps__card {
+    transition: none;
+  }
+}

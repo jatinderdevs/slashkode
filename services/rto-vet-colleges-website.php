@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/process.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/rto-gaps.css" />
 
 </head>
 
@@ -126,9 +127,11 @@
                             </div>
 
                             <p class="about-bio">
-                                I have spent years working inside the VET industry in Melbourne. That means every
-                                RTO website I build already understands ASQA obligations, student decision journeys,
-                                and what actually needs to be on the site - not just what looks modern.
+                                My background is in Computer Science, but a lot of my early career was spent working in
+                                international student services at CRICOS and ESOS-registered institutions - handling the
+                                administration and compliance that RTOs and VET colleges deal with every day. So when I
+                                build a website for a training organisation, I already understand the students, the
+                                paperwork, and what actually needs to be on the page - not just what looks modern.
                             </p>
                         </div>
                         <div class="about-tags">
@@ -153,6 +156,9 @@
                     </article>
                 </div>
             </section>
+
+            <!-- What a good RTO website needs to get right: problems + website information checklist -->
+            <?php require_once('../includes/sections/rto-gaps.php'); ?>
         </div>
         <?php $ctaPage = 'rto'; require_once('../includes/sections/cta.php'); ?>
         <div class="container-fluid">
