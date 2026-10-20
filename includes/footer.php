@@ -34,6 +34,7 @@
                     <li><a href="<?php echo BASE_PATH; ?>/price">Pricing</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/about">About</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/contact">Contact</a></li>
+                    <li><a href="<?php echo BASE_PATH; ?>/blog/">Blogs</a></li>
                 </ul>
             </div>
 

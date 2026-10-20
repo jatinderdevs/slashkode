@@ -1,0 +1,11 @@
+/cache/*
+
+/config/config.ini
+/config/users/*.ini
+/backup
+/.htaccess
+.DS_Store
+
+# Safer if install files ever come back
+install.php
+online-installer.php

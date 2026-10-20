@@ -1,0 +1,636 @@
+/* ============================================
+   SK-BLOG – Content styles
+   Header & footer come from main site
+   ============================================ */
+
+.sk-blog-main {
+  padding: 4.5rem 1.5rem 6rem;
+  background: var(--sk-color-bg-warm, #f8f6f0);
+  min-height: 60vh;
+}
+
+.sk-blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- Blog listing header ---------- */
+.blog-header {
+  margin-bottom: 3.5rem;
+  text-align: left;
+}
+
+.blog-page-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  color: var(--sk-color-primary-dark, #1e293b);
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+  line-height: 1.15;
+}
+
+.blog-page-intro {
+  font-size: 1.125rem;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  max-width: 42ch;
+  line-height: 1.6;
+}
+
+/* ---------- Post cards (listing) ---------- */
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 equal columns on desktop */
+  gap: 2rem;
+}
+
+.post-card {
+  background: var(--sk-color-bg-card, #fff);
+  border: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* makes cards equal height */
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+.post-card:hover {
+  box-shadow: 0 12px 30px -10px rgba(30, 41, 59, 0.08);
+  transform: translateY(-2px);
+}
+
+.post-card-image {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.post-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.post-card:hover .post-card-image img {
+  transform: scale(1.03);
+}
+.post-card-body {
+  padding: 1.5rem 1.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* pushes the "Read article" to the bottom */
+}
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.post-meta .dot {
+  opacity: 0.5;
+}
+
+.post-category {
+  color: var(--sk-color-terracotta, #f74123);
+  font-weight: 500;
+}
+
+.post-card-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  margin-bottom: 0.75rem;
+}
+
+.post-card-title a {
+  color: var(--sk-color-primary-dark, #1e293b);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.post-card-title a:hover {
+  color: var(--sk-color-terracotta, #f74123);
+}
+.post-excerpt {
+  color: var(--sk-color-primary-soft, #2c3e50);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--sk-color-terracotta, #f74123);
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+@media (max-width: 700px) {
+  .post-list {
+    grid-template-columns: 1fr;
+  }
+}
+.read-more:hover {
+  gap: 0.65rem;
+}
+
+/* ---------- Pagination ---------- */
+.blog-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+}
+
+.pagination-btn {
+  font-weight: 600;
+  color: var(--sk-color-primary-dark, #1e293b);
+  text-decoration: none;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.pagination-btn:hover {
+  color: var(--sk-color-terracotta, #f74123);
+}
+
+.page-info {
+  font-size: 0.9rem;
+  color: var(--sk-color-primary-soft, #2c3e50);
+}
+
+/* ---------- Single post ---------- */
+.single-post {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.post-header {
+  margin-bottom: 2.5rem;
+}
+
+.post-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4.5vw, 2.75rem);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--sk-color-primary-dark, #1e293b);
+  margin-top: 0.75rem;
+}
+
+.post-featured-image {
+  margin: 0 0 2.5rem;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.post-featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-content {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--sk-color-primary-dark, #1e293b);
+}
+
+.post-content p {
+  margin-bottom: 1.5rem;
+}
+
+.post-content h2 {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 2.75rem 0 1rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+}
+
+.post-content h3 {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 2.25rem 0 0.85rem;
+}
+
+.post-content a {
+  color: var(--sk-color-terracotta, #f74123);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1.75rem 0;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0 0 1.5rem 1.4rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--sk-color-terracotta, #f74123);
+  padding-left: 1.25rem;
+  margin: 2rem 0;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  font-style: italic;
+}
+
+/* Tags */
+.post-tags {
+  margin-top: 3rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+  font-size: 0.9rem;
+}
+
+.tags-label {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+}
+
+.post-tags a {
+  color: var(--sk-color-terracotta, #f74123);
+  text-decoration: none;
+  margin-right: 0.6rem;
+}
+
+.post-tags a:hover {
+  text-decoration: underline;
+}
+
+/* Post navigation */
+.post-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+}
+
+.nav-prev,
+.nav-next {
+  text-decoration: none;
+  padding: 1rem 0;
+}
+
+.nav-next {
+  text-align: right;
+}
+
+.nav-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  margin-bottom: 0.35rem;
+}
+
+.nav-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+  transition: color 0.2s;
+}
+
+.nav-prev:hover .nav-title,
+.nav-next:hover .nav-title {
+  color: var(--sk-color-terracotta, #f74123);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .post-navigation {
+    grid-template-columns: 1fr;
+  }
+  .nav-next {
+    text-align: left;
+  }
+}
+/* ========== Author Box ========== */
+.author-box {
+  display: flex;
+  align-items: center; /* vertical centering */
+  gap: 1.25rem;
+  margin-top: 3.5rem;
+  padding: 1.5rem 1.75rem;
+  background: #ffffff;
+  border: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+  border-radius: 16px;
+}
+
+.author-avatar {
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+}
+
+.author-avatar img {
+  width: 72px;
+  /* height: 72px; */
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.author-info {
+  flex: 1;
+  min-width: 0; /* prevents overflow */
+}
+
+.author-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  margin-bottom: 0.25rem;
+}
+
+.author-name {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+  line-height: 1.3;
+}
+
+.author-name a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.author-name a:hover {
+  color: var(--sk-color-terracotta, #f74123);
+}
+
+.author-bio {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .author-box {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
+  .author-avatar {
+    margin: 0 auto;
+  }
+}
+/* ========== Author Page ========== */
+.author-page-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+}
+
+.author-page-avatar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.author-page-info {
+  flex: 1;
+}
+
+.author-page-name {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  color: var(--sk-color-primary-dark, #1e293b);
+  margin: 0.3rem 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.author-page-bio {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  max-width: 48ch;
+  margin: 0;
+}
+
+.author-posts-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+}
+
+/* ========== Category / Tag Header ========== */
+.taxonomy-header {
+  margin-bottom: 3rem;
+}
+
+.taxonomy-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--sk-color-terracotta, #f74123);
+  margin-bottom: 0.4rem;
+}
+
+.taxonomy-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 800;
+  font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+  color: var(--sk-color-primary-dark, #1e293b);
+  letter-spacing: -0.025em;
+  margin: 0 0 0.75rem;
+  line-height: 1.2;
+}
+
+.taxonomy-desc {
+  font-size: 1.05rem;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  line-height: 1.6;
+  /* max-width: 50ch; */
+}
+
+.no-posts {
+  color: var(--sk-color-primary-soft, #2c3e50);
+  font-size: 1.05rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .author-page-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .author-page-avatar {
+    margin: 0 auto;
+  }
+}
+/* ========== Previous / Next Navigation ========== */
+.post-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+}
+
+.nav-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid var(--sk-color-surface-sand, #e5e0d8);
+  border-radius: 12px;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+.nav-card:hover {
+  box-shadow: 0 8px 20px -8px rgba(30, 41, 59, 0.1);
+  transform: translateY(-2px);
+}
+
+.nav-card-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.nav-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.nav-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--sk-color-primary-soft, #2c3e50);
+  margin-bottom: 0.25rem;
+}
+
+.nav-title {
+  font-family: var(--sk-font-heading, "Plus Jakarta Sans", sans-serif);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--sk-color-primary-dark, #1e293b);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nav-card:hover .nav-title {
+  color: var(--sk-color-terracotta, #f74123);
+}
+
+.nav-next {
+  text-align: right;
+  flex-direction: row-reverse;
+}
+
+.nav-next .nav-card-content {
+  text-align: right;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .post-navigation {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-next {
+    flex-direction: row;
+  }
+
+  .nav-next .nav-card-content {
+    text-align: left;
+  }
+}
+/* Hide all direct text nodes inside breadcrumb list */
+.breadcrumb {
+  background-color: transparent !important;
+  padding-left: 0 !important ;
+}
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0; /* Hides the loose " » " text nodes */
+}
+
+/* Bring back font size for the actual list items */
+.breadcrumb ol li {
+  font-size: 1rem;
+}
+
+.breadcrumb ol li a:hover {
+  color: var(--sk-color-terracotta);
+}
+/* Add your own clean separator between items using CSS instead */
+.breadcrumb ol li + li::before {
+  content: "/";
+  padding: 0 8px;
+  color: #888;
+  font-size: 1rem;
+}
