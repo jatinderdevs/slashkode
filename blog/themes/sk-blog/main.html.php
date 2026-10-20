@@ -1,6 +1,40 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 
+<nav class="sk-breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/slashkode/"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1">
+        </li>
 
+        <li class="separator" aria-hidden="true">/</li>
+
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <?php if (!empty($category) || !empty($tag)): ?>
+            <a itemprop="item" href="<?php echo site_url(); ?>">
+                <span itemprop="name">Blog</span>
+            </a>
+            <?php else: ?>
+            <span itemprop="name" aria-current="page">Blog</span>
+            <?php endif; ?>
+            <meta itemprop="position" content="2">
+        </li>
+
+        <?php if (!empty($category)): ?>
+        <li class="separator" aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" aria-current="page"><?php echo $category->title; ?></span>
+            <meta itemprop="position" content="3">
+        </li>
+        <?php elseif (!empty($tag)): ?>
+        <li class="separator" aria-hidden="true">/</li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" aria-current="page">#<?php echo $tag->title; ?></span>
+            <meta itemprop="position" content="3">
+        </li>
+        <?php endif; ?>
+    </ol>
+</nav>
 <?php if (!empty($category)): ?>
 <div class="taxonomy-header">
     <span class="taxonomy-label">Category</span>
@@ -16,6 +50,18 @@
     <span class="taxonomy-label">Tag</span>
     <h1 class="taxonomy-title">#<?php echo $tag->title; ?></h1>
 </div>
+<?php else: ?>
+<!-- Blog main page hero (THIS is what you need) -->
+<section class="blog-hero">
+    <div class="blog-hero-inner">
+        <span class="blog-hero-eyebrow">Journal</span>
+        <h1 class="blog-hero-title">Website and SEO advice for Melbourne businesses and RTOs.</h1>
+        <p class="blog-hero-desc">
+            Practical articles on web design, development and SEO for Melbourne businesses
+            that want clarity, speed and better results from their website.
+        </p>
+    </div>
+</section>
 
 <?php endif; ?>
 

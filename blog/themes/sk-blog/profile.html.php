@@ -1,5 +1,26 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
+<nav class="sk-breadcrumb" aria-label="Breadcrumb">
+    <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="/slashkode/"><span itemprop="name">Home</span></a>
+            <meta itemprop="position" content="1">
+        </li>
 
+        <li class="separator" aria-hidden="true">/</li>
+
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="<?php echo site_url(); ?>"><span itemprop="name">Blog</span></a>
+            <meta itemprop="position" content="2">
+        </li>
+
+        <li class="separator" aria-hidden="true">/</li>
+
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name" aria-current="page"><?php echo $author->name; ?></span>
+            <meta itemprop="position" content="3">
+        </li>
+    </ol>
+</nav>
 <div class="author-page-header">
     <?php if (!empty($author->avatar)): ?>
     <div class="author-page-avatar">
@@ -47,7 +68,14 @@
             </h2>
 
             <div class="post-excerpt">
-                <?php echo get_teaser($p->body, $p->url); ?>
+                <?php 
+                // Prefer meta description if available, otherwise use teaser
+                if (!empty($p->description)) {
+                    echo $p->description;
+                } else {
+                    echo get_teaser($p->body, $p->url);
+                }
+                ?>
             </div>
 
             <a href="<?php echo $p->url; ?>" class="read-more">
