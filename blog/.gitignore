@@ -5,7 +5,7 @@
 /backup
 /.htaccess
 .DS_Store
-
+/content/*
 # Safer if install files ever come back
 install.php
 online-installer.php
