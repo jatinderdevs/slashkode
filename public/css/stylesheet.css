@@ -139,6 +139,9 @@ a {
 a:hover {
   text-decoration: none;
 }
+.text-color-main {
+  color: var(--sk-color-terracotta);
+}
 .hero {
   text-align: center;
 }

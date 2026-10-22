@@ -318,38 +318,38 @@ function setupCharReveal(selector = ".headingeffect") {
 /* --------------------------------------------------
    SECTION Service - Scramble text
 -------------------------------------------------- */
-gsap.registerPlugin(ScrambleTextPlugin);
+// gsap.registerPlugin(ScrambleTextPlugin);
 
-function scrambleText(selector) {
-  const elements = document.querySelectorAll(selector);
+// function scrambleText(selector) {
+//   const elements = document.querySelectorAll(selector);
 
-  elements.forEach((el) => {
-    // Optional: store the original text so you can scramble back to it
-    const originalText = el.textContent;
+//   elements.forEach((el) => {
+//     // Optional: store the original text so you can scramble back to it
+//     const originalText = el.textContent;
 
-    el.addEventListener("mouseenter", () => {
-      gsap.to(el, {
-        duration: 1,
-        ease: "power3.out",
-        scrambleText: {
-          text: originalText,
-          chars: "!@#$%^&*({]{[|\?></",
-          revealDelay: 0.5,
-          speed: 0.3,
-        },
-      });
-    });
+//     el.addEventListener("mouseenter", () => {
+//       gsap.to(el, {
+//         duration: 1,
+//         ease: "power3.out",
+//         scrambleText: {
+//           text: originalText,
+//           chars: "!@#$%^&*({]{[|\?></",
+//           revealDelay: 0.5,
+//           speed: 0.3,
+//         },
+//       });
+//     });
 
-    // Optional: scramble back on mouse leave
-    // el.addEventListener("mouseleave", () => {
-    //   gsap.to(el, {
-    //     duration: 0.8,
-    //     scrambleText: {
-    //       text: originalText,
-    //       characters: "XO",
-    //       speed: 0.3,
-    //     },
-    //   });
-    // });
-  });
-}
+//     // Optional: scramble back on mouse leave
+//     // el.addEventListener("mouseleave", () => {
+//     //   gsap.to(el, {
+//     //     duration: 0.8,
+//     //     scrambleText: {
+//     //       text: originalText,
+//     //       characters: "XO",
+//     //       speed: 0.3,
+//     //     },
+//     //   });
+//     // });
+//   });
+// }

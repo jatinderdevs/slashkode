@@ -12,7 +12,7 @@
         content="web design and digital services Melbourne, website services Melbourne businesses, SEO and web development Melbourne, RTO website design, custom web applications Melbourne" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/services" />
+    <link rel="canonical" href="https://slashkode.com.au/services/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />

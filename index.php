@@ -7,19 +7,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one">
-    <meta name="keywords"
-        content="web design Melbourne, website development Melbourne, SEO Melbourne, RTO website design, custom web applications Melbourne, VET college website, Melbourne web developer" />
+        content="Melbourne web designer and developer building fast, SEO-ready websites. $99 to start, then $39 fortnightly. Hosting included, no lock-in.">
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
     <meta name="theme-color" content="#0f172a" />
     <link rel="canonical" href="https://slashkode.com.au/" />
-    <title>Slashkode | Web Design & Development, Melbourne</title>
+    <title>Web Design Melbourne | Websites from $99 | Slashkode</title>
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Slashkode | Web Design & Development, Melbourne" />
+    <meta property="og:title" content="Web Design Melbourne | Websites from $99 | Slashkode" />
     <meta property="og:description"
-        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs. SEO built in from day one." />
+        content="Melbourne web designer and developer building fast, SEO-ready websites. $99 to start, then $39 fortnightly. Hosting included, no lock-in." />
     <meta property="og:url" content="https://slashkode.com.au/" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
@@ -27,9 +25,9 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Slashkode | Web Design & Development, Melbourne" />
+    <meta name="twitter:title" content="Web Design Melbourne | Websites from $99 | Slashkode" />
     <meta name="twitter:description"
-        content="Melbourne web design & development studio building fast, conversion-focused sites for businesses and RTOs." />
+        content="Melbourne web designer and developer building fast, SEO-ready websites. $99 to start, then $39 fortnightly. Hosting included, no lock-in." />
 
 
     <!-- Schema.org: LocalBusiness -->
@@ -40,6 +38,12 @@
         "name": "Slashkode",
         "image": "https://slashkode.com.au/public/img/slashkode.png",
         "url": "https://slashkode.com.au/",
+        "description": "Slashkode is a Melbourne web design and development studio. Jatinder Singh designs, builds and looks after every website personally.",
+        "sameAs": [
+            "https://www.instagram.com/jatinderdeveloper",
+            "https://www.tiktok.com/@slashkode",
+            "https://www.facebook.com/profile.php?id=61576803775165"
+        ],
         "telephone": "+61499167608",
         "email": "info@slashkode.com.au",
         "priceRange": "$$",
@@ -75,7 +79,7 @@
                 "@type": "Offer",
                 "itemOffered": {
                     "@type": "Service",
-                    "name": "RTO and VET Colleges Website"
+                    "name": "RTO Colleges Websites"
                 }
             },
             {
@@ -111,13 +115,13 @@
             <section class="hero ">
                 <div class="sk-container">
                     <h1 class="heroheading">
-                        Minimum cost, maximum results. We make it happen.
+                        Web design in Melbourne that turns visitors into enquiries
                     </h1>
                     <p>
-                        We design and build professional websites for small businesses, migration agencies,
-                        RTO and VET colleges, and service-based businesses. Sites that turn visitors into enquiries,
-                        built and looked after.
-
+                        We design and build fast, professional websites for Melbourne businesses,
+                        migration agencies, RTO colleges. Every site is made to turn visitors
+                        into enquiries, and we look after it once it's live, so it stays quick,
+                        up to date and easy to find on Google.
                     </p>
 
                     <div class="mag-zone">
@@ -207,7 +211,7 @@
             require_once('includes/sections/portfolio.php'); ?>
         </div>
 
-        <section class="skills-section" aria-label="What I am good at">
+        <section class="skills-section" aria-label="Website design and development services in Melbourne">
             <div class="skills-container">
                 <!-- Left: expandable list -->
                 <div class="skills-list" role="list">
@@ -228,19 +232,19 @@
 
                         <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website"
                             class="skill-trigger hover-link" data-img="public/img/mockups/bit.webp">
-                            <span class="skill-label">RTO and VET Colleges Website</span>
+                            <span class="skill-label">RTO College Websites</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
                         <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications"
                             class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.webp">
-                            <span class="skill-label">Custom web Applications</span>
+                            <span class="skill-label">Custom Web Applications</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
                         <div class="cursor-img"></div>
                         <a href="<?php echo BASE_PATH; ?>/services/seo-services" class="skill-trigger hover-link"
                             data-img="public/img/seo.png">
-                            <span class="skill-label">Search Engine Optimise (SEO)</span>
+                            <span class="skill-label">Search Engine Optimisation (SEO)</span>
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
                     </div>
@@ -249,11 +253,12 @@
                 <!-- Right: big title -->
                 <div class="skills-heading-wrap">
                     <span class="sk-statement-eyebrow">/Services</span>
-                    <h2 class="skills-heading headingeffect">
+                    <h2 class="skills-heading headingeffect mb-3">
                         What we do
                     </h2>
-                    <p>We build websites. From design to launch, and everything a business needs to
-                        actually get found and get enquiries.</p>
+                    <p>Website design in Melbourne shouldn’t come with jargon or surprise invoices. We design, build and
+                        launch your site, then look after the hosting, speed, forms and updates, so you can get on with
+                        running your business.</p>
                 </div>
             </div>
         </section>
@@ -261,7 +266,7 @@
             <section class="sk-container">
                 <div class="about-grid-header">
                     <span class="sk-statement-eyebrow">/About</span>
-                    <h2 class="about-grid-title headingeffect">A bit about me &amp; the work</h2>
+                    <h2 class="about-grid-title headingeffect">Your Melbourne web designer, start to finish</h2>
                 </div>
 
                 <div class="bento-grid">
@@ -278,16 +283,15 @@
                                 <div class="col-sm-8">
                                     <div>
                                         <h3 class="about-name">JATINDER SINGH</h3>
-                                        <p class="about-role">Web Designer &amp; Developer</p>
+                                        <p class="about-role">Melbourne Web Designer &amp; Developer</p>
                                     </div>
                                 </div>
                             </div>
 
                             <p class="about-bio">
-                                I’m Jatinder, a Melbourne-based web designer and developer.
-                                I work with small businesses across the city who want clean,
-                                fast websites that actually drive results - not
-                                just look good.
+                                I'm Jatinder, a Melbourne web designer and website developer.
+                                I'm the person you talk to, the person who builds your site, and the person
+                                who looks after it once it's live. No outsourcing, no hand-offs.
                                 <a href="<?php echo BASE_PATH; ?>/about">More about Slashkode →</a>
                             </p>
                         </div>
@@ -365,8 +369,11 @@
                     <br>
                     <br>
 
-                    If you're a small business that needs a website done properly and someone to actually help after
-                    it's live, that's exactly who this is built for.
+                    If you run a small business and need a website designed properly, with someone to help once it's
+                    live, that's who this is built for. You can see how it works on our
+                    <a href="<?php echo BASE_PATH; ?>/services/web-design-development">web
+                        design for small business in
+                        Melbourne</a> page.
                 </p>
             </section>
         </div>

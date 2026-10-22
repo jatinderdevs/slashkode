@@ -30,15 +30,17 @@
                         class="link-num">03</span></a>
                 <a class="menu-link" href="<?php echo BASE_PATH; ?>/about"><span>About</span><span
                         class="link-num">04</span></a>
-                <a class="menu-link" href="<?php echo BASE_PATH; ?>/start"><span>Get started</span><span
+                <a class="menu-link" href="<?php echo BASE_PATH; ?>/blog"><span>blogs</span><span
                         class="link-num">05</span></a>
+                <a class="menu-link" href="<?php echo BASE_PATH; ?>/start"><span>Get started</span><span
+                        class="link-num">06</span></a>
             </nav>
         </div>
     </div>
 
     <div class="row align-items-center" id="desktopNavbar">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
             <div class="sk_navbar">
                 <div class="logo">
                     <a href="<?php echo BASE_PATH; ?>/">
@@ -61,6 +63,9 @@
                     <li><a href="<?php echo BASE_PATH; ?>/about" class="nav-link-anim"><span
                                 class="nav-link-inner"><span class="nav-link-text nav-link-text--top">about</span><span
                                     class="nav-link-text nav-link-text--bottom">About</span></span></a></li>
+                    <li><a href="<?php echo BASE_PATH; ?>/blog" class="nav-link-anim"><span class="nav-link-inner"><span
+                                    class="nav-link-text nav-link-text--top">blog</span><span
+                                    class="nav-link-text nav-link-text--bottom">Blog</span></span></a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/start" class="nav-link-anim"><span
                                 class="nav-link-inner"><span class="nav-link-text nav-link-text--top">Get
                                     started</span><span class="nav-link-text nav-link-text--bottom">Get
@@ -68,6 +73,6 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-3 text-right"></div>
+        <div class="col-md-2 text-right"></div>
     </div>
 </header>

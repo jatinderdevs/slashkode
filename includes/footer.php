@@ -46,7 +46,7 @@
                     <li><a href="<?php echo BASE_PATH; ?>/services/seo-services">Search Engine Optimise (SEO)</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/services/custom-web-applications">Custom Web Applications</a>
                     </li>
-                    <li><a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO &amp; VET College
+                    <li><a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO College
                             Websites</a></li>
                 </ul>
                 <a href="<?php echo BASE_PATH; ?>/quote" class="my-2 sk-btn sk-btn-secondary">
@@ -78,7 +78,7 @@
                     Usually replies within 1 business day
                 </p>
                 <div class="footer-socials" aria-label="Social links">
-                    <a href="https://www.instagram.com/Slashkode.au/" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/jatinderdeveloper" target="_blank" rel="noopener noreferrer"
                         aria-label="Instagram" title="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -95,8 +95,8 @@
                         </svg>
                     </a>
                     <!-- TODO: replace # with real Facebook page URL -->
-                    <a href="https://www.facebook.com/slashkode.au" target="_blank" rel="noopener noreferrer"
-                        aria-label="Facebook" title="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61576803775165" target="_blank"
+                        rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
                         <svg viewBox="0 0 24 24" fill="currentColor">
                             <path
                                 d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.53-3.98 3.87-3.98 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.61V12h2.86l-.46 2.89h-2.4v6.98A10 10 0 0 0 22 12z" />

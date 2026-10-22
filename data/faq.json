@@ -1,57 +1,49 @@
 [
-    {
-        "page": "home",
-        "question": "What does Slashkode do?",
-        "answer": [
-            "We design, build and look after websites for businesses. That means clean, fast business websites with SEO built in from the start, specialist websites for RTOs and VET colleges, and custom web applications when a standard website isn't enough."
-            
-        ]
-    },
-    {
-        "page": "home",
-        "question": "How much does a website cost?",
-        "answer": [
-            "Our standard website package is $99 to start, then $39 fortnightly. There's no lock-in contract and no cancellation fees.",
-            "Anything bigger, like an online store, extra pages, an RTO or VET college website or a custom application, is quoted based on what you actually need. No pressure, just a clear price before we start."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "Why is your price so low? What's the catch?",
-        "answer": [
-            "There isn't one. I keep Slashkode small on purpose: no big team, no account managers and no add-on overheads to pay for. That's what lets me keep the price fair for small businesses that need real help but don't have an agency budget.",
-            "I also limit how many projects I take on at once, so each one gets proper attention."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "Who will I actually be dealing with?",
-        "answer": [
-            "Me, Jatinder. The person you first talk to is the person who designs, builds and looks after your website. No outsourcing and no junior hand-offs, so what was promised is what gets built."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "How do we get started?",
-        "answer": [
-            "Send us a short message about your business and what you need, or request a free consultation. We reply within one business day with a few questions and a clear next step.",
-            "No pressure and no obligation. Once you're happy to go ahead, you pay the $99 start fee, send through your information and we begin building."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "Can you help if I already have a website?",
-        "answer": [
-            "Yes. Many people come to us with a website that's slow, dated or not bringing in enquiries. We'll look at what's working and what isn't, then recommend the simplest path forward, whether that's an SEO audit and upgrade or a fresh rebuild."
-        ]
-    },
-    {
-        "page": "home",
-        "question": "Do you only work with Melbourne businesses?",
-        "answer": [
-            "Melbourne is where we're based and who we build for, and we understand the local market. Most of our work happens online anyway, so if you're outside Melbourne, get in touch and we'll let you know honestly whether we're a good fit."
-        ]
-    },
+   {
+    "page": "home",
+    "question": "What does it cost to get started?",
+    "answer": [
+      "It's $99 to start, then $39 fortnightly. That covers up to 10 pages, hosting, on-page SEO, a mobile-friendly design, a contact form, Google Search Console monitoring and one small update a month. There's no lock-in and no cancellation fee.",
+      "You can see the full list on the <a class='text-color-main' href='https://slashkode.com.au/price'>pricing page</a>."
+    ]
+  },
+  {
+    "page": "home",
+    "question": "Will I deal with you directly, or a team?",
+    "answer": [
+      "Directly. As your Melbourne web designer and website developer, I design, build and look after every site myself. There's no outsourcing and no junior hand-offs, so the person you first speak to is the person doing the work."
+    ]
+  },
+  {
+    "page": "home",
+    "question": "What's the difference between web design and web development?",
+    "answer": [
+      "Web design is how your site looks and flows: the layout, the words, the way a visitor gets to your contact form. Web development is what makes it work: the code, the speed, the forms and the hosting.",
+      "With Slashkode you get both from one person, so nothing gets lost between the two."
+    ]
+  },
+  {
+    "page": "home",
+    "question": "Will people actually find my website on Google?",
+    "answer": [
+      "Every site is built with SEO in mind: clean structure, fast loading, mobile-friendly pages and proper page titles. We also connect Google Search Console so you can see how the site is performing. Nobody can honestly promise a number one ranking, but we make sure the site is built properly so it has a real chance.",
+      "More on how that works on our <a class='text-color-main' href='https://slashkode.com.au/services/seo-services'>SEO page</a>."
+    ]
+  },
+  {
+    "page": "home",
+    "question": "Do you only work with Melbourne businesses?",
+    "answer": [
+      "Melbourne is our focus, and we're happy to meet in person, on Zoom or over the phone. If you're based elsewhere, get in touch and we'll let you know honestly whether we're a good fit."
+    ]
+  },
+  {
+    "page": "home",
+    "question": "Can you help if I already have a website?",
+    "answer": [
+      "Yes. Tell us what isn't working and we'll say plainly whether it needs fixes or a rebuild. Anything outside the standard package is quoted before we start, so there are no surprises. <a href=\"/contact\">Say hi</a> and we'll take a look."
+    ]
+  },
     {
         "page": "contact",
         "question": "How quickly will you reply?",
