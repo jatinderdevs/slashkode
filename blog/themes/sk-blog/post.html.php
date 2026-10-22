@@ -4,7 +4,7 @@
     <nav class="sk-breadcrumb" aria-label="Breadcrumb">
         <ol itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="<?php echo BASE_PATH; ?>/">
+                <a itemprop="item" href="/">
                     <span itemprop="name">Home</span>
                 </a>
                 <meta itemprop="position" content="1">

@@ -2,7 +2,7 @@
 
 <nav class="sk-breadcrumb" aria-label="Breadcrumb">
     <ol>
-        <li><a href="<?php echo BASE_PATH; ?>/">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li class="separator" aria-hidden="true">/</li>
         <li><a href="<?php echo site_url(); ?>">Blog</a></li>
         <li class="separator" aria-hidden="true">/</li>
