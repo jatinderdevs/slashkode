@@ -757,25 +757,6 @@
   gap: 0.75rem;
 }
 
-.sk-btn-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  color: var(--sk-color-primary-dark, #1e293b);
-  font-weight: 600;
-  font-size: 0.95rem;
-  padding: 0.7rem 1.35rem;
-  border-radius: 9999px;
-  border: 1px solid var(--sk-color-surface-sand, #e5e0d8);
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-.sk-btn-secondary:hover {
-  border-color: var(--sk-color-primary-dark, #1e293b);
-  color: var(--sk-color-primary-dark, #1e293b);
-}
 /* HTMLy search form */
 .error-search form,
 .sk-search form {

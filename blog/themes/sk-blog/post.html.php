@@ -1,10 +1,21 @@
 <?php if (!defined('HTMLY')) die('HTMLy'); ?>
 
 <article class="single-post">
+    <?php
+            $catName = trim(strip_tags($p->category));
+            $catUrl  = '';
+
+            // If HTMLy already gives a linked category, extract its URL
+            if (!empty($p->category) && preg_match('/href=["\']([^"\']+)["\']/', $p->category, $m)) {
+                $catUrl = $m[1];
+            }
+     ?>
+
     <nav class="sk-breadcrumb" aria-label="Breadcrumb">
         <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="/">
+                <a itemprop="item" href="https://slashkode.com.au/">
                     <span itemprop="name">Home</span>
                 </a>
                 <meta itemprop="position" content="1">
@@ -13,31 +24,44 @@
             <li class="separator" aria-hidden="true">/</li>
 
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <a itemprop="item" href="<?php echo site_url(); ?>">
+                <a itemprop="item" href="https://slashkode.com.au/blog/">
                     <span itemprop="name">Blog</span>
                 </a>
                 <meta itemprop="position" content="2">
             </li>
 
-            <?php if (!empty($p->category) && $p->category !== 'Uncategorized'): ?>
+            <?php if (!empty($catName) && strtolower($catName) !== 'uncategorized'): ?>
             <li class="separator" aria-hidden="true">/</li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name"><?php echo $p->category; ?></span>
+                <?php if (!empty($catUrl)): ?>
+                <a itemprop="item" href="<?php echo $catUrl; ?>">
+                    <span itemprop="name"><?php echo $catName; ?></span>
+                </a>
+                <?php else: ?>
+                <a itemprop="item" href="<?php echo site_url(); ?>">
+                    <span itemprop="name"><?php echo $catName; ?></span>
+                </a>
+                <?php endif; ?>
                 <meta itemprop="position" content="3">
             </li>
 
             <li class="separator" aria-hidden="true">/</li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page"><?php echo $p->title; ?></span>
+                <a itemprop="item" href="<?php echo $p->url; ?>">
+                    <span itemprop="name"><?php echo $p->title; ?></span>
+                </a>
                 <meta itemprop="position" content="4">
             </li>
             <?php else: ?>
             <li class="separator" aria-hidden="true">/</li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <span itemprop="name" aria-current="page"><?php echo $p->title; ?></span>
+                <a itemprop="item" href="<?php echo $p->url; ?>">
+                    <span itemprop="name"><?php echo $p->title; ?></span>
+                </a>
                 <meta itemprop="position" content="3">
             </li>
             <?php endif; ?>
+
         </ol>
     </nav>
     <header class="post-header">

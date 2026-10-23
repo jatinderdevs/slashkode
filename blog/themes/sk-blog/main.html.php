@@ -2,39 +2,46 @@
 
 <nav class="sk-breadcrumb" aria-label="Breadcrumb">
     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+            <a itemprop="item" href="https://slashkode.com.au/">
+                <span itemprop="name">Home</span>
+            </a>
             <meta itemprop="position" content="1">
         </li>
 
         <li class="separator" aria-hidden="true">/</li>
 
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <?php if (!empty($category) || !empty($tag)): ?>
-            <a itemprop="item" href="<?php echo site_url(); ?>">
+            <a itemprop="item" href="https://slashkode.com.au/blog/">
                 <span itemprop="name">Blog</span>
             </a>
-            <?php else: ?>
-            <span itemprop="name" aria-current="page">Blog</span>
-            <?php endif; ?>
             <meta itemprop="position" content="2">
         </li>
 
         <?php if (!empty($category)): ?>
         <li class="separator" aria-hidden="true">/</li>
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span itemprop="name" aria-current="page"><?php echo $category->title; ?></span>
+            <a itemprop="item"
+                href="<?php echo site_url(); ?>category/<?php echo isset($category->slug) ? $category->slug : ''; ?>">
+                <span itemprop="name"><?php echo $category->title; ?></span>
+            </a>
             <meta itemprop="position" content="3">
         </li>
+
         <?php elseif (!empty($tag)): ?>
         <li class="separator" aria-hidden="true">/</li>
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-            <span itemprop="name" aria-current="page">#<?php echo $tag->title; ?></span>
+            <a itemprop="item" href="<?php echo site_url(); ?>tag/<?php echo isset($tag->slug) ? $tag->slug : ''; ?>">
+                <span itemprop="name">#<?php echo $tag->title; ?></span>
+            </a>
             <meta itemprop="position" content="3">
         </li>
         <?php endif; ?>
+
     </ol>
 </nav>
+
 <?php if (!empty($category)): ?>
 <div class="taxonomy-header">
     <span class="taxonomy-label">Category</span>
@@ -43,15 +50,14 @@
     <div class="taxonomy-desc"><?php echo $category->body; ?></div>
     <?php endif; ?>
 </div>
-<?php endif; ?>
-<?php if (!empty($tag)): ?>
-<!-- Tag Page Header -->
+
+<?php elseif (!empty($tag)): ?>
 <div class="taxonomy-header">
     <span class="taxonomy-label">Tag</span>
     <h1 class="taxonomy-title">#<?php echo $tag->title; ?></h1>
 </div>
+
 <?php else: ?>
-<!-- Blog main page hero (THIS is what you need) -->
 <section class="blog-hero">
     <div class="blog-hero-inner">
         <span class="blog-hero-eyebrow">Journal</span>
@@ -62,7 +68,6 @@
         </p>
     </div>
 </section>
-
 <?php endif; ?>
 
 <div class="post-list">
@@ -81,7 +86,7 @@
                 </time>
                 <?php if (!empty($p->category)): ?>
                 <span class="dot">·</span>
-                <span class="post-category"><?php echo $p->category; ?></span>
+                <span class="post-category"><?php echo strip_tags($p->category); ?></span>
                 <?php endif; ?>
             </div>
 
@@ -90,14 +95,13 @@
             </h2>
 
             <div class="post-excerpt">
-                <?php 
-                // Prefer meta description if available, otherwise use teaser
-                if (!empty($p->description)) {
-                    echo $p->description;
-                } else {
-                    echo get_teaser($p->body, $p->url);
-                }
-                ?>
+                <?php
+          if (!empty($p->description)) {
+              echo $p->description;
+          } else {
+              echo get_teaser($p->body, $p->url);
+          }
+          ?>
             </div>
 
             <a href="<?php echo $p->url; ?>" class="read-more">
