@@ -16,6 +16,18 @@
     "role":"CEO at AIIT College"
   },
   {
+     "id": "arr-logistics",
+    "title": "ARR Logistics",
+    "topTag": "Business Website",
+    "image": "/public/img/mockups/arrlogistics.webp",
+    "alt": "ARR Logistics website – responsive freight and transport site with on-page SEO and quote request form",
+    "link": "https://arrlogistics.com.au/",
+    "cta": "View live site",
+    "chips": ["Responsive Design", "On-Page SEO", "Quote Form"],
+    "pages": ["home", "business-websites", "seo", "lead-capture"],
+    "description": "Clear, mobile-friendly website for a Melbourne freight and transport company. Built with on-page SEO and a simple quote form so customers can find the right service fast and send an enquiry in under a minute."
+  },
+  {
     "id": "brighton-institute",
     "title": "Brighton Institute of Technology",
     "topTag": "VET College",
@@ -78,6 +90,7 @@
     "pages": ["home", "custom-cms", "rto-vet", "custom-apps"],
     "description": "Custom system for RTO colleges to manage education agent data, run automatic calculations, and generate CSV and PDF reports. Built to cut manual work so teams can maintain agent records and commissions with less effort and fewer errors."
   },
+   
   {
     "id": "dalavoro",
     "title": "Dalavoro",

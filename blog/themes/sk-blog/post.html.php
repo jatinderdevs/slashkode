@@ -30,18 +30,20 @@
                 <meta itemprop="position" content="2">
             </li>
 
-            <?php if (!empty($catName) && strtolower($catName) !== 'uncategorized'): ?>
+            <?php
+      $catName = trim(strip_tags($p->category));
+      $catUrl = '';
+      if (!empty($p->category) && preg_match('/href=["\']([^"\']+)["\']/', $p->category, $m)) {
+          $catUrl = $m[1];
+      }
+    ?>
+
+            <?php if (!empty($catName) && strtolower($catName) !== 'uncategorized' && !empty($catUrl)): ?>
             <li class="separator" aria-hidden="true">/</li>
             <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                <?php if (!empty($catUrl)): ?>
                 <a itemprop="item" href="<?php echo $catUrl; ?>">
                     <span itemprop="name"><?php echo $catName; ?></span>
                 </a>
-                <?php else: ?>
-                <a itemprop="item" href="<?php echo site_url(); ?>">
-                    <span itemprop="name"><?php echo $catName; ?></span>
-                </a>
-                <?php endif; ?>
                 <meta itemprop="position" content="3">
             </li>
 
