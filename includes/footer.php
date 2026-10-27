@@ -30,7 +30,7 @@
                 <h4>Navigate</h4>
                 <ul>
                     <li><a href="<?php echo BASE_PATH; ?>/work">Work</a></li>
-                    <li><a href="<?php echo BASE_PATH; ?>/services">Services</a></li>
+                    <li><a href="<?php echo BASE_PATH; ?>/services/">Services</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/price">Pricing</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/about">About</a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/contact">Contact</a></li>

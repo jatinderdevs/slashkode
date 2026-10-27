@@ -19,7 +19,7 @@
     <meta property="og:title" content="Web Design, SEO & Custom Applications Melbourne | Slashkode" />
     <meta property="og:description"
         content="Website design, SEO, RTO websites and custom web applications for Melbourne businesses. Clear services, local focus, results that matter." />
-    <meta property="og:url" content="https://slashkode.com.au/services" />
+    <meta property="og:url" content="https://slashkode.com.au/services/" />
     <meta property="og:site_name" content="slashkode" />
     <meta property="og:locale" content="en_AU" />
 

@@ -238,7 +238,7 @@
                 <h2 class="headingeffect">What I build</h2>
                 <p>Websites, SEO, RTO &amp; VET college platforms, and custom web applications - see the full
                     breakdown on the services page.</p>
-                <a href="<?php echo BASE_PATH; ?>/services" class="sk-btn sk-btn-secondary">
+                <a href="<?php echo BASE_PATH; ?>/services/" class="sk-btn sk-btn-secondary">
                     See all services
                     <img src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" width="15" height="15" alt="">
                     <span></span>
