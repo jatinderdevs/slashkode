@@ -51,7 +51,7 @@
             {
                 "@type": "ListItem",
                 "position": 3,
-                "name": "RTO and VET Colleges Website",
+                "name": "RTO Colleges Website",
                 "url": "https://slashkode.com.au/services/rto-vet-colleges-website"
             },
             {
@@ -148,8 +148,7 @@
                         <div class="service-media">
 
 
-                            <video muted autoplay loop playsinline alt="RTO and VET college website example"
-                                loading="lazy">
+                            <video muted autoplay loop playsinline alt="RTO college website example" loading="lazy">
                                 <source src="<?php echo BASE_PATH; ?>/public/img/mockups/rtomockup.mp4"
                                     type="video/mp4">
                             </video>
@@ -157,7 +156,7 @@
                         </div>
 
                         <div class="service-heading">
-                            <h2>RTO and VET Colleges Website</h2>
+                            <h2>RTO Colleges <br> Website</h2>
                             <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website"
                                 class="sk-btn sk-btn-primary"> Explore <img
                                     src="<?php echo BASE_PATH; ?>/public/icons/top-right.png" class="img-fluid" alt=""

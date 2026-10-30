@@ -7,54 +7,83 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RTO & VET College Website Design Melbourne | Slashkode</title>
+    <title>RTO Website Design Australia | From $99 | Slashkode</title>
     <meta name="description"
-        content="Websites for RTOs and VET colleges built around ASQA requirements: course pages, enrolment paths and SEO. Melbourne-based, quoted per project." />
-    <meta name="keywords"
-        content="RTO website design Melbourne, VET college website Melbourne, ASQA compliant website, CRICOS website design, Registered Training Organisation website developer, RTO enrolment website" />
+        content="RTO website design built around ASQA's requirements: clear course pages, enrolment forms and fast mobile pages. Australia-wide. $99 to start." />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
     <link rel="canonical" href="https://slashkode.com.au/services/rto-vet-colleges-website" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title"
-        content="RTO & VET College Website Design Melbourne | Built Around ASQA Requirements| Slashkode" />
+    <meta property="og:title" content="RTO Website Design Australia | From $99 | Slashkode" />
     <meta property="og:description"
-        content="ASQA-compliant websites for RTOs and VET colleges in Melbourne. Built for compliance, student enrolment journeys and real Google rankings." />
+        content="RTO website design built around ASQA's requirements: clear course pages, enrolment forms and fast mobile pages. Australia-wide. $99 to start." />
     <meta property="og:url" content="https://slashkode.com.au/services/rto-vet-colleges-website" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="RTO & VET College Website Design Melbourne | Slashkode" />
+    <meta name="twitter:title" content="RTO Website Design Australia | From $99 | Slashkode" />
     <meta name="twitter:description"
-        content="ASQA-compliant RTO websites built in Melbourne. Compliance, course pages, enrolment forms and VET-focused SEO." />
+        content="Websites for registered training organisations across Australia. Clear course pages, enrolment forms and fast mobile pages, built around ASQA's requirements." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "RTO & VET College Website Design",
-        "provider": {
-            "@type": "LocalBusiness",
-            "name": "Slashkode",
-            "url": "https://slashkode.com.au",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Melbourne",
-                "addressRegion": "VIC",
-                "addressCountry": "AU"
+        "@graph": [{
+                "@type": "BreadcrumbList",
+                "itemListElement": [{
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://slashkode.com.au/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Services",
+                        "item": "https://slashkode.com.au/services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "RTO Website Design",
+                        "item": "https://slashkode.com.au/services/rto-vet-colleges-website"
+                    }
+                ]
+            },
+            {
+                "@type": "Service",
+                "name": "RTO Website Design",
+                "serviceType": "RTO website design and development",
+                "url": "https://slashkode.com.au/services/rto-vet-colleges-website",
+                "provider": {
+                    "@type": "ProfessionalService",
+                    "name": "Slashkode",
+                    "url": "https://slashkode.com.au",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Melbourne",
+                        "addressRegion": "VIC",
+                        "addressCountry": "AU"
+                    }
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "Australia"
+                },
+                "description": "Website design and development for registered training organisations (RTOs) across Australia. Course pages, enrolment forms, student information pages and on-page SEO, built around ASQA's requirements.",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "99.00",
+                    "priceCurrency": "AUD",
+                    "description": "$99 to start, then $39 fortnightly. No lock-in contract."
+                }
             }
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "Melbourne"
-        },
-        "description": "Custom ASQA-compliant website design and development for Registered Training Organisations and VET colleges in Melbourne. Includes course catalogues, enrolment systems, student information pages and VET-specific SEO.",
-        "serviceType": "Website Design & Development"
+        ]
     }
     </script>
 
@@ -84,17 +113,18 @@
                         <!-- ── Breadcrumb ── -->
                         <div>
                             <div class="flexBreadcrumb">
-                                <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
-                                <a href="<?php echo BASE_PATH; ?>/services/" class="breadcrumb-btn"> / Services</a>
+                                <a href="<?php echo BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
+                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
                             </div>
 
                             <h1 class="heroheading">
-                                RTO &amp; VET College Websites Built for ASQA Compliance &amp; Enrolments
+                                RTO website design that helps students find, trust and enrol
                             </h1>
                             <p>
-                                Websites for Registered Training Organisations and VET colleges in Australia that meet
-                                ASQA requirements, guide students clearly, and turn search traffic into real enrolment
-                                enquiries - not just another brochure site.
+                                We design and build websites for registered training organisations across Australia.
+                                Clear course pages, easy enrolment paths and the information students look for, all
+                                planned around ASQA's requirements, so more of the people who find you actually get in
+                                touch.
                             </p>
                         </div>
                     </div>
@@ -115,13 +145,13 @@
                                 <div class="col-sm-3">
                                     <div class="about-avatar">
                                         <img src="<?php echo BASE_PATH; ?>/public/img/js.jpg" class="img-fluid"
-                                            alt="Jatinder Singh, Founder of Slashkode" />
+                                            alt="Jatinder Singh, founder of Slashkode and RTO website developer" />
                                     </div>
                                 </div>
                                 <div class="col-sm-8">
                                     <div>
                                         <h3 class="about-name">JATINDER SINGH</h3>
-                                        <p class="about-role">Founder &amp; Developer, Slashkode</p>
+                                        <p class="about-role">Founder &amp; RTO Website Developer, Slashkode</p>
                                     </div>
                                 </div>
                             </div>
@@ -129,14 +159,14 @@
                             <p class="about-bio">
                                 My background is in Computer Science, but a lot of my early career was spent working in
                                 international student services at CRICOS and ESOS-registered institutions - handling the
-                                administration and compliance that RTOs and VET colleges deal with every day. So when I
+                                administration and compliance that RTOs deal with every day. So when I
                                 build a website for a training organisation, I already understand the students, the
                                 paperwork, and what actually needs to be on the page - not just what looks modern.
                             </p>
                         </div>
                         <div class="about-tags">
-                            <span class="about-tag">ASQA Compliance</span>
-                            <span class="about-tag">VET Industry</span>
+                            <span class="about-tag">ASQA Requirements</span>
+                            <span class="about-tag">RTO Sector</span>
                             <span class="about-tag">Course Pages</span>
                             <span class="about-tag">Enrolment SEO</span>
                         </div>
@@ -147,9 +177,16 @@
                         <div class="servicebeinto">
                             <h3>Built by someone who understands RTOs</h3>
                             <p class="available-desc">
-                                No generic agency templates. No junior developers guessing at compliance.
-                                Every page is planned around ASQA requirements, student information standards,
-                                and the way prospective students actually search and enrol.
+                                No generic templates. No junior developers guessing at compliance.
+                                Every page is planned around ASQA's requirements, the information students need,
+                                and the way people actually search and enrol. We work with RTOs right across Australia
+                                over video, phone and email.
+                            </p>
+                            <p class="available-desc">
+                                Need more than a website? See our
+                                <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications">custom web
+                                    applications</a>, or how we handle
+                                <a href="<?php echo BASE_PATH; ?>/services/seo-services">on-page SEO</a>.
                             </p>
 
                         </div>
@@ -157,7 +194,7 @@
                 </div>
             </section>
 
-            <!-- What a good RTO website needs to get right: problems + website information checklist -->
+            <!-- What good RTO website design needs to get right: problems + website information checklist -->
             <?php require_once('../includes/sections/rto-gaps.php'); ?>
         </div>
         <?php $ctaPage = 'rto'; require_once('../includes/sections/cta.php'); ?>
@@ -177,7 +214,7 @@
                 <div class="testimonial-author justify-content-center">
                     <div class="author-avatar">RTO</div>
                     <div>
-                        
+
                         <div class="author-name">RTO Director</div>
                         <div class="author-role">Melbourne Registered Training Organisation</div>
                     </div>

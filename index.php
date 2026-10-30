@@ -40,7 +40,7 @@
         "url": "https://slashkode.com.au/",
         "description": "Slashkode is a Melbourne web design and development studio. Jatinder Singh designs, builds and looks after every website personally.",
         "sameAs": [
-            "https://www.instagram.com/jatinderdeveloper",
+            "https://www.instagram.com/slashkode.au",
             "https://www.tiktok.com/@slashkode",
             "https://www.facebook.com/profile.php?id=61576803775165"
         ],

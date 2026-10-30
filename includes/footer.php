@@ -78,7 +78,7 @@
                     Usually replies within 1 business day
                 </p>
                 <div class="footer-socials" aria-label="Social links">
-                    <a href="https://www.instagram.com/jatinderdeveloper" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.instagram.com/slashkode.au" target="_blank" rel="noopener noreferrer"
                         aria-label="Instagram" title="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">

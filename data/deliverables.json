@@ -27,30 +27,36 @@
         "alt": "Secure logins and integrations example"
     },
     {
-        "id": "tailored-web-applications",
-        "pages": ["rto-deliver"],
-        "icon": "/public/icons/admin.gif",
-        "title": "ASQA-Compliant Site Structure",
-        "desc": "RTO code, scope of registration, fees and charges, refund policy, complaints & appeals, USI information and student rights are built into the site from day one - not added later as an afterthought.",
-        "image": "/public/img/website-tick.svg",
-        "alt": "Custom web application interface example"
-    },
-    {
-        "id": "custom-cms-dashboards",
-        "pages": ["rto-deliver"],
-        "icon": "/public/icons/link.gif",
-        "title": "Course Catalogue & Landing Pages",
-        "desc": "Individual pages for each qualification with clear entry requirements, outcomes, fees and enrolment CTAs. Structured so students and Google both understand exactly what you offer.",
-        "image": "/public/img/landing.svg",
-        "alt": "Custom CMS and admin dashboard example"
-    },
-    {
-        "id": "secure-logins-connections",
-        "pages": ["rto-deliver"],
-        "icon": "/public/icons/search.gif",
-        "title": "VET-Focused SEO Foundations",
-        "desc": "On-page SEO built around how students actually search: “Certificate III aged care Melbourne”, “RTO business courses Victoria”, funded training terms and local intent keywords that bring the right enquiries.",
-        "image": "/public/img/rto-seo.svg",
-        "alt": "Secure logins and integrations example"
-    }
+    "id": "rto-site-structure",
+    "pages": [
+      "rto-deliver"
+    ],
+    "icon": "/public/icons/admin.gif",
+    "title": "Built Around ASQA's Requirements",
+    "desc": "RTO code, scope of registration, fees and charges, refund policy, complaints and appeals, USI information and student rights each get a clear, easy-to-find place on your site from day one, planned around ASQA's requirements instead of added later as an afterthought.",
+    "image": "/public/img/website-tick.svg",
+    "alt": "RTO website structure with registration details, fees and student policies"
+  },
+  {
+    "id": "rto-course-pages-enrolment",
+    "pages": [
+      "rto-deliver"
+    ],
+    "icon": "/public/icons/link.gif",
+    "title": "Course Pages & Enrolment Paths",
+    "desc": "An individual page for each qualification, with clear entry requirements, outcomes, fees and an easy enrolment form or enquiry path. Structured so students and Google both understand exactly what you offer.",
+    "image": "/public/img/landing.svg",
+    "alt": "RTO course page and enrolment form example"
+  },
+  {
+    "id": "rto-seo-foundations",
+    "pages": [
+      "rto-deliver"
+    ],
+    "icon": "/public/icons/search.gif",
+    "title": "SEO Foundations for RTOs",
+    "desc": "On-page SEO built around how students actually search, like “Certificate III in Individual Support” plus their city, or business courses in their state. Clear page titles, headings and course details so the right people find you and get in touch.",
+    "image": "/public/img/rto-seo.svg",
+    "alt": "SEO foundations for an RTO website"
+  }
 ]

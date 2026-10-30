@@ -288,41 +288,65 @@
             "Most agencies sell SEO as a monthly line item. We build it into the website as part of design and development, or provide a one-off audit and upgrade if you already have a site, with no ongoing retainer required."
         ]
     },
-    {
+       {
         "page": "rto-vet-service",
-        "question": "Do you understand ASQA requirements for RTO websites?",
+        "question": "Do you understand ASQA's requirements for RTO websites?",
         "answer": [
-            "Yes. I have direct experience in Australian international student services at CRICOS and ESOS-registered institutions, so ASQA-required information like scope of registration, fees and charges, and complaints and appeals is built into the site structure from day one.",
+            "Yes. I worked in international student services at CRICOS and ESOS-registered institutions, so I know the information ASQA expects students to be able to find, like your scope of registration, fees and charges, and complaints and appeals. As an RTO website developer, I plan each of those into the site structure from day one.",
             "We build around ASQA's requirements, but your RTO remains responsible for the accuracy of the information published."
         ]
     },
     {
         "page": "rto-vet-service",
-        "question": "What ASQA-required information do you include on RTO websites?",
+        "question": "What should an RTO website include?",
         "answer": [
-            "Standard requirements like your RTO code, scope of registration, fees and charges, refund policy, complaints and appeals process, student rights and USI information are planned into the site structure from the start, not added later."
+            "The usual essentials are your RTO code, scope of registration, fees and charges, refund and cancellation policy, complaints and appeals process, student rights, USI information and a privacy policy. If you're CRICOS-registered, add your CRICOS code and information for international students.",
+            "We use this as our RTO website checklist and give every item a clear, easy-to-find place, so you don't have to chase it later. You can see the full list near the top of this page."
         ]
     },
     {
         "page": "rto-vet-service",
         "question": "Can you build a CRICOS-ready website for international student enrolments?",
         "answer": [
-            "Yes. Where a college is CRICOS-registered, we structure course and enrolment pages to reflect that clearly for prospective international students, alongside standard domestic enrolment paths."
+            "Yes. If your college is CRICOS-registered, we structure the course and enrolment pages so prospective international students can see that clearly, alongside your domestic enrolment path. CRICOS website design is something I'm especially comfortable with because of my background in international student services."
         ]
     },
     {
         "page": "rto-vet-service",
-        "question": "How is an RTO or VET college website different from a regular business website?",
+        "question": "What does an RTO enrolment website need to do?",
         "answer": [
-            "RTO and VET websites balance compliance information, a clear course catalogue and a straightforward enrolment journey, on top of everything a business website needs to do well, like speed, SEO and clear calls to action."
+            "A good RTO enrolment website makes the next step obvious. Each qualification gets its own page with entry requirements, outcomes, fees and a short enrolment form or enquiry path, so a student can go from searching to getting in touch in a few taps on their phone.",
+            "If you need something more complex, like a connected student system or an admin dashboard, we can look at it under <a href=\"/services/custom-web-applications\">custom web applications</a>."
         ]
     },
     {
         "page": "rto-vet-service",
-        "question": "How much does an RTO or VET college website cost?",
+        "question": "How is RTO website design different from a regular business website?",
         "answer": [
-            "Our standard RTO and VET college package starts at $99 (AUD) and includes up to 10 pages, so it's a simple, clear starting point.",
-    "If your requirements are different, for example more courses, extra pages or custom enrolment features, <a href=\"/contact\">request a quote</a> and we'll give you a clear price and timeline before any work starts."
+            "An RTO site has to balance compliance information, a clear course catalogue and a simple enrolment journey, on top of everything a business website needs to do well, like speed, mobile design and clear calls to action. That's why generic website designers often miss things that students, and your own team, rely on."
+        ]
+    },
+    {
+        "page": "rto-vet-service",
+        "question": "How much does an RTO website cost?",
+        "answer": [
+            "RTO website design starts at $99 to get going, then $39 fortnightly. That covers up to 10 pages, hosting, on-page SEO, a mobile-friendly design, enquiry forms, Google Search Console monitoring and one small update a month. There's no lock-in and no cancellation fee.",
+            "If you need more, for example extra pages, a large course catalogue or custom enrolment features, <a href=\"/contact\">request a quote</a> and we'll give you a clear price and timeline before any work starts."
+        ]
+    },
+    {
+        "page": "rto-vet-service",
+        "question": "Do you work with RTOs outside Melbourne?",
+        "answer": [
+            "Yes. I'm based in Melbourne, but we work with registered training organisations across Australia by video call, phone and email, so it doesn't matter which state you're in."
+        ]
+    },
+    {
+        "page": "rto-vet-service",
+        "question": "Will my courses show up on Google?",
+        "answer": [
+            "We build each site with SEO in mind: a clear page for every qualification, sensible titles and headings, fast loading and a mobile-friendly layout. That gives your courses a real chance of being found by people searching for them. Nobody can honestly promise a particular ranking, but the site will be built properly.",
+            "More about how we handle this on our <a href=\"/services/seo-services\">SEO page</a>."
         ]
     },
     {

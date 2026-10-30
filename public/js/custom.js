@@ -197,7 +197,7 @@ function initFAQ() {
 document.fonts.ready.then(() => {
   initStatementSplitText();
   setupCharReveal(".headingeffect");
-  scrambleText(".skill-label");
+  //scrambleText(".skill-label");
   initHeroHighlight();
 
   // Final refresh after all SplitText DOM mutations

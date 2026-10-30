@@ -5,12 +5,12 @@
         <div class="rto-gaps__main">
             <span class="sk-statement-eyebrow">/ From the inside</span>
             <h2 class="rto-gaps__title" id="rto-gaps-title">
-                What a good RTO website needs to get right
+                What good RTO website design gets right
             </h2>
             <p class="rto-gaps__intro">
                 Generic web designers often don’t understand the information ASQA expects students to be able to find,
-                how students make their decisions, or how the VET industry works day to day. The result? Websites that
-                look outdated, make key information hard to find, and lose enrolments to competitors.
+                how students decide between training providers, or how the RTO sector works day to day. The result?
+                Websites that look outdated, make key information hard to find, and lose enrolments to competitors.
             </p>
 
             <div class="rto-gaps__cards">
@@ -53,11 +53,11 @@
                             <circle cx="12" cy="12" r="3" />
                         </svg>
                     </div>
-                    <h3>Courses people search for aren't findable</h3>
+                    <h3>Your courses aren't easy to find on Google</h3>
                     <p>
                         Without a clear, well-structured page for each qualification, it's hard for Google
                         to match you with people searching for exactly what you teach, like &ldquo;Certificate
-                        III in Individual Support Melbourne&rdquo;.
+                        III in Individual Support&rdquo; in their city.
                     </p>
                 </article>
             </div>
@@ -65,7 +65,7 @@
 
         <!-- Right: the checklist -->
         <aside class="rto-gaps__panel" aria-labelledby="rto-checklist-title">
-            <h3 id="rto-checklist-title">Website information checklist</h3>
+            <h3 id="rto-checklist-title">RTO website information checklist</h3>
             <p class="rto-gaps__panel-sub">
                 What I plan into every RTO website, so students can find it before they enrol:
             </p>
