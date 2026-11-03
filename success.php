@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config.php';
 
 $messages = [
-    'start'   => "Thanks! Check your inbox. We'll send your $99 kick-off link shortly.",
+    'start'   => "Thanks! We'll be in touch shortly.",
     'quote'   => "Thanks! We'll review your project and send a tailored quote within 24 hours.",
     'contact' => "Thanks for getting in touch. We'll reply within one business day.",
 ];

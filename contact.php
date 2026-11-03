@@ -141,11 +141,38 @@ $formError = sk_handle_form('contact');
                             <div class="action-card consultation-card">
                                 <img src="<?php echo BASE_PATH; ?>/public/icons/meeting.webp" width="52" alt="Calendar">
                                 <h3>Book a Free Consultation</h3>
-                                <p>15-min discovery call • No obligation</p>
-                                <a href="" style="   pointer-events: none;      cursor: not-allowed;   opacity: 0.6;  "
-                                    class="btn-block sk-btn sk-btn-primary">
-                                    Schedule Now <span></span>
-                                </a>
+                                <p>No obligation</p>
+                                <div class="sk-btn btn-block sk-btn-primary">
+                                    <style>
+                                    .hur54b {
+                                        background-color: white !important;
+                                    }
+                                    </style>
+                                    <!-- Google Calendar Appointment Scheduling begin -->
+                                    <link href="https://calendar.google.com/calendar/scheduling-button-script.css"
+                                        rel="stylesheet">
+                                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js"
+                                        async>
+                                    </script>
+                                    <script>
+                                    (function() {
+                                        var target = document.currentScript;
+                                        window.addEventListener('load', function() {
+                                            calendar.schedulingButton.load({
+                                                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3J6bYfwWt_ZeoSTUu6VkGJwcfOBQyvE1DE_OjrOWRQe79XGxJ51UGT_SITG-9sYnPSDcrPQ_hy?gv=true',
+                                                color: '#ee5022',
+
+                                                label: 'Book an appointment',
+                                                target,
+                                            });
+                                        });
+                                    })();
+                                    </script>
+                                    <!-- end Google Calendar Appointment Scheduling -->
+                                    <span></span>
+                                </div>
+
+
                             </div>
                         </div>
 

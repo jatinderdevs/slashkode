@@ -121,7 +121,7 @@
 
 /* ===== Dark Profile Card ===== */
 .profile-card {
-  background: #111111;
+  background: var(--sk-color-primary-dark);
 }
 
 .self-contact-card {
@@ -147,7 +147,7 @@
 }
 .profile-img img {
   width: 100%;
-  translate: 0 -10px;
+
   height: auto;
   transform: scale(1.2);
   border: 2px solid rgba(255, 255, 255, 0.15);

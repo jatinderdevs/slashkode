@@ -139,3 +139,145 @@
   text-decoration: underline;
   color: var(--sk-color-terracotta);
 }
+
+/* ═══════════════════════════════════════════════════
+   Pay-to-start card (/start)
+═══════════════════════════════════════════════════ */
+.start-pay {
+  max-width: 560px;
+  text-align: center;
+}
+
+.start-pay .wd-hero-card-title {
+  margin-bottom: 0.75rem;
+}
+
+.start-need-payment {
+  background: var(--sk-color-bg-warm);
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-sm);
+  color: var(--sk-color-primary-dark);
+  font-size: var(--sk-text-sm);
+  padding: 0.75rem 1rem;
+  margin: 0 auto 1.25rem;
+  max-width: none;
+}
+
+.start-price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0;
+  max-width: none;
+}
+
+.start-price__now {
+  font-family: var(--sk-font-heading);
+  font-size: clamp(2.75rem, 8vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: var(--sk-color-primary-dark);
+}
+
+.start-price__label {
+  font-size: var(--sk-text-body-lg);
+  color: var(--sk-color-primary-soft);
+}
+
+.start-price__then {
+  color: var(--sk-color-primary-soft);
+  margin: 0.4rem auto 1.5rem;
+  max-width: none;
+}
+
+.start-pay-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1.75rem;
+  display: grid;
+  gap: 0.6rem;
+  text-align: left;
+  max-width: 400px;
+}
+
+.start-pay-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--sk-color-primary-dark);
+  font-size: var(--sk-text-body);
+}
+
+.start-pay-list li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: var(--sk-color-sage);
+}
+
+.start-pay-btn {
+  width: 100%;
+  max-width: 400px;
+}
+
+.start-consent-note {
+  font-size: var(--sk-text-xs);
+  color: var(--sk-color-primary-soft);
+  text-align: center;
+  margin: 0.6rem auto 0;
+  max-width: 44ch;
+}
+
+.start-consent-note a {
+  text-decoration: underline;
+  color: var(--sk-color-terracotta);
+}
+
+/* ═══════════════════════════════════════════════════
+   Onboarding page (/onboarding)
+═══════════════════════════════════════════════════ */
+.onboard-eyebrow {
+  font-size: var(--sk-text-sm);
+  font-weight: 600;
+  color: var(--sk-color-sage);
+  margin: 0 auto 0.5rem;
+  max-width: none;
+}
+
+.onboard-paid-for {
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  margin: 1rem auto 0;
+  max-width: none;
+}
+
+.onboard-card {
+  max-width: 840px;
+  padding: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.onboard-frame {
+  display: block;
+  width: 100%;
+  min-height: 1100px;
+  border: 0;
+  border-radius: var(--sk-radius-sm);
+}
+
+.onboard-fallback {
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+  text-align: center;
+  margin: 0.85rem auto 0;
+  max-width: none;
+}
+
+.onboard-fallback a,
+.onboarding-page .start-trust a,
+.onboarding-page .start-hero-lead a {
+  text-decoration: underline;
+  color: var(--sk-color-terracotta);
+}

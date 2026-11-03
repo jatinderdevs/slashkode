@@ -4,6 +4,7 @@ Disallow: /includes/
 Disallow: /data/
 Disallow: /demo/
 Disallow: /config.php
+Disallow: /onboarding
 Disallow: /*.json$
 
 Sitemap: https://slashkode.com.au/sitemap.xml

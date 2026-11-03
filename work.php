@@ -50,7 +50,7 @@ function sk_work_asset(string $path): string
 
     <title>Our Work | Melbourne Web Design & Development Portfolio | Slashkode</title>
     <meta name="description"
-        content="Real websites built for Melbourne businesses and RTOs — from RTO/VET enrolment platforms to custom CMS dashboards. See the work Slashkode has shipped." />
+        content="Real websites built for Melbourne businesses and custom CMS dashboards. See the work Slashkode has shipped." />
     <meta name="keywords"
         content="Melbourne web design portfolio, website design examples Melbourne, web development case studies" />
     <meta name="robots" content="index, follow" />
@@ -60,8 +60,7 @@ function sk_work_asset(string $path): string
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | Slashkode" />
-    <meta property="og:description"
-        content="Real websites built for Melbourne businesses and RTOs — from enrolment platforms to custom dashboards." />
+    <meta property="og:description" content="Real websites built for Melbourne businesses and custom dashboards." />
     <meta property="og:url" content="https://slashkode.com.au/work" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
@@ -133,7 +132,7 @@ function sk_work_asset(string $path): string
                 <div class="heroWork">
                     <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Our Work</h1>
-                    <p>A look at the websites, RTO and VET platforms, and custom applications we've built -
+                    <p>A look at the websites, RTO college websites, and custom applications we've built -
                         real projects, real outcomes.</p>
                 </div>
             </section>
@@ -149,7 +148,8 @@ function sk_work_asset(string $path): string
                         <div class="drag-card-body">
                             <div class="drag-card-hero">
                                 <div class="drag-card-media">
-                                    <img src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
+                                    <img style="<?php echo htmlspecialchars($item['style'] ?? '')?>"
+                                        src="<?php echo htmlspecialchars(sk_work_asset($item['image'] ?? '')); ?>"
                                         alt="<?php echo htmlspecialchars($item['alt'] ?? $item['title'] ?? ''); ?>"
                                         <?php echo $i === 0 ? '' : 'loading="lazy"'; ?> draggable="false" />
                                 </div>

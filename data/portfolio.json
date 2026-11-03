@@ -77,7 +77,19 @@
     "description": "Website for a UK-based shopfront and shutter installation company, built to generate more local service enquiries. Clear service pages, a quote-focused layout, and a structure that helps commercial customers find the right shopfront solution quickly."
   },
 
- 
+    {
+  "id": "arr-logistics-crm",
+  "title": "ARR Logistics CRM",
+  "topTag": "Web Application",
+  "image": "/public/img/mockups/arrcrm.webp",
+  "alt": "ARR Logistics CRM – client portal, order management and branded PDF manifests for logistics",
+  "link": "https://arrlogistics.com.au/",
+  "cta": "View live site",
+  "chips": ["Web Application", "Logistics", "CRM", "Order Management"],
+  "pages": ["home", "custom-cms", "custom-apps", "logistics"],
+  "style":"translate:none",
+  "description": "Custom CRM for ARR Logistics to manage clients, addresses, transport orders and branded PDF manifests. Clients place orders in minutes; the system generates professional manifests, sends confirmation emails with attachments, and gives the admin team full visibility — cutting manual paperwork and errors."
+},
   {
     "id": "rto-commissions",
     "title": "RTO Commissions",
@@ -90,7 +102,7 @@
     "pages": ["home", "custom-cms", "rto-vet", "custom-apps"],
     "description": "Custom system for RTO colleges to manage education agent data, run automatic calculations, and generate CSV and PDF reports. Built to cut manual work so teams can maintain agent records and commissions with less effort and fewer errors."
   },
-   
+
   {
     "id": "dalavoro",
     "title": "Dalavoro",

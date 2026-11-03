@@ -1,7 +1,9 @@
 <?php
 require_once __DIR__ . '/config.php';
-require_once __DIR__ . '/email/email-helper.php';
-$formError = sk_handle_form('start');
+
+// Stripe Payment Link for the $99 start fee. Set STRIPE_PAYMENT_LINK_URL in env.php.
+$payUrl      = defined('STRIPE_PAYMENT_LINK_URL') ? STRIPE_PAYMENT_LINK_URL : '';
+$needPayment = ($_GET['need'] ?? '') === 'payment'; // bounced here from /onboarding
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +13,7 @@ $formError = sk_handle_form('start');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Start Your Website | $99 to Start | Slashkode Melbourne</title>
     <meta name="description"
-        content="Start your website with Slashkode for $99, then $39 fortnightly — no lock-in, no cancellation fees. Tell us about your business and we'll get you online." />
+        content="Start your website with Slashkode for $99, then $39 fortnightly once it's live. No lock-in, no cancellation fees. Pay to start, then tell us about your business and we'll get you online." />
     <meta name="keywords"
         content="start website Melbourne, $99 website Melbourne, affordable website design Melbourne, get website built Melbourne" />
     <meta name="robots" content="index, follow" />
@@ -72,32 +74,69 @@ $formError = sk_handle_form('start');
                     <div class="text-container">
                         <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> / Home</a>
 
-                        <h1 class="heroheading">Let's get your website started</h1>
-                        <p class="start-hero-lead">
-                            $99 to start, then $39 fortnightly. No lock-in, no cancellation fees —
-                            just tell us a bit about your business.
-                        </p>
+                        <h1 class="heroheading mb-0">Let's start</h1>
+
                     </div>
                 </div>
             </section>
 
             <!-- ════════════════════════════════════
-                 FORM
+                 PAY TO START
             ════════════════════════════════════ -->
-            <section class="wd-section start-form-section">
+            <section class="wd-section start-form-section pt-0">
                 <div class="sk-container">
-                    <div class="wd-hero-card start-card" id="startCard">
+                    <div class="wd-hero-card start-card start-pay" id="startCard">
 
-                        <div id="startFormWrap">
-                            <?php $formMode = 'standard';
-                            require_once('email/start-form.php'); ?>
-                        </div>
+                        <?php if ($needPayment) : ?>
+                        <p class="start-need-payment" role="status">
+                            The next step opens once your payment is complete. Pay below to get started.
+                        </p>
+                        <?php endif; ?>
 
-                        <div id="startConfirm" class="start-confirm" hidden></div>
+                        <h2 class="wd-hero-card-title">Your website plan</h2>
+
+                        <p class="start-price">
+                            <span class="start-price__now">$99</span>
+                            <span class="start-price__label">to start</span>
+                        </p>
+                        <p class="start-price__then">then $39 fortnightly once your website is live</p>
+
+                        <ul class="start-pay-list">
+                            <li>Up to 10 custom-designed, mobile-friendly pages</li>
+                            <li>Hosting, and help connecting your domain</li>
+                            <li>On-page SEO and Google Search Console monitoring</li>
+                            <li>One small update every month</li>
+                        </ul>
+
+                        <?php if ($payUrl !== '') : ?>
+                        <a href="<?php echo htmlspecialchars($payUrl); ?>"
+                            class="p-3 sk-btn sk-btn-primary start-pay-btn" rel="noopener">
+                            Pay $99 and get started
+                            <span></span>
+                        </a>
+                        <?php else : ?>
+                        <a href="<?php echo BASE_PATH; ?>/contact" class="p-3 sk-btn sk-btn-primary start-pay-btn">
+                            Talk to us to get started
+                            <span></span>
+                        </a>
+                        <?php endif; ?>
+
+                        <p class="start-next-info">
+                            Secure payment by Stripe. Straight after paying, you'll tell us about your business:
+                            your current website, logo, brand guidelines and any instructions.
+                        </p>
+                        <p class="start-consent-note">
+                            By paying you accept our
+                            <a href="<?php echo BASE_PATH; ?>/terms" target="_blank" rel="noopener">Terms of Service</a>
+                            and
+                            <a href="<?php echo BASE_PATH; ?>/privacy" target="_blank" rel="noopener">Privacy
+                                Policy</a>,
+                            and agree that $39 fortnightly starts once your website is live.
+                        </p>
 
                     </div>
 
-                    <p class="start-trust">No lock-in &middot; No cancellation fees &middot; No handover</p>
+                    <p class="start-trust">No lock-in &middot; No cancellation fees</p>
 
                     <p class="start-switch-link">
                         Need something beyond the standard package?
