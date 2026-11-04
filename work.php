@@ -170,11 +170,19 @@ function sk_work_asset(string $path): string
                                     </div>
                                     <?php endif; ?>
 
-                                    <?php if (!empty($item['cta'])) : ?>
-                                    <a href="<?php echo htmlspecialchars($link); ?>"
-                                        <?php echo $external ? 'target="_blank" rel="noopener"' : ''; ?>
-                                        class="sk-btn sk-btn-primary btnlive">
-                                        <?php echo htmlspecialchars($item['cta']); ?>
+                                    <?php if (!empty($item['caseStudy'])) : ?>
+                                    <!-- Show Case Study button ONLY if caseStudy exists -->
+                                    <a class="sk-btn btnlive sk-btn-primary mt-3"
+                                        href="<?php echo BASE_PATH . htmlspecialchars($item['caseStudy']); ?>">
+                                        Read the case study <span aria-hidden="true"></span>
+                                    </a>
+                                    <?php elseif (!empty($item['link'])) : ?>
+                                    <!-- Otherwise, show the live website button if caseStudy does NOT exist -->
+                                    <a href="<?php echo htmlspecialchars($item['link']); ?>"
+                                        class="sk-btn btnlive sk-btn-primary mt-3" target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label="See live website for <?php echo htmlspecialchars($item['title'] ?? ''); ?>">
+                                        <?php echo htmlspecialchars($item['cta'] ?? 'See live website'); ?>
                                         <span></span>
                                     </a>
                                     <?php endif; ?>
