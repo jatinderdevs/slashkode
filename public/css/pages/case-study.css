@@ -1,0 +1,477 @@
+/* ═══════════════════════════════════════════════════
+   Slashkode — Case study page (/work/arr-logistics)
+   Flat, editorial, hairline-divided. No card grids.
+   Uses root design tokens from stylesheet.css
+═══════════════════════════════════════════════════ */
+
+.cs-page {
+  background: var(--sk-color-bg-warm);
+}
+
+/* Screen-reader-only helper */
+.cs-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Hero ── */
+section.cs-hero {
+  text-align: center;
+  padding: clamp(3rem, 7vw, 5rem) 0 clamp(2.5rem, 6vw, 4rem);
+}
+
+.cs-eyebrow {
+  display: inline-block;
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sk-color-terracotta);
+  margin-bottom: 1rem;
+}
+
+.cs-hero h1 {
+  font-size: clamp(2rem, 4.6vw, 3.5rem);
+  max-width: 20ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cs-hero .lead {
+  margin: 0 auto;
+  max-width: 62ch;
+}
+
+/* Quick facts row: hairline-divided, not cards */
+.cs-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 1000px;
+  margin: 2.5rem auto 0;
+  text-align: left;
+  border-top: 1px solid var(--sk-color-surface-sand);
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-fact {
+  padding: 1.1rem 1.25rem;
+  border-left: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-fact:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.cs-fact dt {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sk-color-primary-soft);
+  opacity: 0.8;
+  margin-bottom: 0.35rem;
+}
+
+.cs-fact dd {
+  margin: 0;
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  font-size: var(--sk-text-sm);
+  line-height: 1.4;
+}
+
+.cs-fact dd a {
+  color: var(--sk-color-terracotta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cs-fact dd a:hover {
+  color: var(--sk-color-primary-dark);
+}
+
+.cs-hero-media {
+  margin: 3rem auto 0;
+  max-width: 1100px;
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-md);
+  overflow: hidden;
+  background: var(--sk-color-bg-card);
+  box-shadow: var(--sk-shadow-card);
+}
+
+.cs-hero-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── Sections ── */
+section.cs-section {
+  padding: clamp(2.5rem, 6vw, 4.5rem) 0;
+}
+
+section.cs-section--last {
+  padding-bottom: clamp(3rem, 7vw, 5rem);
+}
+
+.cs-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 1.5rem clamp(2rem, 5vw, 4.5rem);
+  padding-top: 2rem;
+  border-top: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-head {
+  align-self: start;
+}
+
+@media (min-width: 900px) {
+  .cs-head {
+    position: sticky;
+    top: 6rem;
+  }
+}
+
+.cs-label {
+  display: inline-block;
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sk-color-terracotta);
+  margin-bottom: 0.85rem;
+}
+
+.cs-head h2 {
+  font-size: clamp(1.5rem, 2.8vw, 2.1rem);
+  letter-spacing: -0.025em;
+  margin-bottom: 0.9rem;
+}
+
+.cs-head p {
+  color: var(--sk-color-primary-soft);
+  font-size: var(--sk-text-sm);
+  margin-bottom: 0;
+}
+
+.cs-body p {
+  color: var(--sk-color-primary-soft);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 60ch;
+}
+
+.cs-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Numbered rows (what we built) ── */
+.cs-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-row {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: 0.5rem 1rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-row:first-child {
+  padding-top: 0;
+}
+
+.cs-row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cs-num {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.06em;
+  color: var(--sk-color-terracotta);
+  padding-top: 0.35rem;
+}
+
+.cs-row h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.4rem;
+}
+
+.cs-row p {
+  margin: 0;
+  color: var(--sk-color-primary-soft);
+  font-size: var(--sk-text-sm);
+  line-height: 1.7;
+  max-width: 56ch;
+}
+
+/* ── Before / after table ── */
+.cs-compare {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.cs-compare thead th {
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--sk-color-primary-soft);
+  padding: 0 1rem 0.9rem 0;
+  border-bottom: 1px solid var(--sk-color-primary-dark);
+}
+
+.cs-compare thead th:last-child {
+  color: var(--sk-color-terracotta);
+}
+
+.cs-compare tbody th,
+.cs-compare tbody td {
+  padding: 1.15rem 1rem 1.15rem 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+  font-size: var(--sk-text-sm);
+  line-height: 1.6;
+}
+
+.cs-compare tbody th {
+  width: 26%;
+  font-family: var(--sk-font-heading);
+  font-weight: 700;
+  color: var(--sk-color-primary-dark);
+}
+
+.cs-compare tbody td:nth-child(2) {
+  color: var(--sk-color-primary-soft);
+}
+
+.cs-compare tbody td:last-child {
+  color: var(--sk-color-primary-dark);
+  font-weight: 500;
+  padding-right: 0;
+}
+
+/* ── Screens ── */
+.cs-shots {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.cs-shot {
+  margin: 0;
+}
+
+.cs-shot--wide {
+  grid-column: 1 / -1;
+}
+
+.cs-shot img,
+.cs-shot__ph {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--sk-color-surface-sand);
+  border-radius: var(--sk-radius-md);
+  background: var(--sk-color-bg-card);
+  object-fit: cover;
+}
+
+.cs-shot__ph {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sk-font-mono);
+  font-size: var(--sk-text-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sk-color-primary-soft);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--sk-color-bg-card) 0 14px,
+    var(--sk-color-bg-warm) 14px 28px
+  );
+}
+
+.cs-shot figcaption {
+  margin-top: 0.7rem;
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+}
+
+/* ── Outcome ── */
+.cs-outcomes p {
+  max-width: none;
+  margin: 0;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.cs-outcomes p:first-child {
+  padding-top: 0;
+}
+
+.cs-outcomes .cs-byline {
+  border-bottom: 0;
+  padding-bottom: 0;
+  font-family: var(--sk-font-body);
+  font-weight: 400;
+  font-size: var(--sk-text-sm);
+  letter-spacing: 0;
+  color: var(--sk-color-primary-soft);
+}
+
+/* ── Related links ── */
+.cs-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cs-links li {
+  border-bottom: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-links li:first-child {
+  border-top: 1px solid var(--sk-color-surface-sand);
+}
+
+.cs-links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0;
+}
+
+.cs-links strong {
+  display: block;
+  font-family: var(--sk-font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.cs-links small {
+  display: block;
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-primary-soft);
+}
+
+.cs-links a > span:last-child {
+  color: var(--sk-color-terracotta);
+  font-size: 1.25rem;
+  transition: var(--sk-transition-smooth);
+}
+
+.cs-links a:hover strong {
+  color: var(--sk-color-terracotta);
+}
+
+.cs-links a:hover > span:last-child {
+  transform: translateX(6px);
+}
+
+.cs-links a:focus-visible {
+  outline: 2px solid var(--sk-color-terracotta);
+  outline-offset: 4px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 899px) {
+  .cs-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cs-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cs-fact:nth-child(odd) {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .cs-fact:nth-child(n + 3) {
+    border-top: 1px solid var(--sk-color-surface-sand);
+  }
+
+  .cs-shots {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  /* Before/after: stack each row */
+  .cs-compare thead {
+    display: none;
+  }
+
+  .cs-compare,
+  .cs-compare tbody,
+  .cs-compare tr,
+  .cs-compare th,
+  .cs-compare td {
+    display: block;
+    width: 100%;
+  }
+
+  .cs-compare tbody tr {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--sk-color-surface-sand);
+  }
+
+  .cs-compare tbody th,
+  .cs-compare tbody td {
+    border-bottom: 0;
+    padding: 0.15rem 0;
+    width: 100%;
+  }
+
+  .cs-compare tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--sk-font-mono);
+    font-size: var(--sk-text-xs);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--sk-color-primary-soft);
+    opacity: 0.75;
+    margin-top: 0.5rem;
+  }
+
+  .cs-compare tbody td:last-child::before {
+    color: var(--sk-color-terracotta);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-links a > span:last-child {
+    transition: none;
+  }
+}

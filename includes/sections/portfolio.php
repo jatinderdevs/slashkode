@@ -70,7 +70,14 @@ $portfolioItems = sk_get_portfolio($portfolioPage, $portfolioJsonPath);
 
 
                             </div>
-                            <?php if (!empty($item['link'])) : ?>
+                            <?php if (!empty($item['caseStudy'])) : ?>
+                            <!-- Show Case Study button ONLY if caseStudy exists -->
+                            <a class="sk-btn btnlive sk-btn-primary mt-3"
+                                href="<?php echo BASE_PATH . htmlspecialchars($item['caseStudy']); ?>">
+                                Read the case study <span aria-hidden="true"></span>
+                            </a>
+                            <?php elseif (!empty($item['link'])) : ?>
+                            <!-- Otherwise, show the live website button if caseStudy does NOT exist -->
                             <a href="<?php echo htmlspecialchars($item['link']); ?>"
                                 class="sk-btn btnlive sk-btn-primary mt-3" target="_blank" rel="noopener noreferrer"
                                 aria-label="See live website for <?php echo htmlspecialchars($item['title'] ?? ''); ?>">

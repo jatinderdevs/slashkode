@@ -78,6 +78,13 @@
                     Usually replies within 1 business day
                 </p>
                 <div class="footer-socials" aria-label="Social links">
+                    <a href="https://www.linkedin.com/company/slashkode" target="_blank" rel="noopener noreferrer"
+                        aria-label="Linkdin" title="Linkdin">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                        </svg>
+                    </a>
                     <a href="https://www.instagram.com/slashkode.au" target="_blank" rel="noopener noreferrer"
                         aria-label="Instagram" title="Instagram">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -87,13 +94,7 @@
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                         </svg>
                     </a>
-                    <a href="https://www.tiktok.com/@slashkode" target="_blank" rel="noopener noreferrer"
-                        aria-label="TikTok" title="TikTok">
-                        <svg viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
-                        </svg>
-                    </a>
+
                     <!-- TODO: replace # with real Facebook page URL -->
                     <a href="https://www.facebook.com/profile.php?id=61576803775165" target="_blank"
                         rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
@@ -102,6 +103,7 @@
                                 d="M22 12a10 10 0 1 0-11.5 9.87v-6.98H7.9V12h2.6V9.8c0-2.56 1.53-3.98 3.87-3.98 1.12 0 2.3.2 2.3.2v2.53h-1.3c-1.28 0-1.68.8-1.68 1.61V12h2.86l-.46 2.89h-2.4v6.98A10 10 0 0 0 22 12z" />
                         </svg>
                     </a>
+
                     <a href="https://share.google/o9dCVDutB4KWkraOj" target="_blank" rel="noopener noreferrer"
                         aria-label="google business profile" title="Google Business Profile">
                         <svg viewBox="0 0 24 24" fill="currentColor">

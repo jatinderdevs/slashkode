@@ -117,10 +117,10 @@ function sk_work_asset(string $path): string
     <?php require_once('includes/stylesheets.php'); ?>
 
     <!-- portfolio.css (the card styles) is already loaded by stylesheets.php -->
-    <link rel="stylesheet" href="public/css/pages/work.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/pages/work.css" />
 
-    <link rel="stylesheet" href="public/css/faq.css" />
-    <link rel="stylesheet" href="public/css/cta.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/faq.css" />
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
 
 </head>
 
@@ -226,8 +226,8 @@ function sk_work_asset(string $path): string
 
 
 
-    <script src="public/js/cta.js" defer></script>
-    <script src="public/js/pages/work.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/cta.js" defer></script>
+    <script src="<?php echo BASE_PATH; ?>/public/js/pages/work.js" defer></script>
 
 
 

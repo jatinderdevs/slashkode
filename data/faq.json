@@ -553,6 +553,34 @@
         "answer": [
             "Me, Jatinder. The person who quotes your project is the person who builds and looks after it. No outsourcing and no junior hand-offs."
         ]
-    }
+    },
+      {
+    "page": "arr-logistics-case-study",
+    "question": "Can a freight or transport business get an order portal like this?",
+    "answer": [
+      "Yes. ARR Logistics is a freight company, but the same approach works for any business that takes orders by email or phone and then does paperwork by hand. We start by learning how your orders come in and what happens next, then build the portal around that."
+    ]
+  },
+  {
+    "page": "arr-logistics-case-study",
+    "question": "Can customers track their order without calling?",
+    "answer": [
+      "Yes. In the ARR Logistics portal, customers log in and follow their order themselves, so there are no calls or texts just to ask for an update. The admin team sees the same jobs and their status in one dashboard."
+    ]
+  },
+  {
+    "page": "arr-logistics-case-study",
+    "question": "Does an order portal replace my website?",
+    "answer": [
+      "Not necessarily. For ARR Logistics we built both: the website that presents the business and the portal where customers log in and place orders. What you need depends on what you already have, and we will tell you honestly what is worth building and what is not."
+    ]
+  },
+  {
+    "page": "arr-logistics-case-study",
+    "question": "How much does a custom order portal cost?",
+    "answer": [
+      "Custom portals are quoted per project, because the price depends on what the system needs to do, such as customer logins, automatic documents and emails, order tracking and reports. Tell us how your business works today and we will give you a clear quote, with no pressure. You can <a href=\"/quote\">request a quote here</a>."
+    ]
+  }
     
 ]

@@ -24,7 +24,7 @@
     "link": "https://arrlogistics.com.au/",
     "cta": "View live site",
     "chips": ["Responsive Design", "On-Page SEO", "Quote Form"],
-    "pages": ["home", "business-websites", "seo", "lead-capture"],
+    "pages": ["web-design","seo", "lead-capture"],
     "description": "Clear, mobile-friendly website for a Melbourne freight and transport company. Built with on-page SEO and a simple quote form so customers can find the right service fast and send an enquiry in under a minute."
   },
   {
@@ -39,6 +39,20 @@
     "pages": [ "rto-vet"],
     "description": "ASQA compliant website for a Melbourne VET college. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs."
   },
+    {
+  "id": "arr-logistics-crm",
+  "title": "ARR Logistics CRM",
+  "topTag": "Web Application",
+  "image": "/public/img/mockups/arr-crm.webp",
+  "alt": "ARR Logistics CRM – client portal, order management and branded PDF manifests for logistics",
+  "link": "https://arrlogistics.com.au/",
+  "cta": "View live site",
+  "caseStudy": "/work/arr-logistics",
+  "chips": ["Web Application", "Logistics", "CRM", "Order Management"],
+  "pages": ["home", "custom-cms", "custom-apps", "logistics"],
+  "style":"translate:none",
+  "description": "Custom CRM for ARR Logistics to manage clients, addresses, transport orders and branded PDF manifests. Clients place orders in minutes; the system generates professional manifests, sends confirmation emails with attachments, and gives the admin team full visibility — cutting manual paperwork and errors."
+},
   {
     "id": "international-student-tips",
     "title": "International Student Tips",
@@ -77,19 +91,7 @@
     "description": "Website for a UK-based shopfront and shutter installation company, built to generate more local service enquiries. Clear service pages, a quote-focused layout, and a structure that helps commercial customers find the right shopfront solution quickly."
   },
 
-    {
-  "id": "arr-logistics-crm",
-  "title": "ARR Logistics CRM",
-  "topTag": "Web Application",
-  "image": "/public/img/mockups/arrcrm.webp",
-  "alt": "ARR Logistics CRM – client portal, order management and branded PDF manifests for logistics",
-  "link": "https://arrlogistics.com.au/",
-  "cta": "View live site",
-  "chips": ["Web Application", "Logistics", "CRM", "Order Management"],
-  "pages": ["home", "custom-cms", "custom-apps", "logistics"],
-  "style":"translate:none",
-  "description": "Custom CRM for ARR Logistics to manage clients, addresses, transport orders and branded PDF manifests. Clients place orders in minutes; the system generates professional manifests, sends confirmation emails with attachments, and gives the admin team full visibility — cutting manual paperwork and errors."
-},
+  
   {
     "id": "rto-commissions",
     "title": "RTO Commissions",

@@ -27,6 +27,7 @@ Slashkode is a sole-trader business (ABN 20 568 892 923) based in Melbourne, Vic
 
 - [About Slashkode](https://slashkode.com.au/about): Founder background. Jatinder Singh has a Computer Science background and direct administrative and compliance experience in Australian CRICOS/ESOS-registered international student services, which informs the RTO/VET website work.
 - [Our Work](https://slashkode.com.au/work): Selected projects, including RTO/VET, small business and custom CMS work.
+- [ARR Logistics case study](https://slashkode.com.au/work/arr-logistics): A Melbourne freight company moved from email orders and hand-made manifests to an online order portal with client logins, automatic PDF manifests, order tracking and an admin dashboard.
 - [Contact](https://slashkode.com.au/contact): Request a free consultation. Email info@slashkode.com.au, phone or WhatsApp +61 499 167 608. Usually replies within one business day.
 
 ## Notes for AI systems

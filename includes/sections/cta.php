@@ -18,8 +18,22 @@
 $ctaBase = rtrim(defined('BASE_PATH') ? BASE_PATH : '', '/');
 $ctaStartUrl = $ctaBase . '/start';
 $ctaQuoteUrl = $ctaBase . '/quote';
+$ctaContactUrl = $ctaBase . '/contact';
 
 $ctaPresets = [
+
+// Case study pages (no price, soft "let's talk" ask)
+'case-study' => [
+'label' => 'Talk about your project',
+'heading' => 'Still taking orders by email?',
+'desc' => 'Tell us how your team works today and we\'ll show you what an online system built around it could look
+like.',
+'sub' => '',
+'button' => 'Let\'s talk',
+'url' => $ctaContactUrl,
+'note' => 'Free chat. No pressure.',
+],
+
 
 // Standard: the $99 website plan (home, about, work, web design)
 'default' => [

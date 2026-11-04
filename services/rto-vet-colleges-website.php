@@ -121,7 +121,7 @@
                                 RTO website design that helps students find, trust and enrol
                             </h1>
                             <p>
-                                We design and build websites for registered training organisations across Australia.
+                                We design and build RTO websites across Australia.
                                 Clear course pages, easy enrolment paths and the information students look for, all
                                 planned around ASQA's requirements, so more of the people who find you actually get in
                                 touch.
@@ -160,7 +160,7 @@
                                 My background is in Computer Science, but a lot of my early career was spent working in
                                 international student services at CRICOS and ESOS-registered institutions - handling the
                                 administration and compliance that RTOs deal with every day. So when I
-                                build a website for a training organisation, I already understand the students, the
+                                build RTO website, I already understand the students, the
                                 paperwork, and what actually needs to be on the page - not just what looks modern.
                             </p>
                         </div>
@@ -175,7 +175,7 @@
                     <!-- CTA -->
                     <article class="bento-card card-cta" data-animate>
                         <div class="servicebeinto">
-                            <h3>Built by someone who understands RTOs</h3>
+                            <h3>Built by someone who understands RTO Websites</h3>
                             <p class="available-desc">
                                 No generic templates. No junior developers guessing at compliance.
                                 Every page is planned around ASQA's requirements, the information students need,

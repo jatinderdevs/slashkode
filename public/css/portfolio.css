@@ -75,6 +75,19 @@
 .btnlive {
   padding: 12px 25px;
 }
+.drag-card-case {
+  display: inline-block;
+  margin-top: 0.9rem;
+  font-family: var(--sk-font-heading);
+  font-weight: 600;
+  font-size: var(--sk-text-sm);
+  color: var(--sk-color-terracotta);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.drag-card-case:hover {
+  color: var(--sk-color-primary-dark);
+}
 .drag-card:hover .drag-card-media img {
   translate: 0 -60%;
   transition: ease-in-out all 8s;

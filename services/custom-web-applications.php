@@ -96,6 +96,11 @@
                                 adjust to. We start by learning how your team actually works, then build something
                                 around that, so things get done faster and with less hassle.
                             </p>
+                            <p>
+                                See it in practice: <a href="<?php echo BASE_PATH; ?>/work/arr-logistics"
+                                    class="text-color-main">how a Melbourne freight company moved from email orders to
+                                    an online order portal</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
