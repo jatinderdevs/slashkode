@@ -22,7 +22,7 @@
         <div class="menu-backdrop"></div>
         <div class="menu-panel">
             <nav aria-label="Mobile navigation">
-                <a class="menu-link" href="<?php echo BASE_PATH; ?>/work"><span>Work</span><span
+                <a class="menu-link" href="<?php echo BASE_PATH; ?>/work/"><span>Work</span><span
                         class="link-num">01</span></a>
                 <a class="menu-link" href="<?php echo BASE_PATH; ?>/services/"><span>Services</span><span
                         class="link-num">02</span></a>
@@ -49,8 +49,8 @@
                     </a>
                 </div>
                 <ul class="nav" aria-label="Primary navigation">
-                    <li><a href="<?php echo BASE_PATH; ?>/work" class="nav-link-anim"><span class="nav-link-inner"><span
-                                    class="nav-link-text nav-link-text--top">work</span><span
+                    <li><a href="<?php echo BASE_PATH; ?>/work/" class="nav-link-anim"><span
+                                class="nav-link-inner"><span class="nav-link-text nav-link-text--top">work</span><span
                                     class="nav-link-text nav-link-text--bottom">Work</span></span></a></li>
                     <li><a href="<?php echo BASE_PATH; ?>/services/" class="nav-link-anim"><span
                                 class="nav-link-inner"><span
