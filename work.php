@@ -55,13 +55,13 @@ function sk_work_asset(string $path): string
         content="Melbourne web design portfolio, website design examples Melbourne, web development case studies" />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Slashkode" />
-    <link rel="canonical" href="https://slashkode.com.au/work" />
+    <link rel="canonical" href="https://slashkode.com.au/work/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Our Work | Melbourne Web Design & Development Portfolio | Slashkode" />
     <meta property="og:description" content="Real websites built for Melbourne businesses and custom dashboards." />
-    <meta property="og:url" content="https://slashkode.com.au/work" />
+    <meta property="og:url" content="https://slashkode.com.au/work/" />
     <meta property="og:site_name" content="Slashkode" />
     <meta property="og:locale" content="en_AU" />
 

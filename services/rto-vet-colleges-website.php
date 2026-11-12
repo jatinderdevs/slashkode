@@ -45,7 +45,7 @@
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Services",
-                        "item": "https://slashkode.com.au/services"
+                        "item": "https://slashkode.com.au/services/"
                     },
                     {
                         "@type": "ListItem",
@@ -114,7 +114,7 @@
                         <div>
                             <div class="flexBreadcrumb">
                                 <a href="<?php echo BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
-                                <a href="<?php echo BASE_PATH; ?>/services" class="breadcrumb-btn"> / Services</a>
+                                <a href="<?php echo BASE_PATH; ?>/services/" class="breadcrumb-btn"> / Services</a>
                             </div>
 
                             <h1 class="heroheading">

@@ -125,7 +125,7 @@
                     </p>
 
                     <div class="mag-zone">
-                        <a href="<?php echo BASE_PATH; ?>/work" class="btn herobtnPrimary">See the work &nbsp;
+                        <a href="<?php echo BASE_PATH; ?>/work/" class="btn herobtnPrimary">See the work &nbsp;
                             <dotlottie-wc
                                 src="https://lottie.host/3c7a293d-42c4-4658-a8db-6f2e4bfef31c/UY9L97Lncp.lottie"
                                 style="width: 30px; height: 30px" autoplay loop></dotlottie-wc>

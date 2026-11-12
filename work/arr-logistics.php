@@ -75,7 +75,7 @@
                         "@type": "ListItem",
                         "position": 2,
                         "name": "Work",
-                        "item": "https://slashkode.com.au/work"
+                        "item": "https://slashkode.com.au/work/"
                     },
                     {
                         "@type": "ListItem",
@@ -107,7 +107,7 @@
                 <div class="sk-container">
                     <div class="flexBreadcrumb">
                         <a href="<?php echo BASE_PATH; ?>/" class="breadcrumb-btn"> / home</a>
-                        <a href="<?php echo BASE_PATH; ?>/work" class="breadcrumb-btn"> / Work</a>
+                        <a href="<?php echo BASE_PATH; ?>/work/" class="breadcrumb-btn"> / Work</a>
                         <a href="<?php echo BASE_PATH; ?>//work/arr-logistics" class="breadcrumb-btn"> / Case study</a>
 
 
@@ -390,7 +390,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="<?php echo BASE_PATH; ?>/work">
+                                <a href="<?php echo BASE_PATH; ?>/work/">
                                     <span>
                                         <strong>All our work</strong>
                                         <small>Websites, college sites and custom systems we have built.</small>

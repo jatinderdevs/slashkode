@@ -9,6 +9,34 @@ function gtag() {
 gtag('js', new Date());
 
 gtag('config', 'G-MF4Q9KZ8NJ');
+// Click tracking: phone, email, WhatsApp, Start, Quote
+document.addEventListener('click', function(e) {
+    var el = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!el) return;
+
+    var href = el.getAttribute('href') || '';
+    var path = (el.hostname === location.hostname) ? el.pathname.replace(/\/+$/, '') : '';
+    var eventName = '';
+
+    if (/^tel:/i.test(href)) {
+        eventName = 'click_phone';
+    } else if (/^mailto:/i.test(href)) {
+        eventName = 'click_email';
+    } else if (/^(wa\.me|api\.whatsapp\.com|web\.whatsapp\.com)$/i.test(el.hostname)) {
+        eventName = 'click_whatsapp';
+    } else if (/\/start$/.test(path)) {
+        eventName = 'click_start';
+    } else if (/\/quote$/.test(path)) {
+        eventName = 'click_quote';
+    }
+    if (!eventName) return;
+
+    gtag('event', eventName, {
+        link_url: href,
+        link_text: (el.textContent || '').trim().slice(0, 80),
+        transport_type: 'beacon'
+    });
+});
 </script>
 
 <?php require_once __DIR__ . '/../config.php'; ?>
