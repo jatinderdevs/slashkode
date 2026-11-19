@@ -66,7 +66,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/siteValue.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/marquee.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/inclusions.css" />
-
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/guides.css" />
 </head>
 
 <body class="wd-page">
@@ -310,6 +310,12 @@
             </div>
         </section>
         <?php require_once('../includes/sections/process.php'); ?>
+
+
+
+        <?php $guidesPage = 'web-design';
+        require_once('../includes/sections/guides.php'); ?>
+
 
         <?php $faqPage = 'website-service';
         require_once('../includes/sections/faq.php'); ?>

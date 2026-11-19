@@ -95,7 +95,7 @@
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/bientoGrid.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/cta.css" />
     <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/services/rto-gaps.css" />
-
+    <link rel="stylesheet" href="<?php echo BASE_PATH; ?>/public/css/guides.css" />
 </head>
 
 <body class="wd-page">
@@ -223,6 +223,9 @@
         </div>
 
         <?php require_once('../includes/sections/process.php'); ?>
+
+        <?php $guidesPage = 'rto';
+        require_once('../includes/sections/guides.php'); ?>
 
         <div class="container-fluid">
             <?php $faqPage = 'rto-vet-service';
