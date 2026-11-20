@@ -88,17 +88,16 @@
     },
     {
         "page": "website-service",
-        "question": "What's included in a Slashkode website?",
+        "question": "How much does a small business website cost in Melbourne?",
         "answer": [
-            "Our standard package includes up to 10 custom-designed pages, fully mobile-responsive design, website hosting, help connecting your domain, on-page SEO, contact and lead generation forms, click-to-call and WhatsApp messaging, Google Maps integration, photo galleries, testimonial sections and Google Search Console monitoring.",
-            "It also includes ongoing maintenance and one small update every month, such as an image, content or link change."
+            "With Slashkode it's $99 to start, then $39 a fortnight once your site is live. The fortnightly fee covers hosting, one small change a month, ongoing maintenance and Google Search Console monitoring. There's no lock-in and no cancellation fees. If you need more than 10 pages, an online store or bookings with payments, we quote it separately based on what you need."
         ]
     },
     {
         "page": "website-service",
-        "question": "Is my website custom-built or a template?",
+        "question": "Should I use a website builder like Wix or Squarespace instead?",
         "answer": [
-            "Custom-built. We design every site from scratch and write clean, modern code rather than using a drag-and-drop builder or a dressed-up template. That keeps your site fast, easier to look after and different from everyone else's."
+            "A builder can be a fine choice for a simple site you're happy to build and look after yourself. If you'd rather have someone design, build, host and look after it for you, that's what we do. We code every site ourselves, so it isn't a template dressed up as custom work."
         ]
     },
     {
@@ -119,9 +118,9 @@
     },
     {
         "page": "website-service",
-        "question": "Who looks after my website after it launches?",
+        "question": "Is there a lock-in contract, and do I own my domain?",
         "answer": [
-            "I do. Hosting, maintenance and monitoring are included, along with one small update each month. You always own your domain. If you need more changes than that, we'll quote them before starting any work."
+            "There's no lock-in contract and no cancellation fees, so you can cancel any time. You own your domain from the start, and we only help you connect it."
         ]
     },
     {

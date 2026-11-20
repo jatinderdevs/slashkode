@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.htaccess)",
+      "Edit(./.htaccess)",
+      "Read(./env.php)",
+      "Edit(./env.php)",
+      "Read(./config.php)",
+      "Read(./email/email-helper.php)",
+      "Read(./blog/config/**)",
+      "Edit(./blog/config/**)",
+      "Read(./version*.zip)",
+      "Edit(./version*.zip)",
+      "Read(./.git/**)",
+      "Edit(./.claude/**)",
+      "Bash(unzip:*)"
+    ]
+  }
+}

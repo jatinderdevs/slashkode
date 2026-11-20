@@ -7,39 +7,39 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Website Design & Development Melbourne | Slashkode</title>
+    <title>Small Business Website Design Melbourne | $99 to Start</title>
     <meta name="description"
-        content="Custom UI/UX design, fluid GSAP animations, and rock-solid SEO. Responsive websites built for Melbourne small businesses to scale — without the technical stress." />
+        content="Affordable website design for Melbourne small businesses. $99 to start, then $39 a fortnight with hosting included. No lock-in, no outsourcing." />
     <meta name="keywords"
-        content="custom website design Melbourne, responsive website design Melbourne, small business website design Melbourne, conversion focused web design" />
+        content="small business website design Melbourne, web design Melbourne small business, affordable website design Melbourne, affordable web design Melbourne" />
     <meta name="robots" content="index, follow" />
-    <meta name="author" content="Slashkode" />
+    <meta name="author" content="slashkode" />
     <link rel="canonical" href="https://slashkode.com.au/services/web-design-development" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Custom Website Design & Development Melbourne | Slashkode" />
+    <meta property="og:title" content="Small Business Website Design Melbourne | $99 to Start" />
     <meta property="og:description"
-        content="Custom UI/UX design, fluid animations, and rock-solid SEO. Responsive websites built for Melbourne small businesses." />
+        content="Affordable website design for Melbourne small businesses. $99 to start, then $39 a fortnight. No lock-in." />
     <meta property="og:url" content="https://slashkode.com.au/services/web-design-development" />
-    <meta property="og:site_name" content="Slashkode" />
+    <meta property="og:site_name" content="slashkode" />
     <meta property="og:locale" content="en_AU" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Custom Website Design & Development Melbourne | Slashkode" />
+    <meta name="twitter:title" content="Small Business Website Design Melbourne | $99 to Start" />
     <meta name="twitter:description"
-        content="Custom UI/UX design and responsive builds for Melbourne small businesses." />
+        content="Affordable website design for Melbourne small businesses. $99 to start, then $39 a fortnight." />
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "name": "Website Design & Development",
+        "name": "Small Business Website Design",
         "provider": {
             "@type": "LocalBusiness",
-            "name": "Slashkode",
+            "name": "slashkode",
             "url": "https://slashkode.com.au",
             "address": {
                 "@type": "PostalAddress",
@@ -52,8 +52,8 @@
             "@type": "City",
             "name": "Melbourne"
         },
-        "description": "Custom website design and development for Melbourne businesses — responsive UI/UX, GSAP animation, and built-in technical SEO.",
-        "serviceType": "Website Design & Development"
+        "description": "Affordable, custom-built website design for Melbourne small businesses. Mobile responsive, SEO foundations built in, hosting and ongoing care included. $99 to start, then $39 a fortnight, no lock-in.",
+        "serviceType": "Small business website design"
     }
     </script>
 
@@ -90,12 +90,12 @@
 
 
                             <h1 class="heroheading">
-                                Web Design & Development Built to Grow Your Business
+                                Small Business Website Design in Melbourne
                             </h1>
                             <p>
-                                We combine clean design, and solid SEO foundations
-                                to turn your website into more enquiries - not just a prettier
-                                version of what you had.
+                                Clean design and solid SEO foundations, built to turn your website into more enquiries,
+                                not just a prettier version of what you had. $99 to start, no lock-in, and the person
+                                you talk to is the person who builds it.
                             </p>
                         </div>
                     </div>
@@ -103,8 +103,82 @@
             </section>
             <?php require_once('../includes/sections/pricing-strip.php'); ?>
 
+
             <?php $portfolioPage = 'web-design';
             require_once('../includes/sections/portfolio.php'); ?>
+            <!-- ════════════════════════════════════
+             SECTION 2 — Intro + who we build for
+             Primary: small business website design Melbourne
+             Secondary: affordable website design / web design Melbourne
+        ════════════════════════════════════ -->
+            <section class="wd-intro" aria-labelledby="wd-intro-title">
+                <div class="sk-container wd-intro__inner">
+                    <div class="wd-intro__story">
+                        <span class="wd-intro__eyebrow">/small business websites</span>
+                        <h2 id="wd-intro-title" class="wd-intro__title">
+                            Affordable website design for Melbourne small businesses
+                        </h2>
+                        <p>
+                            Most small businesses don't need a 40-page website. They need one that looks the part,
+                            loads quickly on a phone, and makes it easy for someone to call, book or ask for a quote.
+                            That's the kind of small business website design we do here in Melbourne.
+                        </p>
+                        <p>
+                            There's no account manager in the middle. Jatinder designs and builds every site
+                            personally, so the person you first talk to is the same person who launches it and looks
+                            after it afterwards. <a href="<?php echo BASE_PATH; ?>/about">Read a bit about us</a>.
+                        </p>
+                        <p>
+                            Affordable shouldn't mean cheap-looking. You pay $99 to get started, then $39 a fortnight
+                            once you're live, which covers hosting, updates and ongoing care, with no lock-in. SEO
+                            basics are built in from day one, so Google understands your site from launch
+                            (<a href="<?php echo BASE_PATH; ?>/services/seo-services">here's how SEO fits in</a>).
+                        </p>
+                    </div>
+
+                    <aside class="wd-intro__who" aria-labelledby="wd-who-title">
+                        <h3 id="wd-who-title" class="wd-intro__who-title">Who we build websites for</h3>
+                        <ul class="wd-intro__list">
+                            <li>
+                                <span class="wd-intro__num" aria-hidden="true">01</span>
+                                <div>
+                                    <strong>Trades and local services</strong>
+                                    <p>Removalists, cleaners, electricians and anyone whose next job starts with a
+                                        Google search.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="wd-intro__num" aria-hidden="true">02</span>
+                                <div>
+                                    <strong>Clinics, studios and shopfronts</strong>
+                                    <p>Small teams that want to look established and make booking or enquiring
+                                        simple.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="wd-intro__num" aria-hidden="true">03</span>
+                                <div>
+                                    <strong>Training colleges</strong>
+                                    <p>Running an RTO? We have a dedicated page for
+                                        <a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO and
+                                            VET college websites</a>.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="wd-intro__num" aria-hidden="true">04</span>
+                                <div>
+                                    <strong>Need more than a website?</strong>
+                                    <p>Portals, booking systems and admin dashboards sit under
+                                        <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications">custom web
+                                            applications</a>.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
 
             <!-- about us -->
             <section class="sk-container">
@@ -182,20 +256,7 @@
 
             <?php require_once('../includes/sections/inclusions.php'); ?>
 
-            <!-- <section class="sk-container text-center">
-                <span class="sk-statement-eyebrow">/what customer says</span>
-                <h2 class="testimonial-quote">Working with them completely changed how we present our brand. Clear
-                    thinking,
-                    beautiful execution, and genuine care for results.</h2>
-                <div class="testimonial-author justify-content-center">
-                    <div class="author-avatar">EF</div>
-                    <div>
-                        
-                        <div class="author-name">Emily Foster</div>
-                        <div class="author-role">Founder, Sarter</div>
-                    </div>
-                </div>
-            </section> -->
+            <!-- GOOGLE REVIEWS SECTION: add here once real Google reviews are ready (replaces the old placeholder testimonial) -->
         </div>
         <section class="site-value" aria-labelledby="site-value-title">
             <div class="site-value__inner">
