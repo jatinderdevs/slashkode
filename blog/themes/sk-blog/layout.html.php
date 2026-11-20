@@ -14,7 +14,7 @@ require_once __DIR__ . '/../../../config.php';
     <?php require_once __DIR__ . '/../../../includes/stylesheets.php'; ?>
 
     <!-- Blog-specific styles -->
-    <link rel="stylesheet" href="<?php echo theme_path(); ?>css/style.css?v=5">
+    <link rel="stylesheet" href="<?php echo theme_path(); ?>css/style.css?v=6">
 
     <!-- GSAP (needed for island menu + footer wave) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

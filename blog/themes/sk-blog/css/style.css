@@ -805,3 +805,16 @@
 .sk-search button:hover {
   background: var(--sk-color-terracotta-hover, #f76d23);
 }
+
+/* ---------- "Updated" date in post meta ---------- */
+.post-updated {
+  color: var(--sk-color-primary-soft, #2c3e50);
+}
+.post-updated time {
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .post-meta {
+    flex-wrap: wrap;
+  }
+}
