@@ -43,7 +43,8 @@
                 <ul>
                     <li><a href="<?php echo BASE_PATH; ?>/services/web-design-development">Website Design &
                             Development</a></li>
-                    <li><a href="<?php echo BASE_PATH; ?>/services/seo-services">Search Engine Optimise (SEO)</a></li>
+                    <li><a href="<?php echo BASE_PATH; ?>/services/seo-services">Search Engine Optimisation (SEO)</a>
+                    </li>
                     <li><a href="<?php echo BASE_PATH; ?>/services/custom-web-applications">Custom Web Applications</a>
                     </li>
                     <li><a href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO College

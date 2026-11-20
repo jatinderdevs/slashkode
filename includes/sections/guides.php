@@ -25,15 +25,15 @@ $guidesConfig = [
 // Shown only if the feed AND the cache are both unavailable.
 'fallback' => [
 ['title' => 'How to Set Up a Business Website in Australia',
-'url' => 'https://slashkode.com.au/blog/2026/11/how-to-set-up-a-business-website-in-australia',
+'url' => 'https://slashkode.com.au/blog/post/how-to-set-up-a-business-website-in-australia',
 'slug' => 'how-to-set-up-a-business-website-in-australia', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
 ['title' => "Why Your Website Isn't Getting Leads (and How to Fix It)",
-'url' => 'https://slashkode.com.au/blog/2026/11/why-your-website-isnt-getting-leads',
+'url' => 'https://slashkode.com.au/blog/post/why-your-website-isnt-getting-leads',
 'slug' => 'why-your-website-isnt-getting-leads', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
 ['title' => 'Website Design for Small Business in Melbourne: What to Look For (and What to Skip)',
 'url' =>
-'https://slashkode.com.au/blog/2026/10/website-design-for-small-business-in-melbourne-what-to-look-for-and-what-to-skip',
-'slug' => 'website-design-for-small-business-in-melbourne-what-to-look-for-and-what-to-skip', 'category' => 'Web
+'https://slashkode.com.au/blog/post/how-to-choose-a-web-designer',
+'slug' => 'how-to-choose-a-web-designer', 'category' => 'Web
 Design', 'ts' => null, 'image' => ''],
 ],
 ],
@@ -48,11 +48,11 @@ Design', 'ts' => null, 'image' => ''],
 'limit' => 3,
 'fallback' => [
 ['title' => 'RTO Website Checklist: What Students Need to Find',
-'url' => 'https://slashkode.com.au/blog/2026/10/rto-website-checklist-what-students-need-to-find',
+'url' => 'https://slashkode.com.au/blog/post/rto-website-checklist-what-students-need-to-find',
 'slug' => 'rto-website-checklist-what-students-need-to-find', 'category' => 'RTO & VET Websites', 'ts' => null, 'image'
 => ''],
 ['title' => 'How to Set Up a Business Website in Australia',
-'url' => 'https://slashkode.com.au/blog/2026/11/how-to-set-up-a-business-website-in-australia',
+'url' => 'https://slashkode.com.au/blog/post/how-to-set-up-a-business-website-in-australia',
 'slug' => 'how-to-set-up-a-business-website-in-australia', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
 ],
 ],

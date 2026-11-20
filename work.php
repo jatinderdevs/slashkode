@@ -132,7 +132,9 @@ function sk_work_asset(string $path): string
                 <div class="heroWork">
                     <a href="<?php echo  BASE_PATH; ?>/" class="breadcrumb-btn"> /Home</a>
                     <h1 class="heroheading">Our Work</h1>
-                    <p>A look at the websites, RTO college websites, and custom applications we've built -
+                    <p>A look at the websites, <a
+                            href="<?php echo BASE_PATH; ?>/services/rto-vet-colleges-website">RTO college websites</a>,
+                        and custom applications we've built -
                         real projects, real outcomes.</p>
                 </div>
             </section>
@@ -190,7 +192,19 @@ function sk_work_asset(string $path): string
                             </div>
 
                             <?php if (!empty($item['description'])) : ?>
-                            <p class="drag-card-desc"><?php echo htmlspecialchars($item['description']); ?></p>
+                            <?php
+                                // Link the phrase "RTO website design" to the RTO service page (work page only).
+                                $desc = htmlspecialchars($item['description']);
+                                if (!empty($item['workLink'])) {
+                                    $desc = preg_replace(
+                                        '/RTO website design/',
+                                        '<a href="' . htmlspecialchars(BASE_PATH . $item['workLink']) . '">RTO website design</a>',
+                                        $desc,
+                                        1
+                                    );
+                                }
+                                ?>
+                            <p class="drag-card-desc"><?php echo $desc; ?></p>
                             <?php endif; ?>
 
 

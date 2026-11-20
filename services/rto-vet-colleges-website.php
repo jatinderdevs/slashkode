@@ -121,8 +121,8 @@
                                 RTO website design that helps students find, trust and enrol
                             </h1>
                             <p>
-                                We design and build RTO websites across Australia.
-                                Clear course pages, easy enrolment paths and the information students look for, all
+                                We design and build RTO websites across Australia. Our RTO web design is built around
+                                clear course pages, easy enrolment paths and the information students look for, all
                                 planned around ASQA's requirements, so more of the people who find you actually get in
                                 touch.
                             </p>
@@ -132,8 +132,32 @@
             </section>
             <?php require_once('../includes/sections/pricing-strip.php'); ?>
 
+
+
             <?php $portfolioPage = 'rto-vet';
+            $portfolioTitle = 'RTO college websites we\'ve designed and built';
+            $portfolioIntro = 'Real projects for Melbourne RTOs, including AIIT and Brighton Institute of Technology, plus a custom commissions system built for RTO colleges.';
             require_once('../includes/sections/portfolio.php'); ?>
+
+            <!-- Proof first: real review from an RTO client -->
+            <section class="sk-container text-center" aria-label="Review from AIIT">
+                <span class="sk-statement-eyebrow">/what RTO clients say</span>
+                <blockquote class="m-0">
+                    <p class="testimonial-quote beinto-testi-font">
+                        He made the whole process completely stress-free and delivered a modern, student-friendly
+                        site that ticks all our compliance boxes. Great understanding of the RTO industry.
+                        Highly recommend!
+                    </p>
+                    <footer class="testimonial-author justify-content-center">
+                        <div class="author-avatar">KH</div>
+                        <div class="text-left">
+                            <cite class="author-name d-block" style="font-style: normal;">Khalid Hussain</cite>
+                            <div class="author-role">CEO, Australian International Institute of Technology (AIIT)
+                            </div>
+                        </div>
+                    </footer>
+                </blockquote>
+            </section>
 
             <!-- about us / why us bento -->
             <section class="sk-container">
@@ -204,22 +228,6 @@
             <?php $deliverablesPage = 'rto-deliver';
             require_once('../includes/sections/deliverables.php');  ?>
 
-            <!-- Testimonial -->
-            <!-- <section class="sk-container text-center">
-                <span class="sk-statement-eyebrow">/what RTO clients say</span>
-                <h2 class="testimonial-quote">
-                    Finally a developer who understands ASQA requirements and student enrolment journeys.
-                    The new site is clear, compliant and already bringing better quality enquiries.
-                </h2>
-                <div class="testimonial-author justify-content-center">
-                    <div class="author-avatar">RTO</div>
-                    <div>
-
-                        <div class="author-name">RTO Director</div>
-                        <div class="author-role">Melbourne Registered Training Organisation</div>
-                    </div>
-                </div>
-            </section> -->
         </div>
 
         <?php require_once('../includes/sections/process.php'); ?>
