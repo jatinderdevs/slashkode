@@ -58,5 +58,38 @@
     "desc": "On-page SEO built around how students actually search, like “Certificate III in Individual Support” plus their city, or business courses in their state. Clear page titles, headings and course details so the right people find you and get in touch.",
     "image": "/public/img/rto-seo.svg",
     "alt": "SEO foundations for an RTO website"
+  },
+  {
+    "id": "migration-trust-details",
+    "pages": [
+      "migration-deliver"
+    ],
+    "icon": "/public/icons/admin.gif",
+    "title": "Trust Details Built In",
+    "desc": "Your MARN, agent profiles, a link to the OMARA register, office details and reviews sit where visitors look for them, so people can check you're registered before they get in touch.",
+    "image": "/public/img/website-tick.svg",
+    "alt": "Migration agent website with MARN and registration details shown clearly"
+  },
+  {
+    "id": "migration-visa-pages-bookings",
+    "pages": [
+      "migration-deliver"
+    ],
+    "icon": "/public/icons/link.gif",
+    "title": "Visa Pages & Consultation Bookings",
+    "desc": "A page for each visa you handle, written in plain English, with a short consultation enquiry form, click-to-call and WhatsApp on every page. Built to work well on a phone, wherever your clients are.",
+    "image": "/public/img/landing.svg",
+    "alt": "Visa service page and consultation enquiry form on mobile and desktop"
+  },
+  {
+    "id": "migration-seo-foundations",
+    "pages": [
+      "migration-deliver"
+    ],
+    "icon": "/public/icons/search.gif",
+    "title": "SEO Built Around How Clients Search",
+    "desc": "Clear page titles, headings and visa details built around searches like “partner visa agent” or “skilled visa migration agent” plus a city, with Google Business Profile and Search Console set up from day one.",
+    "image": "/public/img/rto-seo.svg",
+    "alt": "SEO foundations for a migration agent website"
   }
 ]

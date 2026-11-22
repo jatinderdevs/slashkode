@@ -588,6 +588,66 @@
     "answer": [
       "Custom portals are quoted per project, because the price depends on what the system needs to do, such as customer logins, automatic documents and emails, order tracking and reports. Tell us how your business works today and we will give you a clear quote, with no pressure. You can <a href=\"/quote\">request a quote here</a>."
     ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Will my MARN be shown on the website?",
+    "answer": [
+      "Yes. The Code of Conduct for registered migration agents requires the MARN of at least one registered agent in your business to appear on your website and social media. We show it on every page and on each agent's profile, with a link to your entry on the <a href='https://portal.mara.gov.au/search-the-register-of-migration-agents/' target='_blank' rel='noopener'>OMARA Register of Migration Agents</a>, so clients can check it themselves in seconds.",
+      "We build the site around those requirements, but you remain responsible for meeting the Code and for the accuracy of what's published."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "What pages does a migration agent website need?",
+    "answer": [
+      "Most practices need a home page, an about or team page with each agent's MARN, a page for each visa type you handle (for example student, partner, skilled, employer sponsored and visitor visas), a consultation and fees page, a contact page and a privacy policy.",
+      "That fits within the 10 pages included in the standard plan. You can see the full checklist we use further up this page."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "How much does a migration agent website cost?",
+    "answer": [
+      "It's $99 to start, then $39 fortnightly once your site is live. That covers up to 10 pages, hosting, on-page SEO, enquiry forms, click-to-call and WhatsApp, and one update a month. There's no lock-in and no cancellation fee.",
+      "Anything beyond that, like extra pages or online booking with payments, is quoted before any work starts. See the full list on the <a href='https://slashkode.com.au/price'>pricing page</a>."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Can clients book a consultation through the website?",
+    "answer": [
+      "Yes. Every site includes a consultation enquiry form, click-to-call and WhatsApp, so people can reach you whichever way suits them. The form asks only what you need to reply, like the visa they're interested in and whether they're in Australia, not their passport or personal documents.",
+      "If you'd like clients to choose a time and pay for a consultation online, we can add that as an extra and give you a clear quote first."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Can my website include pages in other languages?",
+    "answer": [
+      "Yes. If many of your clients speak another language, we can add pages in that language, and each one counts toward your 10 pages. You provide or approve the translation, because accuracy matters when people are reading about visas."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Will my website show up on Google?",
+    "answer": [
+      "Every site has on-page SEO built in, with a separate page for each visa so Google can match you with searches like \"partner visa agent\" plus your city. We also set up Google Search Console, Google Analytics and your Google Business Profile.",
+      "Nobody can honestly guarantee rankings, and new websites take time to build up. If you already have a website that isn't being found, an <a href='https://slashkode.com.au/services/seo-services'>SEO audit</a> is a good place to start."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Do you build websites for immigration lawyers?",
+    "answer": [
+      "Yes. Australian legal practitioners can give immigration assistance without being registered with OMARA, so there's no MARN to show. Instead we make your practice details and experience just as easy to find, along with clear pages for the visas you handle."
+    ]
+  },
+  {
+    "page": "migration-service",
+    "question": "Do you work with migration agents outside Melbourne?",
+    "answer": [
+      "Yes. We're based in Melbourne and work with migration agents across Australia over video calls, phone and email. Jatinder designs and builds every site personally, so you deal with the same person from the first chat to launch and beyond."
+    ]
   }
-    
 ]

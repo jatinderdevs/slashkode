@@ -236,6 +236,12 @@
                             <span class="skill-icon" aria-hidden="true">
                                 <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
 
+                        <a href="<?php echo BASE_PATH; ?>/services/migration-agent-websites"
+                            class="skill-trigger hover-link" data-img="public/img/mockups/ist.webp">
+                            <span class="skill-label">Migration Agent Websites</span>
+                            <span class="skill-icon" aria-hidden="true">
+                                <img src="public/icons/top-right.png" class="img-fluid" alt="" /> </span></a>
+
                         <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications"
                             class="skill-trigger hover-link" data-img="public/img/mockups/rtocommissions.webp">
                             <span class="skill-label">Custom Web Applications</span>

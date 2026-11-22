@@ -8,7 +8,7 @@
     "link": "https://www.aiit.edu.au/",
     "cta": "View live site",
     "chips": ["Website design", "RTO / VET", "SEO"],
-    "pages": ["home", "rto-vet"],
+    "pages": ["home", "rto-vet", "migration"],
     "workLink": "/services/rto-vet-colleges-website",
     "description": "Full RTO website design and development for a Melbourne VET college. Built with clear course information, student enquiry paths, and SEO foundations so prospective students can find and enrol more easily.",
     "stars":5,
@@ -37,7 +37,7 @@
     "link": "https://www.bit.edu.au/",
     "cta": "View live site",
     "chips": ["Website design", "RTO / VET"],
-    "pages": [ "rto-vet"],
+    "pages": [ "rto-vet", "migration"],
     "workLink": "/services/rto-vet-colleges-website",
     "description": "RTO website design for a Melbourne VET college, built around ASQA requirements. Structured course catalogue, clear enrolment information, and a student-friendly design that meets regulatory needs."
   },
@@ -64,7 +64,7 @@
     "link": "https://internationalstudenttips.com.au/",
     "cta": "View live site",
     "chips": ["Blog / CMS", "Admin Dashboard", "SEO"],
-    "pages": ["home", "web-design", "custom-cms"],
+    "pages": ["home", "web-design", "custom-cms", "migration"],
     "description": "Content-focused website and admin dashboard for a blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience."
   },
   {
@@ -103,7 +103,7 @@
     "link": "https://www.rtocommissions.com.au/",
     "cta": "View live site",
     "chips": ["Web Application", "RTO / VET", "Reporting"],
-    "pages": ["home", "custom-cms", "rto-vet", "custom-apps"],
+    "pages": ["home", "custom-cms", "rto-vet", "custom-apps", "migration"],
     "workLink": "/services/rto-vet-colleges-website",
     "description": "Custom system for RTO colleges to manage education agent data, run automatic calculations, and generate CSV and PDF reports. Built to cut manual work so teams can maintain agent records and commissions with less effort and fewer errors. It sits alongside our RTO website design work for colleges that need more than a website."
   },

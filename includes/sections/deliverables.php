@@ -41,8 +41,9 @@ return isset($item['pages']) && in_array($page, $item['pages'], true);
 $deliverablesJsonPath = __DIR__ . '/../../data/deliverables.json';
 
 $deliverablesPage = $deliverablesPage ?? '';
-$deliverablesDesc = $deliverablesPage === "custom-apps" ? 'Software that matches your workflow. Built to last. Room to
-grow.':"Compliance-ready structure. Clear student journeys. Pages that convert enquiries.";
+// A page can set its own $deliverablesDesc before the require; otherwise these defaults apply.
+$deliverablesDesc = !empty($deliverablesDesc) ? $deliverablesDesc : ($deliverablesPage === "custom-apps" ? 'Software that matches your workflow. Built to last. Room to
+grow.':"Compliance-ready structure. Clear student journeys. Pages that convert enquiries.");
 $deliverableCards = sk_get_deliverables($deliverablesPage, $deliverablesJsonPath);
 ?>
 

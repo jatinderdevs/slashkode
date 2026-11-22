@@ -56,6 +56,28 @@ Design', 'ts' => null, 'image' => ''],
 'slug' => 'how-to-set-up-a-business-website-in-australia', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
 ],
 ],
+'migration' => [
+'eyebrow' => '/ Guides',
+'title' => 'Guides before you build',
+'category' => 'Web Design',
+'pin' => [
+'how-to-choose-a-web-designer',
+'why-your-website-isnt-getting-leads',
+'how-to-set-up-a-business-website-in-australia',
+],
+'limit' => 3,
+'fallback' => [
+['title' => 'How to Choose a Web Designer for Your Small Business',
+'url' => 'https://slashkode.com.au/blog/post/how-to-choose-a-web-designer',
+'slug' => 'how-to-choose-a-web-designer', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
+['title' => "Why Your Website Isn't Getting Leads (and How to Fix It)",
+'url' => 'https://slashkode.com.au/blog/post/why-your-website-isnt-getting-leads',
+'slug' => 'why-your-website-isnt-getting-leads', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
+['title' => 'How to Set Up a Business Website in Australia',
+'url' => 'https://slashkode.com.au/blog/post/how-to-set-up-a-business-website-in-australia',
+'slug' => 'how-to-set-up-a-business-website-in-australia', 'category' => 'Web Design', 'ts' => null, 'image' => ''],
+],
+],
 ];
 
 if (empty($guidesPage) || !isset($guidesConfig[$guidesPage])) {

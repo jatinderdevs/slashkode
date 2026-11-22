@@ -59,6 +59,12 @@
                 "position": 4,
                 "name": "Custom Web Applications",
                 "url": "https://slashkode.com.au/services/custom-web-applications"
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "name": "Migration Agent Website Design",
+                "url": "https://slashkode.com.au/services/migration-agent-websites"
             }
         ]
     }
@@ -116,6 +122,9 @@
                         <div class="service-desc">
                             <p>Custom-designed, fast websites with clean code and SEO foundations - built so your
                                 business look professional and turn visitors into enquiries.</p>
+                            <p>Building for a specific industry? See our
+                                <a href="<?php echo BASE_PATH; ?>/services/migration-agent-websites">migration agent
+                                    website design</a> page.</p>
                         </div>
 
                         <div class="subcate">

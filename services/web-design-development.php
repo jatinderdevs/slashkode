@@ -168,6 +168,16 @@
                             <li>
                                 <span class="wd-intro__num" aria-hidden="true">04</span>
                                 <div>
+                                    <strong>Migration agents</strong>
+                                    <p>Registered agents and immigration practices have their own page for
+                                        <a href="<?php echo BASE_PATH; ?>/services/migration-agent-websites">migration
+                                            agent website design</a>.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="wd-intro__num" aria-hidden="true">05</span>
+                                <div>
                                     <strong>Need more than a website?</strong>
                                     <p>Portals, booking systems and admin dashboards sit under
                                         <a href="<?php echo BASE_PATH; ?>/services/custom-web-applications">custom web

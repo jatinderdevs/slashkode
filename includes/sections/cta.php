@@ -58,6 +58,18 @@ to you. ',
 'note' => 'No lock-in. No cancellation fees.',
 ],
 
+// Migration agents: standard $99 plan
+'migration' => [
+'label' => 'Start my website',
+'heading' => 'A website people trust with their visa.',
+'desc' => 'Your MARN in plain sight, a clear page for every visa you handle, and consultation enquiries that come straight
+to you.',
+'sub' => 'Only $99 to start. Then $39 fortnightly, once your site is live.',
+'button' => 'Start my website',
+'url' => $ctaStartUrl,
+'note' => 'No lock-in. No cancellation fees. No outsourcing.',
+],
+
 'seo' => [
 'label' => 'Request a quote',
 'heading' => 'Get found by people already searching for you.',
