@@ -42,7 +42,7 @@ $faqs = sk_get_faqs($faqPage, $faqJsonPath);
     <div class="faq-container">
         <header class="faq-header">
             <span class="sk-statement-eyebrow">/FAQ</span>
-            <h2 class="faq-title headingeffect">Common questions</h2>
+            <h3 class="faq-title headingeffect">Common questions</h3>
             <p class="faq-subtitle">
                 Straight answers about timelines, pricing, and how we work together.
             </p>
@@ -55,14 +55,16 @@ $faqs = sk_get_faqs($faqPage, $faqJsonPath);
         <div class="faq-list">
             <?php foreach ($faqs as $faq) : ?>
             <div class="faq-item">
-                <button class="faq-question" aria-expanded="false">
-                    <span><?php echo htmlspecialchars($faq['question'] ?? ''); ?></span>
-                    <span class="faq-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 5v14M5 12h14" />
-                        </svg>
-                    </span>
-                </button>
+                <h3 class="faq-question-heading">
+                    <button class="faq-question" aria-expanded="false">
+                        <span><?php echo htmlspecialchars($faq['question'] ?? ''); ?></span>
+                        <span class="faq-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 5v14M5 12h14" />
+                            </svg>
+                        </span>
+                    </button>
+                </h3>
                 <div class="faq-answer">
                     <div class="faq-answer-inner">
                         <?php foreach (($faq['answer'] ?? []) as $paragraph) : ?>

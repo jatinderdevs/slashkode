@@ -68,6 +68,16 @@
   box-shadow: var(--sk-shadow-soft);
 }
 
+/* Each question's button sits inside an <h3> (accessible accordion pattern).
+   Reset the heading so it adds no spacing or styles of its own. */
+.faq-question-heading {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
 .faq-question {
   width: 100%;
   display: flex;

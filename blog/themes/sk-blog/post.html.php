@@ -43,7 +43,9 @@
         $schema['author'] = array('@type' => 'Person', 'name' => $author->name, 'url' => $p->authorUrl);
     }
 ?>
-<script type="application/ld+json"><?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?></script>
+<script type="application/ld+json">
+<?php echo json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE); ?>
+</script>
 
 <article class="single-post">
 
@@ -95,7 +97,8 @@
             </time>
             <?php if ($showUpdated): ?>
             <span class="dot">·</span>
-            <span class="post-updated">Updated <time datetime="<?php echo date('c', $updatedTs); ?>"><?php echo format_date($updatedTs); ?></time></span>
+            <span class="post-updated">Updated <time
+                    datetime="<?php echo date('c', $updatedTs); ?>"><?php echo format_date($updatedTs); ?></time></span>
             <?php endif; ?>
             <?php if (!empty($p->category)): ?>
             <span class="dot">·</span>
@@ -108,7 +111,8 @@
 
     <?php if (!empty($p->image)): ?>
     <div class="post-featured-image">
-        <img src="<?php echo $p->image; ?>" alt="<?php echo strip_tags($p->title); ?>" fetchpriority="high" decoding="async">
+        <img src="<?php echo $p->image; ?>" alt="<?php echo strip_tags($p->title); ?>" fetchpriority="high"
+            decoding="async">
     </div>
     <?php endif; ?>
 
@@ -179,3 +183,21 @@
     </nav>
     <?php endif; ?>
 </article>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var tables = document.querySelectorAll('.post-content table');
+
+    tables.forEach(function(table) {
+        table.classList.add('table', 'table-striped');
+
+        var parent = table.parentElement;
+        if (parent && !parent.classList.contains('table-responsive')) {
+            var wrapper = document.createElement('div');
+            wrapper.className = 'table-responsive';
+            parent.insertBefore(wrapper, table);
+            wrapper.appendChild(table);
+        }
+    });
+});
+</script>
