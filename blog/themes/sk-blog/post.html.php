@@ -183,21 +183,3 @@
     </nav>
     <?php endif; ?>
 </article>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var tables = document.querySelectorAll('.post-content table');
-
-    tables.forEach(function(table) {
-        table.classList.add('table', 'table-striped');
-
-        var parent = table.parentElement;
-        if (parent && !parent.classList.contains('table-responsive')) {
-            var wrapper = document.createElement('div');
-            wrapper.className = 'table-responsive';
-            parent.insertBefore(wrapper, table);
-            wrapper.appendChild(table);
-        }
-    });
-});
-</script>

@@ -42,7 +42,23 @@ require_once __DIR__ . '/../../../config.php';
     <!-- Main site JS -->
     <script src="<?php echo BASE_PATH; ?>/public/js/navbar.js"></script>
     <script src="<?php echo BASE_PATH; ?>/public/js/footer.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var tables = document.querySelectorAll('.post-content table');
 
+        tables.forEach(function(table) {
+            table.classList.add('table', 'table-striped');
+
+            var parent = table.parentElement;
+            if (parent && !parent.classList.contains('table-responsive')) {
+                var wrapper = document.createElement('div');
+                wrapper.className = 'table-responsive';
+                parent.insertBefore(wrapper, table);
+                wrapper.appendChild(table);
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
