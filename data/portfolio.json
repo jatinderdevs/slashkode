@@ -63,6 +63,7 @@
     "alt": "International Student Tips blog website with admin dashboard",
     "link": "https://internationalstudenttips.com.au/",
     "cta": "View live site",
+    "caseStudy": "/work/international-student-tips",
     "chips": ["Blog / CMS", "Admin Dashboard", "SEO"],
     "pages": ["home", "web-design", "custom-cms", "migration"],
     "description": "Content-focused website and admin dashboard for a blog helping international students. Easy publishing tools, clean reading experience, and SEO setup so useful articles can rank and reach the right audience."

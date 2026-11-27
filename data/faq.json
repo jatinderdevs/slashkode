@@ -590,6 +590,34 @@
     ]
   },
   {
+    "page": "international-student-tips-case-study",
+    "question": "Can I publish and edit articles myself?",
+    "answer": [
+      "Yes. International Student Tips publishes every guide from a simple dashboard: text, images, categories, FAQs and review dates. You do not need to touch code or wait on a developer to post or update an article."
+    ]
+  },
+  {
+    "page": "international-student-tips-case-study",
+    "question": "Is a blog or guide website good for SEO?",
+    "answer": [
+      "It can be, if it is built properly. Clean URLs, clear titles, topic pages, FAQs, internal links and regularly reviewed content all help search engines understand and trust your site. We build those into the template, so every new article starts with good foundations."
+    ]
+  },
+  {
+    "page": "international-student-tips-case-study",
+    "question": "Can you add tools like the rent checker to my site?",
+    "answer": [
+      "Yes. Small interactive tools, like calculators and checkers, give visitors a reason to come back and share your site. We can build one around a question your audience asks often."
+    ]
+  },
+  {
+    "page": "international-student-tips-case-study",
+    "question": "How much does a blog website with a CMS cost?",
+    "answer": [
+      "It depends on how many page types, topics and extras you need, such as newsletter signup, author pages or interactive tools. Tell us what you want to publish and we will give you a clear quote, with no pressure. You can <a href=\"/quote\">request a quote here</a>."
+    ]
+  },
+  {
     "page": "migration-service",
     "question": "Will my MARN be shown on the website?",
     "answer": [

@@ -311,25 +311,22 @@
                             <p>The screens customers and the admin team use every day.</p>
                         </div>
                         <div class="cs-shots">
-                            <!-- SWAP each .cs-shot__ph div below for an <img>, e.g.
-                                 <img src="<?php echo BASE_PATH; ?>/public/img/case-studies/arr-logistics/order-form.webp"
-                                      width="1600" height="1000" loading="lazy" alt="..."> -->
-
-
-
                             <figure class="cs-shot cs-shot--wide cs-reveal">
                                 <img src="<?php echo BASE_PATH; ?>/public/img/case-studies/arr-logistics/orders.webp"
-                                    width="auto" height="auto" loading="lazy" alt="arr admin dashboard">
+                                    width="1680" height="983" loading="lazy"
+                                    alt="ARR Logistics admin dashboard listing every freight job and its status">
                                 <figcaption>The admin dashboard: every job and its status in one view.</figcaption>
                             </figure>
                             <figure class="cs-shot cs-reveal">
                                 <img src="<?php echo BASE_PATH; ?>/public/img/case-studies/arr-logistics/order.webp"
-                                    width="auto" height="auto" loading="lazy" alt="arr order form">
+                                    width="1680" height="983" loading="lazy"
+                                    alt="ARR Logistics order form with a returning customer's details prefilled">
                                 <figcaption>The order form, with a returning customer's details prefilled.</figcaption>
                             </figure>
                             <figure class="cs-shot cs-reveal">
                                 <img src="<?php echo BASE_PATH; ?>/public/img/case-studies/arr-logistics/pdfview.png"
-                                    width="auto" height="auto" loading="lazy" alt="arr PDF manifest">
+                                    width="1237" height="927" loading="lazy"
+                                    alt="Branded ARR Logistics PDF manifest generated automatically from an order">
                                 <figcaption>The branded PDF manifest, generated automatically.</figcaption>
                             </figure>
                         </div>
@@ -404,7 +401,7 @@
             </section>
         </div>
 
-        <?php $ctaPage = 'case-study';
+        <?php $ctaPage = 'case-study-arr';
         require_once __DIR__ . '/../includes/sections/cta.php'; ?>
 
         <?php $faqPage = 'arr-logistics-case-study';

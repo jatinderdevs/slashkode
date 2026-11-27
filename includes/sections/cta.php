@@ -23,11 +23,34 @@ $ctaContactUrl = $ctaBase . '/contact';
 $ctaPresets = [
 
 // Case study pages (no price, soft "let's talk" ask)
+// General fallback for any case study without its own preset
 'case-study' => [
+'label' => 'Talk about your project',
+'heading' => 'Got a project like this in mind?',
+'desc' => 'Tell us how your business works today and we\'ll show you what we\'d build around it.',
+'sub' => '',
+'button' => 'Let\'s talk',
+'url' => $ctaContactUrl,
+'note' => 'Free chat. No pressure.',
+],
+
+// ARR Logistics case study
+'case-study-arr' => [
 'label' => 'Talk about your project',
 'heading' => 'Still taking orders by email?',
 'desc' => 'Tell us how your team works today and we\'ll show you what an online system built around it could look
 like.',
+'sub' => '',
+'button' => 'Let\'s talk',
+'url' => $ctaContactUrl,
+'note' => 'Free chat. No pressure.',
+],
+
+// International Student Tips case study
+'case-study-ist' => [
+'label' => 'Talk about your project',
+'heading' => 'Want a site you can publish on yourself?',
+'desc' => 'Tell us what you want to write about and we\'ll show you a site and dashboard that make publishing easy and help every article get found.',
 'sub' => '',
 'button' => 'Let\'s talk',
 'url' => $ctaContactUrl,

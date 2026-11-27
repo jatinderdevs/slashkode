@@ -8,7 +8,7 @@ function gtag() {
 }
 gtag('js', new Date());
 
-gtag('config', 'G-MF4Q9KZ8NJ');
+gtag('config', ''); //turn off on local
 // Click tracking: phone, email, WhatsApp, Start, Quote
 document.addEventListener('click', function(e) {
     var el = e.target && e.target.closest ? e.target.closest('a[href]') : null;
